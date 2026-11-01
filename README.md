@@ -35,6 +35,10 @@ Course slides remain attributed to their original authors. Legal texts and third
 
 The site groups exam revision, the five project-preparation steps, and reference material. Role links accept common role-name aliases; unrecognised role links return to the chooser. Published JavaScript, CSS and data use content-hashed filenames so a new page cannot reuse an older incompatible asset. The original scenario is unchanged.
 
-## Rehearsal dialogue
+## Final video script and oral defense
 
-The Rehearsal dialogue page publishes section C of the user-supplied Phase 3 package, verbatim: seven timed sections, 24 speaker turns, speaking cues and delivery notes. It includes speaker highlighting, a seven-minute start/pause/reset timer, section navigation and PDF/Word/text downloads. The supplied script is separate from the original course scenario and the sourced legal reader.
+The final script develops the supplied Phase 3 dialogue into a complete committee recommendation, refined around the instructor’s announcement. It has seven timed sections, 25 turns and 792 spoken words. The original supplied dialogue remains available at `downloads/rehearsal-dialogue-original.txt`; the original course scenario is unchanged.
+
+The oral-defense page and PDF/Word pack cover all four performers (including the combined CS/PM role), 24 questions, follow-ups, explanation formats, contestation grounds, meaningful review, uncertainty and evidence status. The 30 earlier Compliance Officer drills remain supplementary practice.
+
+Video due: 4 November 2026, end of day. Presentation: 6 November 2026. Timing must be checked in a recorded run; 6:40 is the rehearsal target, not a measured performance.
