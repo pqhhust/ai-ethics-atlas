@@ -30,3 +30,7 @@ The consolidated AI Act is dated 27 July 2026. Legal application dates are expla
 The transcript-derived synthesis excludes raw classroom conversations and recordings. Private account details, API keys and group lists are not included.
 
 Course slides remain attributed to their original authors. Legal texts and third-party course material retain their applicable rights; no blanket licence is asserted over them.
+
+## Navigation and updates
+
+The site groups exam revision, the four project-preparation steps, and reference material. Role links accept common role-name aliases; unrecognised role links return to the chooser. Published JavaScript, CSS and data use content-hashed filenames so a new page cannot reuse an older incompatible asset. The original scenario is unchanged.
