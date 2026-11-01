@@ -37,7 +37,7 @@ The site groups exam revision, the five project-preparation steps, and reference
 
 ## Final video script and oral defense
 
-The final script develops the supplied Phase 3 dialogue into a complete committee recommendation, refined around the instructor’s announcement. It has seven timed sections, 25 turns and 792 spoken words. The original supplied dialogue remains available at `downloads/rehearsal-dialogue-original.txt`; the original course scenario is unchanged.
+The final script develops the supplied Phase 3 dialogue into a complete committee recommendation, refined around the instructor’s announcement. It has seven timed sections, 25 turns and 810 spoken words, written in natural spoken English (contractions, short sentences, direct replies). The original supplied dialogue remains available at `downloads/rehearsal-dialogue-original.txt`; the original course scenario is unchanged.
 
 The oral-defense page and PDF/Word pack cover all four performers (including the combined CS/PM role), 24 questions, follow-ups, explanation formats, contestation grounds, meaningful review, uncertainty and evidence status. The 30 earlier Compliance Officer drills remain supplementary practice.
 
