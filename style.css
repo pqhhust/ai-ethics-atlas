@@ -7,3 +7,5 @@
 .stat span{display:block}.law-text p{overflow-wrap:anywhere} .refs a{display:inline-block} .card{overflow-wrap:anywhere} .notes{max-width:100%}
 
 a.card.title-link{text-decoration:none;color:var(--ink)}a.card.title-link span{color:var(--teal)}a.card.title-link:hover{border-color:var(--teal)}.grid+.card{margin-top:24px}
+
+.original-scenario p{white-space:pre-wrap;overflow-wrap:anywhere}.original-scenario{border-left:3px solid var(--teal)}

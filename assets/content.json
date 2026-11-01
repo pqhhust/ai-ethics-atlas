@@ -2359,5 +2359,288 @@
     "The four slide decks and eight existing transcript files were used. Transcripts are fallible and contain informal classroom discussion; the public material uses topic summaries and broad recording intervals rather than publishing raw conversations.",
     "Official legal texts are copied in the legal reader with source links. Formatting and consolidation markers may be normalised; the official PDFs preserve original layout and footnotes.",
     "The legal guide is a dated study aid for the supplied case, not an exhaustive statement of every rule that can apply to a real bank. Additional rules can arise for payments, banking secrecy, AML, discrimination or investment advice."
+  ],
+  "scenario": {
+    "source": "AI Ethics - Group Project.docx",
+    "paragraphs": [
+      "*** LLM-as-a-service platform in banking services ",
+      "A banking company is developing an internal LLM-as-a-service platform for all its employees. The company chooses LLMs, whether open-source or proprietary, and makes them available for use by its employees from all services. Employees can then build applications based on the chosen LLM for their own needs. This can lead to various applications like customer-facing chatbots, credit scoring algorithms for granting loans to individuals, and credit card or financial fraud detection. The bank thinks that some AI use cases in banking can lead to ethical and legal risks, it wonders how to ensure AI applications are built and deployed by its teams while ensuring trustworthiness and legal compliance. The bank also wonders what organization and processes it should put in place to ensure that employees using the LLM-as-a-service platform develop and deploy AI applications ethically. Useful resources: ",
+      "https://cdn.ceps.eu/wp-content/uploads/2025/05/Unfit-for-purpose-ECRI-In-DepthAnalysis.pdf ",
+      "Ali, A., Abd Razak, S., Othman, S. H., Eisa, T. A. E., Al-Dhaqm, A., Nasser, M., Elhassan, T., Elshafie, H., & Saif, A. (2022). Financial Fraud Detection Based on Machine Learning: A Systematic Literature Review. Applied Sciences, 12(19), 9637. https://doi.org/10.3390/app12199637 ",
+      "J. O. Awoyemi, A. O. Adetunmbi and S. A. Oluwadare, \"Credit card fraud detection using machine learning techniques: A comparative analysis,\" 2017 International Conference on Computing Networking and Informatics (ICCNI), Lagos, Nigeria, 2017, pp. 1-9, doi: 10.1109/ICCNI.2017.8123782. ",
+      "https://www.solutions-numeriques.com/cas-dusage-dia-generative-bnp-paribas-met-en-placeen-interne-une-plateforme-de-llm-as-a-service/"
+    ]
+  },
+  "roleReading": [
+    {
+      "id": "scientist",
+      "name": "Computer scientist",
+      "mission": "Defend technical feasibility within the available time. Explain what the model should do in each bank application.",
+      "readings": [
+        {
+          "title": "Model roles and technical safeguards",
+          "why": "For the shared platform, identify the model supplier and the team building each downstream application. For credit and fraud, connect validation, logging, oversight and robustness to the actual decision.",
+          "refs": [
+            "AI_current-3",
+            "AI_current-13",
+            "AI_current-14",
+            "AI_current-15",
+            "AI_current-25",
+            "AI_current-53"
+          ]
+        },
+        {
+          "title": "Course: system boundaries and generative AI",
+          "why": "Map the whole application: model, retrieval data, tools, employees, customer and review process. Compare an external API with self-hosting using the same operational requirements.",
+          "modules": [
+            "sociotechnical",
+            "genai"
+          ]
+        },
+        {
+          "title": "Fraud-detection readings in the project brief",
+          "why": "Read the methods and evaluation sections. Prepare a comparison with a non-LLM baseline and explain how you would test rare fraud events, changing behaviour and false alarms.",
+          "links": [
+            [
+              "https://doi.org/10.3390/app12199637",
+              "Ali et al. (2022): systematic literature review"
+            ],
+            [
+              "https://doi.org/10.1109/ICCNI.2017.8123782",
+              "Awoyemi et al. (2017): comparative analysis"
+            ]
+          ]
+        }
+      ],
+      "prepare": [
+        "Draw the data flow for the chatbot, credit assessment and fraud detection separately.",
+        "Propose a test plan with a baseline, held-out evaluation, error analysis, latency and cost.",
+        "Explain how the application handles unsupported answers, model updates and rollback."
+      ],
+      "question": "Why use an LLM for credit scoring or transaction fraud rather than a simpler model?",
+      "answer": [
+        "I would compare the alternatives on the actual task before choosing the model.",
+        "Language support and structured risk prediction can use different components.",
+        "I would keep the simpler approach if an LLM does not justify its additional errors, cost and operational complexity."
+      ]
+    },
+    {
+      "id": "compliance",
+      "name": "Regulation / compliance officer",
+      "mission": "Classify each application under the AI Act and assess whether the proposed safeguards fit that use.",
+      "readings": [
+        {
+          "title": "Classification, responsibilities and application dates",
+          "why": "Read the creditworthiness category and its financial-fraud exception. Map provider/deployer responsibilities for employee-built applications and check the relevant commencement provisions.",
+          "refs": [
+            "AI_current-3",
+            "AI_current-6",
+            "AI-annex3",
+            "AI_current-25",
+            "AI_current-26",
+            "AI_current-27",
+            "AI_current-43",
+            "AI_current-50",
+            "AI_current-113"
+          ]
+        },
+        {
+          "title": "Credit decisions and borrower rights",
+          "why": "Follow the path from score to lending decision, human review, explanation and challenge. Check the scope and date of consumer-credit rules.",
+          "refs": [
+            "GDPR-22",
+            "GDPR-35",
+            "CCD2-18",
+            "CCD2-48",
+            "SCHUFA",
+            "Dun_Bradstreet"
+          ]
+        },
+        {
+          "title": "Course and project credit-scoring reading",
+          "why": "Use the report as an argument to examine alongside the statutory text. Its policy proposals are not themselves legal authorisation.",
+          "modules": [
+            "law",
+            "privacy"
+          ],
+          "links": [
+            [
+              "https://cdn.ceps.eu/wp-content/uploads/2025/05/Unfit-for-purpose-ECRI-In-Depth-Analysis.pdf",
+              "Arnal (2025): Unfit for purpose?"
+            ]
+          ]
+        }
+      ],
+      "prepare": [
+        "Bring a separate classification and duty map for each of the three applications.",
+        "Explain the proposed credit release conditions and what meaningful human review requires in practice.",
+        "Identify what changes if an employee repurposes an approved chatbot for credit assessment."
+      ],
+      "question": "If the bank buys a compliant model, why does each employee-built application still need review?",
+      "answer": [
+        "The model and the downstream application have different purposes and responsibilities.",
+        "A customer chatbot can become part of a consequential decision when its use changes.",
+        "I would require an application-level review and reassessment after material changes."
+      ]
+    },
+    {
+      "id": "ethics",
+      "name": "AI Ethics officer",
+      "mission": "Examine inequalities, power and the distribution of harms across customers, employees and other affected people.",
+      "readings": [
+        {
+          "title": "Course: fairness, users and contestability",
+          "why": "For lending, ask who loses access and why. For fraud, examine the burden of false alarms. For chatbots, ask whether customers can reach a person and challenge a harmful response.",
+          "modules": [
+            "fairness",
+            "users",
+            "contestability",
+            "arenas"
+          ]
+        },
+        {
+          "title": "Course: labour and value chains",
+          "why": "The platform affects employee discretion and work organisation. Include outsourced data work and the people who correct outputs, rather than treating automation as labour-free.",
+          "modules": [
+            "labour",
+            "valuechains"
+          ]
+        },
+        {
+          "title": "Rights, bias assessment and consultation",
+          "why": "Connect ethical concerns to concrete assessment and review mechanisms. Read the conditions attached to sensitive-data processing before proposing a group-level bias audit.",
+          "refs": [
+            "AI_current-4a",
+            "AI_current-10",
+            "AI_current-14",
+            "AI_current-27",
+            "GDPR-5",
+            "GDPR-9",
+            "GDPR-22",
+            "Labour-L2312-8"
+          ]
+        }
+      ],
+      "prepare": [
+        "Map affected groups and one concrete harm for each core application.",
+        "Explain which fairness objective you prioritise, why, and what trade-off remains.",
+        "Design a usable complaint and correction process with a named owner and review of recurring harms."
+      ],
+      "question": "If average accuracy improves, why might you still oppose deployment?",
+      "answer": [
+        "An average can hide concentrated harms, such as repeated false fraud alerts for a particular group.",
+        "I would examine who bears those errors and whether they can obtain a timely correction.",
+        "My recommendation would depend on the distribution of harm and the available remedy, as well as performance."
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Cybersecurity expert",
+      "mission": "Defend confidentiality, integrity and availability across the shared platform and its downstream applications.",
+      "readings": [
+        {
+          "title": "ICT governance, suppliers and contracts",
+          "why": "For external model APIs, examine access, subcontracting, service continuity, incident cooperation and exit. Consider the bank’s own operational responsibilities when self-hosting.",
+          "refs": [
+            "DORA-5",
+            "DORA-6",
+            "DORA-17",
+            "DORA-19",
+            "DORA-28",
+            "DORA-30"
+          ]
+        },
+        {
+          "title": "Personal data and technical robustness",
+          "why": "Trace prompts, retrieved records, outputs, logs, backups and support access. Connect supplier terms, security and transfer assessments to actual data flows.",
+          "refs": [
+            "GDPR-28",
+            "GDPR-32",
+            "GDPR-33",
+            "GDPR-44",
+            "GDPR-46",
+            "AI_current-15"
+          ]
+        },
+        {
+          "title": "Course: the whole system and privacy",
+          "why": "Employee access and application permissions are part of the system boundary. A secure model endpoint alone does not establish safe retrieval, logging or tool execution.",
+          "modules": [
+            "sociotechnical",
+            "privacy",
+            "genai"
+          ]
+        }
+      ],
+      "prepare": [
+        "Draw trust boundaries and permissions for employees, applications, model providers and support staff.",
+        "Prepare tests for cross-user data leakage, prompt injection and unauthorised tool actions.",
+        "Describe outage handling, incident escalation, rollback and a tested supplier exit path."
+      ],
+      "question": "Would hosting the model inside the bank solve the security problem?",
+      "answer": [
+        "It changes who operates the infrastructure and which data flows leave the bank.",
+        "The bank still needs access controls, patching, monitoring and tests of retrieval and tool permissions.",
+        "I would compare both hosting options against a documented threat model and continuity plan."
+      ]
+    },
+    {
+      "id": "manager",
+      "name": "Project manager",
+      "mission": "Challenge the other roles and turn their priorities into one coherent recommendation to the bank’s management.",
+      "readings": [
+        {
+          "title": "Project and assessment instructions",
+          "why": "Read the scenario, all five role cards and the video instructions. Prepare a negotiated recommendation, make every member speak, and keep the video within seven minutes.",
+          "links": [
+            [
+              "course/AI%20Ethics%20-%20Group%20Project.docx",
+              "Original banking scenario"
+            ],
+            [
+              "course/video_case_studies_guidelines.pdf#page=2",
+              "Role cards · page 2"
+            ],
+            [
+              "course/video_case_studies_guidelines.pdf#page=8",
+              "Video instructions · page 8"
+            ]
+          ]
+        },
+        {
+          "title": "Course: stakeholders, value chains and reasoning",
+          "why": "Make the trade-offs explicit: speed versus validation, cost versus resilience, and detection versus customer burden. Assign each release condition to an owner.",
+          "modules": [
+            "sociotechnical",
+            "valuechains",
+            "method"
+          ]
+        },
+        {
+          "title": "Governance, staff preparation and change",
+          "why": "Understand the organisation’s responsibilities well enough to challenge timelines, training, oversight and supplier dependence. Bring legal specialists into decisions that need them.",
+          "refs": [
+            "AI_current-4",
+            "AI_current-25",
+            "AI_current-26",
+            "DORA-5",
+            "DORA-28",
+            "Labour-L2312-8",
+            "Labour-L2312-14"
+          ]
+        }
+      ],
+      "prepare": [
+        "Present one decision for each core application, with a reason, owner, required evidence and stop condition.",
+        "Show a disagreement, the compromise reached and its remaining cost or risk.",
+        "Prepare the seven-minute run sheet and arrange the coaching session requested in the course instructions."
+      ],
+      "question": "The safeguards delay the rollout. What would you recommend to the board?",
+      "answer": [
+        "I would separate the applications and prioritise a bounded use with a clear benefit and manageable risks.",
+        "I would budget and assign the work needed for the more consequential uses rather than promise an unconditional launch date.",
+        "If the expected benefit no longer justifies that work, I would recommend changing or stopping that use."
+      ]
+    }
   ]
 }

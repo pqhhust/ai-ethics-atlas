@@ -7,6 +7,8 @@ Course revision and bank AI governance project preparation, reviewed 1 November 
 - 13 course modules, drawing on four slide decks and eight lecture transcripts.
 - 40 written questions, including six supplied course examples, with answer outlines.
 - Four mock exams and a self-review rubric. Timings and scoring are practice tools, not official exam rules.
+- Original banking scenario reproduced unchanged from the supplied DOCX.
+- Reading paths for all five role cards: computer scientist, compliance, ethics, cybersecurity and project management.
 - Bank project decisions, release gates, opening statement and 30 Compliance Officer oral drills.
 - 102 complete selected legal provisions, annexes or operative rulings, with official source links.
 - PDF and Word preparation packs; complete official legal PDFs and a combined compendium.
