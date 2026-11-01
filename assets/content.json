@@ -1966,27 +1966,27 @@
         "The decision"
       ],
       [
-        "0:25–0:55",
+        "0:25–0:50",
         "The technical proposal"
       ],
       [
-        "0:55–2:05",
+        "0:50–1:55",
         "Hosting and control"
       ],
       [
-        "2:05–3:40",
+        "1:55–3:30",
         "Credit and meaningful explanations"
       ],
       [
-        "3:40–5:00",
+        "3:30–4:55",
         "Fraud and the burden of mistakes"
       ],
       [
-        "5:00–5:45",
+        "4:55–5:40",
         "Governance and workers"
       ],
       [
-        "5:45–6:40",
+        "5:40–6:40",
         "The board recommendation"
       ],
       [
@@ -2645,7 +2645,7 @@
   ],
   "rehearsal": {
     "title": "Final video script: the bank’s AI committee",
-    "intro": "Four performers, five roles: one member plays both Computer Scientist (CS) and Project Manager (PM). The cues are stage directions, not spoken lines. Deliver the dialogue to one another; address the board in the opening and closing. Target 6:40, with 20 seconds of margin before the seven-minute limit.",
+    "intro": "Five performers, one per role: Project Manager (PM), Computer Scientist (CS), Compliance, Ethics and Security. The cues are stage directions, not spoken lines. Deliver the dialogue to one another; the PM addresses the board in the opening and closing. Target 6:40, with 20 seconds of margin before the seven-minute limit.",
     "sections": [
       {
         "time": "0:00–0:25",
@@ -2659,9 +2659,9 @@
         ]
       },
       {
-        "time": "0:25–0:55",
+        "time": "0:25–0:50",
         "title": "The technical proposal",
-        "cue": "Cue: Switch visibly to the CS role. Present the proposal confidently.",
+        "cue": "Cue: PM hands over to the CS, who presents the proposal confidently.",
         "turns": [
           {
             "speaker": "CS",
@@ -2670,9 +2670,9 @@
         ]
       },
       {
-        "time": "0:55–2:05",
+        "time": "0:50–1:55",
         "title": "Hosting and control",
-        "cue": "Cue: Security challenges the proposal. Compliance separates platform approval from application approval. Pause before switching back to PM.",
+        "cue": "Cue: Security challenges the proposal. Compliance separates platform approval from application approval. The CS pushes back; the PM listens, then decides.",
         "turns": [
           {
             "speaker": "Security",
@@ -2693,9 +2693,9 @@
         ]
       },
       {
-        "time": "2:05–3:40",
+        "time": "1:55–3:30",
         "title": "Credit and meaningful explanations",
-        "cue": "Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. PM makes a decision that limits the technical proposal.",
+        "cue": "Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal, and the CS accepts it.",
         "turns": [
           {
             "speaker": "PM",
@@ -2715,12 +2715,16 @@
           },
           {
             "speaker": "PM",
-            "text": "Then no LLM in live credit at launch. We test extraction and wording offline. Before we reconsider, outputs must be validated, every explanation traced to the real assessment, and the review process working. So the credit benefit comes later. We accept that."
+            "text": "Then no LLM in live credit at launch. We test extraction and wording offline. Before we reconsider, outputs must be validated, every explanation traced to the real assessment, and the review process working. So the credit benefit comes later."
+          },
+          {
+            "speaker": "CS",
+            "text": "That hurts my business case, but I agree. I’d rather launch late than defend a letter I can’t trace."
           }
         ]
       },
       {
-        "time": "3:40–5:00",
+        "time": "3:30–4:55",
         "title": "Fraud and the burden of mistakes",
         "cue": "Cue: Compliance states the narrow exception. Ethics changes the discussion from classification to customer harm. Keep the disagreement visible.",
         "turns": [
@@ -2730,15 +2734,19 @@
           },
           {
             "speaker": "Ethics",
-            "text": "Right. A false alert can leave someone unable to pay. And since fraud is rare, a model can look accurate while many alerts are about honest customers. So we look at those mistakes, and who pays for them, not just the detection rate."
+            "text": "Right. A false alert can leave someone unable to pay. And because fraud is rare, a model can look accurate while many alerts hit honest customers. So we look at who pays for the mistakes, not just the detection rate."
+          },
+          {
+            "speaker": "CS",
+            "text": "And technically, payments need split-second decisions, so the LLM shouldn’t block them. It can summarise alerts for investigators, while the existing fraud system stays separate."
           },
           {
             "speaker": "Security",
-            "text": "And payments need split-second decisions. The LLM shouldn’t block them. It can summarise alerts for investigators, with the existing fraud system kept separate. If the LLM goes down, payments keep going."
+            "text": "And if the LLM goes down, payments keep going through."
           },
           {
             "speaker": "PM",
-            "text": "OK. We’ll monitor wrongful restrictions, check disparities where data can lawfully be used, and staff an urgent correction line. That costs money, and it’s part of the proposal."
+            "text": "OK. We’ll monitor wrongful restrictions, check disparities where data can lawfully be used, and staff an urgent correction line. That costs money; it’s part of the proposal."
           },
           {
             "speaker": "Ethics",
@@ -2751,21 +2759,21 @@
         ]
       },
       {
-        "time": "5:00–5:45",
+        "time": "4:55–5:40",
         "title": "Governance and workers",
-        "cue": "Cue: Move from principles to how the bank would operate the platform.",
+        "cue": "Cue: The CS raises the speed concern. The others answer with how the bank would operate the platform.",
         "turns": [
           {
-            "speaker": "PM",
-            "text": "So how do we make this workable for employees?"
+            "speaker": "CS",
+            "text": "My worry is speed. If every tool needs weeks of approval, teams will just go around the platform."
           },
           {
             "speaker": "Security",
-            "text": "Simple: no registration and no named owner, no access. Low-impact tools get a fast track; sensitive uses get tighter permissions and a review first. Then spot checks that declared use matches real use. Registration alone can’t guarantee honesty."
+            "text": "Then the safe route must be the fast one. No registration and named owner, no access. Low-impact tools get approved quickly; sensitive ones get review first. And we spot-check real use; registration can’t guarantee honesty."
           },
           {
             "speaker": "Compliance",
-            "text": "We also have to consult the works council before introducing the platform. Staff should know how these tools change their work, and what oversight we expect."
+            "text": "And we must consult the works council before launch. Staff should know how these tools change their work, and what oversight we expect."
           },
           {
             "speaker": "Ethics",
@@ -2774,21 +2782,25 @@
         ]
       },
       {
-        "time": "5:45–6:40",
+        "time": "5:40–6:40",
         "title": "The board recommendation",
         "cue": "Cue: PM addresses the board. Each final intervention adds a distinct condition. End with the platform/application distinction.",
         "turns": [
           {
             "speaker": "PM",
-            "text": "So, our recommendation. Approve the platform and a limited internal-assistant pilot. Customer chatbots: approved information only, with a route to a human. Fraud assistants: investigation support only. Live credit uses wait. On this platform: no LLM scoring, no payment blocking, no employee emotion recognition. And fund validation, user support and complaint handling alongside the technology."
+            "text": "So, our recommendation. Approve the platform and a limited internal-assistant pilot. Chatbots use approved information only, with a route to a human. Fraud tools support investigators only. Live credit waits. No LLM scoring, payment blocking or employee emotion recognition on this platform. And we fund the safeguards: validation, support and complaints."
+          },
+          {
+            "speaker": "CS",
+            "text": "And we measure the pilot against today’s process: errors, time saved, complaints. No improvement, no expansion."
           },
           {
             "speaker": "Security",
-            "text": "Every application needs a tested suspension and recovery plan. We can reduce injection and leaks, but we can’t promise to eliminate them."
+            "text": "Each application needs a tested suspension plan. We can reduce injection and leaks, not eliminate them."
           },
           {
             "speaker": "Compliance",
-            "text": "These are our proposed controls, on top of the legal duties. Approval gets reviewed whenever the purpose, model or evidence changes."
+            "text": "These are our proposed controls, on top of the law. Approval is revisited when the purpose, model or evidence changes."
           },
           {
             "speaker": "PM",
@@ -2800,7 +2812,7 @@
     "notes": [
       "The original banking scenario is unchanged. This is the group’s completed proposed recommendation, not a claim that the bank has implemented it.",
       "Record a full timed run. The section times are rehearsal targets; delivery speed and pauses determine the final duration.",
-      "Make the CS-to-PM switch visible with a pause and a change in posture. Confirm the combined role with the instructor during coaching.",
+      "Keep the CS and PM roles distinct: the CS argues for the technology, the PM weighs the objections and decides. The PM limiting the CS’s credit proposal, and the CS accepting it, is a key moment.",
       "Keep the disagreement about the customer representative and the decision to postpone credit. They show a concession and an unresolved trade-off.",
       "The lines are written to be spoken: keep the contractions and short sentences. Each performer should still adjust the wording to sound like themselves, in line with the course rules on generative AI, without changing the decisions.",
       "Use the oral-defense material for detailed law, evidence, explanation formats and review procedures. The video should summarise the argument.",
@@ -2808,7 +2820,7 @@
     ],
     "source": "Completed script refined from your Phase 3 package and the instructor’s presentation guidance",
     "download": "downloads/rehearsal-dialogue.txt",
-    "wordCount": 810
+    "wordCount": 834
   },
   "defense": {
     "title": "Oral defense: understand and defend the bank’s decision",
@@ -2854,24 +2866,42 @@
     ],
     "roles": [
       {
-        "name": "Computer Scientist / Project Manager",
+        "name": "Project Manager",
         "focus": [
-          "Explain the application architecture and why the LLM is not the scoring engine.",
+          "State the conditional recommendation: what the board is, and is not, approving.",
           "Defend a measurable pilot, the cost of safeguards and the postponement of credit benefits.",
-          "Show the CS-to-PM change: technical preference does not decide the final recommendation."
+          "Explain how the committee weighed the objections, and which disagreement remains open."
         ],
         "questions": [
           "D01",
           "D03",
-          "D10",
-          "D13",
+          "D04",
           "D19",
           "D23"
         ],
         "reading": [
           "sociotechnical",
-          "genai",
+          "labour",
           "method"
+        ]
+      },
+      {
+        "name": "Computer Scientist",
+        "focus": [
+          "Explain the application architecture and why the LLM is not the scoring engine.",
+          "Explain the technical limits: extraction errors, unfaithful explanations and misleading accuracy on rare fraud.",
+          "Accept the PM’s limit on your credit proposal: technical preference does not decide the final recommendation."
+        ],
+        "questions": [
+          "D06",
+          "D10",
+          "D12",
+          "D13"
+        ],
+        "reading": [
+          "sociotechnical",
+          "genai",
+          "contestability"
         ]
       },
       {
@@ -2882,7 +2912,6 @@
           "Explain why meaningful review is more than a signature."
         ],
         "questions": [
-          "D04",
           "D07",
           "D09",
           "D15",
@@ -2903,7 +2932,6 @@
         ],
         "questions": [
           "D05",
-          "D06",
           "D08",
           "D11",
           "D16",
@@ -2925,7 +2953,6 @@
         ],
         "questions": [
           "D02",
-          "D12",
           "D14",
           "D17",
           "D18",
@@ -3005,7 +3032,7 @@
     ],
     "rehearsal": [
       "Each performer explains the group decision and one concession without reading.",
-      "Run the script once with the timer. Keep the CS/PM switch and Ethics dissent; shorten repetition if the run exceeds 6:40.",
+      "Run the script once with the timer. Keep the CS concession on credit and the Ethics dissent; shorten repetition if the run exceeds 6:40.",
       "Each performer answers three assigned questions in 20–30 seconds, then one follow-up.",
       "Practise the explanation example jointly: CS describes the output, Ethics the challenge, Compliance the right and PM the staffing.",
       "Practise an unknown question. Acknowledge the limit, explain the missing evidence and preserve the conditional recommendation.",
@@ -3015,7 +3042,7 @@
     "questions": [
       {
         "id": "D01",
-        "lead": "CS / PM",
+        "lead": "PM",
         "support": "All roles",
         "question": "What exactly are you asking the board to approve?",
         "answer": [
@@ -3050,7 +3077,7 @@
       },
       {
         "id": "D03",
-        "lead": "CS / PM",
+        "lead": "PM",
         "support": "Security",
         "question": "Why not ban LLMs, or let every team choose its own tool?",
         "answer": [
@@ -3067,8 +3094,8 @@
       },
       {
         "id": "D04",
-        "lead": "Compliance",
-        "support": "CS / PM",
+        "lead": "PM",
+        "support": "Compliance",
         "question": "Why postpone LLM use in credit instead of allowing a human to sign off?",
         "answer": [
           "Extraction and wording can influence a consequential decision even if the LLM never produces a score.",
@@ -3087,7 +3114,7 @@
       {
         "id": "D05",
         "lead": "Ethics",
-        "support": "CS / PM",
+        "support": "CS",
         "question": "What would the explanation actually look like?",
         "answer": [
           "A short plain-language notice identifies the outcome, the relevant data used and the actual main reasons.",
@@ -3104,8 +3131,8 @@
       },
       {
         "id": "D06",
-        "lead": "Ethics",
-        "support": "CS / PM",
+        "lead": "CS",
+        "support": "Ethics",
         "question": "What are the drawbacks of a letter, a chart and a counterfactual?",
         "answer": [
           "A letter can oversimplify; a feature chart may be unintelligible or wrongly read as causal.",
@@ -3179,7 +3206,7 @@
       },
       {
         "id": "D10",
-        "lead": "CS / PM",
+        "lead": "CS",
         "support": "Ethics",
         "question": "How would you check that an LLM explanation is faithful?",
         "answer": [
@@ -3217,8 +3244,8 @@
       },
       {
         "id": "D12",
-        "lead": "Security",
-        "support": "CS / PM",
+        "lead": "CS",
+        "support": "Security",
         "question": "If the LLM cannot block payments, who does?",
         "answer": [
           "Existing fraud controls remain separate from the LLM investigation assistant.",
@@ -3234,7 +3261,7 @@
       },
       {
         "id": "D13",
-        "lead": "CS / PM",
+        "lead": "CS",
         "support": "Ethics",
         "question": "Why can high accuracy be misleading for fraud?",
         "answer": [
@@ -3252,7 +3279,7 @@
       {
         "id": "D14",
         "lead": "Security",
-        "support": "CS / PM",
+        "support": "CS",
         "question": "Can you prevent prompt injection completely?",
         "answer": [
           "We cannot promise that. Treat retrieved content as untrusted and limit what the model can access or do.",
@@ -3328,7 +3355,7 @@
       {
         "id": "D18",
         "lead": "Security",
-        "support": "CS / PM",
+        "support": "PM",
         "question": "What happens during a provider outage or a serious data incident?",
         "answer": [
           "Use the tested application-specific fallback or suspend the assistant, with a clear user message.",
@@ -3347,7 +3374,7 @@
       },
       {
         "id": "D19",
-        "lead": "CS / PM",
+        "lead": "PM",
         "support": "All roles",
         "question": "What does this cost, and what benefit would justify it?",
         "answer": [
@@ -3366,7 +3393,7 @@
       {
         "id": "D20",
         "lead": "Ethics",
-        "support": "CS / PM",
+        "support": "PM",
         "question": "Your committee is internal. Why should affected people trust it?",
         "answer": [
           "That is a real limit in our proposal, and the customer-representative question remains unresolved.",
@@ -3404,7 +3431,7 @@
       {
         "id": "D22",
         "lead": "Compliance",
-        "support": "CS / PM",
+        "support": "PM",
         "question": "Which legal requirements matter before the delayed high-risk duties?",
         "answer": [
           "GDPR already applies to personal-data processing and qualifying automated decisions.",
@@ -3424,7 +3451,7 @@
       },
       {
         "id": "D23",
-        "lead": "CS / PM",
+        "lead": "PM",
         "support": "All roles",
         "question": "What would make you change your recommendation?",
         "answer": [
