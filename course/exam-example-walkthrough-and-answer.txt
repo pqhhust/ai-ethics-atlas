@@ -1,0 +1,14 @@
+To analyze the question, let us highlight the important elements:
+
+- The EU commission is setting up a panel to support the implementation / enforcement of the AI Act,
+- It is "in parallel" to their collaboration with OpenAI, i.e. broader,
+- The panel is scientific and independent: scientific means its members must be related to research (not necessarily academics), and independent in this context means "independent from the Commission"; in other words, putting non scientist members or members from the Commission on the panel is out of scope
+
+The goal is to write a recommendation to compose a "scientifically sound" and "balanced" panel: we can (and should :) ) use the knowledge from the lectures on defining AI to guide our argumentation. You are expected to justify your proposals: for example, 
+
+So, one possible answer can go like this: we remember that AI is traversed by controversies, a central one being the symbolic vs connectionist approach; we also remember from the thematic analysis of research papers that there are multiple subtopics of AI, broadly regrouped between theory (dimensionality reduction, classifiers, neural networks, expert systems...) and applications (NLP, computer vision, etc.). One of the supporting documents in the exam was the full article from Gargiulo et al., that we discussed in class. Since this analysis gives us the proportion of papers in each area, it is reasonable to use this information to balance part of the panel. 
+
+Furthermore, we know from the course that AI is more than a technical field of study, and that what defines "AI" as a sociotechnical system results from framing operations by different actors. This means, in particular, that any given panel will imply a certain framing (with advantages and drawbacks).
+
+In that context, it would make sense to include researchers from AI ethics, AI safety, sociology, design, anthropology, political science where relevant. These experts should be chosen for their specific expertise in AI & society rather than in the broad field (i.e. a random sociologist). One could argument that AI ethics and AI safety should both be represented because they frame risk differently; anthropologists of AI can highlight, through observations and experience, usage issues that will hinder the AI Act enforcement. Design researchers can critically examine explanation and contestation mechanisms (among others), and ensure that they are scientifically sound (with the CS AI experts), as well as realistic and aligned with the values of the European Union (i.e. allow for fair contestation, for example).
+

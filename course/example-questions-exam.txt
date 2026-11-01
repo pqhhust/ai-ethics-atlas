@@ -1,0 +1,9 @@
+1) Name 5 different roles of actors in the AI sociotechnical system and how they contribute to AI
+
+2) Describe (in a few lines) an example of a value chain of annotation work
+
+3) The french government is asking for your expertise on AI and its social stakes. In particular, they would like to understand better the different trends in AI ethics and how they articulate themselves. Please provide a report (bullet points are acceptable) of the different topics they should look into, why they are relevant to understanding AI ethics, and how they are positioned in the social world of AI.
+
+4) The Ministère de l'Intérieur is willing to deploy algorithmic videosurveillance in the case of large-scale events. Their goal is to identify quickly risks to the public, and facilitate quick action.
+
+Identify and discuss the main legal issues raised by the deployment of the system in public institutions and public spaces. Explain whether and how the institution is subject to the EU AI Act, and what measures it should take to ensure compliance. Both for the main legal issues and for AI Act compliance, you are not expected to cite all the obligations but at least a few examples and be able to translate these in concrete measures that the institution should take to ensure compliance.

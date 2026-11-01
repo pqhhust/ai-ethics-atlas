@@ -1,0 +1,8 @@
+In parallel to their collaboration with OpenAI, the European Commission is setting
+up a scientific panel of independent experts to support the implementation and enforcement of the
+AI Act. It role is to advise the Commission on the state-of-the-art in artificial intelligence and its
+impacts. The Commission is asking for advice to select a balanced panel.
+You are asked to write a recommendation to compose a scientifically sound and balanced panel.
+Detail which expertises should be present in the panel, and why; detail how the panel should be
+balanced.
+

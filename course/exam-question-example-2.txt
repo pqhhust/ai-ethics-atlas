@@ -1,0 +1,9 @@
+Along with the partnership contract, OpenAI has provided a document detailing
+how they will make their LLM fair, accountable, and transparent. They detail fairness metrics,
+explainability algorithms that they will use, as well as technical documentation (model weights
+and code). The document is purely technical.
+The Commission would like your advice on how to evaluate this document critically, i.e. what
+they should look for to make sure that OpenAI’s proposal aligns with trustworthy AI systems.
+You are asked to give them general guidelines, with arguments, to analyse this document critically,
+and make sure that OpenAI is held to realistic standards of accountability. You can make normative
+choicesa, as long as you explain them, and detail how your guidelines fit your normative choices.
