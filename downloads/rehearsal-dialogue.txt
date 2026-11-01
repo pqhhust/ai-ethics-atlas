@@ -1,0 +1,44 @@
+C. Rehearsal dialogue
+Rehearsal example only. It shows the logic, rhythm and length of each turn. Each member should rewrite their own lines in their own words, in line with the course rules on generative AI, before recording. The speaking cues in italics are the part to keep.
+0:00–0:25 Framing
+Cue: name the real choice and the decision needed.
+PM: Thanks, everyone. Our teams are already pasting client data into public chatbots. So the question isn't whether we use LLMs, but on what terms. I need a recommendation for the board: do we approve an internal platform, and what may be built on it?
+0:25–0:55 Proposal
+Cue: propose with enthusiasm, and plant both conflicts (external APIs, credit).
+CS: Here's the proposal. One shared platform in our own data centres, running open-weight and Mistral models. BNP Paribas already runs something similar. Every application goes through one gateway that controls and logs each call. Honestly, I'd also like the best external models through their APIs. Quality matters, and the biggest quick win is credit.
+0:55–2:12 T2: where the models run
+Cue: Security brings two concrete risks; Compliance lifts the debate to platform versus application; the PM visibly switches hats.
+Security: Two problems. An external API sends customer data outside the bank, and every provider becomes a third-party risk we must manage and be able to exit. And LLMs bring new attacks. A document in our search index can hide instructions: that's prompt injection. If the assistant can read everything, one poisoned file can leak another team's data.
+Compliance: There's a bigger point. Approving the platform doesn't approve what's built on it. The law looks at purpose. If a team uses the same model to assess creditworthiness, that application is high-risk, and the bank is its provider.
+CS: But if our own models are weaker, people go straight back to public tools.
+PM: Then we test it instead of guessing. Decision: in-house by default. External models only for internal tasks without personal data, under contract, and only if a benchmark proves we need them. And search only returns documents the user can already open.
+2:12–3:40 T4: credit
+Cue: the CS is honest about the tool; Ethics and Compliance raise two different objections; the PM overrules the business case.
+PM: Next, credit. The retail bank wants faster loan decisions. Can the platform deliver that?
+CS: Not as the decision engine. Scoring runs on structured data, where validated statistical models are the established tool. An LLM helps around them: reading payslips, or turning the model's reasons into a clear letter.
+Ethics: That letter worries me. Research shows language models can write explanations that sound convincing but don't reflect the real reasons. And the EU Court of Justice said last year that people must get an explanation they can actually challenge. A fluent letter isn't a fair process.
+Compliance: And timing. From the twentieth of November, new consumer-credit rules give borrowers the right to an explanation and a human review when an assessment is automated. That's four weeks away, well before the AI Act's high-risk rules apply.
+PM: Then I'm overruling my own business case. No LLM in the live credit chain for now. We test document reading and letter wording offline. Production only once the borrower-rights process is running, and every reason in a letter comes from the scoring model itself.
+3:40–5:07 T3: fraud
+Cue: Compliance is legally right; Ethics argues legitimacy with one concrete example; agreement goes above the law; Ethics records dissent.
+Compliance: Fraud is different. The AI Act excludes fraud detection from the high-risk credit category. Legally, a fraud-support tool could take the light path.
+Ethics: Legally, yes. But who pays for mistakes? Fraud is rare, so even an "accurate" model flags many honest customers. In one benchmark study, a model was right about ninety-seven percent of the time overall, yet only around one in twenty of its alerts were real fraud. For someone with a frozen card, legal isn't enough.
+Security: And no human can review every payment; it's decided in milliseconds. Fraudsters also adapt, so the model drifts. Monitoring isn't a launch task; it's permanent.
+PM: Then the LLM never blocks anything; it only summarises alerts for investigators. And we go beyond the law: we track wrongful blocks by customer group and staff a fast unblocking line.
+Ethics: I want the power to suspend a tool while the committee reviews it. And I still think affected customers deserve a voice on that committee. Please record my dissent.
+PM: Suspension power agreed. Dissent recorded.
+5:07–5:43 T1 and T5: speed and people
+Cue: one worry, two short answers.
+PM: Last worry: will all this control just push people back to public chatbots?
+Security: Not if the gateway does the work. No registration, no access key. But low-impact internal tools get access in minutes, not weeks.
+Compliance: One legal step before launch: French labour law requires consulting the works council before introducing new technology. Courts have already suspended AI rollouts that skipped it.
+5:43–6:40 Decision
+Cue: concrete decision, named risks, the law/policy distinction, and the thesis as the last line.
+PM: So, our recommendation. Approve the platform, in-house by default. Approve internal assistants now; customer chatbots and fraud support with restrictions. Postpone LLMs in credit. Reject LLMs that score, block payments, or read employees' emotions. The board must accept three risks: registration depends on honesty, prompt injection can be contained but not eliminated, and credit value comes later.
+Security: And every application has a kill switch we can pull within minutes.
+Compliance: To be clear: the dates are law. The thresholds and review targets are our own policy, and we'll adjust them.
+PM: Because approving the platform is not approving every application built on it.
+Delivery notes
+Speak to each other, not to the camera, except for the PM's first and last lines.
+Mark the PM hat switch with a pause and a physical cue, such as turning towards the group.
+Avoid article numbers in speech; keep them for the jury.

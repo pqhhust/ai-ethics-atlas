@@ -33,4 +33,8 @@ Course slides remain attributed to their original authors. Legal texts and third
 
 ## Navigation and updates
 
-The site groups exam revision, the four project-preparation steps, and reference material. Role links accept common role-name aliases; unrecognised role links return to the chooser. Published JavaScript, CSS and data use content-hashed filenames so a new page cannot reuse an older incompatible asset. The original scenario is unchanged.
+The site groups exam revision, the five project-preparation steps, and reference material. Role links accept common role-name aliases; unrecognised role links return to the chooser. Published JavaScript, CSS and data use content-hashed filenames so a new page cannot reuse an older incompatible asset. The original scenario is unchanged.
+
+## Rehearsal dialogue
+
+The Rehearsal dialogue page publishes section C of the user-supplied Phase 3 package, verbatim: seven timed sections, 24 speaker turns, speaking cues and delivery notes. It includes speaker highlighting, a seven-minute start/pause/reset timer, section navigation and PDF/Word/text downloads. The supplied script is separate from the original course scenario and the sourced legal reader.
