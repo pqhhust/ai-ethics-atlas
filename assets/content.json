@@ -1970,23 +1970,23 @@
         "The technical proposal"
       ],
       [
-        "0:45–1:55",
+        "0:45–1:50",
         "Hosting and control"
       ],
       [
-        "1:55–3:25",
+        "1:50–3:15",
         "Credit and meaningful explanations"
       ],
       [
-        "3:25–4:50",
+        "3:15–5:00",
         "Fraud and the burden of mistakes"
       ],
       [
-        "4:50–5:35",
+        "5:00–5:40",
         "Governance and workers"
       ],
       [
-        "5:35–6:40",
+        "5:40–6:40",
         "The board recommendation"
       ],
       [
@@ -2672,7 +2672,7 @@
         ]
       },
       {
-        "time": "0:45–1:55",
+        "time": "0:45–1:50",
         "title": "Hosting and control",
         "cue": "Cue: Security challenges the proposal. Compliance separates platform approval from application approval. The CS pushes back; the PM listens, then decides.",
         "turns": [
@@ -2724,7 +2724,7 @@
         ]
       },
       {
-        "time": "1:55–3:25",
+        "time": "1:50–3:15",
         "title": "Credit and meaningful explanations",
         "cue": "Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal and checks that the CS accepts it.",
         "turns": [
@@ -2791,9 +2791,9 @@
         ]
       },
       {
-        "time": "3:25–4:50",
+        "time": "3:15–5:00",
         "title": "Fraud and the burden of mistakes",
-        "cue": "Cue: Compliance states the narrow exception. Ethics changes the discussion from classification to customer harm. Keep the disagreement visible.",
+        "cue": "Cue: Compliance states the narrow exception. Hung explains class imbalance with the 100-customer example (illustrative numbers, not bank data). Thiago turns it into customer harm. Keep the disagreement visible.",
         "turns": [
           {
             "speaker": "PM",
@@ -2808,22 +2808,32 @@
           {
             "speaker": "Ethics",
             "name": "Thiago",
-            "text": "Legal isn’t the same as fair, though. A false alert can leave someone unable to pay. And since fraud is rare, a model can look accurate while many alerts hit honest customers."
+            "text": "Legal isn’t the same as fair, though. A false alert can freeze someone’s card and leave them unable to pay."
           },
           {
             "speaker": "CS",
             "name": "Hung",
-            "text": "True. Accuracy on its own doesn’t tell us much here."
+            "text": "And the numbers can fool us here. Imagine 100 customers, and only one of them is a fraudster. A model that just says “not fraud” to everyone is 99% accurate, and catches nobody. That’s class imbalance."
+          },
+          {
+            "speaker": "PM",
+            "name": "Khue",
+            "text": "So what do we look at instead?"
+          },
+          {
+            "speaker": "CS",
+            "name": "Hung",
+            "text": "Two things. Out of the real frauds, how many we catch: that’s recall. And out of our alerts, how many are really fraud: that’s precision. If the model flags ten customers to catch that one fraudster, nine honest people get blocked."
           },
           {
             "speaker": "Ethics",
             "name": "Thiago",
-            "text": "So the real question is who pays for the mistakes."
+            "text": "Exactly. So the real question is who pays for those mistakes."
           },
           {
             "speaker": "CS",
             "name": "Hung",
-            "text": "And technically, payments are decided in a split second, so the AI shouldn’t block them. It just summarises alerts for investigators; the existing fraud system stays separate."
+            "text": "Also, payments are decided in a split second, so the AI shouldn’t block them. It only summarises alerts for investigators, separately from the existing fraud system."
           },
           {
             "speaker": "Security",
@@ -2853,7 +2863,7 @@
         ]
       },
       {
-        "time": "4:50–5:35",
+        "time": "5:00–5:40",
         "title": "Governance and workers",
         "cue": "Cue: The CS raises the speed concern. The others answer with how the bank would operate the platform.",
         "turns": [
@@ -2865,17 +2875,7 @@
           {
             "speaker": "Security",
             "name": "Matthias",
-            "text": "Then the safe route has to be the fast one. Every tool is registered with an owner, but low-risk ones are approved quickly; only sensitive ones get a full review."
-          },
-          {
-            "speaker": "Ethics",
-            "name": "Thiago",
-            "text": "And what if a team declares the wrong purpose?"
-          },
-          {
-            "speaker": "Security",
-            "name": "Matthias",
-            "text": "We spot-check how tools are really used. Registration alone can’t guarantee people are honest."
+            "text": "Then the safe route has to be the fast one. Every tool is registered with an owner, but low-risk ones are approved quickly; only sensitive ones get a full review. And we spot-check real use, because registration can’t guarantee honesty."
           },
           {
             "speaker": "Compliance",
@@ -2890,7 +2890,7 @@
         ]
       },
       {
-        "time": "5:35–6:40",
+        "time": "5:40–6:40",
         "title": "The board recommendation",
         "cue": "Cue: PM addresses the board. Each final intervention adds a distinct condition. End with the platform/application distinction.",
         "turns": [
@@ -2933,7 +2933,7 @@
     ],
     "source": "Completed script refined from your Phase 3 package and the instructor’s presentation guidance",
     "download": "downloads/rehearsal-dialogue.txt",
-    "wordCount": 940
+    "wordCount": 989
   },
   "defense": {
     "title": "Oral defense: understand and defend the bank’s decision",
@@ -3378,7 +3378,8 @@
         "support": "Ethics",
         "question": "Why can high accuracy be misleading for fraud?",
         "answer": [
-          "When fraud is rare, predicting “not fraud” for almost everyone can look accurate.",
+          "When fraud is rare, predicting “not fraud” for almost everyone can look accurate. This is class imbalance.",
+          "Illustrative example, not bank data: 1 fraudster among 100 customers. A model that flags nobody is 99% accurate but catches no fraud (recall 0%). If it flags 10 customers to catch the one fraudster, precision is 10%: nine honest customers are wrongly blocked.",
           "Assess precision, recall, false alarms and the consequences of errors at realistic prevalence.",
           "We have no bank performance figures. Evaluate on suitable held-out data and monitor change over time."
         ],

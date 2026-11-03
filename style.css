@@ -22,3 +22,24 @@ a.card.title-link{text-decoration:none;color:var(--ink)}a.card.title-link span{c
 .rehearsal-controls{max-height:calc(100vh - 36px);overflow-y:auto}.rehearsal-controls .timer{color:white}@media(max-width:1100px){.rehearsal-controls{max-height:none;overflow:visible}}
 
 .deadline-notice{padding:18px 22px;border:1px solid #c9d9d2;border-left:4px solid var(--teal);background:#edf4ef;border-radius:6px;margin:18px 0 25px}.deadline-notice strong,.deadline-notice span{display:block}.deadline-notice span{font-size:14px;color:var(--muted)}.deadline-notice p{font-size:14px;margin:9px 0 0}
+.script-editor h2{margin-top:0}
+.script-editor-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.script-editor-bar .primary{background:var(--teal);border-color:var(--teal);color:var(--white)}
+.share-output{display:block;width:100%;box-sizing:border-box;margin-top:10px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;font-size:12px;color:var(--muted);background:var(--paper)}
+.share-output[hidden]{display:none}
+.script-status{font-size:13px;color:var(--muted);margin:10px 0 0}
+.script-status.warn{color:#8a4b12}
+.script-turn.editing{padding:12px 14px}
+.turn-tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between;margin-bottom:8px}
+.turn-tools select{font:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--white);color:var(--ink)}
+.turn-buttons{display:flex;flex-wrap:wrap;gap:4px}
+.turn-buttons button{font-size:12px;padding:4px 9px}
+.script-turn textarea{display:block;width:100%;box-sizing:border-box;font:inherit;line-height:1.7;color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:8px 10px;resize:vertical;min-height:64px;overflow-y:auto}
+.edit-heading{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.edit-heading input,.edit-cue{font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px 9px}
+.edit-time{width:8.5em}
+.edit-title{flex:1;min-width:10em;font-weight:600}
+.edit-cue-label{display:block;font-size:12px;color:var(--muted);margin:4px 0 10px}
+.edit-cue{display:block;width:100%;box-sizing:border-box;margin-top:4px;font-size:14px}
+.add-line{display:block;width:100%;margin:6px 0 4px;border-style:dashed!important;background:transparent!important;color:var(--teal)!important}
+@media print{.script-editor{display:none!important}}

@@ -37,7 +37,13 @@ The site groups exam revision, the five project-preparation steps, and reference
 
 ## Final video script and oral defense
 
-The final script develops the supplied Phase 3 dialogue into a complete committee recommendation, refined around the instructor’s announcement. It is written for five performers, one per role, with seven timed sections, 45 turns and 940 spoken words, written as a live discussion: direct questions between roles, short reactions and follow-ups. Cast: Khue (PM), Hung (CS), Yacine (Compliance), Matthias (Security), Thiago (Ethics). The original supplied dialogue remains available at `downloads/rehearsal-dialogue-original.txt`; the original course scenario is unchanged.
+The final script develops the supplied Phase 3 dialogue into a complete committee recommendation, refined around the instructor’s announcement. It is written for five performers, one per role, with seven timed sections, 45 turns and 989 spoken words, written as a live discussion: direct questions between roles, short reactions and follow-ups. Cast: Khue (PM), Hung (CS), Yacine (Compliance), Matthias (Security), Thiago (Ethics).
+
+### Editing and sharing the script
+
+On the script page, **Edit script** lets anyone change lines, speakers and stage directions, and add, move or delete lines and sections. Edits save automatically in the current browser. **Copy share link** produces a link that contains the whole edited script (compressed in the part after `#`), so anyone who opens it sees that version; nothing is uploaded to a server. **Download edited .txt** exports the same format as the source script, and **Reset to published** discards the local edits.
+
+A share link does not change the published script. To publish one, run `python tools/import_script_link.py '<link>'` in the workspace and rebuild. The original supplied dialogue remains available at `downloads/rehearsal-dialogue-original.txt`; the original course scenario is unchanged.
 
 The oral-defense page and PDF/Word pack cover all five performers, each leading four or five of the 24 questions, follow-ups, explanation formats, contestation grounds, meaningful review, uncertainty and evidence status. The 30 earlier Compliance Officer drills remain supplementary practice.
 

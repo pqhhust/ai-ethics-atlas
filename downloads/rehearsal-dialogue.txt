@@ -6,7 +6,7 @@ PM (Khue): The bank wants an AI platform so employees can build things like cust
 0:25–0:45 The technical proposal
 Cue: Khue hands over to Hung, who presents the proposal confidently.
 CS (Hung): Sure. Instead of every team picking its own tool, we build one shared platform with a few approved models, and one gateway that controls access and logs everything. I’d also like the best external models. And credit is the big win: the AI could read documents and draft letters for advisers.
-0:45–1:55 Hosting and control
+0:45–1:50 Hosting and control
 Cue: Security challenges the proposal. Compliance separates platform approval from application approval. The CS pushes back; the PM listens, then decides.
 PM (Khue): Matthias, you look worried.
 Security (Matthias): A bit, yes. With external models, we depend on an outside supplier, and customer data could leave the bank.
@@ -17,7 +17,7 @@ PM (Khue): So approving the platform doesn’t mean approving everything on it.
 Compliance (Yacine): Exactly. Each application gets registered, and we look at it again if its purpose changes.
 CS (Hung): Fair enough. But if our own models are too weak, people will just go back to public chatbots.
 PM (Khue): Good point. So internal hosting is the default, not a rule. External models are fine if they clearly do better, with a contract and no personal data. And search only shows documents you can already open.
-1:55–3:25 Credit and meaningful explanations
+1:50–3:15 Credit and meaningful explanations
 Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal and checks that the CS accepts it.
 PM (Khue): Now, credit. Could we launch document reading and letter drafting straight away?
 CS (Hung): Honestly? Not for the decision itself. Scoring stays with our validated models; the AI would just read documents and rephrase the reasons.
@@ -31,28 +31,28 @@ PM (Khue): Then the AI stays out of live credit at launch. We test it offline fi
 CS (Hung): So the credit benefit comes later.
 PM (Khue): It does. Can you live with that?
 CS (Hung): It hurts my business case, but yes. I’d rather launch late than defend a letter I can’t back up.
-3:25–4:50 Fraud and the burden of mistakes
-Cue: Compliance states the narrow exception. Ethics changes the discussion from classification to customer harm. Keep the disagreement visible.
+3:15–5:00 Fraud and the burden of mistakes
+Cue: Compliance states the narrow exception. Hung explains class imbalance with the 100-customer example (illustrative numbers, not bank data). Thiago turns it into customer harm. Keep the disagreement visible.
 PM (Khue): What about fraud? Same answer?
 Compliance (Yacine): Not quite. Under the AI Act, fraud detection isn’t in the high-risk credit category. But our other legal duties don’t disappear.
-Ethics (Thiago): Legal isn’t the same as fair, though. A false alert can leave someone unable to pay. And since fraud is rare, a model can look accurate while many alerts hit honest customers.
-CS (Hung): True. Accuracy on its own doesn’t tell us much here.
-Ethics (Thiago): So the real question is who pays for the mistakes.
-CS (Hung): And technically, payments are decided in a split second, so the AI shouldn’t block them. It just summarises alerts for investigators; the existing fraud system stays separate.
+Ethics (Thiago): Legal isn’t the same as fair, though. A false alert can freeze someone’s card and leave them unable to pay.
+CS (Hung): And the numbers can fool us here. Imagine 100 customers, and only one of them is a fraudster. A model that just says “not fraud” to everyone is 99% accurate, and catches nobody. That’s class imbalance.
+PM (Khue): So what do we look at instead?
+CS (Hung): Two things. Out of the real frauds, how many we catch: that’s recall. And out of our alerts, how many are really fraud: that’s precision. If the model flags ten customers to catch that one fraudster, nine honest people get blocked.
+Ethics (Thiago): Exactly. So the real question is who pays for those mistakes.
+CS (Hung): Also, payments are decided in a split second, so the AI shouldn’t block them. It only summarises alerts for investigators, separately from the existing fraud system.
 Security (Matthias): And if the AI goes down, payments still go through.
 PM (Khue): Good. So we track wrongful blocks, check whether some groups are hit harder, where that’s lawful, and set up an urgent line to fix mistakes. That costs money, and it’s in the proposal.
 Ethics (Thiago): I can accept that, if serious harm can trigger a suspension. But customers should still have their own representative here.
 PM (Khue): Suspension, agreed. On the customer seat we still disagree, so let’s record your dissent and revisit it after the pilot.
 Ethics (Thiago): Fine, as long as it’s on record.
-4:50–5:35 Governance and workers
+5:00–5:40 Governance and workers
 Cue: The CS raises the speed concern. The others answer with how the bank would operate the platform.
 CS (Hung): I have one more worry: speed. If every tool needs weeks of approval, teams will just go around us.
-Security (Matthias): Then the safe route has to be the fast one. Every tool is registered with an owner, but low-risk ones are approved quickly; only sensitive ones get a full review.
-Ethics (Thiago): And what if a team declares the wrong purpose?
-Security (Matthias): We spot-check how tools are really used. Registration alone can’t guarantee people are honest.
+Security (Matthias): Then the safe route has to be the fast one. Every tool is registered with an owner, but low-risk ones are approved quickly; only sensitive ones get a full review. And we spot-check real use, because registration can’t guarantee honesty.
 Compliance (Yacine): And before launch, we have to consult the works council, so staff know how their work will change.
 Ethics (Thiago): And give them the time and authority to question the AI. Otherwise they carry the responsibility without the control.
-5:35–6:40 The board recommendation
+5:40–6:40 The board recommendation
 Cue: PM addresses the board. Each final intervention adds a distinct condition. End with the platform/application distinction.
 PM (Khue): So, here’s our recommendation. Approve the platform, starting with a pilot of internal assistants. Chatbots only use approved information and can always pass you to a human. Fraud tools only help investigators. Credit waits. And on this platform, no AI scoring customers, blocking payments or reading employees’ emotions. We also pay for testing, support and complaint handling.
 CS (Hung): And we compare the pilot with how things work today. If it isn’t better, we don’t expand it.
