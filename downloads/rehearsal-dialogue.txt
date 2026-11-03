@@ -2,68 +2,68 @@ Final video script: the bank’s AI committee
 Five performers, one per role: Project Manager (PM): Khue; Computer Scientist (CS): Hung; Compliance Officer: Yacine; Cybersecurity Expert (Security): Matthias; AI Ethics Officer (Ethics): Thiago. The cues are stage directions, not spoken lines. Deliver the dialogue to one another; the PM addresses the board in the opening and closing. Target 6:40, with 20 seconds of margin before the seven-minute limit.
 0:00–0:25 The decision
 Cue: PM faces the board, then turns to the committee.
-PM (Khue): The bank wants an LLM platform for its employees: customer chatbots, plus credit and fraud tools. Our answer is yes, with conditions. Because even a secure platform can host an unfair or unlawful application. So we need to decide what each use is allowed to do. Hung, can you walk us through the proposal?
-0:25–0:55 The technical proposal
+PM (Khue): The bank wants an AI platform so employees can build things like customer chatbots, credit tools and fraud tools. Our answer is yes, with conditions. Even a secure platform can host an unfair or unlawful application, so we need to decide what each use is allowed to do. Hung, can you walk us through it?
+0:25–0:45 The technical proposal
 Cue: Khue hands over to Hung, who presents the proposal confidently.
-CS (Hung): Sure. The idea is simple: instead of every team picking its own tool, we build one shared platform with a few approved models. Everything goes through one gateway that controls access and logs every request. I’d also like access to the best external models. And credit is the big win: the AI could read documents and draft letters, and save advisers a lot of time.
-0:55–2:00 Hosting and control
+CS (Hung): Sure. Instead of every team picking its own tool, we build one shared platform with a few approved models, and one gateway that controls access and logs everything. I’d also like the best external models. And credit is the big win: the AI could read documents and draft letters for advisers.
+0:45–1:55 Hosting and control
 Cue: Security challenges the proposal. Compliance separates platform approval from application approval. The CS pushes back; the PM listens, then decides.
 PM (Khue): Matthias, you look worried.
-Security (Matthias): A bit. External models mean a supplier dependency, and customer data possibly leaving the bank.
-CS (Hung): So we host internally.
-Security (Matthias): That helps, but it’s not enough. A retrieved document can hide malicious instructions. If the assistant sees too much, one bad file could leak another team’s records.
-Compliance (Yacine): And it’s not only security. The same model can serve very different legal purposes. A chatbot answering questions isn’t a tool assessing creditworthiness.
-PM (Khue): So approving the platform doesn’t approve what runs on it.
-Compliance (Yacine): Exactly. We register each application, and look again when its purpose changes.
-CS (Hung): Fair. But if our models are too weak, people just go back to public chatbots.
-PM (Khue): Good point. So internal hosting is the default, not always the answer. External models need a proven benefit, a contract, and no personal data. And search only shows what the user can already open.
-2:00–3:40 Credit and meaningful explanations
+Security (Matthias): A bit, yes. With external models, we depend on an outside supplier, and customer data could leave the bank.
+CS (Hung): Then we host the models ourselves.
+Security (Matthias): That helps, but it’s not enough. Someone could hide instructions in a document the AI reads. If it sees too much, one bad file could leak another team’s data.
+Compliance (Yacine): And it’s not just security. Legally, a chatbot answering questions and a tool judging who gets a loan are very different, even on the same model.
+PM (Khue): So approving the platform doesn’t mean approving everything on it.
+Compliance (Yacine): Exactly. Each application gets registered, and we look at it again if its purpose changes.
+CS (Hung): Fair enough. But if our own models are too weak, people will just go back to public chatbots.
+PM (Khue): Good point. So internal hosting is the default, not a rule. External models are fine if they clearly do better, with a contract and no personal data. And search only shows documents you can already open.
+1:55–3:25 Credit and meaningful explanations
 Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal and checks that the CS accepts it.
-PM (Khue): Now, credit. Can we launch document reading and letter drafting straight away?
-CS (Hung): Honestly? Not for the decision itself. Scoring stays on our validated models. The LLM would extract information and rephrase the reasons.
+PM (Khue): Now, credit. Could we launch document reading and letter drafting straight away?
+CS (Hung): Honestly? Not for the decision itself. Scoring stays with our validated models; the AI would just read documents and rephrase the reasons.
 Ethics (Thiago): That’s what worries me.
-CS (Hung): Me too, actually. If it misreads a payslip, the assessment changes. And a convincing letter might give reasons the model never used.
-Ethics (Thiago): Right. Fluent isn’t the same as explained. If I’m refused a loan, I need to know what mattered, and how to correct or challenge it. A chart can be unreadable; a polished letter can hide uncertainty.
+CS (Hung): Me too, actually. If it misreads a payslip, the assessment changes. And a convincing letter could give reasons the model never used.
+Ethics (Thiago): Right. A fluent letter isn’t an explanation. If I’m refused a loan, I need to know what counted against me, and how to fix or challenge it.
 PM (Khue): So what would be enough?
-Ethics (Thiago): Plain language, access to the evidence, and a reviewer who can actually change the outcome.
-Compliance (Yacine): And that’s a legal issue too, not just ethics. GDPR already applies, and new consumer-credit rules start on 20 November 2026. When the assessment involves automated processing of personal data, borrowers get explanation and review rights. An adviser who just signs off the score isn’t meaningful review.
-PM (Khue): Then no LLM in live credit at launch. We test offline first: validated outputs, every explanation traced to the real assessment, and a review process that works.
+Ethics (Thiago): Plain language, access to the evidence, and a real person who can actually change the decision.
+Compliance (Yacine): And that’s not just ethics, it’s the law. GDPR already applies, and from 20 November 2026, new consumer-credit rules give borrowers a right to an explanation and a review when the assessment involves automated processing. Just signing off the score isn’t a real review.
+PM (Khue): Then the AI stays out of live credit at launch. We test it offline first, and it only goes live once outputs are validated, explanations match the real assessment, and reviews actually work.
 CS (Hung): So the credit benefit comes later.
 PM (Khue): It does. Can you live with that?
-CS (Hung): It hurts my business case, but yes. I’d rather launch late than defend a letter I can’t trace.
-3:40–5:00 Fraud and the burden of mistakes
+CS (Hung): It hurts my business case, but yes. I’d rather launch late than defend a letter I can’t back up.
+3:25–4:50 Fraud and the burden of mistakes
 Cue: Compliance states the narrow exception. Ethics changes the discussion from classification to customer harm. Keep the disagreement visible.
-PM (Khue): And fraud? Same answer?
-Compliance (Yacine): Not quite. The AI Act leaves fraud detection out of its high-risk credit category. But our other duties remain.
-Ethics (Thiago): And legal isn’t the same as fair. A false alert can leave someone unable to pay. Fraud is rare, so a model can look accurate while many alerts hit honest customers.
-CS (Hung): True. Accuracy alone tells us very little here.
-Ethics (Thiago): So we ask who pays for the mistakes.
-CS (Hung): And payments need split-second decisions, so the LLM shouldn’t block them. It summarises alerts for investigators; the existing fraud system stays separate.
-Security (Matthias): And if the LLM goes down, payments keep going.
-PM (Khue): Good. We monitor wrongful restrictions, check disparities where data can lawfully be used, and staff an urgent correction line. That costs money, and it’s in the proposal.
-Ethics (Thiago): I accept that, if serious harm can trigger a suspension. But customers still deserve an external representative on this committee.
-PM (Khue): Suspension, agreed. On the customer seat, we don’t agree yet. We’ll record your dissent and review it after the pilot.
+PM (Khue): What about fraud? Same answer?
+Compliance (Yacine): Not quite. Under the AI Act, fraud detection isn’t in the high-risk credit category. But our other legal duties don’t disappear.
+Ethics (Thiago): Legal isn’t the same as fair, though. A false alert can leave someone unable to pay. And since fraud is rare, a model can look accurate while many alerts hit honest customers.
+CS (Hung): True. Accuracy on its own doesn’t tell us much here.
+Ethics (Thiago): So the real question is who pays for the mistakes.
+CS (Hung): And technically, payments are decided in a split second, so the AI shouldn’t block them. It just summarises alerts for investigators; the existing fraud system stays separate.
+Security (Matthias): And if the AI goes down, payments still go through.
+PM (Khue): Good. So we track wrongful blocks, check whether some groups are hit harder, where that’s lawful, and set up an urgent line to fix mistakes. That costs money, and it’s in the proposal.
+Ethics (Thiago): I can accept that, if serious harm can trigger a suspension. But customers should still have their own representative here.
+PM (Khue): Suspension, agreed. On the customer seat we still disagree, so let’s record your dissent and revisit it after the pilot.
 Ethics (Thiago): Fine, as long as it’s on record.
-5:00–5:40 Governance and workers
+4:50–5:35 Governance and workers
 Cue: The CS raises the speed concern. The others answer with how the bank would operate the platform.
-CS (Hung): One more worry: speed. If every tool needs weeks of approval, teams will go around us.
-Security (Matthias): Then the safe route must be the fast one. No registration and named owner, no access. Low-impact tools go quickly; sensitive ones get reviewed.
-Ethics (Thiago): And if a team declares the wrong purpose?
-Security (Matthias): We spot-check real use. Registration can’t guarantee honesty.
-Compliance (Yacine): And before launch, we consult the works council. Staff should know how their work changes.
-Ethics (Thiago): And give them time and authority to question outputs. Otherwise we hand them responsibility without control.
-5:40–6:40 The board recommendation
+CS (Hung): I have one more worry: speed. If every tool needs weeks of approval, teams will just go around us.
+Security (Matthias): Then the safe route has to be the fast one. Every tool is registered with an owner, but low-risk ones are approved quickly; only sensitive ones get a full review.
+Ethics (Thiago): And what if a team declares the wrong purpose?
+Security (Matthias): We spot-check how tools are really used. Registration alone can’t guarantee people are honest.
+Compliance (Yacine): And before launch, we have to consult the works council, so staff know how their work will change.
+Ethics (Thiago): And give them the time and authority to question the AI. Otherwise they carry the responsibility without the control.
+5:35–6:40 The board recommendation
 Cue: PM addresses the board. Each final intervention adds a distinct condition. End with the platform/application distinction.
-PM (Khue): So, our recommendation. Approve the platform and a limited internal-assistant pilot. Chatbots use approved information only, with a route to a human. Fraud tools support investigators only. Live credit waits. No LLM scoring, payment blocking or employee emotion recognition on this platform. And we fund the safeguards: validation, support and complaints.
-CS (Hung): And we measure the pilot against today’s process. No improvement, no expansion.
-Security (Matthias): Every application gets a tested suspension plan. We can reduce injection and leaks, not eliminate them.
-Compliance (Yacine): To be clear: these are our proposed controls, on top of the law. Approval is revisited when the purpose, model or evidence changes.
-PM (Khue): Yes, we give up some speed and short-term credit value. That’s the price of keeping this governable. Because approving the platform is not approving every application built on it.
+PM (Khue): So, here’s our recommendation. Approve the platform, starting with a pilot of internal assistants. Chatbots only use approved information and can always pass you to a human. Fraud tools only help investigators. Credit waits. And on this platform, no AI scoring customers, blocking payments or reading employees’ emotions. We also pay for testing, support and complaint handling.
+CS (Hung): And we compare the pilot with how things work today. If it isn’t better, we don’t expand it.
+Security (Matthias): Every application also needs a tested off switch. We can reduce attacks and leaks, not eliminate them.
+Compliance (Yacine): And to be clear, these are our own controls, on top of the law. If the purpose, the model or the evidence changes, we review the approval.
+PM (Khue): So yes, we give up some speed and some early credit value. That’s the price of staying in control. Because approving the platform is not approving every application built on it.
 Delivery notes
 The original banking scenario is unchanged. This is the group’s completed proposed recommendation, not a claim that the bank has implemented it.
 Record a full timed run. The section times are rehearsal targets; delivery speed and pauses determine the final duration.
 Keep the CS and PM roles distinct: the CS argues for the technology, the PM weighs the objections and decides. The PM limiting the CS’s credit proposal, and the CS accepting it, is a key moment.
 Keep the disagreement about the customer representative and the decision to postpone credit. They show a concession and an unresolved trade-off.
-Play it as a discussion, not a sequence of speeches: look at the person you are answering, and pick up short replies such as “Exactly”, “Fair” or “Me too, actually” without a long pause. Each performer should still adjust the wording to sound like themselves, in line with the course rules on generative AI, without changing the decisions.
+Play it as a discussion, not a sequence of speeches: look at the person you are answering, and pick up short replies such as “Exactly”, “Fair enough” or “Me too, actually” without a long pause. Each performer should still adjust the wording to sound like themselves, in line with the course rules on generative AI, without changing the decisions.
 Use the oral-defense material for detailed law, evidence, explanation formats and review procedures. The video should summarise the argument.
 Video deadline: 4 November 2026, end of day. Project presentation: 6 November 2026, as stated in the instructor’s announcement.
