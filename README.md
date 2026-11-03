@@ -37,7 +37,7 @@ The site groups exam revision, the five project-preparation steps, and reference
 
 ## Final video script and oral defense
 
-The final script develops the supplied Phase 3 dialogue into a complete committee recommendation, refined around the instructor’s announcement. It is written for five performers, one per role, with seven timed sections, 45 turns and 844 spoken words, written as a live discussion: direct questions between roles, short reactions and follow-ups. The original supplied dialogue remains available at `downloads/rehearsal-dialogue-original.txt`; the original course scenario is unchanged.
+The final script develops the supplied Phase 3 dialogue into a complete committee recommendation, refined around the instructor’s announcement. It is written for five performers, one per role, with seven timed sections, 45 turns and 844 spoken words, written as a live discussion: direct questions between roles, short reactions and follow-ups. Cast: Khue (PM), Hung (CS), Yacine (Compliance), Matthias (Security), Thiago (Ethics). The original supplied dialogue remains available at `downloads/rehearsal-dialogue-original.txt`; the original course scenario is unchanged.
 
 The oral-defense page and PDF/Word pack cover all five performers, each leading four or five of the 24 questions, follow-ups, explanation formats, contestation grounds, meaningful review, uncertainty and evidence status. The 30 earlier Compliance Officer drills remain supplementary practice.
 
