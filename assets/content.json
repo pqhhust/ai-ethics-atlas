@@ -2654,7 +2654,7 @@
         "turns": [
           {
             "speaker": "PM",
-            "text": "The bank wants an LLM platform so employees can build customer chatbots, plus credit and fraud tools. Our answer: yes, with conditions. Here’s the catch: a secure platform can still host an unfair or unlawful application. So we have to decide what each use may do."
+            "text": "The bank wants an LLM platform for its employees: customer chatbots, plus credit and fraud tools. Our answer is yes, with conditions. Because even a secure platform can host an unfair or unlawful application. So, team: what should each use be allowed to do?"
           }
         ]
       },
@@ -2665,7 +2665,7 @@
         "turns": [
           {
             "speaker": "CS",
-            "text": "Here’s my proposal. One shared platform, approved models, and one gateway that checks access and logs every request. Teams build on that instead of picking their own tools. I’d also like the best external models when they help. And credit’s the quick win: reading documents and drafting letters saves advisers time."
+            "text": "I’ll start, since it’s my proposal. One shared platform, a few approved models, and one gateway that checks access and logs every request. I’d also like the best external models. And credit’s the quick win: reading documents, drafting letters. Advisers would save hours."
           }
         ]
       },
@@ -2675,27 +2675,47 @@
         "cue": "Cue: Security challenges the proposal. Compliance separates platform approval from application approval. The CS pushes back; the PM listens, then decides.",
         "turns": [
           {
-            "speaker": "Security",
-            "text": "Two problems. External models mean a supplier dependency, and customer data possibly leaving the bank. Hosting internally helps, but doesn’t fix everything. A retrieved document can hide malicious instructions. If the assistant sees too much, it could leak another team’s records."
+            "speaker": "PM",
+            "text": "Security, you look worried."
           },
           {
-            "speaker": "Compliance",
-            "text": "And the same model can serve very different legal purposes. A chatbot answering general questions isn’t a tool assessing creditworthiness. So we register each application, work out our obligations, and look again when its purpose changes."
+            "speaker": "Security",
+            "text": "A bit. External models mean a supplier dependency, and customer data possibly leaving the bank."
           },
           {
             "speaker": "CS",
-            "text": "Fair, but if our models are too weak, people go straight back to public tools. A rule everyone works around protects no one."
+            "text": "So we host internally."
+          },
+          {
+            "speaker": "Security",
+            "text": "That helps, but it’s not enough. A retrieved document can hide malicious instructions. If the assistant sees too much, one bad file could leak another team’s records."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "And it’s not only security. The same model can serve very different legal purposes. A chatbot answering questions isn’t a tool assessing creditworthiness."
           },
           {
             "speaker": "PM",
-            "text": "Agreed. Internal hosting is the default, not because it’s always better. External models need a proven benefit, an approved contract, and no personal data. And search only returns what the user can already open. Those are our release conditions."
+            "text": "So approving the platform doesn’t approve what runs on it."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "Exactly. We register each application, and look again when its purpose changes."
+          },
+          {
+            "speaker": "CS",
+            "text": "Fair. But if our models are too weak, people just go back to public chatbots."
+          },
+          {
+            "speaker": "PM",
+            "text": "Good point. So internal hosting is the default, not always the answer. External models need a proven benefit, a contract, and no personal data. And search only shows what the user can already open."
           }
         ]
       },
       {
         "time": "1:55–3:30",
         "title": "Credit and meaningful explanations",
-        "cue": "Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal, and the CS accepts it.",
+        "cue": "Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal and checks that the CS accepts it.",
         "turns": [
           {
             "speaker": "PM",
@@ -2703,23 +2723,47 @@
           },
           {
             "speaker": "CS",
-            "text": "Honestly, I’d keep scoring on validated models, and the decision with the accountable process. An LLM could extract information or rephrase reasons. But if it misreads a payslip, the assessment changes. And a convincing letter might give reasons the model never used."
+            "text": "Honestly? Not for the decision itself. Scoring stays on our validated models. The LLM would extract information and rephrase the reasons."
           },
           {
             "speaker": "Ethics",
-            "text": "That’s my worry. Fluent isn’t the same as explained. A refused applicant needs to know which information mattered, and how to correct or challenge it. A feature chart can be unreadable; a polished letter can hide uncertainty. We need plain language, access to the evidence, and a reviewer who can change the outcome."
-          },
-          {
-            "speaker": "Compliance",
-            "text": "GDPR already applies, and new consumer-credit rules start on 20 November 2026. When an assessment involves automated processing of personal data, borrowers get explanation and review rights. An adviser who just signs off the score isn’t meaningful scrutiny."
-          },
-          {
-            "speaker": "PM",
-            "text": "Then no LLM in live credit at launch. We test extraction and wording offline. Before we reconsider, outputs must be validated, every explanation traced to the real assessment, and the review process working. So the credit benefit comes later."
+            "text": "That’s what worries me."
           },
           {
             "speaker": "CS",
-            "text": "That hurts my business case, but I agree. I’d rather launch late than defend a letter I can’t trace."
+            "text": "Me too, actually. If it misreads a payslip, the assessment changes. And a convincing letter might give reasons the model never used."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "Right. Fluent isn’t the same as explained. If I’m refused a loan, I need to know what mattered, and how to correct or challenge it. A chart can be unreadable; a polished letter can hide uncertainty."
+          },
+          {
+            "speaker": "PM",
+            "text": "So what would be enough?"
+          },
+          {
+            "speaker": "Ethics",
+            "text": "Plain language, access to the evidence, and a reviewer who can actually change the outcome."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "And that’s a legal issue too, not just ethics. GDPR already applies, and new consumer-credit rules start on 20 November 2026. When the assessment involves automated processing of personal data, borrowers get explanation and review rights. An adviser who just signs off the score isn’t meaningful review."
+          },
+          {
+            "speaker": "PM",
+            "text": "Then no LLM in live credit at launch. We test offline first: validated outputs, every explanation traced to the real assessment, and a review process that works."
+          },
+          {
+            "speaker": "CS",
+            "text": "So the credit benefit comes later."
+          },
+          {
+            "speaker": "PM",
+            "text": "It does. Can you live with that?"
+          },
+          {
+            "speaker": "CS",
+            "text": "It hurts my business case, but yes. I’d rather launch late than defend a letter I can’t trace."
           }
         ]
       },
@@ -2729,32 +2773,48 @@
         "cue": "Cue: Compliance states the narrow exception. Ethics changes the discussion from classification to customer harm. Keep the disagreement visible.",
         "turns": [
           {
+            "speaker": "PM",
+            "text": "And fraud? Same answer?"
+          },
+          {
             "speaker": "Compliance",
-            "text": "Fraud is different. The AI Act leaves fraud detection out of its high-risk credit category. But that doesn’t remove our other duties, or tell us whether a given restriction is justified."
+            "text": "Not quite. The AI Act leaves fraud detection out of its high-risk credit category. But our other duties remain."
           },
           {
             "speaker": "Ethics",
-            "text": "Right. A false alert can leave someone unable to pay. And because fraud is rare, a model can look accurate while many alerts hit honest customers. So we look at who pays for the mistakes, not just the detection rate."
+            "text": "And legal isn’t the same as fair. A false alert can leave someone unable to pay. Fraud is rare, so a model can look accurate while many alerts hit honest customers."
           },
           {
             "speaker": "CS",
-            "text": "And technically, payments need split-second decisions, so the LLM shouldn’t block them. It can summarise alerts for investigators, while the existing fraud system stays separate."
-          },
-          {
-            "speaker": "Security",
-            "text": "And if the LLM goes down, payments keep going through."
-          },
-          {
-            "speaker": "PM",
-            "text": "OK. We’ll monitor wrongful restrictions, check disparities where data can lawfully be used, and staff an urgent correction line. That costs money; it’s part of the proposal."
+            "text": "True. Accuracy alone tells us very little here."
           },
           {
             "speaker": "Ethics",
-            "text": "I accept that, if serious harm can trigger a suspension. But I still want an external customer representative on this committee."
+            "text": "So we ask who pays for the mistakes."
+          },
+          {
+            "speaker": "CS",
+            "text": "And payments need split-second decisions, so the LLM shouldn’t block them. It summarises alerts for investigators; the existing fraud system stays separate."
+          },
+          {
+            "speaker": "Security",
+            "text": "And if the LLM goes down, payments keep going."
           },
           {
             "speaker": "PM",
-            "text": "Suspension, agreed. The customer seat stays open. We’ll record your dissent and review the committee after the pilot."
+            "text": "Good. We monitor wrongful restrictions, check disparities where data can lawfully be used, and staff an urgent correction line. That costs money, and it’s in the proposal."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "I accept that, if serious harm can trigger a suspension. But customers still deserve an external representative on this committee."
+          },
+          {
+            "speaker": "PM",
+            "text": "Suspension, agreed. On the customer seat, we don’t agree yet. We’ll record your dissent and review it after the pilot."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "Fine, as long as it’s on record."
           }
         ]
       },
@@ -2765,19 +2825,27 @@
         "turns": [
           {
             "speaker": "CS",
-            "text": "My worry is speed. If every tool needs weeks of approval, teams will just go around the platform."
+            "text": "One more worry: speed. If every tool needs weeks of approval, teams will go around us."
           },
           {
             "speaker": "Security",
-            "text": "Then the safe route must be the fast one. No registration and named owner, no access. Low-impact tools get approved quickly; sensitive ones get review first. And we spot-check real use; registration can’t guarantee honesty."
-          },
-          {
-            "speaker": "Compliance",
-            "text": "And we must consult the works council before launch. Staff should know how these tools change their work, and what oversight we expect."
+            "text": "Then the safe route must be the fast one. No registration and named owner, no access. Low-impact tools go quickly; sensitive ones get reviewed."
           },
           {
             "speaker": "Ethics",
-            "text": "And training isn’t enough. People need time and authority to question outputs. Otherwise we hand them responsibility without control."
+            "text": "And if a team declares the wrong purpose?"
+          },
+          {
+            "speaker": "Security",
+            "text": "We spot-check real use. Registration can’t guarantee honesty."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "And before launch, we consult the works council. Staff should know how their work changes."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "And give them time and authority to question outputs. Otherwise we hand them responsibility without control."
           }
         ]
       },
@@ -2792,19 +2860,19 @@
           },
           {
             "speaker": "CS",
-            "text": "And we measure the pilot against today’s process: errors, time saved, complaints. No improvement, no expansion."
+            "text": "And we measure the pilot against today’s process. No improvement, no expansion."
           },
           {
             "speaker": "Security",
-            "text": "Each application needs a tested suspension plan. We can reduce injection and leaks, not eliminate them."
+            "text": "Every application gets a tested suspension plan. We can reduce injection and leaks, not eliminate them."
           },
           {
             "speaker": "Compliance",
-            "text": "These are our proposed controls, on top of the law. Approval is revisited when the purpose, model or evidence changes."
+            "text": "To be clear: these are our proposed controls, on top of the law. Approval is revisited when the purpose, model or evidence changes."
           },
           {
             "speaker": "PM",
-            "text": "Yes, we give up some speed and near-term credit value to keep this governable. Approving the platform is not approving every application built on it."
+            "text": "Yes, we give up some speed and short-term credit value. That’s the price of keeping this governable. Because approving the platform is not approving every application built on it."
           }
         ]
       }
@@ -2814,13 +2882,13 @@
       "Record a full timed run. The section times are rehearsal targets; delivery speed and pauses determine the final duration.",
       "Keep the CS and PM roles distinct: the CS argues for the technology, the PM weighs the objections and decides. The PM limiting the CS’s credit proposal, and the CS accepting it, is a key moment.",
       "Keep the disagreement about the customer representative and the decision to postpone credit. They show a concession and an unresolved trade-off.",
-      "The lines are written to be spoken: keep the contractions and short sentences. Each performer should still adjust the wording to sound like themselves, in line with the course rules on generative AI, without changing the decisions.",
+      "Play it as a discussion, not a sequence of speeches: look at the person you are answering, and pick up short replies such as “Exactly”, “Fair” or “Me too, actually” without a long pause. Each performer should still adjust the wording to sound like themselves, in line with the course rules on generative AI, without changing the decisions.",
       "Use the oral-defense material for detailed law, evidence, explanation formats and review procedures. The video should summarise the argument.",
       "Video deadline: 4 November 2026, end of day. Project presentation: 6 November 2026, as stated in the instructor’s announcement."
     ],
     "source": "Completed script refined from your Phase 3 package and the instructor’s presentation guidance",
     "download": "downloads/rehearsal-dialogue.txt",
-    "wordCount": 834
+    "wordCount": 844
   },
   "defense": {
     "title": "Oral defense: understand and defend the bank’s decision",

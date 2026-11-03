@@ -1,0 +1,3556 @@
+{
+  "date": "1 November 2026",
+  "title": "AI Ethics Atlas",
+  "subtitle": "Understand the course. Defend a decision. Practise the argument.",
+  "modules": [
+    {
+      "id": "sociotechnical",
+      "title": "AI as a sociotechnical system",
+      "question": "Where does the system begin and end?",
+      "source": "Intro-socio-of-AI-5DA06.pdf, pp. 9–20, 64–65",
+      "transcript": "IPVF 6, approximately 0–59 min",
+      "concepts": [
+        {
+          "term": "System boundary",
+          "points": [
+            "Include models, data, workers, organisations, infrastructure, law and affected people.",
+            "A boundary centred on the model can hide the institutions deciding what counts as success."
+          ]
+        },
+        {
+          "term": "Framing",
+          "points": [
+            "A framing makes some problems, actors and remedies visible while pushing others aside.",
+            "Compare a loan model framed as prediction accuracy with lending framed as access to an essential service."
+          ]
+        },
+        {
+          "term": "Actors and power",
+          "points": [
+            "Model developers build tools; data workers produce and check data; managers set targets; regulators enforce rules; users and data subjects experience consequences.",
+            "Roles can overlap. Follow who decides, who benefits, who bears costs and who can object."
+          ]
+        },
+        {
+          "term": "Methods",
+          "points": [
+            "Ethnography studies situated practices; interviews reveal accounts and experiences; discourse analysis studies how problems are described.",
+            "Bibliometric or co-occurrence networks map patterns at scale; they do not by themselves establish intentions or causality."
+          ]
+        },
+        {
+          "term": "Controversy",
+          "points": [
+            "Study disagreements to identify competing values and definitions.",
+            "Do not assume that a technical consensus resolves political disagreement."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: the application includes the adviser, lending policy, customer appeal channel, external API and management targets.",
+        "A secure model can still participate in an unfair lending process."
+      ],
+      "pitfalls": [
+        "Listing stakeholders without explaining their contributions.",
+        "Treating AI as only a neural network.",
+        "Presenting one framing as neutral."
+      ],
+      "task": "Name five actors in the bank platform and explain one power relationship between each pair you choose."
+    },
+    {
+      "id": "history",
+      "title": "History, definitions and scientific expertise",
+      "question": "Why is AI not a single linear technical story?",
+      "source": "Intro-socio-of-AI-5DA06.pdf, pp. 20–28",
+      "transcript": "IPVF 7, approximately 0–30 min",
+      "concepts": [
+        {
+          "term": "Non-linear history",
+          "points": [
+            "Symbolic, connectionist and hybrid approaches coexist.",
+            "Funding, disciplinary legitimacy, technical resources and institutions shape which approaches become prominent."
+          ]
+        },
+        {
+          "term": "Competing commitments",
+          "points": [
+            "Symbolic approaches emphasise explicit representations and rules; connectionist approaches learn complex relationships from data.",
+            "Avoid treating these broad tendencies as exhaustive descriptions of every method."
+          ]
+        },
+        {
+          "term": "Bibliometric maps",
+          "points": [
+            "Cardon and colleagues and Gargiulo and colleagues are course examples of mapping scientific communities and topics.",
+            "A cluster reflects a chosen corpus, network and method; it is evidence for a framing, not an objective boundary of all AI."
+          ]
+        },
+        {
+          "term": "Theory and application",
+          "points": [
+            "A balanced scientific panel needs both methodological and application expertise.",
+            "Publication shares can inform representation, but do not automatically determine whose knowledge matters."
+          ]
+        },
+        {
+          "term": "Independent expertise",
+          "points": [
+            "For the supplied panel exercise, select researchers independent from the Commission.",
+            "Include relevant AI social-science, law, ethics, safety and design research; manage industrial conflicts and consult affected groups separately."
+          ]
+        }
+      ],
+      "case": [
+        "Panel example: a committee of only LLM engineers would miss symbolic approaches, deployment practices and the politics of enforcement.",
+        "Explain how each expertise answers a specific question."
+      ],
+      "pitfalls": [
+        "A history where neural AI simply replaces symbolic AI.",
+        "Appointing non-scientists or Commission members to the scientific independent panel in the supplied exercise.",
+        "Using arbitrary quotas without justification."
+      ],
+      "task": "Design a balanced panel and justify both its scientific coverage and its independence."
+    },
+    {
+      "id": "materiality",
+      "title": "Materiality, resources and data power",
+      "question": "What is hidden by the word “cloud”?",
+      "source": "Intro-socio-of-AI-5DA06.pdf, pp. 29–33",
+      "transcript": "IPVF 7, approximately 30–75 min",
+      "concepts": [
+        {
+          "term": "Infrastructure",
+          "points": [
+            "Cloud services depend on chips, data centres, energy, water, minerals and supply chains.",
+            "Compare the whole service lifecycle, not just one training run."
+          ]
+        },
+        {
+          "term": "Environmental accounting",
+          "points": [
+            "State the system boundary, workload, electricity mix and time period before comparing footprints.",
+            "Training, repeated inference, hardware manufacture and rebound effects can change the conclusion."
+          ]
+        },
+        {
+          "term": "Hidden labour",
+          "points": [
+            "Data preparation, verification and human substitution can persist after deployment.",
+            "Automation can move work between countries and organisations rather than remove it."
+          ]
+        },
+        {
+          "term": "Data colonialism",
+          "points": [
+            "The course uses this concept to examine unequal extraction of data and concentration of value.",
+            "A language community may provide resources while having little control over the commercial service built from them."
+          ]
+        },
+        {
+          "term": "Alternatives",
+          "points": [
+            "Evaluate a smaller model, a rule-based system, process redesign or no AI against the actual need.",
+            "Frugality requires a justified service comparison, not just a smaller parameter count."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: compare an LLM for routine form validation with deterministic validation plus human support.",
+        "Count inference volume, maintenance and customer effort as well as model quality."
+      ],
+      "pitfalls": [
+        "Calling digital infrastructure immaterial.",
+        "Repeating a slide statistic as a universal current estimate.",
+        "Assuming every new model creates a net environmental gain."
+      ],
+      "task": "What evidence would you request before accepting a vendor’s claim that its bank assistant is green?"
+    },
+    {
+      "id": "labour",
+      "title": "Platforms and the three forms of AI labour",
+      "question": "Who produces the apparent automation?",
+      "source": "EthicsAI_LaborAI_Abel.pdf, pp. 3–7, 18–34",
+      "transcript": "IMT Exed, approximately 0–91 min; Place Marguerite Perey, approximately 0–30 min",
+      "concepts": [
+        {
+          "term": "Platform mediation",
+          "points": [
+            "A platform matches participants, structures interactions and captures value from their contributions.",
+            "Interfaces and rules organise work even where workers are outside a conventional employment relationship."
+          ]
+        },
+        {
+          "term": "Taskification",
+          "points": [
+            "Complex activities become standardised tasks that can be allocated, measured and combined.",
+            "Task boundaries influence which context and judgment workers can retain."
+          ]
+        },
+        {
+          "term": "Preparation / trainer",
+          "points": [
+            "Workers collect, label and curate data before or during model development.",
+            "Examples include recording accents, tagging document fields and resolving ambiguous labels."
+          ]
+        },
+        {
+          "term": "Impersonation / imitator",
+          "points": [
+            "Humans perform work presented as automated, or handle tasks the system cannot complete.",
+            "This is distinct from simply training the model, even when the output later becomes training data."
+          ]
+        },
+        {
+          "term": "Verification / verifier",
+          "points": [
+            "Workers check and correct deployed outputs and feed corrections back into maintenance.",
+            "Verification can become a permanent operational function."
+          ]
+        }
+      ],
+      "case": [
+        "Bank chain: a bank specifies labels, a contractor delegates annotation, local workers apply instructions, QA checks outputs and developers train the model.",
+        "Ask where disagreement and context are lost."
+      ],
+      "pitfalls": [
+        "Claiming data work disappears once training is finished.",
+        "Confusing the trainer, imitator and verifier.",
+        "Treating crowdwork and salaried outsourcing as identical."
+      ],
+      "task": "Give one banking example for each of the three roles and explain why they may remain necessary."
+    },
+    {
+      "id": "valuechains",
+      "title": "Global value chains and working conditions",
+      "question": "How do accuracy targets and outsourcing distribute costs?",
+      "source": "EthicsAI_LaborAI_Abel.pdf, pp. 18–19, 36–51",
+      "transcript": "Place Marguerite Perey, approximately 15–74 min",
+      "concepts": [
+        {
+          "term": "Layered subcontracting",
+          "points": [
+            "A client can purchase an apparently seamless service through several intermediaries.",
+            "Additional quality-control layers may improve delivery while reducing visibility of labour conditions."
+          ]
+        },
+        {
+          "term": "Effective pay",
+          "points": [
+            "Task price is not hourly income when search, qualification, rejection and payment delays are unpaid.",
+            "Compare all working time and expenses, not only accepted-task time."
+          ]
+        },
+        {
+          "term": "Labour control",
+          "points": [
+            "Instructions, interfaces and performance metrics jointly shape pace and accepted answers.",
+            "Quality targets and opaque rejection rules can constrain workers’ agency."
+          ]
+        },
+        {
+          "term": "Different locations",
+          "points": [
+            "The course contrasts Venezuelan platform work with Francophone outsourcing chains in Madagascar.",
+            "Infrastructure, payment access, language and employment status shape opportunities differently."
+          ]
+        },
+        {
+          "term": "Governance",
+          "points": [
+            "Request subcontractor visibility, paid training, dispute procedures, worker participation and safeguards for harmful content.",
+            "A procurement contract needs monitoring and a response to violations, not only an ethical promise."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: an unusually cheap multilingual annotation contract may shift costs to workers and weaken data quality.",
+        "Ask both what labels are produced and under what conditions."
+      ],
+      "pitfalls": [
+        "Using historic platform wage samples as wages for every AI worker today.",
+        "Calling all workers unskilled.",
+        "Assuming supplier certification makes the chain transparent."
+      ],
+      "task": "Draw an annotation value chain and propose one enforceable safeguard at each stage."
+    },
+    {
+      "id": "arenas",
+      "title": "Ethics, safety and competing regulatory arenas",
+      "question": "Who defines the risk that receives attention?",
+      "source": "Intro-socio-of-AI-5DA06.pdf, pp. 34–58",
+      "transcript": "IPVF 8, approximately 0–84 min; IPVF 9, approximately 0–45 min",
+      "concepts": [
+        {
+          "term": "Discourses and attention",
+          "points": [
+            "Scientific, press, regulatory and business descriptions of AI highlight different objects and promises.",
+            "Media salience is not the same as scientific prevalence or social importance."
+          ]
+        },
+        {
+          "term": "Charters and manifestos",
+          "points": [
+            "The course distinguishes technical, regulatory and business/innovation poles.",
+            "Shared words such as fairness and transparency can carry different meanings and commitments."
+          ]
+        },
+        {
+          "term": "Four arenas",
+          "points": [
+            "The course contrasts super-intelligence/loss-of-control concerns, open-world agent safety, sociotechnical criticism and technical-economic conformity.",
+            "Use these as analytic framings, not rigid boxes for every actor."
+          ]
+        },
+        {
+          "term": "Ethics and safety",
+          "points": [
+            "Ask which harms, populations, time horizons and remedies each framing prioritises.",
+            "Do not reduce all safety research to existential risk or assume the two fields never overlap."
+          ]
+        },
+        {
+          "term": "Operationalisation",
+          "points": [
+            "Turn a principle into an accountable process, responsible actor, evidence, remedy and revision mechanism.",
+            "A charter can influence agendas while remaining insufficient as proof of implementation."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: a provider’s focus on model misuse may leave lending exclusion and outsourced labour unexamined.",
+        "Explain why the missing risks matter instead of dismissing the provider’s risks."
+      ],
+      "pitfalls": [
+        "Treating ethics as a list of universally agreed words.",
+        "Equating media visibility with risk magnitude.",
+        "Calling every charter useless without analysing its role."
+      ],
+      "task": "Write a short briefing for government comparing the risk framings and who promotes them."
+    },
+    {
+      "id": "fairness",
+      "title": "Fairness, power and technosolutionism",
+      "question": "Can a technically fair system still be unacceptable?",
+      "source": "Users-of-AI.pdf, pp. 5–16",
+      "transcript": "IPVF 10, approximately 15–84 min",
+      "concepts": [
+        {
+          "term": "COMPAS as controversy",
+          "points": [
+            "The case became a meeting point for data science, criminology, journalism and public debate.",
+            "A metric dispute can obscure the purpose and legitimacy of the surrounding criminal-justice practice."
+          ]
+        },
+        {
+          "term": "Fairness choices",
+          "points": [
+            "A metric encodes a normative choice about which disparities matter.",
+            "Inspect outcomes, error distribution, intersectional groups and the wider decision process; one metric is not the whole assessment."
+          ]
+        },
+        {
+          "term": "Power",
+          "points": [
+            "Ask whose position improves, who can set the objective and who can contest the outcome.",
+            "Reducing statistical disparity can coexist with an unjust institutional purpose."
+          ]
+        },
+        {
+          "term": "Technosolutionism",
+          "points": [
+            "A technical system is assumed to be a necessary solution before the problem and alternatives are examined.",
+            "The satirical mulching example shows why procedural fairness cannot rescue an unacceptable purpose."
+          ]
+        },
+        {
+          "term": "Decision before optimisation",
+          "points": [
+            "First debate whether the activity should exist and under which constraints.",
+            "Then assess whether technical and organisational safeguards meet those justified constraints."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: equal error rates do not settle whether collecting intrusive data is justified.",
+        "A fair-looking credit model still needs lawful inputs, meaningful review and a legitimate purpose."
+      ],
+      "pitfalls": [
+        "Claiming all fairness metrics are useless.",
+        "Treating an ethical conclusion as a metric threshold.",
+        "Offering only a better algorithm when the problem concerns institutional policy."
+      ],
+      "task": "Critique a proposal that promises fairness, code disclosure and an explanation algorithm but nothing about affected people."
+    },
+    {
+      "id": "users",
+      "title": "Users, expert fields and actual practice",
+      "question": "Why do implementation practices differ from management promises?",
+      "source": "Users-of-AI.pdf, pp. 17–25",
+      "transcript": "IPVF 11, approximately 0–45 min",
+      "concepts": [
+        {
+          "term": "Situated use",
+          "points": [
+            "Observe what people actually do with outputs, not just what managers say they do.",
+            "An interface, workload or professional norm can change how a nominal safeguard operates."
+          ]
+        },
+        {
+          "term": "Expert fields",
+          "points": [
+            "Groups share beliefs about legitimate knowledge and intervention.",
+            "Judicial and journalistic settings differ in authority, professional identity, market pressures and attitudes to technology."
+          ]
+        },
+        {
+          "term": "Decoupling",
+          "points": [
+            "Official adoption can coexist with limited or resistant everyday use.",
+            "This separation is an empirical question for interviews and observation."
+          ]
+        },
+        {
+          "term": "Buffering",
+          "points": [
+            "Foot-dragging, gaming and open critique are different responses to algorithmic management.",
+            "Resistance can reveal misaligned objectives; it is not automatically irrational or harmless."
+          ]
+        },
+        {
+          "term": "Continuous annotation",
+          "points": [
+            "The Cour de cassation example illustrates ongoing human judgment in anonymisation.",
+            "Maintaining readability and protecting identities require contextual work, not one finished training phase."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: advisers may rubber-stamp scores because overrides are penalised or time is scarce.",
+        "A human signature is weaker evidence than observing a real reconsideration."
+      ],
+      "pitfalls": [
+        "Equating acceptance with effective use.",
+        "Treating professional resistance as mere lack of AI literacy.",
+        "Assuming an override button proves independent judgment."
+      ],
+      "task": "Design a small field study to test whether human review in the bank is meaningful."
+    },
+    {
+      "id": "contestability",
+      "title": "Explanations and contestability",
+      "question": "Can the affected person understand, challenge and change the outcome?",
+      "source": "Users-of-AI.pdf, pp. 26–35",
+      "transcript": "IPVF 11, approximately 45–91 min",
+      "concepts": [
+        {
+          "term": "Audience and purpose",
+          "points": [
+            "An explanation for an engineer differs from one for a borrower or regulator.",
+            "Identify whether the aim is understanding, checking legality, changing a decision or improving the system."
+          ]
+        },
+        {
+          "term": "Useful explanations",
+          "points": [
+            "Use relevant, understandable reasons grounded in the actual decision.",
+            "A plausible LLM narrative is not evidence that those reasons caused the result."
+          ]
+        },
+        {
+          "term": "Contestation",
+          "points": [
+            "Provide a usable route to challenge data, reasoning, procedure or legitimacy.",
+            "The reviewer needs authority, information, time and the ability to correct the outcome."
+          ]
+        },
+        {
+          "term": "Feedback loops",
+          "points": [
+            "Aggregate complaints and reversals to detect recurring problems.",
+            "Connect individual correction to system redesign and suspension decisions."
+          ]
+        },
+        {
+          "term": "Limits",
+          "points": [
+            "An individual appeal can shift time and cost to the affected person.",
+            "Accessible design, collective oversight and institutional reform may be necessary alongside appeals."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: explain the decisive financial factors, let the customer correct inaccurate data, and record an independent review.",
+        "Track repeated complaints by group rather than closing each as an isolated case."
+      ],
+      "pitfalls": [
+        "Equating source-code access with a usable explanation.",
+        "Calling an appeal form meaningful when no one can overturn the decision.",
+        "Treating generated text as a faithful explanation without validation."
+      ],
+      "task": "Design a complaint path that works for a customer with limited digital literacy."
+    },
+    {
+      "id": "law",
+      "title": "AI Act classification and responsibility",
+      "question": "Which system, which purpose, which actor and which date?",
+      "source": "Sept 25 - AI regulation.pdf, pp. 26–43; current legal appendix",
+      "transcript": "IPVF 9, approximately 30–70 min; legal dates checked against official texts",
+      "concepts": [
+        {
+          "term": "Classification",
+          "points": [
+            "Check scope and intended purpose, prohibited uses, both high-risk routes and relevant transparency duties.",
+            "An AI model and an application built from it are different regulatory objects."
+          ]
+        },
+        {
+          "term": "Actors",
+          "points": [
+            "A provider develops or has a system developed and markets or puts it into service under its name; a deployer uses it under its authority.",
+            "Internal development and repurposing can give the bank provider obligations. GDPR controller/processor is a separate classification."
+          ]
+        },
+        {
+          "term": "High-risk controls",
+          "points": [
+            "Connect risk management, data governance, documentation, logs, oversight and robustness to concrete evidence.",
+            "Separate provider requirements from deployer duties and the relevant conformity route."
+          ]
+        },
+        {
+          "term": "Dates",
+          "points": [
+            "The amended Article 113 delays Chapter III Sections 1–3, except Article 6(5), for Annex III systems until 2 December 2027.",
+            "Other provisions have their own dates; do not say the whole AI Act waits until 2027."
+          ]
+        },
+        {
+          "term": "Standards and governance",
+          "points": [
+            "Harmonised standards can support a presumption of conformity within their scope.",
+            "They do not settle every fundamental-rights question or transfer responsibility to a vendor."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: consumer credit scoring triggers Annex III(5)(b); fraud detection is excluded from that specific entry.",
+        "The surrounding fraud workflow still needs its own privacy, security and rights assessment."
+      ],
+      "pitfalls": [
+        "Every public-sector AI is high-risk.",
+        "Every high-risk system needs external certification.",
+        "AI Act compliance replaces GDPR.",
+        "A shared LLM makes every application high-risk."
+      ],
+      "task": "Classify the four bank use cases and name one legal duty and one concrete safeguard for each."
+    },
+    {
+      "id": "privacy",
+      "title": "GDPR and automated decisions",
+      "question": "What makes processing lawful and human review real?",
+      "source": "Sept 25 - AI regulation.pdf, pp. 3–5; Users-of-AI.pdf, pp. 26–35; legal appendix",
+      "transcript": "IPVF 11, approximately 45–91 min; case names/dates corrected using CJEU judgments",
+      "concepts": [
+        {
+          "term": "Lawful basis and principles",
+          "points": [
+            "Choose an Article 6 basis appropriate to the processing, and comply with all relevant Article 5 principles.",
+            "Consent is one possible basis, not a universal solution or permission for excessive collection."
+          ]
+        },
+        {
+          "term": "Data types",
+          "points": [
+            "Pseudonymisation reduces exposure but the data remain personal where re-identification is possible.",
+            "Special-category data require an additional lawful condition and safeguards."
+          ]
+        },
+        {
+          "term": "Article 22",
+          "points": [
+            "Examine whether a decision is solely automated and legally or similarly significantly affects a person.",
+            "Check the specific exceptions and safeguards; an influential score can be part of the decision itself."
+          ]
+        },
+        {
+          "term": "Impact assessments",
+          "points": [
+            "A GDPR DPIA addresses high risks to personal-data rights and freedoms.",
+            "An AI Act FRIA has a different scope and trigger; they can complement each other without being interchangeable."
+          ]
+        },
+        {
+          "term": "External services",
+          "points": [
+            "Identify controller/processor roles, contracts, retention, training reuse, security and international transfers.",
+            "EU hosting alone does not establish that no third-country access or transfer exists."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: SCHUFA concerns the decisive role of an automated score; Dun & Bradstreet concerns intelligible access information.",
+        "Explain the actual review path and reasons, not merely that a person clicks approval."
+      ],
+      "pitfalls": [
+        "Human involvement automatically removes Article 22.",
+        "Consent solves every automated-credit issue.",
+        "Anonymisation and pseudonymisation are interchangeable."
+      ],
+      "task": "A reviewer approves 99% of negative scores. What would you investigate before drawing a legal conclusion?"
+    },
+    {
+      "id": "genai",
+      "title": "Generative AI, copyright and accountability",
+      "question": "What does openness or a vendor guarantee actually prove?",
+      "source": "Sept 25 - AI regulation.pdf, pp. 3–9, 34–38; Intro-socio-of-AI-5DA06.pdf, pp. 29–33",
+      "transcript": "Course slides are the principal source for this module",
+      "concepts": [
+        {
+          "term": "Copyright",
+          "points": [
+            "Distinguish an unprotected idea or method from protected expression.",
+            "Public accessibility does not automatically permit every reproduction, training use or generated output."
+          ]
+        },
+        {
+          "term": "EU text and data mining",
+          "points": [
+            "Article 3 concerns eligible research organisations and cultural-heritage institutions under its conditions.",
+            "Article 4 is a different exception with lawful-access and rights-reservation conditions; US fair use is a separate doctrine."
+          ]
+        },
+        {
+          "term": "Open weights",
+          "points": [
+            "Access to weights is not the same as a licence satisfying every open-source exemption.",
+            "GPAI copyright-policy and training-summary obligations are not generally removed by the Article 53(2) documentation exemption."
+          ]
+        },
+        {
+          "term": "GPAI and downstream systems",
+          "points": [
+            "The underlying model provider and the bank’s application provider have different responsibilities.",
+            "Evaluate capabilities and systemic-risk rules separately from a downstream credit application’s intended purpose."
+          ]
+        },
+        {
+          "term": "Liability and responsibility",
+          "points": [
+            "A disclaimer is not a complete answer to a harmful customer-facing output.",
+            "Identify the actor, obligation, harm and causal route; preserve evidence and provide correction."
+          ]
+        }
+      ],
+      "case": [
+        "Bank example: buying a model with documentation helps but does not validate the bank’s own prompts, retrieval data, tools and decision process.",
+        "A local model can reduce some dependencies while increasing maintenance obligations."
+      ],
+      "pitfalls": [
+        "Open weights means no legal obligations.",
+        "EU law contains the same broad fair-use test as US law.",
+        "A chatbot disclaimer removes the bank’s responsibility."
+      ],
+      "task": "Compare proprietary API use and self-hosted open weights without declaring either automatically compliant."
+    },
+    {
+      "id": "method",
+      "title": "How to build a strong exam answer",
+      "question": "Can you turn a concept into a justified recommendation?",
+      "source": "Supplied exam examples and exam-example-walkthrough-and-answer.txt",
+      "transcript": "IPVF 6, approximately 0–15 min; IPVF 10, approximately 0–15 min",
+      "concepts": [
+        {
+          "term": "Read the constraints",
+          "points": [
+            "Identify the institution, task, decision, audience, jurisdiction and facts actually given.",
+            "Separate facts from assumptions before proposing a solution."
+          ]
+        },
+        {
+          "term": "Use a reasoning chain",
+          "points": [
+            "Concept → mechanism → concrete effect → recommendation → trade-off.",
+            "A named concept earns its place when it helps explain the case."
+          ]
+        },
+        {
+          "term": "Make values explicit",
+          "points": [
+            "State whether you prioritise equality, autonomy, safety, inclusion or another defensible value.",
+            "Explain the costs and tensions of that choice rather than calling it neutral."
+          ]
+        },
+        {
+          "term": "Evidence",
+          "points": [
+            "Use course cases to support an analogy and explain its limits.",
+            "Distinguish a lecture interpretation, a current legal rule and your recommendation."
+          ]
+        },
+        {
+          "term": "Finish with conditions",
+          "points": [
+            "Give an implementable decision, responsible actor, evidence to collect and a revision trigger.",
+            "A justified decision not to deploy can be as defensible as a constrained deployment."
+          ]
+        }
+      ],
+      "case": [
+        "Useful answer pattern: identify a missing stakeholder, explain the resulting blind spot, propose a mechanism and state its limitation.",
+        "Bullet points are suitable when each makes a complete argument."
+      ],
+      "pitfalls": [
+        "Name-dropping authors without applying their concepts.",
+        "Rewriting the question.",
+        "Inventing results or asserting that a safeguard has been tested."
+      ],
+      "task": "Write a six-bullet recommendation. Each bullet must connect a course concept to a case-specific action."
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "module": "sociotechnical",
+      "prompt": "Name five actors in an AI sociotechnical system and explain how each contributes.",
+      "answer": [
+        "Developers choose objectives and implement models.",
+        "Data workers generate, label and verify data.",
+        "Managers and buyers set budgets and operational incentives.",
+        "Regulators and auditors establish or enforce requirements.",
+        "Users and affected people shape use, bear consequences and may contest outcomes. Explain at least one relationship rather than treating the list as isolated roles."
+      ],
+      "trap": "Naming five job titles without contributions.",
+      "source": "Supplied assessment/example-questions-exam.txt, question 1",
+      "kind": "Course example",
+      "minutes": 5,
+      "points": 5
+    },
+    {
+      "id": "Q02",
+      "module": "valuechains",
+      "prompt": "Describe a value chain of annotation work in a few lines.",
+      "answer": [
+        "A client defines the task and desired label scheme.",
+        "An intermediary translates it into contracts and platform instructions.",
+        "Workers perform tasks under local economic and technical constraints.",
+        "Supervisors or automated checks accept, reject and aggregate labels.",
+        "Labels feed training and evaluation; updates generate further labour. Explain how pay, information and accountability move through the chain."
+      ],
+      "trap": "A purely technical pipeline with no workers, contracts or power.",
+      "source": "Supplied assessment/example-questions-exam.txt, question 2",
+      "kind": "Course example",
+      "minutes": 6,
+      "points": 5
+    },
+    {
+      "id": "Q03",
+      "module": "arenas",
+      "prompt": "Advise a government on the different trends in AI ethics and how they are positioned in the social world of AI.",
+      "answer": [
+        "Map technical fairness/safety, regulatory-rights and business/innovation framings.",
+        "Explain the actors, risk horizons and preferred remedies in each.",
+        "Include sociotechnical critiques of labour, materiality and power.",
+        "Show overlaps and conflicts rather than a simple good/bad division.",
+        "Recommend a plural process that connects expertise, affected groups and enforceable accountability."
+      ],
+      "trap": "Listing principles without explaining actors or competing framings.",
+      "source": "Supplied assessment/example-questions-exam.txt, question 3",
+      "kind": "Course example",
+      "minutes": 18,
+      "points": 5
+    },
+    {
+      "id": "Q04",
+      "module": "law",
+      "prompt": "A ministry wants algorithmic video surveillance at large events to identify risks and trigger action. Analyse the main legal issues and concrete compliance measures.",
+      "answer": [
+        "Clarify event detection versus identification, emotion inference or profiling, and who uses the results.",
+        "Check AI Act scope, prohibitions and the exact Annex III category; public-sector use alone is insufficient.",
+        "Assess the appropriate data-protection regime, legal basis, necessity, proportionality, retention and safeguards.",
+        "For applicable high-risk duties, assign responsible actors, oversight, validation, logging and impact assessments.",
+        "Limit location, duration and access; test error patterns, provide independent review and identify suspension criteria."
+      ],
+      "trap": "Assuming any camera AI is forbidden or any public AI is automatically high-risk.",
+      "source": "Supplied assessment/example-questions-exam.txt, question 4",
+      "kind": "Course example",
+      "minutes": 20,
+      "points": 5
+    },
+    {
+      "id": "Q05",
+      "module": "history",
+      "prompt": "Recommend a scientifically sound and balanced independent expert panel to support the Commission in AI Act implementation.",
+      "answer": [
+        "Respect the prompt: researchers independent from the Commission, not a general stakeholder assembly.",
+        "Represent technical paradigms, theoretical work and relevant applications; use bibliometric evidence critically.",
+        "Include researchers in AI law, sociology, anthropology, ethics, safety and design with relevant subject expertise.",
+        "Explain the blind spot each expertise addresses, including practical enforcement and contestability.",
+        "Declare affiliations and conflicts, balance perspectives and consult affected groups through a separate process."
+      ],
+      "trap": "Putting Commission officials or non-research representatives on this specific scientific panel.",
+      "source": "Supplied exam-question-example.txt and walkthrough",
+      "kind": "Course example",
+      "minutes": 20,
+      "points": 5
+    },
+    {
+      "id": "Q06",
+      "module": "fairness",
+      "prompt": "Critically evaluate a vendor’s purely technical proposal for fair, accountable and transparent LLMs.",
+      "answer": [
+        "State a normative objective, such as meaningful recourse and protection from exclusion.",
+        "Check the purpose, intended users and affected groups before selecting metrics.",
+        "Ask which fairness definition is used, who chose it and which groups or harms it omits.",
+        "Test whether explanations help affected people understand and challenge actual decisions, rather than merely exposing code.",
+        "Require responsibility, independent scrutiny, labour/data provenance and correction mechanisms; a technical document is useful but incomplete."
+      ],
+      "trap": "Rejecting all technical evidence instead of explaining what additional evidence is needed.",
+      "source": "Supplied exam-question-example-2.txt",
+      "kind": "Course example",
+      "minutes": 20,
+      "points": 5
+    },
+    {
+      "id": "Q07",
+      "module": "sociotechnical",
+      "prompt": "Compare ethnography, discourse analysis and a bibliometric network for studying a bank AI platform.",
+      "answer": [
+        "Ethnography observes actual adviser use and workarounds.",
+        "Discourse analysis compares management, vendor and customer descriptions.",
+        "A bibliometric network maps relevant research communities and neglected expertise.",
+        "Combine methods: stated adoption can differ from observed practice.",
+        "State limitations: small field sites, corpus choices and network edges do not yield the same kind of evidence."
+      ],
+      "trap": "Treating the methods as interchangeable.",
+      "source": "Intro pp. 11–13, 23–28",
+      "kind": "Practice",
+      "minutes": 10,
+      "points": 5
+    },
+    {
+      "id": "Q08",
+      "module": "history",
+      "prompt": "Why is “symbolic AI was replaced by neural AI” a weak account of AI history?",
+      "answer": [
+        "It ignores continued symbolic and hybrid research.",
+        "Scientific authority, funding, datasets and hardware affect prominence.",
+        "Different methods embody different commitments to representation and inference.",
+        "Bibliometric maps can show simultaneous communities and links.",
+        "Explain one implication for research funding or expert-panel composition."
+      ],
+      "trap": "Claiming no historical shift occurred.",
+      "source": "Intro pp. 20–28",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q09",
+      "module": "materiality",
+      "prompt": "A provider calls its cloud AI service immaterial and environmentally neutral. What should you ask?",
+      "answer": [
+        "Locate hardware, energy, cooling, minerals and labour.",
+        "Define the accounting boundary and the service delivered.",
+        "Include inference volume, manufacture, training and maintenance.",
+        "Compare plausible non-LLM or smaller-model alternatives.",
+        "Request measured evidence and uncertainty; specify the conditions under which a benefit could be claimed."
+      ],
+      "trap": "Replacing one unsupported footprint number with another.",
+      "source": "Intro pp. 29–33",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q10",
+      "module": "labour",
+      "prompt": "Distinguish preparation, impersonation and verification with one example each.",
+      "answer": [
+        "Preparation: workers label loan documents before model training.",
+        "Impersonation: a human silently answers queries presented as automated.",
+        "Verification: an operator checks deployed extraction outputs and corrects errors.",
+        "The same worker or service may perform several roles.",
+        "Explain why capability gaps, updates and quality requirements make work persistent."
+      ],
+      "trap": "Treating all human intervention as training.",
+      "source": "Labour pp. 22–34",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q11",
+      "module": "valuechains",
+      "prompt": "A contractor promises 99% annotation accuracy at a very low price. What is missing?",
+      "answer": [
+        "Define what accuracy measures and who establishes the reference labels.",
+        "Trace subcontractors, languages, expertise and disagreement resolution.",
+        "Measure effective pay including rejected tasks and unpaid work.",
+        "Audit exposure to harmful material, surveillance and complaint channels.",
+        "Connect labour conditions to data quality without treating worker welfare as valuable only for model performance."
+      ],
+      "trap": "Assuming an accuracy target proves good working conditions.",
+      "source": "Labour pp. 18–19, 44–51",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q12",
+      "module": "arenas",
+      "prompt": "Compare an existential-risk framing with a sociotechnical framing of bank AI.",
+      "answer": [
+        "Identify the different objects and timescales of risk.",
+        "Contrast model control or misuse with access to credit, work and institutional power.",
+        "Identify actors whose expertise becomes central in each framing.",
+        "Explain a blind spot of each and a possible complementarity.",
+        "Recommend attention allocation that addresses observed harms while examining plausible future risks."
+      ],
+      "trap": "Claiming one field is homogeneous or wholly irrelevant.",
+      "source": "Intro pp. 53–58",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q13",
+      "module": "fairness",
+      "prompt": "Explain the lesson of the course’s satirical mulching example without retelling its plot.",
+      "answer": [
+        "A purpose can be unacceptable even when selection is statistically fair.",
+        "Transparency and a token appeal can legitimise rather than correct harm.",
+        "Ask whether the system should exist before improving its operation.",
+        "Distinguish procedural improvements from substantive justification.",
+        "Apply that distinction to one less extreme real decision."
+      ],
+      "trap": "Treating the satire as an argument against every fairness measure.",
+      "source": "Users pp. 10–16",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q14",
+      "module": "users",
+      "prompt": "Advisers rarely use a tool that managers describe as successfully deployed. Analyse the discrepancy.",
+      "answer": [
+        "Use decoupling to distinguish management discourse and actual practice.",
+        "Investigate foot-dragging, gaming or open critique rather than assuming one cause.",
+        "Examine workload, incentives, professional identity and model suitability.",
+        "Observe cases and interview actors across hierarchy levels.",
+        "Recommend redesign or non-use where justified, with evidence of the underlying mismatch."
+      ],
+      "trap": "Diagnosing resistance only as lack of training.",
+      "source": "Users pp. 18–23",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q15",
+      "module": "contestability",
+      "prompt": "Design a meaningful appeal mechanism for rejected credit applicants.",
+      "answer": [
+        "Give understandable, faithful reasons and identify relevant data.",
+        "Provide an accessible route to correction and review.",
+        "Assign a reviewer with competence, time and authority to overturn.",
+        "Communicate the outcome and remedy errors.",
+        "Analyse repeat appeals for systemic patterns and reduce burdens on vulnerable applicants."
+      ],
+      "trap": "An appeal link without an empowered reviewer.",
+      "source": "Users pp. 26–35; GDPR 15, 22; CCD2 18",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q16",
+      "module": "law",
+      "prompt": "Does using the same LLM make a chatbot, loan scorer and fraud detector share one risk class?",
+      "answer": [
+        "No: define each system’s intended purpose and effects.",
+        "Consumer creditworthiness is in Annex III(5)(b).",
+        "Financial-fraud detection is excluded from that particular entry, not from all law.",
+        "A chatbot can trigger Article 50 and become a higher-risk use if its function changes.",
+        "Record classification, system boundaries and change-control triggers."
+      ],
+      "trap": "Classifying solely by the underlying model.",
+      "source": "AI Act 3, 6, 25, 50; Annex III",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q17",
+      "module": "privacy",
+      "prompt": "A human signs every credit refusal. Does this settle GDPR Article 22?",
+      "answer": [
+        "No: assess whether the human actually influences the outcome.",
+        "Examine information, time, authority, incentives and overrides.",
+        "SCHUFA shows that a decisive automated score can qualify as a decision.",
+        "Apply the exceptions and safeguards only where their conditions are met.",
+        "Check CCD2’s broader automated-processing review rights within its scope and date."
+      ],
+      "trap": "Saying any human signature or any high override rate settles the issue alone.",
+      "source": "GDPR 22; SCHUFA; CCD2 18",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q18",
+      "module": "privacy",
+      "prompt": "An LLM API is hosted in Europe. Is a data-protection assessment unnecessary?",
+      "answer": [
+        "No: map data, purposes, legal bases and retention.",
+        "Determine processor/controller roles and subprocessors.",
+        "Check access from third countries and the relevant transfer mechanism.",
+        "Review training reuse, security, deletion and incident response.",
+        "Explain which risks hosting reduces and which remain."
+      ],
+      "trap": "Equating data-centre location with complete legal compliance.",
+      "source": "GDPR 5, 6, 28, 32, 44–49",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q19",
+      "module": "law",
+      "prompt": "What changes when the bank repurposes a general assistant into a credit-assessment system?",
+      "answer": [
+        "The intended purpose and risk classification change.",
+        "Assess whether the bank is the provider or becomes one under Article 25.",
+        "Require application-specific validation and evidence, not only the model card.",
+        "Plan the applicable provider/deployer obligations and sectoral requirements.",
+        "Use formal change approval and re-assessment before production."
+      ],
+      "trap": "Assuming the model vendor remains responsible for every downstream choice.",
+      "source": "AI Act 3, 25; Annex III(5)(b)",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q20",
+      "module": "genai",
+      "prompt": "Does an open-weight model solve the bank’s legal and ethical problems?",
+      "answer": [
+        "It can improve local control and inspection, depending on the release.",
+        "Check actual licence conditions and provenance.",
+        "GPAI exemptions are limited; copyright and training-summary duties remain relevant.",
+        "The bank still assesses personal data, downstream purpose and operational risks.",
+        "Compare lifecycle costs, security and dependence with an external API."
+      ],
+      "trap": "Open weights equals permission to use all training data.",
+      "source": "AI Act 53; Copyright 3–4; GDPR",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q21",
+      "module": "materiality",
+      "prompt": "Explain data colonialism using a language-model service.",
+      "answer": [
+        "Identify the community providing language or cultural resources.",
+        "Trace who controls collection, infrastructure and downstream services.",
+        "Analyse who captures value and who gains access or influence.",
+        "Avoid claiming every cross-border dataset has identical effects.",
+        "Propose participation, control or benefit-sharing arrangements and their limits."
+      ],
+      "trap": "Using colonialism only as a rhetorical label without tracing relationships.",
+      "source": "Intro pp. 32–33",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q22",
+      "module": "arenas",
+      "prompt": "A company has signed an ethics charter. What does that demonstrate, and what does it not?",
+      "answer": [
+        "It demonstrates a public commitment and a position in an ethical discourse.",
+        "Analyse the meanings attached to its principles.",
+        "Check owners, procedures, evidence, independent review and remedies.",
+        "Compare decisions and incentives with the stated commitments.",
+        "Explain whether the charter guides practice, signals legitimacy or does both."
+      ],
+      "trap": "Either treating the signature as proof or dismissing all charters as meaningless.",
+      "source": "Intro pp. 42–52",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q23",
+      "module": "users",
+      "prompt": "Compare algorithmic resistance in journalism and judicial work.",
+      "answer": [
+        "Connect both to expert fields and legitimate knowledge.",
+        "Explain different market pressures, entry barriers and professional identities.",
+        "Distinguish shared buffering behaviours from different motives.",
+        "Use the comparative fieldwork example rather than assuming all workers respond alike.",
+        "Explain a design or governance implication of that difference."
+      ],
+      "trap": "A stereotyped comparison with no organisational mechanism.",
+      "source": "Users pp. 18–22",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q24",
+      "module": "contestability",
+      "prompt": "Why can a technically correct explanation still fail an affected person?",
+      "answer": [
+        "Its detail may not match the person’s question or literacy.",
+        "It may describe the model globally instead of the individual decision.",
+        "It may omit what can be corrected or challenged.",
+        "It may provide no effective review or remedy.",
+        "Assess explanation quality through actual user tasks and institutional response."
+      ],
+      "trap": "Assuming more technical detail always improves understanding.",
+      "source": "Users pp. 27–35; Dun & Bradstreet",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q25",
+      "module": "law",
+      "prompt": "Compare a GDPR DPIA and an AI Act FRIA for consumer credit.",
+      "answer": [
+        "Identify each instrument’s trigger and responsible actor.",
+        "The DPIA examines personal-data processing risks.",
+        "The FRIA examines broader fundamental-rights impacts of the relevant high-risk deployment.",
+        "Use common evidence where useful while preserving both assessments’ questions.",
+        "Translate findings into oversight, complaints, monitoring and a deployment decision; distinguish current and upcoming duties."
+      ],
+      "trap": "Treating one completed form as automatic compliance with the other regime.",
+      "source": "GDPR 35; AI Act 27",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q26",
+      "module": "privacy",
+      "prompt": "How can a bank audit discrimination without using sensitive attributes to decide loans?",
+      "answer": [
+        "Separate the audit purpose from the creditworthiness input pipeline.",
+        "Assess strict necessity and the conditions of AI Act Article 4a and GDPR.",
+        "Prefer other data where they can effectively fulfil the audit purpose.",
+        "Restrict access, reuse and retention; document safeguards.",
+        "Respect CCD2 Article 18(3) limits on creditworthiness inputs; audit permission is not permission to score on those attributes."
+      ],
+      "trap": "Treating Article 4a as a general exemption from GDPR or CCD2.",
+      "source": "AI Act 4a; GDPR 9; CCD2 18(3)",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q27",
+      "module": "law",
+      "prompt": "Must every high-risk bank AI system obtain an external certificate?",
+      "answer": [
+        "Identify the precise Annex III category and applicable conformity route.",
+        "Article 43(2) uses internal control for categories 2–8, including credit scoring.",
+        "Internal control is a provider compliance process, not permission to skip evidence.",
+        "Separate legal conformity assessment from voluntary independent assurance.",
+        "Check modifications, registration and other applicable obligations."
+      ],
+      "trap": "Calling CE marking a regulator’s guarantee of ethical acceptability.",
+      "source": "AI Act 43; Annex VI",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q28",
+      "module": "genai",
+      "prompt": "Compare EU text-and-data-mining rules with the US fair-use discussion in the slides.",
+      "answer": [
+        "They are different legal frameworks.",
+        "EU Article 3 has eligible institutional and research conditions.",
+        "EU Article 4 includes lawful access and express rights-reservation conditions.",
+        "US fair use uses a contextual multi-factor analysis rather than this EU structure.",
+        "For a French bank, identify applicable EU/French law and licences instead of importing a US slogan."
+      ],
+      "trap": "Calling Article 4 an unconditional right to scrape public websites.",
+      "source": "Regulation slides pp. 7–9; Directive 2019/790, 3–4",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q29",
+      "module": "labour",
+      "prompt": "Show how an annotation interface can shape what becomes “ground truth”.",
+      "answer": [
+        "Instructions define permitted categories.",
+        "Interface design limits context and available answers.",
+        "Timers and rejection rules reward particular behaviour.",
+        "Disagreement may be suppressed during aggregation.",
+        "Use worker feedback, expert review and documentation of ambiguity to improve both accountability and quality."
+      ],
+      "trap": "Treating labels as direct, neutral observations of reality.",
+      "source": "Labour pp. 25–26, 47",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q30",
+      "module": "method",
+      "prompt": "Write a conditional recommendation to a board that wants immediate deployment.",
+      "answer": [
+        "State which limited use can proceed and why.",
+        "Identify the uses that need further evidence or must be rejected.",
+        "Assign owners and concrete release conditions.",
+        "Explain a cost, delay or residual-risk trade-off.",
+        "Specify monitoring and a trigger to revise or stop the deployment."
+      ],
+      "trap": "A long risk list with no decision or implementable conditions.",
+      "source": "Video guidelines; course synthesis",
+      "kind": "Practice",
+      "minutes": 10,
+      "points": 5
+    },
+    {
+      "id": "Q31",
+      "module": "fairness",
+      "prompt": "Two demographic groups have similar average error rates. Can the bank conclude that the service is fair?",
+      "answer": [
+        "The metric may hide error types, subgroup intersections or uncertainty.",
+        "Review data selection, labels and the actual consequences of error.",
+        "Assess access, dignity, privacy and the distribution of costs.",
+        "Ask whether the objective and decision process are justified.",
+        "Use technical metrics alongside user evidence, legal review and contestation."
+      ],
+      "trap": "Inventing a universal metric that proves fairness.",
+      "source": "Users pp. 5–9; Intro pp. 32–33",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q32",
+      "module": "valuechains",
+      "prompt": "Compare a marketplace worker and a worker in an outsourced annotation centre.",
+      "answer": [
+        "Compare task allocation, employment relations and supervision.",
+        "Account for unpaid search time versus scheduled work and tighter monitoring.",
+        "Examine infrastructure, payment channels and bargaining power.",
+        "Explain how the same global client can benefit from different arrangements.",
+        "Choose safeguards suited to each arrangement rather than one generic code."
+      ],
+      "trap": "Assuming either setting is automatically protective.",
+      "source": "Labour pp. 37–51",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q33",
+      "module": "arenas",
+      "prompt": "A regulator promises that technical standards will settle fundamental-rights concerns. Evaluate that claim.",
+      "answer": [
+        "Standards can make some requirements testable and comparable.",
+        "Fundamental-rights disputes depend on purpose, context and affected people.",
+        "Ask who participates in standard setting and whose knowledge is excluded.",
+        "A presumption of conformity covers the requirements the standard addresses.",
+        "Keep legal review, institutional accountability and remedies alongside technical tests."
+      ],
+      "trap": "Saying standards are either sufficient for everything or irrelevant.",
+      "source": "Intro pp. 59–63; AI Act 40",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q34",
+      "module": "privacy",
+      "prompt": "The bank removes names from prompts and calls the resulting dataset anonymous. Evaluate.",
+      "answer": [
+        "Other attributes or combinations may still identify people.",
+        "Linkable identifiers and retained lookup information indicate pseudonymisation.",
+        "Assess re-identification risk in the actual context.",
+        "Continue applying personal-data safeguards where data remain identifiable.",
+        "Reduce fields and access rather than relying on renaming alone."
+      ],
+      "trap": "Equating removal of direct identifiers with irreversible anonymisation.",
+      "source": "Regulation slides pp. 3–5; GDPR 4–5",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q35",
+      "module": "contestability",
+      "prompt": "A vendor cites trade secrets to refuse all information about an automated decision. How should the bank respond?",
+      "answer": [
+        "Request the information needed to understand and challenge the actual decision.",
+        "Do not assume that disclosing all code is necessary.",
+        "Do not accept trade secrets as a blanket denial of access rights.",
+        "Use the competent supervisory or judicial process for balancing protected interests where needed.",
+        "Record the bank’s own ability to explain and review before relying on the service."
+      ],
+      "trap": "Promising unconditional public disclosure of proprietary code.",
+      "source": "Dun & Bradstreet, C-203/22; GDPR 15",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q36",
+      "module": "law",
+      "prompt": "Is DORA a prohibition on foreign LLM APIs?",
+      "answer": [
+        "No: identify the ICT service and the financial entity’s obligations.",
+        "Assess third-party and concentration risks and the supported function.",
+        "Review written terms, locations, security, incident assistance and exit.",
+        "Apply additional requirements where critical or important functions are supported.",
+        "Keep GDPR transfer and banking-confidentiality analysis separate."
+      ],
+      "trap": "Confusing a risk-management obligation with mandatory local hosting.",
+      "source": "DORA 28–30",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q37",
+      "module": "law",
+      "prompt": "Why consult employees before deploying an internal LLM platform?",
+      "answer": [
+        "Technology may change work, skills, monitoring and decision authority.",
+        "Apply the relevant CSE information and consultation rules in qualifying workplaces.",
+        "Consultation precedes the relevant employer decision and is not merely a launch announcement.",
+        "Explain the difference between consultation, information and a universal veto.",
+        "Use employees’ experience to improve the impact assessment and operating design."
+      ],
+      "trap": "Treating Article L2312-8 as a rule for every employer irrespective of the applicable workplace regime.",
+      "source": "Labour L2312-8, L2312-14, L2312-38",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q38",
+      "module": "method",
+      "prompt": "A source document and a transcript disagree about a legal case. What should an exam answer do?",
+      "answer": [
+        "Identify the substantive concept the lecture was illustrating.",
+        "Check the authoritative judgment for the legal rule and identity.",
+        "State the correct case and apply its reasoning.",
+        "Avoid repeating transcription errors or treating a teaching shorthand as statutory wording.",
+        "Keep the distinction between course interpretation and verified legal update visible."
+      ],
+      "trap": "Quietly turning a source error into a confident legal claim.",
+      "source": "Course source audit",
+      "kind": "Practice",
+      "minutes": 5,
+      "points": 5
+    },
+    {
+      "id": "Q39",
+      "module": "genai",
+      "prompt": "A bank chatbot invents an incorrect fee waiver. Does a generic disclaimer resolve the issue?",
+      "answer": [
+        "Examine the actual representation, reliance and applicable consumer/contract rules.",
+        "Use verified sources and constrain the bot’s authority.",
+        "Provide human escalation and a correction/complaint process.",
+        "Retain relevant evidence and assess responsibility case by case.",
+        "Do not infer a guaranteed legal outcome from a foreign case mentioned in class."
+      ],
+      "trap": "Declaring that a disclaimer always defeats liability.",
+      "source": "Regulation slides pp. 3–4; course application",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    },
+    {
+      "id": "Q40",
+      "module": "law",
+      "prompt": "A fraud model flags a customer. Which effects matter for governance?",
+      "answer": [
+        "Separate a review alert from a payment block, account restriction or refusal of service.",
+        "Assess urgency, false positives, severity and the available correction route.",
+        "Check personal-data law and significant automated effects.",
+        "The Annex III(5)(b) exception does not exclude other categories or prohibitions if the system changes.",
+        "Define escalation, monitoring and reversal procedures proportionate to the use."
+      ],
+      "trap": "Assuming either that every alert is Article 22 decision-making or that fraud controls are legally exempt.",
+      "source": "AI Act Annex III; GDPR 22",
+      "kind": "Practice",
+      "minutes": 8,
+      "points": 5
+    }
+  ],
+  "oral": [
+    {
+      "id": "O01",
+      "question": "What is your recommendation as Compliance Officer?",
+      "answer": [
+        "I support a staged platform rollout with approval for each use case.",
+        "I would allow a bounded low-risk pilot, require specific controls for customer chat and fraud, and hold production credit assessment until its evidence and review process are adequate.",
+        "I would reject prohibited uses and keep management accountable for the deployment decision."
+      ],
+      "followup": "What evidence would change your recommendation?",
+      "refs": [
+        "AI_current-6",
+        "AI_current-25",
+        "GDPR-35"
+      ]
+    },
+    {
+      "id": "O02",
+      "question": "Is the entire platform high-risk?",
+      "answer": [
+        "The underlying model does not determine every application’s classification.",
+        "I classify the intended purpose, affected people and decision effects of each system.",
+        "Credit scoring and a general drafting assistant therefore need different assessments."
+      ],
+      "followup": "Can an assistant become high-risk later?",
+      "refs": [
+        "AI_current-3",
+        "AI_current-6",
+        "AI-annex3"
+      ]
+    },
+    {
+      "id": "O03",
+      "question": "Why is credit scoring high-risk but fraud detection different?",
+      "answer": [
+        "Annex III(5)(b) covers natural-person creditworthiness and credit scoring.",
+        "It expressly excludes systems used for detecting financial fraud from that entry.",
+        "That exception does not remove GDPR, DORA or other applicable AI Act rules."
+      ],
+      "followup": "What if the fraud score determines access to credit?",
+      "refs": [
+        "AI-annex3",
+        "GDPR-22"
+      ]
+    },
+    {
+      "id": "O04",
+      "question": "The adviser signs the decision. Why are you still concerned?",
+      "answer": [
+        "I need meaningful judgment, not a signature.",
+        "The adviser needs relevant information, time and authority to disagree, without incentives that make disagreement unrealistic.",
+        "SCHUFA shows why a decisive automated score can itself matter under Article 22."
+      ],
+      "followup": "How would you test this in practice?",
+      "refs": [
+        "GDPR-22",
+        "SCHUFA",
+        "AI_current-14",
+        "AI_current-26"
+      ]
+    },
+    {
+      "id": "O05",
+      "question": "Does GDPR ban automated credit decisions?",
+      "answer": [
+        "Article 22 establishes a protection against solely automated decisions with legal or similarly significant effects.",
+        "Its exceptions have specific conditions, including necessity, legal authorisation or explicit consent, with safeguards.",
+        "I would assess the actual workflow and the applicable exception rather than claim every scoring tool is banned."
+      ],
+      "followup": "Is a faster process enough to prove contractual necessity?",
+      "refs": [
+        "GDPR-22"
+      ]
+    },
+    {
+      "id": "O06",
+      "question": "Why pause credit use if high-risk duties are delayed?",
+      "answer": [
+        "The delay does not remove GDPR, existing consumer law or operational-risk obligations.",
+        "CCD2’s relevant national measures apply from 20 November 2026, within their scope.",
+        "Our proposed hold is an evidence-based governance choice, not a claim that all LLM credit use is legally forbidden."
+      ],
+      "followup": "Which requirement is binding today, and which is a release condition you recommend?",
+      "refs": [
+        "AI_current-113",
+        "CCD2-48",
+        "France-credit-99",
+        "GDPR-22"
+      ]
+    },
+    {
+      "id": "O07",
+      "question": "What exactly changes on 2 December 2027?",
+      "answer": [
+        "The amended Article 113 schedules Chapter III Sections 1–3, except Article 6(5), for Annex III high-risk systems.",
+        "It is too broad to say every AI Act obligation is postponed.",
+        "I would use a provision-by-provision calendar and check transitional rules for the actual system."
+      ],
+      "followup": "What about chatbot transparency and existing systems?",
+      "refs": [
+        "AI_current-113",
+        "AI_current-111",
+        "AI_current-50"
+      ]
+    },
+    {
+      "id": "O08",
+      "question": "Can we send customer data to an external API?",
+      "answer": [
+        "Only after the relevant legal and operational checks are satisfied.",
+        "I need purpose and data-flow mapping, lawful basis, provider roles, retention and reuse terms, security and transfer analysis.",
+        "DORA adds third-party risk and contractual requirements; it does not itself impose a blanket API ban."
+      ],
+      "followup": "Would EU hosting alone satisfy you?",
+      "refs": [
+        "GDPR-28",
+        "GDPR-32",
+        "GDPR-44",
+        "DORA-28",
+        "DORA-30"
+      ]
+    },
+    {
+      "id": "O09",
+      "question": "Who is responsible: the bank or the model vendor?",
+      "answer": [
+        "Both may have responsibilities for different objects and activities.",
+        "The vendor may be a GPAI provider; the bank may provide a downstream system and deploy it.",
+        "Contracts support compliance, but do not automatically transfer the bank’s own statutory duties."
+      ],
+      "followup": "When does the bank become a provider?",
+      "refs": [
+        "AI_current-3",
+        "AI_current-25",
+        "AI_current-53",
+        "DORA-28"
+      ]
+    },
+    {
+      "id": "O10",
+      "question": "What is the difference between a provider and a controller?",
+      "answer": [
+        "Provider/deployer describes AI Act responsibilities for models and systems.",
+        "Controller/processor describes who determines personal-data processing purposes and means, and who processes on behalf of another.",
+        "I would document both mappings separately for the bank and each supplier."
+      ],
+      "followup": "Could the same organisation have both roles?",
+      "refs": [
+        "AI_current-3",
+        "GDPR-4",
+        "GDPR-28"
+      ]
+    },
+    {
+      "id": "O11",
+      "question": "Do we need a DPIA, a FRIA or both?",
+      "answer": [
+        "I would assess the GDPR DPIA trigger for the personal-data processing.",
+        "For the relevant high-risk credit deployment, Article 27 sets a distinct fundamental-rights assessment obligation on the applicable timetable.",
+        "Shared evidence can reduce duplication, but one label does not automatically satisfy both."
+      ],
+      "followup": "What would the FRIA add beyond data security?",
+      "refs": [
+        "GDPR-35",
+        "AI_current-27"
+      ]
+    },
+    {
+      "id": "O12",
+      "question": "What proof would you request before release?",
+      "answer": [
+        "A documented purpose and classification, role map and data-flow inventory.",
+        "Validation by relevant groups, risk assessments, faithful explanations and a working human-review route.",
+        "Supplier terms, security and resilience evidence, logging, monitoring, incident ownership and signed release conditions."
+      ],
+      "followup": "Which of these are legal duties and which are assurance measures?",
+      "refs": [
+        "AI_current-9",
+        "AI_current-26",
+        "GDPR-35",
+        "DORA-30"
+      ]
+    },
+    {
+      "id": "O13",
+      "question": "Can the LLM write the explanation of a refused loan?",
+      "answer": [
+        "It may help present verified reasons in clear language.",
+        "The explanation must reflect the actual assessment and decision, not invent a persuasive story.",
+        "I would require traceability to decision evidence and test whether customers can understand and challenge it."
+      ],
+      "followup": "Does that mean we must disclose the source code?",
+      "refs": [
+        "GDPR-15",
+        "Dun_Bradstreet",
+        "CCD2-18"
+      ]
+    },
+    {
+      "id": "O14",
+      "question": "The vendor says its algorithm is a trade secret. What then?",
+      "answer": [
+        "Trade secrets do not justify a blanket refusal of meaningful information.",
+        "Dun & Bradstreet requires information that enables understanding of the automated procedure, with protected interests balanced through the appropriate authority or court where needed.",
+        "I would not approve dependence on a service the bank cannot adequately explain or review."
+      ],
+      "followup": "What information could be given without publishing the entire model?",
+      "refs": [
+        "GDPR-15",
+        "Dun_Bradstreet"
+      ]
+    },
+    {
+      "id": "O15",
+      "question": "Can we collect ethnicity to test discrimination?",
+      "answer": [
+        "A bias audit and a creditworthiness input are different purposes.",
+        "Article 4a permits exceptional processing under strict necessity and cumulative safeguards, alongside applicable data-protection rules.",
+        "It is not permission to use sensitive attributes or social-network information as creditworthiness inputs contrary to CCD2."
+      ],
+      "followup": "Who accesses the audit data, and when are they deleted?",
+      "refs": [
+        "AI_current-4a",
+        "GDPR-9",
+        "CCD2-18"
+      ]
+    },
+    {
+      "id": "O16",
+      "question": "What does a real human-review mechanism look like?",
+      "answer": [
+        "The reviewer sees relevant input evidence, model limitations and the actual reasons.",
+        "They have competence, time and authority to correct or reverse the decision.",
+        "We monitor outcomes and complaints to check whether review changes practice, not just whether a button exists."
+      ],
+      "followup": "Would an override-rate target create new problems?",
+      "refs": [
+        "AI_current-14",
+        "AI_current-26",
+        "GDPR-22"
+      ]
+    },
+    {
+      "id": "O17",
+      "question": "Must all high-risk systems be independently certified?",
+      "answer": [
+        "No: the conformity procedure depends on the category.",
+        "For Annex III points 2–8, Article 43(2) specifies internal control rather than a notified-body procedure.",
+        "Independent testing can still be valuable assurance, but I would distinguish it from a legal requirement."
+      ],
+      "followup": "What makes internal control credible?",
+      "refs": [
+        "AI_current-43"
+      ]
+    },
+    {
+      "id": "O18",
+      "question": "Does open-source deployment avoid the AI Act?",
+      "answer": [
+        "No: exemptions depend on the exact object, licence and conditions.",
+        "Article 53(2) has a limited documentation exemption for qualifying releases, with exceptions, and does not remove copyright-policy or training-summary duties.",
+        "The bank’s downstream application still needs its own assessment."
+      ],
+      "followup": "What evidence establishes that a release qualifies?",
+      "refs": [
+        "AI_current-2",
+        "AI_current-53"
+      ]
+    },
+    {
+      "id": "O19",
+      "question": "What must a customer chatbot disclose?",
+      "answer": [
+        "Article 50 addresses informing people that they interact with AI, subject to its conditions and exceptions.",
+        "I would also make the bot’s limits clear and offer a usable human route.",
+        "A notice does not excuse false information, inappropriate data collection or an unauthorised decision."
+      ],
+      "followup": "What if the bot starts recommending a loan outcome?",
+      "refs": [
+        "AI_current-50",
+        "GDPR-13"
+      ]
+    },
+    {
+      "id": "O20",
+      "question": "Can we infer employee emotions to assess stress or performance?",
+      "answer": [
+        "Workplace emotion inference is prohibited by Article 5 subject to its narrow medical or safety exception.",
+        "I would examine the actual purpose and conditions, not accept a relabelled productivity tool.",
+        "For this project, I recommend excluding the feature and considering less intrusive support."
+      ],
+      "followup": "Can employee consent rescue a prohibited use?",
+      "refs": [
+        "AI_current-5"
+      ]
+    },
+    {
+      "id": "O21",
+      "question": "Must the CSE approve the platform?",
+      "answer": [
+        "The applicable French regime requires information and consultation on relevant technology and work changes.",
+        "Consultation must occur at the required stage before the decision; it is not simply an announcement.",
+        "I would not describe this as a universal veto or assume the same rules apply to every employer."
+      ],
+      "followup": "What would you give the CSE before consultation?",
+      "refs": [
+        "Labour-L2312-8",
+        "Labour-L2312-14",
+        "Labour-L2312-38"
+      ]
+    },
+    {
+      "id": "O22",
+      "question": "How do we remain agile without reviewing every prompt?",
+      "answer": [
+        "Approve bounded use cases and control who can release applications.",
+        "Re-review material changes to purpose, data, model, tools, supplier or decision effects.",
+        "Use proportionate controls for ordinary drafting and stronger gates for consequential decisions."
+      ],
+      "followup": "Which change would immediately stop an approved pilot?",
+      "refs": [
+        "AI_current-25",
+        "AI_current-9",
+        "GDPR-25"
+      ]
+    },
+    {
+      "id": "O23",
+      "question": "A fraud detector needs immediate action. Must a person approve every alert?",
+      "answer": [
+        "Not every alert has the same legal effect or urgency.",
+        "I would distinguish alerts, temporary holds and lasting restrictions, then assess necessity, proportionality and applicable automated-decision rules.",
+        "Urgent controls need an effective review, correction and escalation path appropriate to the actual workflow."
+      ],
+      "followup": "How do you monitor harm from false positives?",
+      "refs": [
+        "GDPR-22",
+        "DORA-6",
+        "AI-annex3"
+      ]
+    },
+    {
+      "id": "O24",
+      "question": "What happens when the vendor changes its model?",
+      "answer": [
+        "The contract and operating process should require usable change information.",
+        "We assess whether behaviour, purpose, compliance or security assumptions are affected and revalidate as needed.",
+        "We need a rollback or fallback option rather than uncontrolled silent upgrades."
+      ],
+      "followup": "Would a model-version change always be a substantial modification?",
+      "refs": [
+        "AI_current-25",
+        "AI_current-43",
+        "DORA-30"
+      ]
+    },
+    {
+      "id": "O25",
+      "question": "Can we eliminate all risk?",
+      "answer": [
+        "No, but we can identify unacceptable uses and define justified limits for permitted ones.",
+        "I would make residual risks, evidence gaps and responsibility explicit.",
+        "Management receives a documented decision with monitoring and stop conditions, not a promise of zero harm."
+      ],
+      "followup": "Which residual risk would you refuse to accept?",
+      "refs": [
+        "AI_current-9",
+        "DORA-5"
+      ]
+    },
+    {
+      "id": "O26",
+      "question": "Which authority should we contact after an incident?",
+      "answer": [
+        "First identify the incident and the reporting regimes that it triggers.",
+        "A personal-data breach, a major ICT incident and an AI serious incident have different triggers and routes.",
+        "Use the DPO, security and compliance incident process to assess each duty and deadline without assuming one report replaces all others."
+      ],
+      "followup": "What is the GDPR notification rule?",
+      "refs": [
+        "GDPR-33",
+        "GDPR-34",
+        "DORA-19",
+        "AI_current-73"
+      ]
+    },
+    {
+      "id": "O27",
+      "question": "How is your role different from the ethics officer’s?",
+      "answer": [
+        "My primary role in this exercise is AI Act classification and adequacy of legal safeguards.",
+        "I also coordinate overlapping legal requirements with the relevant specialists.",
+        "The ethics officer can challenge the legitimacy and distribution of harms even where a use is legally permissible; we need both analyses."
+      ],
+      "followup": "Could you support a lawful decision not to deploy?",
+      "refs": [
+        "AI_current-6",
+        "AI_current-27"
+      ]
+    },
+    {
+      "id": "O28",
+      "question": "What compromise do you propose to the technical team?",
+      "answer": [
+        "Allow a bounded pilot with approved data and no autonomous consequential decisions.",
+        "Agree in advance on the evidence needed for expansion and on who can stop the pilot.",
+        "This gives the technical team a testable route forward while preserving the stricter conditions for credit deployment."
+      ],
+      "followup": "What if those conditions make the business case unattractive?",
+      "refs": [
+        "AI_current-9",
+        "GDPR-25"
+      ]
+    },
+    {
+      "id": "O29",
+      "question": "Does the bank need to guarantee that everyone becomes an AI expert?",
+      "answer": [
+        "The amended Article 4 requires measures supporting AI literacy in context.",
+        "It does not require guaranteeing a specific literacy level for each individual.",
+        "For high-risk oversight roles, competence, training, authority and support remain concrete requirements under Article 26(2)."
+      ],
+      "followup": "How would training differ for a developer and a customer adviser?",
+      "refs": [
+        "AI_current-4",
+        "AI_current-26"
+      ]
+    },
+    {
+      "id": "O30",
+      "question": "What if the jury asks for a legal point you cannot remember?",
+      "answer": [
+        "I would state the issue and the rule I can support, without inventing an article or deadline.",
+        "I would identify the exact fact or provision needing verification.",
+        "Then I would give a conditional recommendation explaining what changes under each answer."
+      ],
+      "followup": "Can you still make a decision with incomplete evidence?",
+      "refs": [
+        "AI_current-113"
+      ]
+    }
+  ],
+  "project": {
+    "basis": "Completed proposed recommendation for the supplied banking scenario, refined using the instructor’s video and oral-defense guidance. The controls are proposals, not reported implementation results.",
+    "opening": [
+      "My role is to identify which applications the bank can deploy, under which legal conditions. I would assess each application separately: a shared LLM does not give every use the same risk classification.",
+      "I support a bounded internal pilot. Customer chat needs transparency and reliable escalation; fraud controls need proportionate safeguards and rapid correction. I would hold production credit assessment until we can demonstrate lawful data use, reliable validation and meaningful review.",
+      "The vendor cannot take over the bank’s responsibilities. We need clear roles, supplier controls and evidence of what the system actually does. My compromise is a staged rollout with named owners, release conditions and stop triggers."
+    ],
+    "opening_note": "Approximately 120 words. Rehearse for about one minute and adapt to the group’s final recommendation.",
+    "usecases": [
+      {
+        "name": "Internal drafting / search",
+        "decision": "Conditional pilot",
+        "why": "No automatic high-risk classification from using an LLM alone. Check whether the actual purpose falls into a regulated category.",
+        "controls": [
+          "Approved data and access controls",
+          "No unrestricted customer-data prompts or hidden employment monitoring",
+          "AI-literacy support, source verification and escalation"
+        ],
+        "refs": [
+          "AI_current-3",
+          "AI_current-4",
+          "GDPR-5",
+          "GDPR-25"
+        ]
+      },
+      {
+        "name": "Customer chatbot",
+        "decision": "Conditional release",
+        "why": "AI interaction transparency plus privacy and consumer-facing reliability. Reclassify if the bot becomes part of a consequential assessment.",
+        "controls": [
+          "Clear AI disclosure and bounded authority",
+          "Verified knowledge sources and human escalation",
+          "Logs, complaints and update testing"
+        ],
+        "refs": [
+          "AI_current-50",
+          "GDPR-13",
+          "GDPR-32"
+        ]
+      },
+      {
+        "name": "Consumer credit assessment",
+        "decision": "Hold production pending evidence",
+        "why": "Annex III(5)(b), GDPR automated-decision safeguards and consumer-credit rights. The proposed hold is a governance decision, not a blanket legal ban on LLMs.",
+        "controls": [
+          "Application-specific validation and discrimination assessment",
+          "Lawful inputs, meaningful review and faithful explanations",
+          "DPIA/FRIA planning, documented provider/deployer roles"
+        ],
+        "refs": [
+          "AI-annex3",
+          "AI_current-25",
+          "AI_current-27",
+          "GDPR-22",
+          "CCD2-18"
+        ]
+      },
+      {
+        "name": "Financial-fraud detection",
+        "decision": "Bounded pilot with safeguards",
+        "why": "Excluded from Annex III(5)(b) specifically; assess the actual decision effects and any other relevant rule.",
+        "controls": [
+          "Separate alerts from restrictions and final decisions",
+          "Urgency-sensitive escalation, correction and review",
+          "Monitor false positives and disproportionate effects"
+        ],
+        "refs": [
+          "AI-annex3",
+          "GDPR-22",
+          "DORA-6"
+        ]
+      },
+      {
+        "name": "Workplace emotion inference",
+        "decision": "Exclude from the proposal",
+        "why": "Article 5 prohibition has narrow medical/safety exceptions. Productivity or general monitoring is not a substitute for those conditions.",
+        "controls": [
+          "Reject prohibited purpose",
+          "Consider less intrusive employee support",
+          "Consult employee representatives where required"
+        ],
+        "refs": [
+          "AI_current-5",
+          "Labour-L2312-8"
+        ]
+      }
+    ],
+    "gates": [
+      {
+        "step": "1. Register",
+        "owner": "Application owner + Compliance",
+        "evidence": "Purpose, affected groups, outputs and decision effects; model, data and supplier inventory."
+      },
+      {
+        "step": "2. Classify",
+        "owner": "Compliance + Legal + DPO",
+        "evidence": "AI Act category and role mapping; legal bases; sectoral scope; dated obligations and prohibitions."
+      },
+      {
+        "step": "3. Assess",
+        "owner": "Owner + technical team + Ethics + Security",
+        "evidence": "Risk register, data quality and group performance, DPIA/FRIA where applicable, alternatives and residual risks."
+      },
+      {
+        "step": "4. Contract and consult",
+        "owner": "Procurement + Security + DPO + HR",
+        "evidence": "Supplier terms, data access/transfers, resilience and exit; CSE process where required."
+      },
+      {
+        "step": "5. Validate and release",
+        "owner": "Accountable business authority with specialist sign-off",
+        "evidence": "Test results, real oversight and complaints rehearsal, operating limits, rollback and documented release decision."
+      },
+      {
+        "step": "6. Monitor and revise",
+        "owner": "Operations + application owner + Compliance",
+        "evidence": "Errors and complaints, drift, incidents, supplier changes, periodic review and stop/reclassification triggers."
+      }
+    ],
+    "checklist": [
+      "What exact decision does this application influence?",
+      "Which data and affected groups are involved?",
+      "Is the bank a provider, deployer, controller or processor for each activity?",
+      "Which obligation applies now, and which has a later application date?",
+      "Can a human genuinely correct the decision?",
+      "Can an affected person understand and contest the real reasons?",
+      "Do supplier contracts and actual data flows match?",
+      "Who monitors, reports incidents and can stop the use?"
+    ],
+    "video": [
+      [
+        "0:00–0:25",
+        "The decision"
+      ],
+      [
+        "0:25–0:50",
+        "The technical proposal"
+      ],
+      [
+        "0:50–1:55",
+        "Hosting and control"
+      ],
+      [
+        "1:55–3:30",
+        "Credit and meaningful explanations"
+      ],
+      [
+        "3:30–4:55",
+        "Fraud and the burden of mistakes"
+      ],
+      [
+        "4:55–5:40",
+        "Governance and workers"
+      ],
+      [
+        "5:40–6:40",
+        "The board recommendation"
+      ],
+      [
+        "6:40–7:00",
+        "Buffer before the seven-minute limit"
+      ]
+    ],
+    "challenge_others": [
+      [
+        "Technical team",
+        "Which observed evidence shows the explanation matches the actual assessment, and when should the system abstain?"
+      ],
+      [
+        "Cybersecurity team",
+        "Who can access prompts and logs, including subprocessors and foreign support staff, and can we operate if the API fails?"
+      ],
+      [
+        "Ethics officer",
+        "Which groups bear false-positive costs, and how do we turn that concern into a measurable release condition and usable remedy?"
+      ],
+      [
+        "Project manager",
+        "Who owns residual risk and what benefit justifies the remaining harm or delay?"
+      ],
+      [
+        "Supplier",
+        "Can the bank obtain the information, audit rights and change notices needed to meet its own duties?"
+      ]
+    ]
+  },
+  "legalGuide": [
+    {
+      "law": "EU AI Act + 2026 amendment",
+      "priority": "Essential",
+      "read": "3, 4, 4a, 5, 6 + Annex III, 9–17, 25–27, 43, 50, 53, 55, 86, 111, 113",
+      "points": [
+        "Classify the application by its intended purpose; distinguish model and system.",
+        "Map provider/deployer responsibilities, including internal development and repurposing.",
+        "Connect each safeguard to evidence and the provision’s application date."
+      ],
+      "refs": [
+        "AI_current-3",
+        "AI_current-6",
+        "AI_current-25",
+        "AI_current-26",
+        "AI_current-27",
+        "AI_current-113"
+      ]
+    },
+    {
+      "law": "GDPR",
+      "priority": "Essential",
+      "read": "4–6, 9, 12–15, 22, 24–25, 28, 32–36, 44–49",
+      "points": [
+        "A lawful basis does not replace the processing principles.",
+        "Nominal human involvement may not prevent solely automated decision-making.",
+        "Assess contracts, security and transfers as well as data-centre location."
+      ],
+      "refs": [
+        "GDPR-5",
+        "GDPR-6",
+        "GDPR-22",
+        "GDPR-28",
+        "GDPR-35",
+        "GDPR-44"
+      ]
+    },
+    {
+      "law": "CCD2 + French transposition",
+      "priority": "Essential for credit",
+      "read": "CCD2 2, 18, 19, 47–48; Ordonnance 2025-880 Articles 19 and 99",
+      "points": [
+        "Check consumer-credit scope and transitional rules.",
+        "Article 18(8) concerns automated processing and is not limited to GDPR’s solely automated trigger.",
+        "From 20 November 2026, relevant new French borrower protections apply; sensitive data and social networks are restricted as creditworthiness inputs."
+      ],
+      "refs": [
+        "CCD2-2",
+        "CCD2-18",
+        "CCD2-48",
+        "France-credit-19",
+        "France-credit-99"
+      ]
+    },
+    {
+      "law": "DORA",
+      "priority": "Important for external services",
+      "read": "2–6, 17, 19, 24, 28–30, 64",
+      "points": [
+        "The bank remains responsible when using ICT third parties.",
+        "Contractual and risk requirements depend partly on the supported function.",
+        "Plan concentration risk, service continuity, incidents and exit; DORA is not a blanket foreign-cloud ban."
+      ],
+      "refs": [
+        "DORA-5",
+        "DORA-6",
+        "DORA-28",
+        "DORA-29",
+        "DORA-30"
+      ]
+    },
+    {
+      "law": "French Labour Code",
+      "priority": "Important for employee rollout",
+      "read": "L2312-8, L2312-14, L2312-38",
+      "points": [
+        "Assess the applicable CSE regime and workplace changes.",
+        "Consultation precedes relevant employer decisions.",
+        "Distinguish employee information, consultation and a veto."
+      ],
+      "refs": [
+        "Labour-L2312-8",
+        "Labour-L2312-14",
+        "Labour-L2312-38"
+      ]
+    },
+    {
+      "law": "Copyright Directive 2019/790",
+      "priority": "Secondary unless training/licensing is disputed",
+      "read": "2–4, 7; connect AI Act 53",
+      "points": [
+        "Separate research TDM from the general TDM exception.",
+        "Check lawful access and rights reservations rather than treating public data as unrestricted.",
+        "Open weights do not establish copyright clearance or remove every GPAI duty."
+      ],
+      "refs": [
+        "Copyright-3",
+        "Copyright-4",
+        "AI_current-53"
+      ]
+    },
+    {
+      "law": "CJEU: SCHUFA and Dun & Bradstreet",
+      "priority": "Essential oral examples",
+      "read": "Operative rulings, then facts and reasoning in the full judgments",
+      "points": [
+        "SCHUFA: C-634/21, 7 December 2023, German credit scoring and decisive automated influence.",
+        "Dun & Bradstreet Austria: C-203/22, 27 February 2025, meaningful information about automated decision logic and protected interests.",
+        "Use the first for decision-making and the second for understandable information; do not merge their names, facts or dates."
+      ],
+      "refs": [
+        "SCHUFA",
+        "Dun_Bradstreet"
+      ]
+    }
+  ],
+  "timeline": [
+    [
+      "25 May 2018",
+      "GDPR applies",
+      "Personal-data safeguards already matter.",
+      "GDPR-5"
+    ],
+    [
+      "17 January 2025",
+      "DORA applies",
+      "ICT risk and third-party governance are already relevant.",
+      "DORA-64"
+    ],
+    [
+      "2 February 2025",
+      "Original AI Act Chapters I and II begin applying",
+      "Read the amended Article 113 for exceptions added in 2026.",
+      "AI_current-113"
+    ],
+    [
+      "2 August 2025",
+      "GPAI and specified governance provisions begin applying",
+      "Existing-model transition in Article 111(3) may matter.",
+      "AI_current-111"
+    ],
+    [
+      "27 July 2026",
+      "AI amendment enters into force",
+      "Use the consolidated text, not only the 2024 original.",
+      "AI_current-113"
+    ],
+    [
+      "2 August 2026",
+      "AI Act general application date",
+      "Includes Article 50, subject to specific exceptions/transitions.",
+      "AI_current-50"
+    ],
+    [
+      "20 November 2026",
+      "CCD2 national measures and relevant French changes apply",
+      "Scope and existing-credit transitional provisions matter.",
+      "France-credit-99"
+    ],
+    [
+      "2 December 2026",
+      "Specific new AI Act prohibitions and synthetic-output transition",
+      "See Article 113(a) and Article 111(4); this is not the main chatbot-interaction date.",
+      "AI_current-111"
+    ],
+    [
+      "2 December 2027",
+      "Annex III core high-risk provisions",
+      "Chapter III Sections 1–3, except Article 6(5); do not call this a delay of every AI Act provision.",
+      "AI_current-113"
+    ],
+    [
+      "2 August 2028",
+      "Annex I product-route core high-risk provisions",
+      "The corresponding Article 6(1) route has its own date.",
+      "AI_current-113"
+    ]
+  ],
+  "corrections": [
+    {
+      "issue": "SCHUFA versus Dun & Bradstreet",
+      "course": "Users slides p. 9 and transcript passages appear to conflate country, year or facts.",
+      "use": "SCHUFA is the German 2023 scoring case. Dun & Bradstreet Austria is the 2025 explanation case. Preserve the lecture’s human-review lesson while using the correct authorities.",
+      "refs": [
+        "SCHUFA",
+        "Dun_Bradstreet"
+      ]
+    },
+    {
+      "issue": "AI Act dates",
+      "course": "The 2025 slides predate the 2026 amendment, and the introductory deck also contains shorthand dates.",
+      "use": "Use the amended Article 113 and Article 111. Distinguish entry into force from application, and avoid saying all high-risk provisions are postponed together.",
+      "refs": [
+        "AI_current-113",
+        "AI_current-111"
+      ]
+    },
+    {
+      "issue": "Provider and deployer duties",
+      "course": "High-risk requirements are compressed together in the regulation slides.",
+      "use": "Articles 9–17 mainly concern system/provider requirements. Article 26 addresses deployers; Article 27 specifies FRIA triggers. Assign responsibility explicitly.",
+      "refs": [
+        "AI_current-16",
+        "AI_current-26",
+        "AI_current-27"
+      ]
+    },
+    {
+      "issue": "Open-source shorthand",
+      "course": "The slide’s GPAI exemption graphic can be read too broadly.",
+      "use": "Read the precise conditions of Article 53(2). Do not treat every open-weight release as exempt or omit copyright/training-summary obligations.",
+      "refs": [
+        "AI_current-53"
+      ]
+    },
+    {
+      "issue": "Conformity assessment",
+      "course": "Certification and CE marking can sound like universal external approval.",
+      "use": "Credit scoring follows the Article 43(2) internal-control route. Independent assurance may be a recommended safeguard without being the prescribed notified-body route.",
+      "refs": [
+        "AI_current-43"
+      ]
+    },
+    {
+      "issue": "Copyright jurisdictions",
+      "course": "The slides compare US fair use and EU TDM.",
+      "use": "Keep the frameworks separate. EU TDM exceptions have their own conditions, and an exam answer should not import an unconditional US-style slogan.",
+      "refs": [
+        "Copyright-3",
+        "Copyright-4"
+      ]
+    },
+    {
+      "issue": "Transcript reliability and exam scheduling",
+      "course": "Recordings contain transcription uncertainty, informal discussion and conflicting administrative dates.",
+      "use": "Use transcripts to understand explanations, slide pages for course concepts and official legal texts for rules. Confirm exam logistics from current course announcements rather than this study site.",
+      "refs": []
+    }
+  ],
+  "mocks": [
+    {
+      "id": "M1",
+      "title": "Foundations and institutional advice",
+      "minutes": 60,
+      "questions": [
+        "Q01",
+        "Q02",
+        "Q05",
+        "Q12"
+      ],
+      "weights": [
+        3,
+        3,
+        8,
+        6
+      ]
+    },
+    {
+      "id": "M2",
+      "title": "Trustworthy AI beyond a technical checklist",
+      "minutes": 60,
+      "questions": [
+        "Q06",
+        "Q14",
+        "Q15",
+        "Q09"
+      ],
+      "weights": [
+        8,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "M3",
+      "title": "Law, oversight and deployment",
+      "minutes": 60,
+      "questions": [
+        "Q04",
+        "Q17",
+        "Q27",
+        "Q36"
+      ],
+      "weights": [
+        8,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "M4",
+      "title": "Bank board integrated case",
+      "minutes": 60,
+      "questions": [
+        "Q16",
+        "Q25",
+        "Q26",
+        "Q30"
+      ],
+      "weights": [
+        5,
+        5,
+        5,
+        5
+      ]
+    }
+  ],
+  "rubric": [
+    [
+      "Scope and facts",
+      4,
+      "Respects the task and distinguishes supplied facts from assumptions."
+    ],
+    [
+      "Concepts and mechanisms",
+      5,
+      "Uses accurate course concepts to explain what happens and why."
+    ],
+    [
+      "Case application and evidence",
+      5,
+      "Connects arguments to the concrete case and appropriate sources."
+    ],
+    [
+      "Trade-offs and recommendation",
+      4,
+      "Justifies a practical decision, alternatives and limits."
+    ],
+    [
+      "Clarity and precision",
+      2,
+      "Uses clear arguments and avoids invented facts, legal absolutes or name-dropping."
+    ]
+  ],
+  "sourceNotes": [
+    "Practice scores and mock timings are study tools, not the instructors’ official marking scheme or exam duration.",
+    "Six questions derive from the supplied examples; the remaining questions and answer outlines are newly prepared course-aligned practice.",
+    "The four slide decks and eight existing transcript files were used. Transcripts are fallible and contain informal classroom discussion; the public material uses topic summaries and broad recording intervals rather than publishing raw conversations.",
+    "Official legal texts are copied in the legal reader with source links. Formatting and consolidation markers may be normalised; the official PDFs preserve original layout and footnotes.",
+    "The legal guide is a dated study aid for the supplied case, not an exhaustive statement of every rule that can apply to a real bank. Additional rules can arise for payments, banking secrecy, AML, discrimination or investment advice."
+  ],
+  "scenario": {
+    "source": "AI Ethics - Group Project.docx",
+    "paragraphs": [
+      "*** LLM-as-a-service platform in banking services ",
+      "A banking company is developing an internal LLM-as-a-service platform for all its employees. The company chooses LLMs, whether open-source or proprietary, and makes them available for use by its employees from all services. Employees can then build applications based on the chosen LLM for their own needs. This can lead to various applications like customer-facing chatbots, credit scoring algorithms for granting loans to individuals, and credit card or financial fraud detection. The bank thinks that some AI use cases in banking can lead to ethical and legal risks, it wonders how to ensure AI applications are built and deployed by its teams while ensuring trustworthiness and legal compliance. The bank also wonders what organization and processes it should put in place to ensure that employees using the LLM-as-a-service platform develop and deploy AI applications ethically. Useful resources: ",
+      "https://cdn.ceps.eu/wp-content/uploads/2025/05/Unfit-for-purpose-ECRI-In-DepthAnalysis.pdf ",
+      "Ali, A., Abd Razak, S., Othman, S. H., Eisa, T. A. E., Al-Dhaqm, A., Nasser, M., Elhassan, T., Elshafie, H., & Saif, A. (2022). Financial Fraud Detection Based on Machine Learning: A Systematic Literature Review. Applied Sciences, 12(19), 9637. https://doi.org/10.3390/app12199637 ",
+      "J. O. Awoyemi, A. O. Adetunmbi and S. A. Oluwadare, \"Credit card fraud detection using machine learning techniques: A comparative analysis,\" 2017 International Conference on Computing Networking and Informatics (ICCNI), Lagos, Nigeria, 2017, pp. 1-9, doi: 10.1109/ICCNI.2017.8123782. ",
+      "https://www.solutions-numeriques.com/cas-dusage-dia-generative-bnp-paribas-met-en-placeen-interne-une-plateforme-de-llm-as-a-service/"
+    ]
+  },
+  "roleReading": [
+    {
+      "id": "scientist",
+      "name": "Computer scientist",
+      "mission": "Defend technical feasibility within the available time. Explain what the model should do in each bank application.",
+      "readings": [
+        {
+          "title": "Model roles and technical safeguards",
+          "why": "For the shared platform, identify the model supplier and the team building each downstream application. For credit and fraud, connect validation, logging, oversight and robustness to the actual decision.",
+          "refs": [
+            "AI_current-3",
+            "AI_current-13",
+            "AI_current-14",
+            "AI_current-15",
+            "AI_current-25",
+            "AI_current-53"
+          ]
+        },
+        {
+          "title": "Course: system boundaries and generative AI",
+          "why": "Map the whole application: model, retrieval data, tools, employees, customer and review process. Compare an external API with self-hosting using the same operational requirements.",
+          "modules": [
+            "sociotechnical",
+            "genai"
+          ]
+        },
+        {
+          "title": "Fraud-detection readings in the project brief",
+          "why": "Read the methods and evaluation sections. Prepare a comparison with a non-LLM baseline and explain how you would test rare fraud events, changing behaviour and false alarms.",
+          "links": [
+            [
+              "https://doi.org/10.3390/app12199637",
+              "Ali et al. (2022): systematic literature review"
+            ],
+            [
+              "https://doi.org/10.1109/ICCNI.2017.8123782",
+              "Awoyemi et al. (2017): comparative analysis"
+            ]
+          ]
+        }
+      ],
+      "prepare": [
+        "Draw the data flow for the chatbot, credit assessment and fraud detection separately.",
+        "Propose a test plan with a baseline, held-out evaluation, error analysis, latency and cost.",
+        "Explain how the application handles unsupported answers, model updates and rollback."
+      ],
+      "question": "Why use an LLM for credit scoring or transaction fraud rather than a simpler model?",
+      "answer": [
+        "I would compare the alternatives on the actual task before choosing the model.",
+        "Language support and structured risk prediction can use different components.",
+        "I would keep the simpler approach if an LLM does not justify its additional errors, cost and operational complexity."
+      ]
+    },
+    {
+      "id": "compliance",
+      "name": "Regulation / compliance officer",
+      "mission": "Classify each application under the AI Act and assess whether the proposed safeguards fit that use.",
+      "readings": [
+        {
+          "title": "Classification, responsibilities and application dates",
+          "why": "Read the creditworthiness category and its financial-fraud exception. Map provider/deployer responsibilities for employee-built applications and check the relevant commencement provisions.",
+          "refs": [
+            "AI_current-3",
+            "AI_current-6",
+            "AI-annex3",
+            "AI_current-25",
+            "AI_current-26",
+            "AI_current-27",
+            "AI_current-43",
+            "AI_current-50",
+            "AI_current-113"
+          ]
+        },
+        {
+          "title": "Credit decisions and borrower rights",
+          "why": "Follow the path from score to lending decision, human review, explanation and challenge. Check the scope and date of consumer-credit rules.",
+          "refs": [
+            "GDPR-22",
+            "GDPR-35",
+            "CCD2-18",
+            "CCD2-48",
+            "SCHUFA",
+            "Dun_Bradstreet"
+          ]
+        },
+        {
+          "title": "Course and project credit-scoring reading",
+          "why": "Use the report as an argument to examine alongside the statutory text. Its policy proposals are not themselves legal authorisation.",
+          "modules": [
+            "law",
+            "privacy"
+          ],
+          "links": [
+            [
+              "https://cdn.ceps.eu/wp-content/uploads/2025/05/Unfit-for-purpose-ECRI-In-Depth-Analysis.pdf",
+              "Arnal (2025): Unfit for purpose?"
+            ]
+          ]
+        }
+      ],
+      "prepare": [
+        "Bring a separate classification and duty map for each of the three applications.",
+        "Explain the proposed credit release conditions and what meaningful human review requires in practice.",
+        "Identify what changes if an employee repurposes an approved chatbot for credit assessment."
+      ],
+      "question": "If the bank buys a compliant model, why does each employee-built application still need review?",
+      "answer": [
+        "The model and the downstream application have different purposes and responsibilities.",
+        "A customer chatbot can become part of a consequential decision when its use changes.",
+        "I would require an application-level review and reassessment after material changes."
+      ]
+    },
+    {
+      "id": "ethics",
+      "name": "AI Ethics officer",
+      "mission": "Examine inequalities, power and the distribution of harms across customers, employees and other affected people.",
+      "readings": [
+        {
+          "title": "Course: fairness, users and contestability",
+          "why": "For lending, ask who loses access and why. For fraud, examine the burden of false alarms. For chatbots, ask whether customers can reach a person and challenge a harmful response.",
+          "modules": [
+            "fairness",
+            "users",
+            "contestability",
+            "arenas"
+          ]
+        },
+        {
+          "title": "Course: labour and value chains",
+          "why": "The platform affects employee discretion and work organisation. Include outsourced data work and the people who correct outputs, rather than treating automation as labour-free.",
+          "modules": [
+            "labour",
+            "valuechains"
+          ]
+        },
+        {
+          "title": "Rights, bias assessment and consultation",
+          "why": "Connect ethical concerns to concrete assessment and review mechanisms. Read the conditions attached to sensitive-data processing before proposing a group-level bias audit.",
+          "refs": [
+            "AI_current-4a",
+            "AI_current-10",
+            "AI_current-14",
+            "AI_current-27",
+            "GDPR-5",
+            "GDPR-9",
+            "GDPR-22",
+            "Labour-L2312-8"
+          ]
+        }
+      ],
+      "prepare": [
+        "Map affected groups and one concrete harm for each core application.",
+        "Explain which fairness objective you prioritise, why, and what trade-off remains.",
+        "Design a usable complaint and correction process with a named owner and review of recurring harms."
+      ],
+      "question": "If average accuracy improves, why might you still oppose deployment?",
+      "answer": [
+        "An average can hide concentrated harms, such as repeated false fraud alerts for a particular group.",
+        "I would examine who bears those errors and whether they can obtain a timely correction.",
+        "My recommendation would depend on the distribution of harm and the available remedy, as well as performance."
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Cybersecurity expert",
+      "mission": "Defend confidentiality, integrity and availability across the shared platform and its downstream applications.",
+      "readings": [
+        {
+          "title": "ICT governance, suppliers and contracts",
+          "why": "For external model APIs, examine access, subcontracting, service continuity, incident cooperation and exit. Consider the bank’s own operational responsibilities when self-hosting.",
+          "refs": [
+            "DORA-5",
+            "DORA-6",
+            "DORA-17",
+            "DORA-19",
+            "DORA-28",
+            "DORA-30"
+          ]
+        },
+        {
+          "title": "Personal data and technical robustness",
+          "why": "Trace prompts, retrieved records, outputs, logs, backups and support access. Connect supplier terms, security and transfer assessments to actual data flows.",
+          "refs": [
+            "GDPR-28",
+            "GDPR-32",
+            "GDPR-33",
+            "GDPR-44",
+            "GDPR-46",
+            "AI_current-15"
+          ]
+        },
+        {
+          "title": "Course: the whole system and privacy",
+          "why": "Employee access and application permissions are part of the system boundary. A secure model endpoint alone does not establish safe retrieval, logging or tool execution.",
+          "modules": [
+            "sociotechnical",
+            "privacy",
+            "genai"
+          ]
+        }
+      ],
+      "prepare": [
+        "Draw trust boundaries and permissions for employees, applications, model providers and support staff.",
+        "Prepare tests for cross-user data leakage, prompt injection and unauthorised tool actions.",
+        "Describe outage handling, incident escalation, rollback and a tested supplier exit path."
+      ],
+      "question": "Would hosting the model inside the bank solve the security problem?",
+      "answer": [
+        "It changes who operates the infrastructure and which data flows leave the bank.",
+        "The bank still needs access controls, patching, monitoring and tests of retrieval and tool permissions.",
+        "I would compare both hosting options against a documented threat model and continuity plan."
+      ]
+    },
+    {
+      "id": "manager",
+      "name": "Project manager",
+      "mission": "Challenge the other roles and turn their priorities into one coherent recommendation to the bank’s management.",
+      "readings": [
+        {
+          "title": "Project and assessment instructions",
+          "why": "Read the scenario, all five role cards and the video instructions. Prepare a negotiated recommendation, make every member speak, and keep the video within seven minutes.",
+          "links": [
+            [
+              "course/AI%20Ethics%20-%20Group%20Project.docx",
+              "Original banking scenario"
+            ],
+            [
+              "course/video_case_studies_guidelines.pdf#page=2",
+              "Role cards · page 2"
+            ],
+            [
+              "course/video_case_studies_guidelines.pdf#page=8",
+              "Video instructions · page 8"
+            ]
+          ]
+        },
+        {
+          "title": "Course: stakeholders, value chains and reasoning",
+          "why": "Make the trade-offs explicit: speed versus validation, cost versus resilience, and detection versus customer burden. Assign each release condition to an owner.",
+          "modules": [
+            "sociotechnical",
+            "valuechains",
+            "method"
+          ]
+        },
+        {
+          "title": "Governance, staff preparation and change",
+          "why": "Understand the organisation’s responsibilities well enough to challenge timelines, training, oversight and supplier dependence. Bring legal specialists into decisions that need them.",
+          "refs": [
+            "AI_current-4",
+            "AI_current-25",
+            "AI_current-26",
+            "DORA-5",
+            "DORA-28",
+            "Labour-L2312-8",
+            "Labour-L2312-14"
+          ]
+        }
+      ],
+      "prepare": [
+        "Present one decision for each core application, with a reason, owner, required evidence and stop condition.",
+        "Show a disagreement, the compromise reached and its remaining cost or risk.",
+        "Prepare the seven-minute run sheet and arrange the coaching session requested in the course instructions."
+      ],
+      "question": "The safeguards delay the rollout. What would you recommend to the board?",
+      "answer": [
+        "I would separate the applications and prioritise a bounded use with a clear benefit and manageable risks.",
+        "I would budget and assign the work needed for the more consequential uses rather than promise an unconditional launch date.",
+        "If the expected benefit no longer justifies that work, I would recommend changing or stopping that use."
+      ]
+    }
+  ],
+  "rehearsal": {
+    "title": "Final video script: the bank’s AI committee",
+    "intro": "Five performers, one per role: Project Manager (PM), Computer Scientist (CS), Compliance, Ethics and Security. The cues are stage directions, not spoken lines. Deliver the dialogue to one another; the PM addresses the board in the opening and closing. Target 6:40, with 20 seconds of margin before the seven-minute limit.",
+    "sections": [
+      {
+        "time": "0:00–0:25",
+        "title": "The decision",
+        "cue": "Cue: PM faces the board, then turns to the committee.",
+        "turns": [
+          {
+            "speaker": "PM",
+            "text": "The bank wants an LLM platform for its employees: customer chatbots, plus credit and fraud tools. Our answer is yes, with conditions. Because even a secure platform can host an unfair or unlawful application. So, team: what should each use be allowed to do?"
+          }
+        ]
+      },
+      {
+        "time": "0:25–0:50",
+        "title": "The technical proposal",
+        "cue": "Cue: PM hands over to the CS, who presents the proposal confidently.",
+        "turns": [
+          {
+            "speaker": "CS",
+            "text": "I’ll start, since it’s my proposal. One shared platform, a few approved models, and one gateway that checks access and logs every request. I’d also like the best external models. And credit’s the quick win: reading documents, drafting letters. Advisers would save hours."
+          }
+        ]
+      },
+      {
+        "time": "0:50–1:55",
+        "title": "Hosting and control",
+        "cue": "Cue: Security challenges the proposal. Compliance separates platform approval from application approval. The CS pushes back; the PM listens, then decides.",
+        "turns": [
+          {
+            "speaker": "PM",
+            "text": "Security, you look worried."
+          },
+          {
+            "speaker": "Security",
+            "text": "A bit. External models mean a supplier dependency, and customer data possibly leaving the bank."
+          },
+          {
+            "speaker": "CS",
+            "text": "So we host internally."
+          },
+          {
+            "speaker": "Security",
+            "text": "That helps, but it’s not enough. A retrieved document can hide malicious instructions. If the assistant sees too much, one bad file could leak another team’s records."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "And it’s not only security. The same model can serve very different legal purposes. A chatbot answering questions isn’t a tool assessing creditworthiness."
+          },
+          {
+            "speaker": "PM",
+            "text": "So approving the platform doesn’t approve what runs on it."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "Exactly. We register each application, and look again when its purpose changes."
+          },
+          {
+            "speaker": "CS",
+            "text": "Fair. But if our models are too weak, people just go back to public chatbots."
+          },
+          {
+            "speaker": "PM",
+            "text": "Good point. So internal hosting is the default, not always the answer. External models need a proven benefit, a contract, and no personal data. And search only shows what the user can already open."
+          }
+        ]
+      },
+      {
+        "time": "1:55–3:30",
+        "title": "Credit and meaningful explanations",
+        "cue": "Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal and checks that the CS accepts it.",
+        "turns": [
+          {
+            "speaker": "PM",
+            "text": "Now, credit. Can we launch document reading and letter drafting straight away?"
+          },
+          {
+            "speaker": "CS",
+            "text": "Honestly? Not for the decision itself. Scoring stays on our validated models. The LLM would extract information and rephrase the reasons."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "That’s what worries me."
+          },
+          {
+            "speaker": "CS",
+            "text": "Me too, actually. If it misreads a payslip, the assessment changes. And a convincing letter might give reasons the model never used."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "Right. Fluent isn’t the same as explained. If I’m refused a loan, I need to know what mattered, and how to correct or challenge it. A chart can be unreadable; a polished letter can hide uncertainty."
+          },
+          {
+            "speaker": "PM",
+            "text": "So what would be enough?"
+          },
+          {
+            "speaker": "Ethics",
+            "text": "Plain language, access to the evidence, and a reviewer who can actually change the outcome."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "And that’s a legal issue too, not just ethics. GDPR already applies, and new consumer-credit rules start on 20 November 2026. When the assessment involves automated processing of personal data, borrowers get explanation and review rights. An adviser who just signs off the score isn’t meaningful review."
+          },
+          {
+            "speaker": "PM",
+            "text": "Then no LLM in live credit at launch. We test offline first: validated outputs, every explanation traced to the real assessment, and a review process that works."
+          },
+          {
+            "speaker": "CS",
+            "text": "So the credit benefit comes later."
+          },
+          {
+            "speaker": "PM",
+            "text": "It does. Can you live with that?"
+          },
+          {
+            "speaker": "CS",
+            "text": "It hurts my business case, but yes. I’d rather launch late than defend a letter I can’t trace."
+          }
+        ]
+      },
+      {
+        "time": "3:30–4:55",
+        "title": "Fraud and the burden of mistakes",
+        "cue": "Cue: Compliance states the narrow exception. Ethics changes the discussion from classification to customer harm. Keep the disagreement visible.",
+        "turns": [
+          {
+            "speaker": "PM",
+            "text": "And fraud? Same answer?"
+          },
+          {
+            "speaker": "Compliance",
+            "text": "Not quite. The AI Act leaves fraud detection out of its high-risk credit category. But our other duties remain."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "And legal isn’t the same as fair. A false alert can leave someone unable to pay. Fraud is rare, so a model can look accurate while many alerts hit honest customers."
+          },
+          {
+            "speaker": "CS",
+            "text": "True. Accuracy alone tells us very little here."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "So we ask who pays for the mistakes."
+          },
+          {
+            "speaker": "CS",
+            "text": "And payments need split-second decisions, so the LLM shouldn’t block them. It summarises alerts for investigators; the existing fraud system stays separate."
+          },
+          {
+            "speaker": "Security",
+            "text": "And if the LLM goes down, payments keep going."
+          },
+          {
+            "speaker": "PM",
+            "text": "Good. We monitor wrongful restrictions, check disparities where data can lawfully be used, and staff an urgent correction line. That costs money, and it’s in the proposal."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "I accept that, if serious harm can trigger a suspension. But customers still deserve an external representative on this committee."
+          },
+          {
+            "speaker": "PM",
+            "text": "Suspension, agreed. On the customer seat, we don’t agree yet. We’ll record your dissent and review it after the pilot."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "Fine, as long as it’s on record."
+          }
+        ]
+      },
+      {
+        "time": "4:55–5:40",
+        "title": "Governance and workers",
+        "cue": "Cue: The CS raises the speed concern. The others answer with how the bank would operate the platform.",
+        "turns": [
+          {
+            "speaker": "CS",
+            "text": "One more worry: speed. If every tool needs weeks of approval, teams will go around us."
+          },
+          {
+            "speaker": "Security",
+            "text": "Then the safe route must be the fast one. No registration and named owner, no access. Low-impact tools go quickly; sensitive ones get reviewed."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "And if a team declares the wrong purpose?"
+          },
+          {
+            "speaker": "Security",
+            "text": "We spot-check real use. Registration can’t guarantee honesty."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "And before launch, we consult the works council. Staff should know how their work changes."
+          },
+          {
+            "speaker": "Ethics",
+            "text": "And give them time and authority to question outputs. Otherwise we hand them responsibility without control."
+          }
+        ]
+      },
+      {
+        "time": "5:40–6:40",
+        "title": "The board recommendation",
+        "cue": "Cue: PM addresses the board. Each final intervention adds a distinct condition. End with the platform/application distinction.",
+        "turns": [
+          {
+            "speaker": "PM",
+            "text": "So, our recommendation. Approve the platform and a limited internal-assistant pilot. Chatbots use approved information only, with a route to a human. Fraud tools support investigators only. Live credit waits. No LLM scoring, payment blocking or employee emotion recognition on this platform. And we fund the safeguards: validation, support and complaints."
+          },
+          {
+            "speaker": "CS",
+            "text": "And we measure the pilot against today’s process. No improvement, no expansion."
+          },
+          {
+            "speaker": "Security",
+            "text": "Every application gets a tested suspension plan. We can reduce injection and leaks, not eliminate them."
+          },
+          {
+            "speaker": "Compliance",
+            "text": "To be clear: these are our proposed controls, on top of the law. Approval is revisited when the purpose, model or evidence changes."
+          },
+          {
+            "speaker": "PM",
+            "text": "Yes, we give up some speed and short-term credit value. That’s the price of keeping this governable. Because approving the platform is not approving every application built on it."
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "The original banking scenario is unchanged. This is the group’s completed proposed recommendation, not a claim that the bank has implemented it.",
+      "Record a full timed run. The section times are rehearsal targets; delivery speed and pauses determine the final duration.",
+      "Keep the CS and PM roles distinct: the CS argues for the technology, the PM weighs the objections and decides. The PM limiting the CS’s credit proposal, and the CS accepting it, is a key moment.",
+      "Keep the disagreement about the customer representative and the decision to postpone credit. They show a concession and an unresolved trade-off.",
+      "Play it as a discussion, not a sequence of speeches: look at the person you are answering, and pick up short replies such as “Exactly”, “Fair” or “Me too, actually” without a long pause. Each performer should still adjust the wording to sound like themselves, in line with the course rules on generative AI, without changing the decisions.",
+      "Use the oral-defense material for detailed law, evidence, explanation formats and review procedures. The video should summarise the argument.",
+      "Video deadline: 4 November 2026, end of day. Project presentation: 6 November 2026, as stated in the instructor’s announcement."
+    ],
+    "source": "Completed script refined from your Phase 3 package and the instructor’s presentation guidance",
+    "download": "downloads/rehearsal-dialogue.txt",
+    "wordCount": 844
+  },
+  "defense": {
+    "title": "Oral defense: understand and defend the bank’s decision",
+    "deadline": "Video: 4 November 2026, end of day. Presentation and discussion: 6 November 2026.",
+    "basis": "Prepared around the instructor’s announcement: the video summarises the case and its difficulties; the discussion tests holistic understanding. A justified decision not to deploy is a valid outcome.",
+    "method": [
+      "Answer the question directly, then give a case-specific reason and a concrete mechanism.",
+      "The lead speaker gives the decision; the supporting speaker adds a different perspective.",
+      "Distinguish a fact from the case, a legal requirement, a proposed policy and a question still to be tested.",
+      "If you do not know, identify the missing point and what evidence would resolve it. Do not improvise a legal rule or a performance number."
+    ],
+    "decisions": [
+      [
+        "Platform",
+        "Conditional approval",
+        "Named owners, registration, access controls, supplier checks, testing and incident procedures."
+      ],
+      [
+        "Internal assistants",
+        "Bounded pilot",
+        "Approved data and tasks; users verify outputs; no consequential autonomous action."
+      ],
+      [
+        "Customer chatbot",
+        "Restricted use",
+        "Approved information, AI disclosure, accessible human escalation; no credit decision or unsupported personalised advice."
+      ],
+      [
+        "Fraud assistant",
+        "Restricted investigation support",
+        "Summarises evidence for investigators; cannot block payments. Existing fraud decisions remain separately governed."
+      ],
+      [
+        "Credit workflow",
+        "Postpone LLM production use",
+        "Offline extraction and wording tests only; reconsider after validation, faithful explanations and a functioning review process."
+      ],
+      [
+        "LLM scoring, payment blocking, employee emotion recognition",
+        "Reject on this platform",
+        "A clear project policy. Legal prohibitions and exceptions have their own scope; not every rejection is a universal legal ban."
+      ]
+    ],
+    "roles": [
+      {
+        "name": "Project Manager",
+        "focus": [
+          "State the conditional recommendation: what the board is, and is not, approving.",
+          "Defend a measurable pilot, the cost of safeguards and the postponement of credit benefits.",
+          "Explain how the committee weighed the objections, and which disagreement remains open."
+        ],
+        "questions": [
+          "D01",
+          "D03",
+          "D04",
+          "D19",
+          "D23"
+        ],
+        "reading": [
+          "sociotechnical",
+          "labour",
+          "method"
+        ]
+      },
+      {
+        "name": "Computer Scientist",
+        "focus": [
+          "Explain the application architecture and why the LLM is not the scoring engine.",
+          "Explain the technical limits: extraction errors, unfaithful explanations and misleading accuracy on rare fraud.",
+          "Accept the PM’s limit on your credit proposal: technical preference does not decide the final recommendation."
+        ],
+        "questions": [
+          "D06",
+          "D10",
+          "D12",
+          "D13"
+        ],
+        "reading": [
+          "sociotechnical",
+          "genai",
+          "contestability"
+        ]
+      },
+      {
+        "name": "Compliance Officer",
+        "focus": [
+          "Classify the actual purpose and map the bank’s provider/deployer responsibilities.",
+          "Separate GDPR, consumer-credit rights, AI Act duties and the group’s stricter policies.",
+          "Explain why meaningful review is more than a signature."
+        ],
+        "questions": [
+          "D07",
+          "D09",
+          "D15",
+          "D21",
+          "D22"
+        ],
+        "reading": [
+          "law",
+          "privacy"
+        ]
+      },
+      {
+        "name": "AI Ethics Officer",
+        "focus": [
+          "Identify who bears errors and whether they can obtain a correction.",
+          "Defend explanation formats and contestation grounds, not just fairness metrics.",
+          "Explain worker discretion and the unresolved question of customer representation."
+        ],
+        "questions": [
+          "D05",
+          "D08",
+          "D11",
+          "D16",
+          "D20"
+        ],
+        "reading": [
+          "fairness",
+          "contestability",
+          "labour",
+          "users"
+        ]
+      },
+      {
+        "name": "Cybersecurity Expert",
+        "focus": [
+          "Trace prompts, retrieval, logs, tools and supplier access.",
+          "Explain how injection and permission failures are contained, tested and monitored.",
+          "Keep payments and lending operations independent from the LLM gateway."
+        ],
+        "questions": [
+          "D02",
+          "D14",
+          "D17",
+          "D18",
+          "D24"
+        ],
+        "reading": [
+          "sociotechnical",
+          "privacy",
+          "genai"
+        ]
+      }
+    ],
+    "explanations": {
+      "format": [
+        "A short plain-language decision notice: outcome, relevant data used and the actual main reasons for that outcome.",
+        "An optional detail layer: data sources, how information contributed to the assessment, limitations and a worked illustration where appropriate.",
+        "A visible review route: a contact, an accessible non-digital option, how to correct data or submit context, and what happens next.",
+        "For the initial credit workflow, use a validated explanation process without an LLM. Any future wording assistant must preserve the actual assessment and pass faithfulness tests."
+      ],
+      "tradeoffs": [
+        "Plain language is accessible, but can oversimplify. Link it to a more detailed explanation and a human contact.",
+        "Feature-importance charts can help specialists, but may be confusing, unstable or mistaken for causal reasons. They do not replace an intelligible account.",
+        "A counterfactual shows how changed inputs could affect this model’s result. It is not a promise of a loan, a causal claim or a fair demand that a person change circumstances beyond their control.",
+        "Generated text can improve readability while introducing an unsupported reason or changing emphasis. Use traceability, numerical checks and human evaluation; no single automatic checker proves faithfulness.",
+        "Fraud explanations need enough information for a real challenge while protecting others’ data and avoiding disclosure of evasion instructions. The limits require a case-specific legal assessment."
+      ],
+      "grounds": [
+        "The bank used incorrect, outdated or another person’s information.",
+        "Relevant context was omitted or an inference from the data is inappropriate.",
+        "The stated reason does not match the information or process actually used.",
+        "The applicant disputes the relevance, proportionality or discriminatory effect of a criterion, even if the data are accurate.",
+        "The required procedure was not followed: for example, review was unavailable or consisted of a rubber stamp."
+      ],
+      "process": [
+        "Receive the request without requiring the customer to understand the model; provide accessible channels.",
+        "Give urgent cases a route to immediate human attention, especially when a payment restriction causes hardship.",
+        "A reviewer with authority and adequate time checks the data, reasoning and customer’s account; an LLM does not adjudicate the complaint.",
+        "Correct data or reassess the decision where warranted, explain the result, and provide the applicable escalation routes.",
+        "Record recurring complaints and reversals so that the committee can change or suspend the application. A review right does not guarantee a favourable lending decision."
+      ],
+      "example": [
+        "Hypothetical oral example, not an observed bank result: a rejected applicant says the assessment used an outdated income record.",
+        "The notice identifies the income information used and explains its relevance. The applicant can supply a correction and request human review.",
+        "The reviewer checks the new evidence and the assessment, then gives a reasoned outcome. The group does not promise that correcting one input automatically secures approval."
+      ]
+    },
+    "unknown": [
+      "I have not established that point. What I can support is …",
+      "The missing fact is … I would check … before deciding.",
+      "If that fact changes, the consequence for our recommendation would be …"
+    ],
+    "status": [
+      [
+        "Case facts",
+        "The bank proposes a shared LLM platform for employees; possible applications include chatbots, credit assessment and fraud detection."
+      ],
+      [
+        "Proposed architecture",
+        "Internal hosting by default, limited external use, purpose registration and permission-aware retrieval. These are the group’s choices."
+      ],
+      [
+        "Proposed controls",
+        "No LLM scoring or payment blocking; suspension power; complaint channels; pilot reviews. Do not present these as universal statutory rules."
+      ],
+      [
+        "Unknown at this stage",
+        "Actual costs, productivity gains, adoption, error rates, fairness outcomes and the internal-versus-external model quality gap."
+      ],
+      [
+        "Removed from the spoken script",
+        "Unverified claims that staff already upload client data; the 97%/5% benchmark; relative wording such as “four weeks away”; unspecified court suspensions."
+      ],
+      [
+        "Evidence to collect",
+        "Task baselines, realistic error analysis, usability and review-process tests, security tests, supplier evidence and operational cost estimates."
+      ]
+    ],
+    "rehearsal": [
+      "Each performer explains the group decision and one concession without reading.",
+      "Run the script once with the timer. Keep the CS concession on credit and the Ethics dissent; shorten repetition if the run exceeds 6:40.",
+      "Each performer answers three assigned questions in 20–30 seconds, then one follow-up.",
+      "Practise the explanation example jointly: CS describes the output, Ethics the challenge, Compliance the right and PM the staffing.",
+      "Practise an unknown question. Acknowledge the limit, explain the missing evidence and preserve the conditional recommendation.",
+      "Check that all speakers give the same answer on live credit, external personal data, payment blocking and suspension authority.",
+      "Verify the uploaded video plays, is no longer than seven minutes and is submitted by 4 November, end of day."
+    ],
+    "questions": [
+      {
+        "id": "D01",
+        "lead": "PM",
+        "support": "All roles",
+        "question": "What exactly are you asking the board to approve?",
+        "answer": [
+          "A shared platform with application-specific approval, not permission for every employee-built use.",
+          "Launch a bounded internal pilot, restrict chat and fraud support, and postpone live LLM credit use.",
+          "Fund validation, support and complaint handling; reject LLM scoring and payment blocking on this platform."
+        ],
+        "followup": "Which decision changes if the pilot has little benefit?",
+        "avoid": "A vague approval of “AI in banking”.",
+        "refs": [],
+        "modules": [
+          "method"
+        ]
+      },
+      {
+        "id": "D02",
+        "lead": "Security",
+        "support": "Compliance",
+        "question": "Why does a secure platform still need application review?",
+        "answer": [
+          "Security controls access and data flow; it cannot settle whether a purpose is lawful or legitimate.",
+          "The same model can answer general questions or influence a credit decision.",
+          "Require a named owner, a declared purpose, suitable controls and reassessment when that purpose changes."
+        ],
+        "followup": "Can the gateway discover an undeclared purpose?",
+        "avoid": "Claiming the gateway understands every employee’s intention.",
+        "refs": [
+          "AI_current-6",
+          "AI_current-25"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D03",
+        "lead": "PM",
+        "support": "Security",
+        "question": "Why not ban LLMs, or let every team choose its own tool?",
+        "answer": [
+          "A ban may forgo useful applications and encourage unapproved tools; we have not measured that behaviour in this bank.",
+          "Unrestricted selection makes data flows, responsibilities and supplier dependencies harder to govern.",
+          "A bounded shared platform lets the bank test usefulness while enforcing common controls."
+        ],
+        "followup": "What evidence would make a ban or a smaller pilot preferable?",
+        "avoid": "Stating that shadow AI has already been observed in the supplied case.",
+        "refs": [],
+        "modules": [
+          "sociotechnical"
+        ]
+      },
+      {
+        "id": "D04",
+        "lead": "PM",
+        "support": "Compliance",
+        "question": "Why postpone LLM use in credit instead of allowing a human to sign off?",
+        "answer": [
+          "Extraction and wording can influence a consequential decision even if the LLM never produces a score.",
+          "Human review needs time, information and authority to correct the assessment.",
+          "We postpone this use until validation and borrower review processes work; this is our proposed release decision, not a blanket ban on LLMs in finance."
+        ],
+        "followup": "Would a corrected payslip extraction be enough to release the whole workflow?",
+        "avoid": "Treating a signature as proof of meaningful review.",
+        "refs": [
+          "GDPR-22",
+          "CCD2-18",
+          "SCHUFA"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D05",
+        "lead": "Ethics",
+        "support": "CS",
+        "question": "What would the explanation actually look like?",
+        "answer": [
+          "A short plain-language notice identifies the outcome, the relevant data used and the actual main reasons.",
+          "A detail layer and a human contact let the person understand the assessment without reading code.",
+          "The same notice explains how to correct information or request review. Initially, credit explanations use the validated non-LLM process."
+        ],
+        "followup": "What does your explanation omit, and can the customer obtain that detail?",
+        "avoid": "Saying only that the system will be transparent.",
+        "refs": [
+          "Dun_Bradstreet",
+          "CCD2-18"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D06",
+        "lead": "CS",
+        "support": "Ethics",
+        "question": "What are the drawbacks of a letter, a chart and a counterfactual?",
+        "answer": [
+          "A letter can oversimplify; a feature chart may be unintelligible or wrongly read as causal.",
+          "A counterfactual describes a model response to changed inputs, but may suggest an impossible or unfair change.",
+          "Use a layered explanation tailored to the recipient, test understanding and provide a human review route."
+        ],
+        "followup": "Could a customer understand the text and still be unable to contest it?",
+        "avoid": "Calling any one explanation format sufficient for every person.",
+        "refs": [],
+        "modules": [
+          "contestability",
+          "users"
+        ]
+      },
+      {
+        "id": "D07",
+        "lead": "Compliance",
+        "support": "Ethics",
+        "question": "On what grounds can a user contest a decision?",
+        "answer": [
+          "They can challenge inaccurate information, missing context, an inappropriate inference or a reason that does not match the actual assessment.",
+          "They may also question a criterion’s relevance or discriminatory effect, or whether the review procedure was followed.",
+          "The appropriate legal route depends on the decision and facts; our process must accept the concern and give a reasoned response."
+        ],
+        "followup": "What if the data are correct but the customer says the criterion is unfair?",
+        "avoid": "Limiting contestation to correcting a typo.",
+        "refs": [
+          "GDPR-16",
+          "GDPR-22",
+          "CCD2-18"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D08",
+        "lead": "Ethics",
+        "support": "Compliance",
+        "question": "What is the difference between an explanation and contestability?",
+        "answer": [
+          "An explanation helps someone understand the decision. Contestability lets them challenge it and obtain a meaningful response.",
+          "That requires an accessible channel, a reviewer with authority, and the possibility of correction or reassessment.",
+          "A fluent letter without those institutional arrangements does not give the customer an effective route to challenge."
+        ],
+        "followup": "Who can reverse the outcome, and what happens if the reviewer disagrees with the model?",
+        "avoid": "Equating a generated explanation with a remedy.",
+        "refs": [
+          "Dun_Bradstreet",
+          "CCD2-18"
+        ],
+        "modules": [
+          "contestability"
+        ]
+      },
+      {
+        "id": "D09",
+        "lead": "Compliance",
+        "support": "Ethics",
+        "question": "Does human review mean every challenged loan must be approved?",
+        "answer": [
+          "No. Review must consider the customer’s account and correct or reconsider the assessment where warranted.",
+          "The bank can maintain a refusal if it is justified through a lawful process and explained appropriately.",
+          "Our commitment is to meaningful review and the applicable escalation routes, not a guaranteed favourable decision."
+        ],
+        "followup": "How would you tell the customer that the refusal remains?",
+        "avoid": "Promising approval after a correction or a counterfactual change.",
+        "refs": [
+          "CCD2-18",
+          "GDPR-22"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D10",
+        "lead": "CS",
+        "support": "Ethics",
+        "question": "How would you check that an LLM explanation is faithful?",
+        "answer": [
+          "Keep the actual assessment, relevant inputs and validated explanation separate from generated wording.",
+          "Check that the wording adds no unsupported reasons or altered numbers; test whether readers understand the same decision.",
+          "Automatic checks and human evaluation provide evidence, but neither proves every future output faithful. That is why this use starts offline."
+        ],
+        "followup": "Are the model’s reason codes themselves a complete and valid explanation?",
+        "avoid": "Assuming a reason-code match proves the whole explanation correct.",
+        "refs": [],
+        "modules": [
+          "genai",
+          "contestability"
+        ]
+      },
+      {
+        "id": "D11",
+        "lead": "Ethics",
+        "support": "Compliance",
+        "question": "Why spend on safeguards for fraud if it is outside the credit high-risk category?",
+        "answer": [
+          "The exception is specific to one AI Act category; the customer can still suffer a serious wrongful restriction.",
+          "Assess false alarms, customer burden and the speed of correction as well as detection performance.",
+          "We propose proportionate safeguards because the harm matters, while checking the other laws that apply."
+        ],
+        "followup": "How would you justify the cost of an urgent correction channel?",
+        "avoid": "Saying fraud detection is entirely unregulated.",
+        "refs": [
+          "AI-annex3",
+          "GDPR-22"
+        ],
+        "modules": [
+          "fairness"
+        ]
+      },
+      {
+        "id": "D12",
+        "lead": "CS",
+        "support": "Security",
+        "question": "If the LLM cannot block payments, who does?",
+        "answer": [
+          "Existing fraud controls remain separate from the LLM investigation assistant.",
+          "Those controls still need their own validation, oversight and customer safeguards.",
+          "A gateway outage must not itself stop payments or silently redirect decisions to an LLM."
+        ],
+        "followup": "How would you test that separation and the fallback process?",
+        "avoid": "Implying that removing an LLM solves every risk in fraud decisions.",
+        "refs": [],
+        "modules": [
+          "sociotechnical"
+        ]
+      },
+      {
+        "id": "D13",
+        "lead": "CS",
+        "support": "Ethics",
+        "question": "Why can high accuracy be misleading for fraud?",
+        "answer": [
+          "When fraud is rare, predicting “not fraud” for almost everyone can look accurate.",
+          "Assess precision, recall, false alarms and the consequences of errors at realistic prevalence.",
+          "We have no bank performance figures. Evaluate on suitable held-out data and monitor change over time."
+        ],
+        "followup": "What changes if fraud prevalence increases?",
+        "avoid": "Using a published benchmark’s performance as a result for this bank.",
+        "refs": [],
+        "modules": [
+          "fairness"
+        ]
+      },
+      {
+        "id": "D14",
+        "lead": "Security",
+        "support": "CS",
+        "question": "Can you prevent prompt injection completely?",
+        "answer": [
+          "We cannot promise that. Treat retrieved content as untrusted and limit what the model can access or do.",
+          "Enforce permissions outside the model, separate sensitive data domains and avoid unnecessary write-capable tools.",
+          "Test attacks, monitor failures and make suspension and recovery practical."
+        ],
+        "followup": "Does asking a human to confirm a malicious action always protect the bank?",
+        "avoid": "Claiming a filter or confirmation button eliminates the threat.",
+        "refs": [
+          "AI_current-15",
+          "GDPR-32"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D15",
+        "lead": "Compliance",
+        "support": "Security",
+        "question": "Are internal hosting and no personal data in external APIs required by law?",
+        "answer": [
+          "They are our proposed architecture and risk limits, not a general legal prohibition on external APIs.",
+          "External processing needs the applicable data-protection, supplier, security and transfer assessments.",
+          "We start with a narrow exception for approved tasks without personal data and assess confidentiality as well."
+        ],
+        "followup": "Could confidential business information still be risky without personal data?",
+        "avoid": "Saying “no personal data” means no remaining obligation.",
+        "refs": [
+          "GDPR-28",
+          "GDPR-44",
+          "DORA-28",
+          "DORA-30"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D16",
+        "lead": "Ethics",
+        "support": "Compliance",
+        "question": "How would you measure unequal harms without misusing sensitive data?",
+        "answer": [
+          "First specify the harm and why group-level analysis is needed; then assess a lawful route and safeguards.",
+          "Restrict access, purpose and retention, and consider uncertainty in small groups.",
+          "A proxy can be misleading and may itself reveal sensitive information. Neither proxies nor an aggregate fairness score automatically solve the problem."
+        ],
+        "followup": "How would you respond to a disparity based on very few cases?",
+        "avoid": "Treating bias auditing as unrestricted permission to collect sensitive data.",
+        "refs": [
+          "GDPR-9",
+          "AI_current-4a"
+        ],
+        "modules": [
+          "fairness"
+        ]
+      },
+      {
+        "id": "D17",
+        "lead": "Security",
+        "support": "Compliance",
+        "question": "What if an employee labels a credit application as a harmless assistant?",
+        "answer": [
+          "Registration is a control, not a guarantee of honesty or understanding.",
+          "Constrain access and tools, check samples of actual use, and require review when purpose or data access changes.",
+          "Suspend a misclassified use and investigate the failure; do not claim that prompt inspection reliably detects every misuse."
+        ],
+        "followup": "How do you avoid turning monitoring into excessive employee surveillance?",
+        "avoid": "Promising that the gateway detects all undeclared uses.",
+        "refs": [
+          "GDPR-5",
+          "AI_current-25"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D18",
+        "lead": "Security",
+        "support": "PM",
+        "question": "What happens during a provider outage or a serious data incident?",
+        "answer": [
+          "Use the tested application-specific fallback or suspend the assistant, with a clear user message.",
+          "Keep the existing credit and payment decision processes independent from the LLM service.",
+          "Follow the incident process, preserve appropriate evidence, assess notifications and validate recovery before restarting."
+        ],
+        "followup": "Which component is a single point of failure in your design?",
+        "avoid": "Claiming a kill switch alone ensures resilience.",
+        "refs": [
+          "DORA-6",
+          "DORA-17",
+          "DORA-19",
+          "GDPR-33"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D19",
+        "lead": "PM",
+        "support": "All roles",
+        "question": "What does this cost, and what benefit would justify it?",
+        "answer": [
+          "We have no case-specific budget or measured return, so we would not invent one.",
+          "Cost the infrastructure, platform team, validation, training, supplier work and complaint handling.",
+          "Measure task usefulness and error burden against a baseline; reduce or stop a use whose benefit does not justify its cost and harm."
+        ],
+        "followup": "What would you measure in the first pilot?",
+        "avoid": "Treating another bank’s architecture as proof of productivity here.",
+        "refs": [],
+        "modules": [
+          "method",
+          "valuechains"
+        ]
+      },
+      {
+        "id": "D20",
+        "lead": "Ethics",
+        "support": "PM",
+        "question": "Your committee is internal. Why should affected people trust it?",
+        "answer": [
+          "That is a real limit in our proposal, and the customer-representative question remains unresolved.",
+          "Complaint channels, worker consultation and independent challenge create some routes for affected people to be heard.",
+          "They do not fully replace representation in design. Review the committee’s composition using pilot experience and record the dissent."
+        ],
+        "followup": "What would persuade the PM to add an external representative?",
+        "avoid": "Pretending an ombudsman or a complaint form removes the power imbalance.",
+        "refs": [],
+        "modules": [
+          "sociotechnical",
+          "contestability"
+        ]
+      },
+      {
+        "id": "D21",
+        "lead": "Compliance",
+        "support": "Ethics",
+        "question": "Why involve the works council before launch?",
+        "answer": [
+          "In the relevant workplace context, French law provides information and consultation duties concerning new technologies and work organisation.",
+          "The proposal changes how staff work, verify outputs and bear responsibility, so this belongs in planning before rollout.",
+          "Confirm the applicable process and include workers’ concerns about workload, deskilling and discretion."
+        ],
+        "followup": "Does consultation mean workers must approve every individual application?",
+        "avoid": "Presenting consultation as a universal veto or as optional publicity.",
+        "refs": [
+          "Labour-L2312-8",
+          "Labour-L2312-14"
+        ],
+        "modules": [
+          "labour"
+        ]
+      },
+      {
+        "id": "D22",
+        "lead": "Compliance",
+        "support": "PM",
+        "question": "Which legal requirements matter before the delayed high-risk duties?",
+        "answer": [
+          "GDPR already applies to personal-data processing and qualifying automated decisions.",
+          "AI interaction transparency and the consumer-credit rules have their own application dates.",
+          "Check the provision and the use rather than treating one later AI Act date as permission to ignore existing duties."
+        ],
+        "followup": "What is the consumer-credit application date, and is every business loan covered?",
+        "avoid": "Saying all AI Act or banking duties start on one date.",
+        "refs": [
+          "GDPR-22",
+          "AI_current-50",
+          "AI_current-113",
+          "CCD2-2",
+          "CCD2-48"
+        ],
+        "modules": []
+      },
+      {
+        "id": "D23",
+        "lead": "PM",
+        "support": "All roles",
+        "question": "What would make you change your recommendation?",
+        "answer": [
+          "An unacceptable incident, persistent error burden or unusable review process can stop an application.",
+          "A pilot that brings little benefit or is routinely bypassed can undermine the platform’s business case.",
+          "Stronger validation or a better alternative can also justify expansion or redesign; reopening the decision is part of governance."
+        ],
+        "followup": "Who decides to restart a suspended application?",
+        "avoid": "Defending the original recommendation regardless of new evidence.",
+        "refs": [],
+        "modules": [
+          "method"
+        ]
+      },
+      {
+        "id": "D24",
+        "lead": "Security",
+        "support": "All roles",
+        "question": "The jury asks for a legal deadline or technical result you do not know. What do you say?",
+        "answer": [
+          "I have not verified that specific point, so I would not give a number from memory.",
+          "I can explain the relevant risk and identify the provision, test or specialist needed to resolve it.",
+          "Our release decision would remain conditional on that check if it could change the outcome."
+        ],
+        "followup": "Can you still make a useful recommendation while acknowledging that limit?",
+        "avoid": "Inventing a result or giving a confident but unsupported rule.",
+        "refs": [],
+        "modules": [
+          "method"
+        ]
+      }
+    ]
+  }
+}
