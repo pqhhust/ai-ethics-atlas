@@ -1966,23 +1966,23 @@
         "The decision"
       ],
       [
-        "0:25–0:50",
+        "0:25–0:55",
         "The technical proposal"
       ],
       [
-        "0:50–1:55",
+        "0:55–2:00",
         "Hosting and control"
       ],
       [
-        "1:55–3:30",
+        "2:00–3:40",
         "Credit and meaningful explanations"
       ],
       [
-        "3:30–4:55",
+        "3:40–5:00",
         "Fraud and the burden of mistakes"
       ],
       [
-        "4:55–5:40",
+        "5:00–5:40",
         "Governance and workers"
       ],
       [
@@ -2655,24 +2655,24 @@
           {
             "speaker": "PM",
             "name": "Khue",
-            "text": "The bank wants an LLM platform for its employees: customer chatbots, plus credit and fraud tools. Our answer is yes, with conditions. Because even a secure platform can host an unfair or unlawful application. So, team: what should each use be allowed to do?"
+            "text": "The bank wants an LLM platform for its employees: customer chatbots, plus credit and fraud tools. Our answer is yes, with conditions. Because even a secure platform can host an unfair or unlawful application. So we need to decide what each use is allowed to do. Hung, can you walk us through the proposal?"
           }
         ]
       },
       {
-        "time": "0:25–0:50",
+        "time": "0:25–0:55",
         "title": "The technical proposal",
-        "cue": "Cue: PM hands over to the CS, who presents the proposal confidently.",
+        "cue": "Cue: Khue hands over to Hung, who presents the proposal confidently.",
         "turns": [
           {
             "speaker": "CS",
             "name": "Hung",
-            "text": "I’ll start, since it’s my proposal. One shared platform, a few approved models, and one gateway that checks access and logs every request. I’d also like the best external models. And credit’s the quick win: reading documents, drafting letters. Advisers would save hours."
+            "text": "Sure. The idea is simple: instead of every team picking its own tool, we build one shared platform with a few approved models. Everything goes through one gateway that controls access and logs every request. I’d also like access to the best external models. And credit is the big win: the AI could read documents and draft letters, and save advisers a lot of time."
           }
         ]
       },
       {
-        "time": "0:50–1:55",
+        "time": "0:55–2:00",
         "title": "Hosting and control",
         "cue": "Cue: Security challenges the proposal. Compliance separates platform approval from application approval. The CS pushes back; the PM listens, then decides.",
         "turns": [
@@ -2724,7 +2724,7 @@
         ]
       },
       {
-        "time": "1:55–3:30",
+        "time": "2:00–3:40",
         "title": "Credit and meaningful explanations",
         "cue": "Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal and checks that the CS accepts it.",
         "turns": [
@@ -2791,7 +2791,7 @@
         ]
       },
       {
-        "time": "3:30–4:55",
+        "time": "3:40–5:00",
         "title": "Fraud and the burden of mistakes",
         "cue": "Cue: Compliance states the narrow exception. Ethics changes the discussion from classification to customer harm. Keep the disagreement visible.",
         "turns": [
@@ -2853,7 +2853,7 @@
         ]
       },
       {
-        "time": "4:55–5:40",
+        "time": "5:00–5:40",
         "title": "Governance and workers",
         "cue": "Cue: The CS raises the speed concern. The others answer with how the bank would operate the platform.",
         "turns": [
@@ -2933,7 +2933,7 @@
     ],
     "source": "Completed script refined from your Phase 3 package and the instructor’s presentation guidance",
     "download": "downloads/rehearsal-dialogue.txt",
-    "wordCount": 844
+    "wordCount": 876
   },
   "defense": {
     "title": "Oral defense: understand and defend the bank’s decision",

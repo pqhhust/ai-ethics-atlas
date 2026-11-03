@@ -2,11 +2,11 @@ Final video script: the bank’s AI committee
 Five performers, one per role: Project Manager (PM): Khue; Computer Scientist (CS): Hung; Compliance Officer: Yacine; Cybersecurity Expert (Security): Matthias; AI Ethics Officer (Ethics): Thiago. The cues are stage directions, not spoken lines. Deliver the dialogue to one another; the PM addresses the board in the opening and closing. Target 6:40, with 20 seconds of margin before the seven-minute limit.
 0:00–0:25 The decision
 Cue: PM faces the board, then turns to the committee.
-PM (Khue): The bank wants an LLM platform for its employees: customer chatbots, plus credit and fraud tools. Our answer is yes, with conditions. Because even a secure platform can host an unfair or unlawful application. So, team: what should each use be allowed to do?
-0:25–0:50 The technical proposal
-Cue: PM hands over to the CS, who presents the proposal confidently.
-CS (Hung): I’ll start, since it’s my proposal. One shared platform, a few approved models, and one gateway that checks access and logs every request. I’d also like the best external models. And credit’s the quick win: reading documents, drafting letters. Advisers would save hours.
-0:50–1:55 Hosting and control
+PM (Khue): The bank wants an LLM platform for its employees: customer chatbots, plus credit and fraud tools. Our answer is yes, with conditions. Because even a secure platform can host an unfair or unlawful application. So we need to decide what each use is allowed to do. Hung, can you walk us through the proposal?
+0:25–0:55 The technical proposal
+Cue: Khue hands over to Hung, who presents the proposal confidently.
+CS (Hung): Sure. The idea is simple: instead of every team picking its own tool, we build one shared platform with a few approved models. Everything goes through one gateway that controls access and logs every request. I’d also like access to the best external models. And credit is the big win: the AI could read documents and draft letters, and save advisers a lot of time.
+0:55–2:00 Hosting and control
 Cue: Security challenges the proposal. Compliance separates platform approval from application approval. The CS pushes back; the PM listens, then decides.
 PM (Khue): Matthias, you look worried.
 Security (Matthias): A bit. External models mean a supplier dependency, and customer data possibly leaving the bank.
@@ -17,7 +17,7 @@ PM (Khue): So approving the platform doesn’t approve what runs on it.
 Compliance (Yacine): Exactly. We register each application, and look again when its purpose changes.
 CS (Hung): Fair. But if our models are too weak, people just go back to public chatbots.
 PM (Khue): Good point. So internal hosting is the default, not always the answer. External models need a proven benefit, a contract, and no personal data. And search only shows what the user can already open.
-1:55–3:30 Credit and meaningful explanations
+2:00–3:40 Credit and meaningful explanations
 Cue: The CS explains the opportunity; Ethics challenges the explanation; Compliance gives the legal issue. The PM makes a decision that limits the CS’s proposal and checks that the CS accepts it.
 PM (Khue): Now, credit. Can we launch document reading and letter drafting straight away?
 CS (Hung): Honestly? Not for the decision itself. Scoring stays on our validated models. The LLM would extract information and rephrase the reasons.
@@ -31,7 +31,7 @@ PM (Khue): Then no LLM in live credit at launch. We test offline first: validate
 CS (Hung): So the credit benefit comes later.
 PM (Khue): It does. Can you live with that?
 CS (Hung): It hurts my business case, but yes. I’d rather launch late than defend a letter I can’t trace.
-3:30–4:55 Fraud and the burden of mistakes
+3:40–5:00 Fraud and the burden of mistakes
 Cue: Compliance states the narrow exception. Ethics changes the discussion from classification to customer harm. Keep the disagreement visible.
 PM (Khue): And fraud? Same answer?
 Compliance (Yacine): Not quite. The AI Act leaves fraud detection out of its high-risk credit category. But our other duties remain.
@@ -44,7 +44,7 @@ PM (Khue): Good. We monitor wrongful restrictions, check disparities where data 
 Ethics (Thiago): I accept that, if serious harm can trigger a suspension. But customers still deserve an external representative on this committee.
 PM (Khue): Suspension, agreed. On the customer seat, we don’t agree yet. We’ll record your dissent and review it after the pilot.
 Ethics (Thiago): Fine, as long as it’s on record.
-4:55–5:40 Governance and workers
+5:00–5:40 Governance and workers
 Cue: The CS raises the speed concern. The others answer with how the bank would operate the platform.
 CS (Hung): One more worry: speed. If every tool needs weeks of approval, teams will go around us.
 Security (Matthias): Then the safe route must be the fast one. No registration and named owner, no access. Low-impact tools go quickly; sensitive ones get reviewed.
