@@ -1,0 +1,830 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2cm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{texgyrepagella}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setsansfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\usepackage[dvipsnames]{xcolor}
+\usepackage{microtype,parskip,longtable,booktabs,array,tabularx,enumitem,titlesec,fancyhdr,multicol,ragged2e,amssymb}
+\usepackage[hidelinks]{hyperref}
+\definecolor{ink}{HTML}{18333D}\definecolor{teal}{HTML}{237A76}\definecolor{gold}{HTML}{BD7D3C}
+\definecolor{vibg}{HTML}{F7F0E4}\definecolor{slotbg}{HTML}{E3ECF4}\definecolor{tipc}{HTML}{87602F}
+\color{ink}
+\titleformat{\section}{\sffamily\Large\bfseries\color{teal}}{\thesection}{0.6em}{}[\vspace{-0.4em}\textcolor{teal}{\rule{\linewidth}{0.6pt}}]
+\titleformat{\subsection}{\sffamily\large\bfseries}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\sffamily\normalsize\bfseries\color{teal}}{}{0em}{}
+\titlespacing*{\section}{0pt}{1.6em}{0.8em}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0.3pt}
+\fancyhead[L]{\sffamily\small AI Ethics 5DA06 — Exam preparation pack}\fancyhead[R]{\sffamily\small\leftmark}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\newcommand{\vi}[1]{\par\vspace{2pt}{\setlength{\fboxsep}{5pt}\colorbox{vibg}{\parbox{\dimexpr\linewidth-10pt\relax}{\small\textcolor{gold}{\textbf{VI}}\enspace #1}}}\par}
+\newcommand{\vitext}[1]{{\small\color{tipc}#1}}
+\newcommand{\tip}[1]{\par{\small\textcolor{tipc}{\textbf{Exam:} #1}}\par}
+\newcommand{\slot}[1]{{\setlength{\fboxsep}{1.2pt}\colorbox{slotbg}{\sffamily\scriptsize\bfseries\color{RoyalBlue}#1}}}
+\newcommand{\blk}[1]{{\setlength{\fboxsep}{2pt}\colorbox{ink}{\sffamily\footnotesize\bfseries\color{white}\,#1\,}}}
+\setlist{itemsep=3pt,topsep=4pt}\setlength{\emergencystretch}{3em}
+\setlength{\LTpre}{6pt}\setlength{\LTpost}{6pt}
+\begin{document}
+\begin{titlepage}\centering\vspace*{3cm}
+{\sffamily\small\color{teal} TÉLÉCOM PARIS · HSS 5DA06 · 2026--2027\par}\vspace{1em}
+{\Huge AI Ethics\par}\vspace{0.4em}{\LARGE Exam preparation pack\par}\vspace{1.5em}
+{\large Lectures by parts · Glossary · Writing kit · Use cases · 10-question mock papers · Self-tests\par}\vspace{3em}
+\begin{minipage}{0.8\linewidth}\RaggedRight
+Table exam format: \textbf{10 questions} — \textbf{6 long} (one A4 page each) and \textbf{4 short} (all four on one A4 page).
+Each lecture is broken into parts and numbered ideas (“X is Y…”) with a Vietnamese explanation.
+The sentence bank uses \slot{SLOTS} that you replace with the facts of the case in front of you.
+\end{minipage}\vfill
+{\small Independent study companion built from the course slides and recordings. Not official course material; confirm logistics with the teaching team.\par}
+\end{titlepage}
+\tableofcontents\newpage
+\section{The exam and how to answer it}
+\textbf{10 questions: 6 long (one A4 page each) + 4 short (all four on one A4 page). Plan 7 pages of writing.}
+\subsection*{Page budget}\begin{tabularx}{\linewidth}{>{\bfseries\RaggedRight}p{2.7cm}>{\RaggedRight\arraybackslash}p{3.2cm}>{\RaggedRight\arraybackslash}X>{\RaggedRight\arraybackslash}X}\toprule Question & Length & Structure & What earns points\\\midrule
+Long question ($\times$6) & 1 A4 page $\approx$ 250–320 handwritten words & 5 blocks: Frame $\rightarrow$ 3 arguments $\rightarrow$ Recommendation & Concept + mechanism + case + concrete measure + trade-off\\
+Short question ($\times$4) & \textonequarter{} page each $\approx$ 60–80 words, 5–7 lines & Define $\rightarrow$ name 2–3 items $\rightarrow$ 1 example & Exact names from the slides (teacher: “just put the names”)\\
+\bottomrule\end{tabularx}
+\subsection*{Time plan}\begin{tabular}{lcccc}\toprule \textbf{Exam length} & \textbf{Read + plan} & \textbf{Each long} & \textbf{Each short} & \textbf{Final check}\\\midrule
+2 h (120 min) & 6 min & 15 min & 4 min & 8 min\\
+3 h (180 min) & 10 min & 23 min & 5 min & 12 min\\
+\bottomrule\end{tabular}
+\subsection*{Order of work}\begin{enumerate}\item Do the 4 short questions first ($\approx$ 10 points that the teachers say are “free” if you know the names) — it warms up your memory.\item Then the long questions in order of confidence. Never leave one blank: the 5-block skeleton with course concepts already earns the passing points.\item Write the block labels small in the margin (F, A1, A2, A3, R) so you keep to one page.\end{enumerate}
+\subsection*{What the teachers said about the exam}\begin{itemize}\item Framing: “there will be at least one question about framing” — always state your framing and what it hides.\item Short questions: “give three examples of methods… just put the names… five questions like this = 10 points”.\item SCHUFA trap: a human who always follows the score does not make the decision “not automated”.\item Labour: never write only “human in the loop” — say who, which contract, how paid, internal or external.\item Normative choices are allowed and expected “as long as you explain them”. Trade-offs matter more than the solution.\item Scientific independent panel = researchers, independent from the Commission; non-scientists or Commission staff are out of scope.\end{itemize}
+\subsection*{Long answer: one page, five blocks}\begin{description}[leftmargin=1.2cm,style=nextline]
+\item[\blk{F}] \textbf{Frame (3–4 lines, \textasciitilde{}40 words)} — Restate who asks, what system, for what purpose. State your framing (wide sociotechnical, not only the model) and your normative choice (which value you prioritise).\\\vitext{Đặt khung: ai hỏi, hệ thống gì, mục đích gì; nói rõ mình nhìn rộng (xã hội–kỹ thuật) và chọn ưu tiên giá trị nào.}
+\item[\blk{A1}] \textbf{Argument 1 (\textasciitilde{}65 words)} — Claim $\rightarrow$ course concept (named) $\rightarrow$ mechanism in THIS case $\rightarrow$ concrete measure.\\\vitext{Luận điểm 1: khẳng định $\rightarrow$ khái niệm của môn $\rightarrow$ cơ chế trong tình huống này $\rightarrow$ biện pháp cụ thể.}
+\item[\blk{A2}] \textbf{Argument 2 (\textasciitilde{}65 words)} — Same pattern, a different lecture (e.g. law if A1 was sociology).\\\vitext{Luận điểm 2: cùng cấu trúc, lấy từ bài giảng khác.}
+\item[\blk{A3}] \textbf{Argument 3 (\textasciitilde{}65 words)} — Same pattern; ideally the “hidden” dimension: workers, users, contestation or materiality.\\\vitext{Luận điểm 3: chiều “bị che giấu”: người lao động, người dùng, khiếu nại, tài nguyên.}
+\item[\blk{R}] \textbf{Recommendation + trade-off (4–5 lines, \textasciitilde{}50 words)} — Decision (deploy / conditional / do not deploy), who is responsible, which evidence, revision or stop trigger, and the cost of your choice.\\\vitext{Kết luận: quyết định, ai chịu trách nhiệm, bằng chứng nào, khi nào xem lại/dừng, và cái giá của lựa chọn.}
+\end{description}Each argument block: \textbf{Claim $\rightarrow$ Concept (author, year) $\rightarrow$ Mechanism in this case $\rightarrow$ Concrete measure}.
+\subsection*{Short answer: a quarter page, D--N--E}\begin{description}[leftmargin=1.2cm,style=nextline]
+\item[\blk{D}] \textbf{Define in one sentence} — “X is …” — the definition from the slide.\\\vitext{Định nghĩa một câu.}
+\item[\blk{N}] \textbf{Name the items asked} — Exact names, numbered (1) (2) (3), each with $\leq$ 1 line.\\\vitext{Liệt kê đúng tên, đánh số.}
+\item[\blk{E}] \textbf{One example or author} — A course case or author anchors the answer (Tubaro 2020, SCHUFA, COMPAS…).\\\vitext{Một ví dụ/tác giả của môn.}
+\end{description}Template: \emph{“X is … . Three examples are (1) …, (2) …, (3) … . For instance, … (author, year).”}
+\section{Lectures by parts}
+Read each idea aloud, cover the explanation, and recall it. The bold key is what you must be able to name in a short question.
+\subsection{L1 — AI as a sociotechnical system: definitions, history, materiality, power}
+{\small\textit{Tiphaine Viard · Slides: Intro-socio-of-AI-5DA06.pdf, pp. 1–33, 64–65 · Recordings: IPVF 6, IPVF 7}}\par
+\textbf{Why it matters:} Foundation of every long answer: the teachers say framing is the single most likely exam topic, and the “name three methods” short question comes from Part 2.
+\subsubsection*{Part 1 — What is AI? The sociotechnical lens}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{AI} is a polysemic term: technical, media, regulatory and scientific arenas each define it differently, and the course’s working definition is “systems that learn inferences from data”.\vi{AI là một thuật ngữ đa nghĩa: giới kỹ thuật, báo chí, nhà làm luật và giới khoa học mỗi bên hiểu “AI” theo một cách riêng. Định nghĩa dùng trong môn: hệ thống học cách suy luận (inference) từ dữ liệu.}\tip{Short question: “Why is AI hard to define?” $\rightarrow$ polysemy + fights for scientific space.}
+\item \textbf{A sociotechnical system} is the set of technical objects AND people studied together: models, data, workers, companies, users, regulators, affected people, infrastructure and law.\vi{Hệ thống xã hội–kỹ thuật (sociotechnical system) = nhìn công nghệ và con người như MỘT hệ thống: mô hình, dữ liệu, người gán nhãn, doanh nghiệp, người dùng, cơ quan quản lý, người bị ảnh hưởng, hạ tầng và luật pháp. Đừng coi AI chỉ là “một mạng nơ-ron”.}
+\item \textbf{Framing} is the choice of where a technical object starts and ends; every framing makes some problems, actors and remedies visible and pushes others out of view.\vi{Framing (đóng khung vấn đề) = quyết định ranh giới của đối tượng: bắt đầu ở đâu, kết thúc ở đâu. Mỗi cách đóng khung làm lộ ra một số vấn đề/tác nhân/giải pháp và che khuất những cái khác. Ví dụ: “chấm điểm tín dụng” đóng khung là “bài toán dự đoán chính xác” khác hẳn với “quyền tiếp cận một dịch vụ thiết yếu”.}\tip{Teacher: “there will be at least one question about framing”. Always say which framing you choose and what it hides.}
+\item \textbf{Reception} is how uses of a technology emerge, evolve and disappear after release; it cannot be predicted from the design alone.\vi{Sự tiếp nhận (reception): cách người ta thật sự dùng công nghệ sẽ xuất hiện, thay đổi, rồi biến mất — không thể suy ra chỉ từ thiết kế. Ví dụ app truy vết Covid cuối cùng chủ yếu dùng để lấy mã QR.}
+\item \textbf{Attention} is a limited resource: citizens and policymakers cannot follow every issue, so what gets discussed is itself a political outcome.\vi{Sự chú ý (của công dân, của nhà hoạch định chính sách) là tài nguyên có hạn $\rightarrow$ vấn đề nào được bàn tới đã là kết quả của một cuộc tranh giành mang tính chính trị.}
+\item \textbf{Sub-political spaces} (Beck, 1986) are places outside parliaments — labs, companies, standard bodies — where decisions with political consequences are taken.\vi{Không gian “cận chính trị” (sub-political, Ulrich Beck 1986): các quyết định có hệ quả chính trị được đưa ra ngoài nghị viện — trong phòng thí nghiệm, công ty, tổ chức tiêu chuẩn.}
+\end{enumerate}
+\subsubsection*{Part 2 — Methods to analyse a sociotechnical system}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Ethnography and on-site interviews} are methods that observe situated practices and collect people’s own accounts of their work.\vi{Dân tộc học (ethnography) và phỏng vấn tại chỗ: quan sát con người làm việc thực tế và nghe chính họ kể. Cho thấy khoảng cách giữa “điều được nói” và “điều được làm”.}\tip{Short question favourite: “Give three methods” $\rightarrow$ you only need the names + one line each.}
+\item \textbf{Discourse analysis} is the study of which words actors use, how they use them and how this changes over time (charters, press, laws).\vi{Phân tích diễn ngôn: các tác nhân dùng từ ngữ gì, dùng thế nào, thay đổi ra sao theo thời gian (hiến chương đạo đức, báo chí, văn bản luật).}
+\item \textbf{Computational methods} are NLP, network analysis and machine learning applied to field data — e.g. bibliometric or word co-occurrence networks clustered with the Louvain algorithm.\vi{Phương pháp tính toán: dùng NLP, phân tích mạng, học máy trên dữ liệu thực địa — ví dụ mạng đồng trích dẫn/đồng xuất hiện từ, phân cụm bằng thuật toán Louvain. Lưu ý: cho thấy mô hình (pattern) chứ không tự chứng minh ý định hay quan hệ nhân quả.}
+\item \textbf{Sociotechnical imaginaries} are utopias and dystopias (including fiction) that shape what people expect a technology to be and do.\vi{Hình dung xã hội–kỹ thuật (imaginaries): các viễn cảnh không tưởng/phản không tưởng (kể cả tiểu thuyết, phim) định hình kỳ vọng của xã hội về công nghệ.}
+\item \textbf{Controversies} are points of tension that reveal competing values, definitions and actors; following them is a key analytic tool.\vi{Tranh cãi (controversies): các điểm căng thẳng làm lộ ra giá trị, định nghĩa và tác nhân đối lập. Theo dõi tranh cãi = công cụ phân tích chủ chốt của môn (ví dụ vụ COMPAS).}
+\item \textbf{Comparing spheres} — Comparing heterogeneous spheres means contrasting press, science, regulation and civil society to see how each frames the same object.\vi{So sánh các “lĩnh vực” khác nhau: báo chí, khoa học, luật pháp, xã hội dân sự — xem mỗi bên đóng khung cùng một đối tượng ra sao.}
+\end{enumerate}
+\subsubsection*{Part 3 — History and definitions of AI}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{AI is not recent}: the term was coined in the 1950s, but AI today is nothing like AI in 1950.\vi{AI không mới: thuật ngữ ra đời từ thập niên 1950 (Dartmouth 1956), nhưng AI ngày nay khác hẳn AI năm 1950.}
+\item \textbf{The linear-history preconception} is the false idea that symbolic AI came first and was simply replaced by neural AI; hype cycles of this kind are rare in practice.\vi{Định kiến “lịch sử tuyến tính”: tưởng rằng AI biểu tượng (symbolic) có trước rồi bị AI nơ-ron thay thế hoàn toàn. Thực tế các hướng cùng tồn tại, cạnh tranh và lai ghép (neuro-symbolic).}
+\item \textbf{Symbolic AI} is the family of approaches (expert systems, rules, decision trees) that encode explicit knowledge, often from human experts.\vi{AI biểu tượng: hệ chuyên gia, luật suy diễn, cây quyết định — mã hoá tri thức tường minh, thường lấy từ chuyên gia con người. Dễ giải thích hơn.}
+\item \textbf{Connectionist (neural) AI} — Connectionist AI is statistical inference from data that bypasses experts at the cost of large amounts of data and training.\vi{AI kết nối/nơ-ron (connectionist): suy luận thống kê từ dữ liệu, không cần chuyên gia nhưng đổi lại cần rất nhiều dữ liệu và tính toán. Nguyên lý: chấp nhận hy sinh tính dễ hiểu để nắm được độ phức tạp của dữ liệu; thế giới “lộn xộn, phi tuyến”; dữ liệu phải được chia nhỏ.}
+\item \textbf{“La revanche des neurones”} (Cardon, Cointet \& Mazières, 2018) is a socio-history showing, through a co-authorship network and Louvain clustering, two rival scientific communities — symbolic and connectionist.\vi{Cardon, Cointet \& Mazières (2018): dựng mạng đồng tác giả + phân cụm Louvain $\rightarrow$ thấy hai cộng đồng khoa học đối địch (Minsky… vs Hinton, LeCun…). AI là một chuỗi cuộc chiến giành “không gian khoa học”.}
+\item \textbf{Gargiulo et al. (2023)} is a meso-scale map of 139 million papers showing AI is multifaceted, split between theory and applications, influenced by press and fiction, and entering regulated territory.\vi{Gargiulo và cộng sự (2023): bản đồ 139 triệu bài báo (Microsoft Academic Graph) $\rightarrow$ AI gồm nhiều phân ngành phụ thuộc nhau, có symbolic/neural/neuro-symbolic, chia giữa lý thuyết và ứng dụng, chịu ảnh hưởng của báo chí \& hư cấu, và đang bước vào vùng bị luật điều chỉnh.}\tip{Used in the official sample answer to balance an expert panel by research area.}
+\end{enumerate}
+\subsubsection*{Part 4 — The materiality of AI}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Rematerialising the cloud} means showing that AI depends on mines (lithium, rare earths), servers, energy, water and harsh working conditions (Crawford, Atlas of AI, 2021).\vi{“Tái vật chất hoá đám mây”: AI dựa trên mỏ khoáng (lithium, đất hiếm — 1 tấn đất hiếm = 75.000 L nước axit + 1 tấn chất thải phóng xạ), máy chủ, điện, nước và lao động khắc nghiệt (Crawford 2021). “Cloud” không hề phi vật chất.}
+\item \textbf{Deep learning costs} — Deep learning is carbon-intensive and labour-intensive, and it is not always better than simpler methods (Luccioni et al. 2023 on BLOOM; Delarue et al. 2024).\vi{Học sâu tốn carbon và tốn lao động, và không phải lúc nào cũng tốt hơn phương pháp đơn giản (Luccioni 2023 đo dấu chân carbon của BLOOM; Delarue 2024 “link prediction without learning”).}
+\item \textbf{Moral reconfiguration of research} — The moral reconfiguration of research (Hardy, 2023) is the way research now embraces frugal AI, green AI, carbon estimates or even “no AI” as values.\vi{Sự tái cấu hình đạo đức của nghiên cứu (Hardy 2023): giới nghiên cứu chuyển sang đề cao AI tiết kiệm (frugal), AI xanh, ước tính carbon, thậm chí “không dùng AI”.}
+\item \textbf{Hidden human labour} is the work of trainers, verifiers and imitators (Tubaro et al., 2020) without which AI does not function; the promise that it is only “transitory before automation” is mostly false.\vi{Lao động con người bị che giấu: người huấn luyện (trainer), người kiểm tra (verifier), người giả làm AI (imitator). Lời hứa “chỉ tạm thời trước khi tự động hoá hoàn toàn” phần lớn là sai. Ví dụ “Clever Hans” — ảo giác về trí thông minh.}
+\item \textbf{North–South dynamics} — Digital labour reinforces North–South dynamics through cascades of delocalisation: demand in the North, cheap data work in the South.\vi{Lao động số củng cố quan hệ Bắc–Nam qua chuỗi thuê ngoài nhiều tầng: nhu cầu ở Bắc Mỹ/châu Âu, công việc dữ liệu giá rẻ ở các nước thu nhập thấp.}
+\end{enumerate}
+\subsubsection*{Part 5 — Power and data}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Data colonialism} is the extraction of value from data to maximise profit and concentrate wealth — not new, but an extension of colonialism and capitalism.\vi{Thực dân dữ liệu: khai thác giá trị từ dữ liệu để tối đa lợi nhuận, tập trung của cải vào vài công ty — không mới, là sự nối dài của chủ nghĩa thực dân và tư bản. Ví dụ ngôn ngữ: cộng đồng cho đi tài nguyên ngôn ngữ rồi bị bán lại chính nó dưới dạng dịch vụ.}
+\item \textbf{Social quantification and reactivity} — Reactivity (Espeland \& Sauder, 2007) is the way people adapt to what is measured, so measures end up recreating the social world — “do we find what we measure?”.\vi{Lượng hoá xã hội \& tính phản ứng: con người thay đổi hành vi theo chỉ số đo $\rightarrow$ chỉ số tái tạo lại thế giới. Ví dụ bảng xếp hạng đại học có tiêu chí “\% sinh viên quốc tế” $\rightarrow$ trường nào cũng tuyển thêm cho đẹp số liệu.}
+\item \textbf{Shifting power} — Asking how AI shifts power (Kalluri, 2020) means replacing “is this AI good or fair?” with “who gains and who loses power?”.\vi{Kalluri (2020): đừng hỏi AI có “tốt” hay “công bằng” không — hãy hỏi AI chuyển dịch quyền lực thế nào: ai được thêm quyền, ai mất quyền.}
+\item \textbf{AI ideologies} are claims that data is a “natural resource”, that collection is inherently rational and that digital means dematerialised; the course asks us to challenge them.\vi{Ý thức hệ AI: coi dữ liệu là “tài nguyên tự nhiên”, coi thu thập dữ liệu là hiển nhiên hợp lý, coi số hoá là phi vật chất. Cần thách thức bằng hiểu biết truyền thông, luật pháp, và xây dựng các tương lai đa nguyên.}
+\item \textbf{Decolonial AI} (Mohamed, Png \& Isaac, 2020) shows the problem is systemic: neither individual action nor alternative platforms (Mastodon vs X) are sufficient.\vi{AI giải thực dân (Mohamed và cs. 2020): vấn đề mang tính hệ thống — hành động cá nhân hay nền tảng thay thế (Mastodon thay X, IRC thay Messenger) đều không đủ.}
+\end{enumerate}
+\subsection{L2 — The landscape of AI ethics: discourses, arenas, standards}
+{\small\textit{Tiphaine Viard · Slides: Intro-socio-of-AI-5DA06.pdf, pp. 34–63 · Recordings: IPVF 8, IPVF 9}}\par
+\textbf{Why it matters:} Directly answers the sample question “report to the French government on the trends in AI ethics and how they are positioned”.
+\subsubsection*{Part 1 — The media landscape and the hype}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{The media map} of AI is a co-occurrence network of n-grams from \textasciitilde{}1,000 French press articles (pre-2023), coloured by Louvain clusters: technical, private sector, transhumanist, regulation, bioethics.\vi{Bản đồ truyền thông: mạng đồng xuất hiện của các cụm từ trong \textasciitilde{}1.000 bài báo Pháp (trước 2023), cạnh = đồng xuất hiện có ý nghĩa thống kê (kiểm định $\chi$\textsuperscript{2}), màu = cụm Louvain: kỹ thuật, khu vực tư nhân, siêu nhân học (transhumanist), điều chỉnh pháp luật, đạo đức sinh học. 2023–2025 nổi lên: RIA (AI Act), OpenAI, IA générative, chính trị Mỹ.}
+\item \textbf{Hype} is the mismatch between claims and reality: unlike crypto, AI has defined beneficial uses, but the field has been fuelled by waves of hope and hype.\vi{Hype (thổi phồng) = khoảng cách giữa lời hứa và thực tế. Khác crypto, AI có ứng dụng hữu ích rõ ràng; nhưng lĩnh vực này luôn đi theo các làn sóng kỳ vọng/thổi phồng. Ví dụ Hinton 2016: “5 năm nữa deep learning giỏi hơn bác sĩ X-quang” — điều đó không xảy ra.}
+\item \textbf{Conflicts of interest} — A structural blind spot of AI research is that working with industry is largely not treated as a conflict of interest, and conferences still reward performance over conceptual understanding.\vi{Điểm mù cấu trúc: giới AI/khoa học máy tính phần lớn không coi hợp tác với doanh nghiệp là xung đột lợi ích; hội nghị vẫn ưu tiên “điểm hiệu năng” hơn hiểu biết khái niệm.}
+\end{enumerate}
+\subsubsection*{Part 2 — What AI ethics says about itself}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{AI ethics} is an interdisciplinary field (CS, economics, law, maths, sociology) whose goals are to separate hype from reality, understand how discourses and actors articulate, highlight areas for regulation and give operational guidelines.\vi{Đạo đức AI: lĩnh vực liên ngành với 4 mục tiêu: tách thổi phồng khỏi thực tế; hiểu các diễn ngôn và tác nhân liên kết với nhau thế nào; chỉ ra lĩnh vực cần luật; đưa ra hướng dẫn vận hành cụ thể.}
+\item \textbf{Jobin et al. (2019)} — Jobin, Ienca \& Vayena (2019) is a qualitative reading of 84 guidelines finding 11 themes, with global convergence on five — transparency, justice \& fairness, non-maleficence, responsibility, privacy — but divergence on interpretation and implementation.\vi{Jobin và cs. (2019): đọc 84 văn bản $\rightarrow$ 11 chủ đề; hội tụ toàn cầu quanh 5 nguyên tắc (minh bạch, công bằng, không gây hại, trách nhiệm, quyền riêng tư) nhưng mỗi bên hiểu và thực hiện khác nhau $\rightarrow$ tính đa nghĩa (polysemy) cao.}
+\item \textbf{The three poles of manifestos} — The three poles of AI-ethics manifestos (Gornet, Delarue, Boritchev \& Viard, FAccT 2024; 436 documents) are technical, regulatory and business/innovation discourses.\vi{Ba cực diễn ngôn (Gornet và cs., FAccT 2024, 436 văn bản — MapAIE): kỹ thuật, pháp lý/điều chỉnh, kinh doanh/đổi mới. Explainable AI $\rightarrow$ thiên về kỹ thuật; fairness $\rightarrow$ không đổi nhiều; AGI $\rightarrow$ ít cả kỹ thuật lẫn luật; tự do/tự chủ $\rightarrow$ nặng về luật và công bằng xã hội.}
+\item \textbf{Operationalisation gap} — The operationalisation gap is that ethics charters still rarely translate into concrete procedures (except in specific domains) and leave topics invisible — work, power struggles, ecology.\vi{Khoảng trống vận hành hoá: các hiến chương vẫn hiếm khi biến thành quy trình cụ thể (trừ vài lĩnh vực chuyên biệt) và bỏ sót các chủ đề: lao động, đấu tranh quyền lực (bất công, phân biệt giới), sinh thái. Theo thời gian, đạo đức AI đang được cấu trúc lại thành luật AI.}
+\item \textbf{The continuum} — The charter–regulation–standards continuum is the progressive structuring of soft ethical principles into binding regulation and then technical standards.\vi{Chuỗi liên tục: hiến chương đạo đức $\rightarrow$ luật $\rightarrow$ tiêu chuẩn kỹ thuật. Nguyên tắc mềm dần được “cứng hoá”.}
+\end{enumerate}
+\subsubsection*{Part 3 — Four normative arenas (four framings of risk)}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Arenas} — An arena is a coherent group of actors sharing tenets about what AI risk is and how to govern it; Benbouzid et al. (2020) distinguish four.\vi{Đấu trường (arena): nhóm tác nhân có chung niềm tin về “rủi ro AI là gì, quản trị thế nào”. Benbouzid và cs. (2020) “Quatre nuances de régulation de l’IA” phân biệt 4 đấu trường. Dùng như công cụ phân tích, không phải hộp cứng nhắc.}\tip{Core of the “report to government on trends in AI ethics” sample question.}
+\item \textbf{1. Super-intelligence} — The super-intelligence arena focuses on loss of control and AI takeover — small but “serious” risk; criticised for distracting from real short-term harms (Bender et al., 2021).\vi{Đấu trường 1 – Siêu trí tuệ: lo sợ mất kiểm soát, AI “thống trị” (Wiener, Good, Bostrom, Russell; Future of Life Institute). Phê phán: tập trung vào tác hại giả định dài hạn làm sao nhãng tác hại thực tế trước mắt (Bender và cs. 2021).}
+\item \textbf{2. Intelligent agents in an open world} — The open-world agents arena (Asilomar 2009, AAAI) lets experts identify short-term technical risks and countermeasures, treating AI as a technical component that can be certified.\vi{Đấu trường 2 – Tác tử thông minh trong thế giới mở: hội nghị Asilomar 2009 (AAAI) — chuyên gia xác định rủi ro ngắn hạn và biện pháp đối phó; coi AI là thành phần kỹ thuật có thể chứng nhận. (One Hundred Year Study, Partnership on AI.)}
+\item \textbf{3. Sociotechnical criticism} — The sociotechnical-criticism arena argues AI reinforces power structures (Weizenbaum, 1976) and carries systematic bias (Buolamwini \& Gebru, 2018), using audits, policy reports and social-science studies.\vi{Đấu trường 3 – Phê phán xã hội–kỹ thuật: AI củng cố cấu trúc quyền lực thay vì thách thức (Weizenbaum 1976); học máy có thiên lệch hệ thống (Buolamwini \& Gebru 2018, Gender Shades). Công cụ: kiểm toán, báo cáo chính sách, khoa học xã hội. Căng thẳng: giải pháp kỹ thuật vs coi AI là dấu hiệu của vấn đề chính trị sâu hơn.}
+\item \textbf{4. Technical-economic conformity} — The technical-economic arena aims to build conformity for AI products on the EU market (GDPR, DSA, DMA, AI Act), producing a “Brussels effect” (Bradford) and broad definitions with amendable annexes.\vi{Đấu trường 4 – Kỹ thuật–kinh tế (tuân thủ): xây dựng sự phù hợp cho sản phẩm AI trên thị trường EU; “hiệu ứng Brussels” (Anu Bradford) lan sang Mỹ/châu Á; định nghĩa rộng + phụ lục dễ sửa đổi để giảm bất định pháp lý.}
+\item \textbf{AI safety vs AI ethics} — AI safety is a recent, North-America-centred arena focused on existential risk, led by tech leaders (Musk, Altman), some academics (Hinton, Bengio) and philosophers (Bostrom); it uses a nuclear analogy that yields technology-centred regulation.\vi{AI safety (an toàn AI) vs AI ethics: safety tập trung rủi ro tồn vong, do lãnh đạo công nghệ + vài học giả + triết gia dẫn dắt, nặng tính Bắc Mỹ, được chính giới chú ý (Bletchley, AI Safety Institutes, code of practice của AI Act). So sánh với hạt nhân $\rightarrow$ quản lý xoay quanh công nghệ, bỏ qua khía cạnh phi kỹ thuật. Phê phán TESCREAL (Gebru \& Torres 2024). Ethics: tác hại hiện tại, phân bố bất công, quyền lực.}
+\end{enumerate}
+\subsubsection*{Part 4 — The AI Act and standards as sociotechnical objects}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{The AI Act} is the EU regulation built on two main definitions — “AI system” and “high-risk AI system” — and relying on standards, national supervisory authorities and codes of practice; much is still to be decided.\vi{Đạo luật AI (AI Act): xây trên 2 định nghĩa chính “hệ thống AI” và “hệ thống AI rủi ro cao”; dựa vào tiêu chuẩn, cơ quan giám sát quốc gia, bộ quy tắc thực hành (codes of practice). Nhiều điều còn đang được quyết định.}
+\item \textbf{Harmonised standards} (hENs) are technical norms whose fulfilment gives a presumption of conformity, as for the CE mark in product safety.\vi{Tiêu chuẩn hài hoà (hENs): đáp ứng tiêu chuẩn $\rightarrow$ được suy đoán là tuân thủ, giống dấu CE trong an toàn sản phẩm.}
+\item \textbf{Certifying fundamental rights} — The AI Act’s novelty is trying to certify fundamental rights through standards, which is difficult because rights are context-dependent and usually require judicial determination (Gornet \& Maxwell, 2024).\vi{Điểm mới của AI Act: muốn “chứng nhận” cả quyền cơ bản qua tiêu chuẩn kỹ thuật — rất khó vì quyền con người phụ thuộc bối cảnh và thường cần thẩm phán quyết định. Tính dân chủ của tổ chức tiêu chuẩn cũng bị đặt câu hỏi (CJEU, 5/3/2024).}
+\item \textbf{Wrap-up} — The take-home message is that defining AI and AI ethics is a confrontational, (sub-)political space: the presence or absence of a discourse is itself a fight.\vi{Thông điệp tổng kết: định nghĩa AI và đạo đức AI là không gian đối đầu mang tính (cận) chính trị — việc một diễn ngôn có mặt hay vắng mặt đã là một cuộc đấu tranh.}
+\end{enumerate}
+\subsection{L3 — Regulating AI: soft law, GDPR, AI Act, GPAI, copyright, liability}
+{\small\textit{Thomas Le Goff · Slides: Sept 25 - AI regulation.pdf · Recordings: Regulation lectures; IPVF 8–9 for the SCHUFA trap}}\par
+\textbf{Why it matters:} Every “institution wants to deploy X” question needs: legal issues + AI Act classification + concrete compliance measures.
+\subsubsection*{Part 1 — Ethics charters and soft law}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Ethics frameworks} — The main ethics frameworks are the EU HLEG guidelines (2019, seven requirements), the OECD principles (2019, updated 2024) and UNESCO’s recommendation (2021).\vi{Các khung đạo đức chính: HLEG của EU (2019, 7 yêu cầu: sự chủ động \& giám sát của con người; vững chắc \& an toàn kỹ thuật; quyền riêng tư \& quản trị dữ liệu; minh bạch; đa dạng–không phân biệt–công bằng; phúc lợi xã hội \& môi trường; trách nhiệm giải trình), OECD (2019, cập nhật 2024), UNESCO (2021).}
+\item \textbf{Soft law} is a set of agreements, principles and declarations that are not legally binding, unlike hard law, which can be enforced before a court.\vi{Luật mềm (soft law): thoả thuận, nguyên tắc, tuyên bố KHÔNG ràng buộc pháp lý; luật cứng (hard law) thì có thể cưỡng chế trước toà. Conseil d’État (2013) – 3 điều kiện: nhằm định hướng hành vi bằng sự tự nguyện; tự nó không tạo quyền/nghĩa vụ; có mức độ hình thức hoá giống quy phạm pháp luật.}
+\item \textbf{Shortcomings of soft law} — The shortcomings of soft law are: no effect without voluntary adherence, lack of legal security, bypassing democratic institutions, and serving as a way to avoid strict regulation.\vi{Hạn chế của luật mềm: không có hiệu lực nếu không tự nguyện; thiếu an toàn pháp lý; né tránh các thiết chế dân chủ; là cách để tránh luật chặt (“ethics washing”). Bài 2: hiến chương bỏ sót lao động, quyền lực, sinh thái.}
+\item \textbf{Soft law can harden} — Soft law can acquire legal force when a company publicly adheres to it (enforced by FTC/CNIL as a misleading practice) or when institutions incorporate it into a binding text, doctrine or a judge’s assessment of fault.\vi{Luật mềm có thể “cứng lại”: khi công ty tuyên bố công khai tuân thủ (cơ quan như FTC, CNIL có thể xử lý nếu nói mà không làm), hoặc khi luật/tiêu chuẩn ràng buộc/thẩm phán dùng nó để xác định lỗi.}
+\end{enumerate}
+\subsubsection*{Part 2 — GDPR}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Lawful basis} — A lawful basis (Art. 6 GDPR) is required for every processing — consent, contract, legal obligation, vital interest, public interest/task, or legitimate interest — and it is ONE basis AND all the principles.\vi{Cơ sở pháp lý (Điều 6): mỗi hoạt động xử lý cần MỘT cơ sở (đồng ý, hợp đồng, nghĩa vụ pháp lý, lợi ích sống còn, lợi ích công/nhiệm vụ công, lợi ích chính đáng) VÀ phải tôn trọng TẤT CẢ các nguyên tắc. “Đồng ý” không phải chìa khoá vạn năng.}\tip{Slide formula: legal basis = “OR”; principles = “AND”.}
+\item \textbf{The Art. 5 principles} are lawfulness, fairness and transparency; purpose limitation; data minimisation and accuracy; storage limitation; integrity and confidentiality; accountability.\vi{Các nguyên tắc Điều 5: hợp pháp–công bằng–minh bạch; giới hạn mục đích; tối thiểu hoá \& chính xác dữ liệu; giới hạn lưu trữ; toàn vẹn \& bảo mật; trách nhiệm giải trình.}
+\item \textbf{Accountability} is the controller’s duty to set procedures, technical measures and policies and to be able to prove compliance to internal and external stakeholders.\vi{Trách nhiệm giải trình: bên kiểm soát dữ liệu (controller) phải có quy trình, biện pháp kỹ thuật, chính sách, chuỗi trách nhiệm rõ ràng và CHỨNG MINH được sự tuân thủ.}
+\item \textbf{Pseudonymisation vs anonymisation} — Pseudonymised data are still personal data because re-identification is possible; only truly anonymised data leave the GDPR.\vi{Giả danh hoá $\neq$ ẩn danh hoá: dữ liệu giả danh (bỏ tên, thay mã) vẫn là dữ liệu cá nhân vì còn tái nhận dạng được; chỉ dữ liệu ẩn danh thật sự mới nằm ngoài GDPR.}
+\item \textbf{Article 22 and the SCHUFA trap} — Article 22 GDPR gives a right not to be subject to a solely automated decision with legal or similarly significant effects; in SCHUFA (CJEU C-634/21, 2023) a score that decisively drives a human’s decision counts as such a decision.\vi{Điều 22 GDPR: quyền không bị quyết định hoàn toàn tự động gây hệ quả pháp lý/đáng kể. Vụ SCHUFA (CJEU, 2023, công ty chấm điểm tín dụng Đức): nếu con người “luôn làm theo” điểm số của máy thì thực chất vẫn là quyết định tự động. Có người ký duyệt $\neq$ có giám sát thật.}\tip{Explicit exam trap named by the teacher: “there is a human, so it is not automated” = wrong answer.}
+\item \textbf{DPIA} — A DPIA (Art. 35) is the data-protection impact assessment required before processing likely to result in high risk — e.g. systematic monitoring of public spaces or large-scale profiling.\vi{DPIA (Điều 35): đánh giá tác động bảo vệ dữ liệu, bắt buộc trước khi xử lý có rủi ro cao — ví dụ giám sát có hệ thống nơi công cộng, lập hồ sơ quy mô lớn.}
+\end{enumerate}
+\subsubsection*{Part 3 — The AI Act}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{AI system (definition)} — An AI system is a machine-based system that, for explicit or implicit objectives, infers from its input how to generate outputs (predictions, content, recommendations, decisions) that can influence environments; autonomy and adaptiveness are optional criteria.\vi{Định nghĩa “hệ thống AI”: hệ thống dựa trên máy, vì mục tiêu tường minh hay ngầm định, SUY LUẬN từ đầu vào để tạo đầu ra (dự đoán, nội dung, khuyến nghị, quyết định) có thể ảnh hưởng môi trường. Tiêu chí then chốt = khả năng suy luận (inference); tính tự chủ và khả năng thích nghi là tuỳ chọn. Không bao gồm phần mềm chỉ chạy luật do con người viết sẵn (Recital 12).}
+\item \textbf{Provider and deployer} — A provider is the body that places an AI system on the market or puts it into service under its own name; a deployer is the body using it under its authority (not for personal non-professional use); distributors and importers have their own duties.\vi{Nhà cung cấp (provider): đưa hệ thống ra thị trường/vào sử dụng dưới tên mình $\rightarrow$ chịu trách nhiệm tuân thủ trước (ex-ante), đánh giá phù hợp, dấu CE. Bên triển khai (deployer): dùng hệ thống dưới quyền của mình $\rightarrow$ làm theo hướng dẫn sử dụng, giám sát con người… Deployer trở thành provider nếu gắn tên mình hoặc sửa đổi đáng kể/đổi mục đích.}
+\item \textbf{The risk pyramid} has four levels — prohibited, high-risk (strict obligations), transparency obligations, and minimal risk (voluntary codes) — plus specific rules for general-purpose AI models.\vi{Kim tự tháp rủi ro: cấm $\rightarrow$ rủi ro cao (nghĩa vụ nghiêm ngặt) $\rightarrow$ nghĩa vụ minh bạch $\rightarrow$ rủi ro tối thiểu (tự nguyện theo nguyên tắc đạo đức); cộng thêm quy định riêng cho mô hình AI đa dụng (GPAI).}
+\item \textbf{Prohibited practices} (Art. 5) include subliminal manipulation, exploiting vulnerabilities, social scoring, predicting crime from profiling, untargeted scraping for facial-recognition databases, emotion inference at work or school, biometric categorisation of sensitive traits, and real-time remote biometric identification in public spaces for law enforcement (narrow exceptions).\vi{Thực hành bị CẤM (Điều 5): thao túng tiềm thức; khai thác điểm yếu (tuổi, khuyết tật, hoàn cảnh xã hội); chấm điểm xã hội; dự đoán khả năng phạm tội chỉ dựa trên hồ sơ cá nhân; cào ảnh tràn lan để lập CSDL nhận diện khuôn mặt; nhận diện cảm xúc ở nơi làm việc/trường học; phân loại sinh trắc để suy ra dữ liệu nhạy cảm; nhận dạng sinh trắc từ xa thời gian thực ở nơi công cộng cho mục đích thực thi pháp luật (trừ ngoại lệ hẹp: bắt cóc, buôn người, người mất tích, khủng bố, nghi phạm tội nghiêm trọng).}
+\item \textbf{High-risk (two routes)} — A system is high-risk either as a safety component of a product under EU sectoral law (Annex I: machinery, medical devices, vehicles…) or by its use in an Annex III area: biometrics, critical infrastructure, education, employment, essential services (credit, insurance, benefits), law enforcement, migration and border control, justice and democratic processes.\vi{Rủi ro cao — 2 con đường: (1) gắn vào sản phẩm chịu luật ngành (Phụ lục I: máy móc, thiết bị y tế, hàng không, xe…); (2) dùng trong lĩnh vực Phụ lục III: sinh trắc học, hạ tầng trọng yếu, giáo dục, việc làm \& quản lý lao động, dịch vụ thiết yếu (tín dụng, bảo hiểm, trợ cấp), thực thi pháp luật, di trú \& biên giới, tư pháp \& tiến trình dân chủ.}
+\item \textbf{High-risk obligations} are risk management (Art. 9), data governance (10), technical documentation (11), logs (12), transparency to deployers (13), human oversight (14), accuracy–robustness–cybersecurity (15) and a quality management system (17); deployers add Art. 26 duties and, for public bodies and some others, a fundamental-rights impact assessment (FRIA, Art. 27).\vi{Nghĩa vụ hệ rủi ro cao: quản lý rủi ro (Đ.9), quản trị dữ liệu – chất lượng, thiên lệch, tính đại diện (Đ.10), tài liệu kỹ thuật (Đ.11), lưu log (Đ.12), minh bạch với bên triển khai (Đ.13), giám sát của con người – giao diện, nút “stop”, khả năng bác bỏ (Đ.14), chính xác–vững chắc–an ninh mạng (Đ.15), hệ thống quản lý chất lượng (Đ.17). Bên triển khai: Đ.26; cơ quan công quyền: đánh giá tác động quyền cơ bản FRIA (Đ.27).}
+\item \textbf{Transparency obligations} (Art. 50) require telling people they interact with an AI, marking synthetic content in machine-readable form, informing people exposed to emotion recognition or biometric categorisation, and disclosing deepfakes and AI-generated public-interest text.\vi{Nghĩa vụ minh bạch (Đ.50): báo cho người dùng biết họ đang nói chuyện với AI; đánh dấu (watermark) nội dung tổng hợp; thông báo khi dùng nhận diện cảm xúc/phân loại sinh trắc; công khai deepfake (trừ tác phẩm nghệ thuật/châm biếm) và văn bản do AI tạo nhằm thông tin cho công chúng.}
+\item \textbf{Enforcement and fines} — Enforcement involves the European AI Office (notably for GPAI), the AI Board, national market-surveillance authorities and regulatory sandboxes; fines reach €35M/7\% of turnover for prohibited practices, €15M/3\% for most other obligations and €7.5M/1\% for misleading information to authorities.\vi{Thực thi: Văn phòng AI châu Âu (giám sát GPAI), Hội đồng AI (các nước thành viên), cơ quan giám sát thị trường quốc gia, sandbox thử nghiệm. Phạt: 35 triệu €/7\% doanh thu toàn cầu (thực hành bị cấm); 15 triệu €/3\% (rủi ro cao, minh bạch); 7,5 triệu €/1\% (không hợp tác/thông tin sai).}
+\item \textbf{Timeline} — The AI Act entered into force on 1 August 2024 and applies progressively: prohibitions from 2 February 2025, GPAI rules from 2 August 2025, general application from 2 August 2026; a 2026 amendment postpones core Annex III high-risk requirements to 2 December 2027.\vi{Lộ trình: có hiệu lực 1/8/2024; điều cấm áp dụng 2/2/2025; GPAI 2/8/2025; áp dụng chung 2/8/2026; bản sửa đổi 2026 lùi các yêu cầu cốt lõi cho hệ rủi ro cao Phụ lục III đến 2/12/2027. Trong bài thi: phân biệt “có hiệu lực” và “áp dụng”, đừng nói cả đạo luật chờ đến 2027.}
+\end{enumerate}
+\subsubsection*{Part 4 — General-purpose AI (GPAI)}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{GPAI model} — A GPAI model is an AI model, often trained on large data with self-supervision, that displays significant generality, competently performs a wide range of distinct tasks and can be integrated into many downstream systems.\vi{Mô hình AI đa dụng (GPAI): thường huấn luyện tự giám sát trên dữ liệu lớn, có tính tổng quát cao, làm tốt nhiều nhiệm vụ khác nhau, tích hợp được vào nhiều hệ thống hạ nguồn (ví dụ GPT). Không tính mô hình chỉ dùng cho nghiên cứu trước khi ra thị trường.}
+\item \textbf{Duties of all GPAI providers} — All GPAI providers must keep technical documentation, inform downstream providers about capabilities and limits, adopt a copyright-compliance policy (respecting opt-outs) and publish a summary of training content; open-source models are exempt only from the documentation duties.\vi{Mọi nhà cung cấp GPAI: tài liệu kỹ thuật (huấn luyện, kiểm thử); cung cấp thông tin cho bên hạ nguồn (năng lực, giới hạn); chính sách tuân thủ bản quyền (tôn trọng quyền opt-out của tác giả); công bố bản tóm tắt dữ liệu huấn luyện. Mô hình mã nguồn mở chỉ được miễn phần tài liệu — VẪN phải có chính sách bản quyền và bản tóm tắt dữ liệu.}
+\item \textbf{Systemic risk} is the risk specific to high-impact GPAI capabilities that can propagate at scale across the value chain; it is presumed above 10\textsuperscript{25} FLOPs of training compute or designated by the Commission, including after a qualified alert from the scientific panel.\vi{Rủi ro hệ thống: rủi ro đặc thù của GPAI có “năng lực tác động cao”, lan rộng theo chuỗi giá trị (sức khoẻ, an ninh, quyền cơ bản, xã hội). Suy đoán khi tính toán huấn luyện > 10\textsuperscript{25} FLOPs, hoặc do Ủy ban chỉ định (có thể sau “cảnh báo đủ điều kiện” từ hội đồng khoa học độc lập).}\tip{Links to the sample question on composing the independent scientific panel.}
+\item \textbf{Extra duties for systemic risk} — GPAI with systemic risk must also run model evaluations and adversarial testing, assess and mitigate systemic risks, track and report serious incidents to the AI Office, and ensure cybersecurity of the model and infrastructure.\vi{GPAI có rủi ro hệ thống thêm: đánh giá mô hình \& kiểm thử đối kháng (red-teaming); đánh giá và giảm thiểu rủi ro hệ thống; theo dõi và báo cáo sự cố nghiêm trọng cho Văn phòng AI; an ninh mạng cho mô hình và hạ tầng vật lý.}
+\end{enumerate}
+\subsubsection*{Part 5 — LLM legal risks: copyright and liability}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Three legal risk families} — The three legal risk families of LLMs are data protection (lawful basis, principles, no personal-data outputs), intellectual property (infringing training data or outputs) and liability.\vi{Ba nhóm rủi ro pháp lý của LLM: bảo vệ dữ liệu (cơ sở pháp lý, nguyên tắc, không để mô hình “nhả” dữ liệu cá nhân); sở hữu trí tuệ (dữ liệu huấn luyện/đầu ra vi phạm bản quyền); trách nhiệm pháp lý.}
+\item \textbf{Copyright} protects original expression by a human in a fixed medium: ideas, methods and algorithms are not protected, source code is, and machine-generated expression is not.\vi{Bản quyền bảo vệ “biểu đạt nguyên gốc, do con người, trên phương tiện cố định”: ý tưởng/phương pháp/thuật toán KHÔNG được bảo vệ, mã nguồn thì có; đầu ra do máy tạo ra không được bảo vệ. Không cần thủ tục đăng ký (nhưng phải chứng minh được); quyền độc quyền theo lãnh thổ, công nghệ, thời gian.}
+\item \textbf{US fair use} is an exception weighed on four factors: purpose and character (is it transformative?), nature of the work, amount taken, and effect on the market.\vi{Fair use (Mỹ): ngoại lệ xét theo 4 yếu tố: mục đích \& tính chất (có “biến đổi” không?), bản chất tác phẩm (thông tin thực tế dễ hơn hư cấu), lượng trích dùng, ảnh hưởng tới thị trường.}
+\item \textbf{EU text-and-data mining} exceptions are the research exception (Art. 3, research organisations and heritage institutions) and the general/commercial exception (Art. 4), which rights holders can block with an opt-out.\vi{Ngoại lệ khai thác văn bản \& dữ liệu (TDM) của EU: cho nghiên cứu (Đ.3, tổ chức nghiên cứu/di sản) và cho mục đích chung/thương mại (Đ.4) — chủ sở hữu có quyền opt-out. Không giống fair use kiểu Mỹ; “công khai trên mạng” $\neq$ “được tự do dùng”.}
+\item \textbf{Liability regimes} are contractual (breach of contract — Air Canada chatbot), civil fault-based (fault + harm + causal link), strict liability for things or defective products (product + safety defect), and criminal liability.\vi{Các chế độ trách nhiệm: hợp đồng (vi phạm hợp đồng — vụ chatbot Air Canada bị buộc thực hiện lời hứa sai của bot); dân sự do lỗi (lỗi + thiệt hại + quan hệ nhân quả); trách nhiệm do vật/sản phẩm khuyết tật (sản phẩm + khiếm khuyết an toàn); hình sự (ví dụ LLM xúi giục tự hại). Lời miễn trừ chung chung không xoá trách nhiệm.}
+\item \textbf{Risk-assessment tools} include the NIST AI RMF (2023), ANSSI’s security recommendations for generative AI (2024) and the HLEG’s ALTAI checklist (2020); a risk is rated by gravity $\times$ probability, then mitigated.\vi{Công cụ đánh giá rủi ro: NIST AI RMF (2023), khuyến nghị an ninh của ANSSI cho AI tạo sinh (2024), ALTAI của HLEG (2020). Bài tập lớp: liệt kê $\geq$3 rủi ro, chấm mức nghiêm trọng (0–4) $\times$ xác suất (0–4), rồi đề xuất biện pháp giảm thiểu.}
+\end{enumerate}
+\subsection{L4 — The microwork behind AI: platforms, data work, global value chains}
+{\small\textit{Mathilde Abel · Slides: EthicsAI\_LaborAI\_Abel.pdf · Recordings: IMT Exed, Place Marguerite Perey}}\par
+\textbf{Why it matters:} Sample short question “describe a value chain of annotation work”; and the teacher’s warning: never just write “human in the loop” — say who, contract, pay, internal or external.
+\subsubsection*{Part 1 — Platforms and digital labour}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{A platform} is an intermediary firm based on sociotechnical devices that matches people, information and goods/services and captures data from these interactions; it “taskifies” contributions to make them interoperable.\vi{Nền tảng (platform): doanh nghiệp trung gian dùng thiết bị xã hội–kỹ thuật để GHÉP NỐI người/thông tin/dịch vụ và THU GIỮ dữ liệu từ các tương tác đó; nó “nhiệm vụ hoá” (taskify) đóng góp để chúng tương thích với nhau.}
+\item \textbf{Platform triangulation} (Abel \& Dieuaide, 2023) is the three-way relation between platform, clients and workers in which the platform organises work and captures value without being a classic employer.\vi{Tam giác nền tảng (Abel \& Dieuaide 2023): quan hệ ba bên nền tảng – khách hàng – người lao động; nền tảng tổ chức công việc và thu giá trị nhưng không phải chủ lao động truyền thống. Không phải Taylorism cổ điển: điều phối nằm NGOÀI doanh nghiệp, trên vô số người dùng.}
+\item \textbf{Taskification} is breaking complex work into standardised micro-tasks that can be allocated, measured and recombined — and it generates data.\vi{Nhiệm vụ hoá: chia nhỏ công việc phức tạp thành vi-nhiệm vụ chuẩn hoá để phân phối, đo lường, ghép lại — đồng thời sinh ra dữ liệu. Ranh giới nhiệm vụ quyết định người làm còn giữ được bao nhiêu bối cảnh và phán đoán.}
+\item \textbf{Digital labour} is a continuum from unpaid user activity (Terranova’s “free labour”: profiles, ratings, posts) to micro-paid piecework and freelancing, mostly lacking workers’ rights.\vi{Lao động số: một dải liên tục từ hoạt động không lương của người dùng (Terranova: “lao động miễn phí” — điền hồ sơ, đánh giá, đăng bài) đến làm khoán vi-nhiệm vụ trả rất ít, thiếu hầu hết quyền lao động (nghỉ phép, hưu trí, thậm chí quyền được trả lương).}
+\item \textbf{Displacement, not replacement} — AI development displaces rather than replaces work: it multiplies micro-workers and “non-workers” who supply the data that fuels automation.\vi{AI dịch chuyển chứ không thay thế lao động: làm nảy sinh vô số “vi-lao động” và “người không được coi là lao động” cung cấp dữ liệu — nhiên liệu của tự động hoá. Câu hỏi: họ là ai, ở đâu, theo luật nào, trả bao nhiêu?}
+\end{enumerate}
+\subsubsection*{Part 2 — Clients, platforms and the value chain}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{The clients} are AI producers — Big Tech, start-ups, corporate R\&D and labs — whose data-hungry supervised and deep learning needs label quality over volume, domain and local coverage, up-to-date data, accuracy–cost–time trade-offs, secrecy and provenance, and risk containment.\vi{Khách hàng: nhà sản xuất AI (Big Tech, start-up, R\&D doanh nghiệp, phòng lab). Nhu cầu: chất lượng nhãn > số lượng; bao phủ lĩnh vực \& đặc thù địa phương; dữ liệu cập nhật suốt vòng đời; cân bằng chính xác–chi phí–thời gian; bí mật \& nguồn gốc dữ liệu; kiểm soát rủi ro pháp lý/danh tiếng.}
+\item \textbf{Typology of data-work institutions} — The typology of AI data-work institutions (Muldoon et al., 2024) crosses employment relationship (crowdworkers vs employees) with service focus (external vs internal; generalist vs AI-specific).\vi{Phân loại tổ chức làm dữ liệu (Muldoon và cs. 2024) theo 2 trục: quan hệ lao động (crowdworker tự do vs nhân viên) $\times$ trọng tâm dịch vụ (bên ngoài vs nội bộ; đa năng vs chuyên AI). Ví dụ: Amazon MTurk (crowd), BPO ở Madagascar (nhân viên), đội nội bộ Cour de cassation.}
+\item \textbf{Multilayer stacks} (Schmidt, 2022) are the chains of intermediaries — tooling + curated labour + internal QA — built to hit 95–99\%+ accuracy; they mirror neural networks’ hidden layers and create “black boxes within black boxes”.\vi{Chuỗi nhiều tầng (Schmidt 2022): để đạt độ chính xác 95–99\%+, trung gian tiến hoá từ chợ việc phẳng thành nhiều tầng (công cụ + lao động tuyển chọn + kiểm định nội bộ). Tầng ẩn của tổ chức giống tầng ẩn của mạng nơ-ron $\rightarrow$ “hộp đen trong hộp đen”: chính xác hơn nhưng mờ đục hơn về nguồn gốc và điều kiện lao động.}
+\item \textbf{A value chain of annotation} is the sequence client $\rightarrow$ platform/BPO intermediary $\rightarrow$ (sub-)subcontractors $\rightarrow$ local annotators $\rightarrow$ multi-layer QA $\rightarrow$ data returned to the client’s ML team, where value is captured at the top and costs pushed to the bottom.\vi{Chuỗi giá trị gán nhãn: khách hàng (vd. start-up Pháp) $\rightarrow$ nền tảng/BPO trung gian $\rightarrow$ các tầng thầu phụ $\rightarrow$ người gán nhãn tại địa phương (vd. Madagascar) $\rightarrow$ kiểm định chất lượng nhiều lớp $\rightarrow$ dữ liệu trở về đội ML của khách hàng. Giá trị bị thu ở đỉnh, chi phí bị đẩy xuống đáy.}\tip{This is literally sample short question 2.}
+\end{enumerate}
+\subsubsection*{Part 3 — Three roles of humans behind AI (Tubaro, Casilli \& Coville, 2020)}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{AI data work} is the human labour required to support machine learning through preparing and evaluating datasets and model outputs, often outsourced to low-paid, marginalised workers (Muldoon et al., 2024).\vi{Công việc dữ liệu AI: lao động con người cần để hỗ trợ học máy — chuẩn bị và đánh giá dữ liệu cũng như đầu ra mô hình — thường thuê ngoài cho lao động lương thấp, bị gạt ra lề.}
+\item \textbf{Preparation (the trainer)} — Preparation — the trainer role — is data generation (recording voices, images, text with accents, slang, noise) plus annotation (from classification and boxes to pixel-level segmentation).\vi{Chuẩn bị (người huấn luyện – trainer): tạo dữ liệu (thu âm giọng nói nhiều chất giọng/tiếng ồn, ảnh, văn bản) + gán nhãn (phân loại, khung, đa giác, đến phân đoạn từng pixel cho lĩnh vực an toàn). Ví dụ: ghép ảnh–tên sản phẩm, ẩn danh CV và gắn thẻ tên/ngày/địa chỉ.}
+\item \textbf{Impersonation (the imitator)} — Impersonation — the imitator role, “artificial artificial intelligence” — is humans partly or fully substituting for the algorithm, by design, to keep the service usable and generate training signals.\vi{Giả làm AI (người bắt chước – imitator), “trí tuệ nhân tạo nhân tạo”: con người thay thuật toán một phần/toàn bộ để dịch vụ chạy được và tạo tín hiệu huấn luyện. Ví dụ: Google Duplex (5/2019 tới 25\% cuộc gọi do người thực hiện), Julie Desk (“80\% máy/20\% người”), phát hiện trộm qua camera ở Madagascar.}
+\item \textbf{Verification (the verifier)} — Verification — the verifier role — is post-deployment checking: humans audit and correct live outputs (ASR clips, search relevance, post-OCR invoices) and produce fresh labels; it never goes away and becomes a recurrent, strategic need.\vi{Kiểm tra (người kiểm định – verifier): hệ thống đã chạy thật, con người kiểm tra/sửa đầu ra (nghe đoạn 3–15 giây sửa phiên âm, chấm độ liên quan tìm kiếm, sửa hoá đơn sau OCR) và tạo nhãn mới. Không bao giờ biến mất, là nhu cầu thường trực và chiến lược.}
+\end{enumerate}
+\subsubsection*{Part 4 — The global division of AI labour and working conditions}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{A planetary division of labour} — A planetary, platform-mediated division of labour is the pattern in which platforms and BPOs act as a new offshoring institution: demand clusters in North America and Europe, supply in South Asia, Eastern Europe, Latin America and parts of Africa.\vi{Phân công lao động toàn cầu qua nền tảng: nền tảng/BPO là “thiết chế thuê ngoài” mới; nhu cầu ở Bắc Mỹ/châu Âu, nguồn cung ở Nam Á, Đông Âu, Mỹ Latinh, một phần châu Phi — nơi kỹ năng ngôn ngữ, kết nối mạng và mức lương kỳ vọng “khớp”, dù thị trường lao động bấp bênh.}
+\item \textbf{Scale} — The scale of online work is 154–435 million people, i.e. 4.4–12.5\% of the global workforce (World Bank, 2023); AI data work is a sub-segment.\vi{Quy mô: 154–435 triệu người làm việc trực tuyến (4,4–12,5\% lực lượng lao động toàn cầu, Ngân hàng Thế giới 2023); công việc dữ liệu AI là một phân khúc trong đó. MTurk: >100k đăng ký nhưng \textasciitilde{}2k hoạt động cùng lúc, “nửa đời” 12–18 tháng; giai đoạn 2015–17 Mỹ $\approx$75\%, Ấn Độ $\approx$16\%.}
+\item \textbf{Worker profile} — The typical AI data worker is younger and more highly educated than the national labour market, yet economically constrained.\vi{Chân dung người làm dữ liệu: trẻ hơn và học vấn cao hơn mặt bằng quốc gia, nhưng bị ràng buộc kinh tế (làm vì cần sống).}
+\item \textbf{Effective pay} is lower than piece rates suggest because search, rejections and returns are unpaid: median $\approx$ \$1.77/h, mean $\approx$ \$3.13/h on MTurk (Hara et al., 2018).\vi{Thu nhập thực: giá khoán $\neq$ lương giờ vì thời gian tìm việc, bị từ chối, làm lại không được trả. MTurk: trung vị $\approx$ 1,77 \$/giờ, trung bình $\approx$ 3,13 \$/giờ (Hara 2018). Khác nhau rất lớn theo loại nhiệm vụ.}
+\item \textbf{The data-production dispositif} (Miceli \& Posada, 2022) is the combination of instructions, interface and metrics that governs what counts as “truth” and the pace of work (accuracy bars, timers, bans).\vi{Bộ máy sản xuất dữ liệu (Miceli \& Posada 2022): hướng dẫn + giao diện + chỉ số đo cùng nhau quyết định đâu là “sự thật” (ground truth) và nhịp làm việc (ngưỡng chính xác, đồng hồ đếm giờ, cấm tài khoản). Thêm: tiếp xúc nội dung bạo lực/tình dục, khó rút tiền.}
+\item \textbf{Two work settings} — The two work settings are home-based marketplaces (isolation, constant availability, opaque disputes) and on-site BPOs (queues and training, but tight surveillance and short contracts).\vi{Hai môi trường làm việc: chợ việc tại nhà (cô lập, luôn phải sẵn sàng, tranh chấp mờ ám) vs BPO tại chỗ (có hàng việc và đào tạo, nhưng giám sát chặt và hợp đồng ngắn).}
+\item \textbf{Gender gap} — The gender gap in data work is that women are about one-third to 40\% of workers and can earn much less (\textasciitilde{}68\% gap in some Latin-American surveys) because of task segmentation, fragmented hours and unequal access to tools and networks.\vi{Khoảng cách giới: phụ nữ chiếm \textasciitilde{}1/3 đến 40\%; chênh lệch thu nhập có nơi \textasciitilde{}68\% (khảo sát Mỹ Latinh) do phân mảnh nhiệm vụ, giờ làm vụn vặt, ít tiếp cận công cụ/mạng lưới; khoảng cách thu hẹp khi họ có script, nhóm requester, đào tạo.}
+\end{enumerate}
+\subsubsection*{Part 5 — Case studies}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Venezuela} (Posada, 2022) is a case of marketplace survivalism: platform dollars are a lifeline amid hyperinflation, pay is \textasciitilde{}\$0.7–2/h for \textasciitilde{}15 h/week, and blackouts and costly cash-out push workers to the lowest-paid tasks.\vi{Venezuela (Posada 2022) — “sinh tồn trên chợ việc”: đô-la từ nền tảng là phao cứu sinh giữa siêu lạm phát/cấm vận; \textasciitilde{}0,7–2 \$/giờ, \textasciitilde{}15 giờ/tuần; mất điện, mạng chậm, rút tiền qua trung gian tốn phí $\rightarrow$ bị đẩy sang việc rẻ nhất (captcha, selfie, click); phải luôn sẵn sàng, dựa vào nhóm Discord/Telegram.}
+\item \textbf{Madagascar} (Le Ludec, 2024) is a case of Francophone BPO chains tied to French clients: graduates on day-rated or short contracts at \textasciitilde{}\$0.4–1.7/h, multi-layer QA, and impersonation such as live theft detection “sold as automatic”.\vi{Madagascar (Le Ludec 2024) — chuỗi BPO nói tiếng Pháp gắn với khách hàng Pháp: tuyển cử nhân, hợp đồng theo ngày (journaliers, không nghỉ phép) hoặc ngắn hạn, \textasciitilde{}0,4–1,7 \$/giờ; hàng việc, trưởng nhóm, kiểm định nhiều lớp; gán nhãn + giả làm AI (phát hiện trộm từ video trực tiếp) + cập nhật dữ liệu liên tục (khay ăn căng-tin). “Chúng tôi mới là người phát hiện trộm… ông ấy bảo là tự động.”}
+\item \textbf{Human in the loop — say it properly} — Writing “human in the loop” properly means stating who the humans are, how they are contracted, how much they are paid, whether they are internal or external, and what authority they have.\vi{Viết “human in the loop” cho đúng: nói rõ họ là ai, ký hợp đồng kiểu gì, được trả bao nhiêu, nội bộ hay thuê ngoài, có quyền gì. Giảng viên dặn: đừng chỉ viết “có con người trong vòng lặp”.}\tip{Teacher’s explicit instruction at the end of the labour lecture.}
+\end{enumerate}
+\subsection{L5 — Users of AI: bias, technosolutionism, practice, explanation and contestation}
+{\small\textit{Tiphaine Viard · Slides: Users-of-AI.pdf · Recordings: IPVF 10, IPVF 11}}\par
+\textbf{Why it matters:} Answers the sample question “critique OpenAI’s purely technical FAT document” and any question about human oversight, explanations or appeals.
+\subsubsection*{Part 1 — Why users matter; the state of AI bias}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Why users} — Studying users matters because we are all users, because it maintains trust in institutions, because it reveals hindrances, non-use cases and grounds for discrimination, because it brings models closer to “metrological realism”, and because it helps operationalise regulation.\vi{Vì sao quan tâm người dùng: chúng ta đều là người dùng; giữ niềm tin vào thể chế; phát hiện trở ngại, trường hợp không dùng, căn cứ phân biệt đối xử; giúp mô hình gần “hiện thực đo lường”; giúp vận hành hoá luật.}
+\item \textbf{COMPAS} (ProPublica, 2016) is the flagship AI-bias case: a recidivism score that displaced a debate from law and criminology to the public sphere, where data science and criminology talked past each other.\vi{COMPAS (ProPublica 2016): vụ điển hình về thiên lệch AI — điểm nguy cơ tái phạm ở Mỹ. Đẩy tranh luận từ luật/tội phạm học ra công chúng; hai đấu trường (khoa học dữ liệu vs tội phạm học) ít nói chuyện với nhau; quy tắc thống kê (actuarial) vs AI; một bài báo truyền thông có tác động học thuật khổng lồ.}
+\item \textbf{The limits of debiasing} — Debiasing has mixed results (Bolukbasi et al. 2016; Prost et al. 2021 — sometimes more bias); fairness definitions remain dated, not sociologically sound and rarely intersectional.\vi{Giới hạn của “khử thiên lệch”: kết quả lẫn lộn, có khi còn thiên lệch hơn; định nghĩa công bằng lỗi thời, không vững về xã hội học, hiếm khi tính đến giao thoa (intersectionality: vd. phụ nữ da màu).}
+\item \textbf{Algocracy} is the way societies and governments use and deploy algorithmic systems to govern; bias debates reinforce the need to discuss it.\vi{Algocracy (“thuật toán trị”): cách xã hội và chính phủ dùng hệ thống thuật toán để cai trị.}
+\item \textbf{Fair AI vs radical AI} — The “fair AI vs radical AI” tension is that cases like SyRI (Netherlands welfare fraud), SCHUFA (credit scoring), CNAF (French welfare fraud), ETIAS (EU borders) and Clearview AI (facial recognition) question the point of a fair algorithm that is not attached to deeper change.\vi{Căng thẳng “AI công bằng” vs “AI cấp tiến”: các vụ SyRI (Hà Lan, gian lận phúc lợi), SCHUFA (chấm điểm tín dụng), CNAF/CAF (Pháp, gian lận phúc lợi), ETIAS (biên giới EU), Clearview AI (nhận diện khuôn mặt) $\rightarrow$ một thuật toán “công bằng” có ích gì nếu không gắn với thay đổi sâu hơn (Kalluri 2020; Keyes 2020), khi bất công bị cộng dồn (Eidelson 2021), và cần lòng trắc ẩn trong thiết kế (Vaccaro 2021).}
+\end{enumerate}
+\subsubsection*{Part 2 — Technosolutionism}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{The mulching proposal} (Keyes, Hutson \& Durbin, CHI 2019) is a satire that applies Fairness, Accountability and Transparency to an algorithm turning elderly people into slurry — showing that FAT can “improve” a system whose purpose is unacceptable.\vi{“Đề xuất nghiền” (Keyes và cs. 2019) — bài châm biếm: áp dụng khung Công bằng–Trách nhiệm–Minh bạch (FAT) cho thuật toán biến người già thành thức ăn. Làm nó “công bằng” (demographic parity), “có trách nhiệm” (10 giây để phản đối + người giám sát), “minh bạch” (biển “khu vực nghiền”, website mulchme.com). Bài học: FAT không đặt câu hỏi về MỤC ĐÍCH thì biện minh được cho bất cứ thứ gì.}\tip{Use it to critique any “purely technical” fairness/transparency document.}
+\item \textbf{Technosolutionism} is the idea that technology is a necessary part of the solution to a given problem; it leads to post-hoc rationalisation and out-of-touch technical fixes, and is a problem for democratic processes (Nemitz, 2023).\vi{Chủ nghĩa giải pháp công nghệ: tin rằng công nghệ nhất thiết phải là một phần của lời giải $\rightarrow$ hợp lý hoá sau khi đã quyết, giải pháp xa rời thực tế, nguy hại cho tiến trình dân chủ (Nemitz 2023). Xem thêm “bẫy trừu tượng hoá” (Selbst và cs. 2018).}
+\item \textbf{Tech neutrality vs tech politics} is the debate between seeing technology as a neutral tool and seeing it as political; discussing only uses reduces the debate to experts (Covid tracing: debate on privacy, not on Bluetooth’s inadequacy).\vi{Công nghệ trung lập vs công nghệ là chính trị: chỉ bàn “cách dùng” khiến cuộc tranh luận thành chuyện của chuyên gia — vd. app truy vết Covid: tranh cãi về quyền riêng tư, trong khi câu hỏi “Bluetooth có đo được tiếp xúc không?” bị bỏ qua.}
+\item \textbf{Lobbying arguments} — Typical lobbying arguments are “if we don’t do it, others will”, “there will be a brain drain”, “regulation will thwart innovation” and “the next version will solve the problems of this one”.\vi{Lập luận vận động hành lang điển hình: “mình không làm thì người khác làm”; “chảy máu chất xám”; “quản lý sẽ bóp chết đổi mới”; “phiên bản sau sẽ sửa lỗi phiên bản này”. Nhận diện và phản biện chúng.}
+\end{enumerate}
+\subsubsection*{Part 3 — Algorithms in practice}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Algorithms in practice} — “Algorithms in practice” (Christin) is an ethnography (2011–2015, \textasciitilde{}100 interviews) of judges/lawyers using defendant-scoring tools and web journalists using trend-mining analytics, comparing discourses with practices.\vi{Christin – “Thuật toán trong thực tế”: nghiên cứu dân tộc học 2011–2015, \textasciitilde{}100 phỏng vấn, hai nhóm: giới luật (Paris/New York, công cụ chấm điểm bị cáo) và nhà báo mạng (công cụ dò xu hướng). Hỏi: diễn ngôn khác thực hành ra sao?}
+\item \textbf{Expert fields} — An expert field (Bourdieu) is a group sharing belief in the legitimacy of specific knowledge as a basis for intervening in public affairs; law has strong entry barriers and is non-profit, journalism has almost none and is profit-oriented.\vi{Trường chuyên gia (Bourdieu): nhóm cùng tin vào tính chính danh của một dạng tri thức để can thiệp vào việc công. Luật: rào cản gia nhập cao (thi luật sư), phi lợi nhuận, dè dặt với công nghệ, gắn quyết định với bản sắc. Báo chí: gần như không rào cản, vì lợi nhuận, thích công nghệ và tính tức thời.}
+\item \textbf{Decoupling} (Meyer \& Rowan, 1977) is the separation between management discourse (“the tool is deployed”) and employees’ actual practice (the tool is ignored or resisted).\vi{Tách rời (decoupling): diễn ngôn quản lý (“công cụ đã triển khai thành công”) tách khỏi thực hành của nhân viên (bỏ qua hoặc chống lại công cụ). “Đã áp dụng” $\neq$ “được dùng thật”.}
+\item \textbf{Buffering} is the set of responses that shield work from algorithms: foot-dragging (ignoring outputs, putting them at the end of reports), gaming (clickbait titles, choosing cases) and open critique.\vi{Đệm chắn (buffering): lề mề (lờ kết quả, để cuối báo cáo), lách luật/gaming (giật tít, chọn giờ đăng, chọn vụ án), phê phán công khai (tiêu chí “thành công” của thuật toán lệch với tiêu chí của nghề). $\rightarrow$ dịch chuyển phán đoán chủ quan và lượng hoá xã hội.}
+\item \textbf{Algorithmic imaginaries} (Bucher, 2016) are “ways of thinking about what algorithms are, what they should be and how they function”; journalists question the tool’s goal, while courts openly call the tools “crude”.\vi{Hình dung về thuật toán (Bucher 2016): cách nghĩ thuật toán là gì, nên là gì. Nhà báo không nghi ngờ công cụ nhưng lưỡng lự về mục đích của nó; toà án thì công khai chê “thô thiển”, phê phán công cụ vì lợi nhuận, và thiếu án lệ khiến thay đổi chậm.}
+\item \textbf{The Cour de cassation} case is an in-house named-entity-recognition system for anonymising court decisions, annotated by civil servants: training never ends (a permanent team), the AI is called “the software”, becomes an absent colleague, and annotators mobilise empathy for readers.\vi{Toà Phá án Pháp: hệ nhận dạng thực thể (NER) để ẩn danh bản án, do công chức tự gán nhãn trong 2 năm; KHÔNG BAO GIỜ hết huấn luyện (thành đội thường trực); không gọi là “AI” mà là “phần mềm”; thành “đồng nghiệp vắng mặt”; người gán nhãn dùng sự thấu cảm để bản án vẫn dễ hiểu. Ví dụ đẹp cho “verification never goes away”.}
+\end{enumerate}
+\subsubsection*{Part 4 — Explanations and contestation}\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=1.6em]
+\item \textbf{Good explanations} — A good explanation is selective, contrastive and dialogic (Miller), ideally producing a “complexity drop” (Dessalles); it must fit its audience — experts, laypeople or regulators.\vi{Giải thích tốt: có chọn lọc, mang tính đối chiếu (“vì sao A mà không phải B?”), có đối thoại (Miller); tạo ra “sự giảm độ phức tạp” (Dessalles). Phải hợp với người nghe: chuyên gia, người thường, cơ quan quản lý.}
+\item \textbf{Why explain} — The four purposes of an explanation are descriptive, explanatory, normative (justification) and contestable (giving grounds to challenge).\vi{Bốn mục đích giải thích: mô tả (descriptive), giải thích (explanatory), chuẩn tắc/biện minh (normative — “vì sao như thế là đúng”), có thể phản bác (contestable — cho người ta căn cứ để khiếu nại). Ví dụ của giảng viên: chấm điểm thi — “câu 1 được 2 điểm” là mô tả; “vì sao câu trả lời chưa đạt” là biện minh.}
+\item \textbf{The right to contest} AI (Kaminski \& Urban, 2021) is an individual right mimicking due process, which already fits the GDPR framework (Art. 22(3)) but puts the onus on individuals.\vi{Quyền phản đối AI (Kaminski \& Urban 2021): quyền cá nhân mô phỏng “thủ tục tố tụng công bằng”; đã khớp với GDPR (Đ.22(3): quyền có sự can thiệp của con người, bày tỏ quan điểm, phản đối quyết định) — nhưng đặt gánh nặng lên vai từng cá nhân.}
+\item \textbf{Goals and limits of contestation} — Contestation aims at citizen empowerment, acceptability of decisions, better system development and preventing gaming; its limits are that it does not fix information asymmetry or power imbalance and people fight only for their own case.\vi{Mục tiêu: trao quyền công dân, quyết định dễ chấp nhận, cải thiện hệ thống, chống lách luật. Giới hạn: không xoá bất cân xứng thông tin \& quyền lực; mỗi người chỉ đấu tranh cho trường hợp của mình (tốn thời gian, tiền). Contestability = “bước ngoặt chính trị” của explainability.}
+\item \textbf{The contestation matrix} crosses individual $\leftrightarrow$ collective with descriptive $\leftrightarrow$ normative: an explanation (individual, descriptive), a justification (individual, normative), and deliberation or public-scrutiny tools such as the DSA transparency database, NGOs (La Quadrature du Net) or the Défenseur des droits (collective).\vi{Ma trận phản đối: trục cá nhân $\leftrightarrow$ tập thể $\times$ mô tả $\leftrightarrow$ chuẩn tắc. Cá nhân–mô tả: giải thích; cá nhân–chuẩn tắc: biện minh; tập thể: tranh luận công khai trước khi triển khai, cơ sở dữ liệu minh bạch DSA, NGO (La Quadrature du Net gom các vụ việc ra toà), Thanh tra quyền (Défenseur des droits) — trên lý thuyết, nhưng thiếu kinh phí.}
+\item \textbf{Contestable AI by design} (Alfrink et al., 2023) uses Value-Sensitive Design to build contestability loops into public AI, combining procedural and substantive, descriptive and normative aspects.\vi{Thiết kế AI có thể phản đối (Alfrink và cs. 2023): dùng thiết kế nhạy cảm giá trị (VSD) để đưa “vòng lặp phản đối” vào AI công; luật là một chuyện, thiết kế để khuyến khích phản đối là chuyện khác. Một khiếu nại tốt phải khả thi cho người dùng VÀ cho cơ quan (ví dụ cực đoan: bấm nút $\rightarrow$ giáo viên viết báo cáo 50 trang; hay chỉ nhận thư tay lúc nửa đêm thứ Sáu).}
+\end{enumerate}
+\section{Consolidated glossary}{\small
+\begin{longtable}{>{\RaggedRight\arraybackslash\bfseries}p{3.3cm}>{\RaggedRight\arraybackslash}p{5.1cm}>{\RaggedRight\arraybackslash}p{5.1cm}>{\centering\arraybackslash}p{0.8cm}}
+\toprule Term & Definition \textit{(use it when…)} & Tiếng Việt & Lect.\\\midrule\endfirsthead\toprule Term & Definition \textit{(use it when…)} & Tiếng Việt & Lect.\\\midrule\endhead\bottomrule\endfoot
+Sociotechnical system & Technical objects and people studied together as one system. \newline\textit{\color{teal}Opening sentence of almost any long answer.} & \textcolor{tipc}{Hệ thống xã hội–kỹ thuật: công nghệ + con người + tổ chức + luật như một khối.} & L1\\[3pt]
+Framing & The choice of where a technical object starts and ends; it makes some problems and actors visible and hides others. \newline\textit{\color{teal}Every question; state your framing and what it hides.} & \textcolor{tipc}{Đóng khung vấn đề: chọn ranh giới đối tượng phân tích.} & L1\\[3pt]
+Polysemy (of AI) & AI has different meanings in technical, media, regulatory and scientific arenas. \newline\textit{\color{teal}“Why is AI hard to define/regulate?”} & \textcolor{tipc}{Tính đa nghĩa của “AI”.} & L1\\[3pt]
+Sub-political space & A place outside parliament where politically consequential decisions are taken (Beck). \newline\textit{\color{teal}Standards, company charters, procurement.} & \textcolor{tipc}{Không gian cận chính trị (phòng lab, công ty, tổ chức tiêu chuẩn).} & L1\\[3pt]
+Ethnography & Observing situated practices in the field over time. \newline\textit{\color{teal}Method to check if human review is real.} & \textcolor{tipc}{Dân tộc học: quan sát thực địa.} & L1\\[3pt]
+Discourse analysis & Studying the words actors use and how they change. \newline\textit{\color{teal}Method for charters, press, vendor documents.} & \textcolor{tipc}{Phân tích diễn ngôn.} & L1\\[3pt]
+Computational methods & NLP, network analysis and ML applied to social data (e.g. Louvain clustering). \newline\textit{\color{teal}Method; maps patterns, not intentions.} & \textcolor{tipc}{Phương pháp tính toán (NLP, mạng, học máy).} & L1\\[3pt]
+Controversy & A point of tension revealing competing values and actors. \newline\textit{\color{teal}COMPAS, SyRI, videosurveillance.} & \textcolor{tipc}{Tranh cãi – điểm căng thẳng giá trị.} & L1\\[3pt]
+Sociotechnical imaginary & Shared utopias/dystopias shaping expectations of technology. \newline\textit{\color{teal}Super-intelligence narratives.} & \textcolor{tipc}{Hình dung xã hội–kỹ thuật (không tưởng/phản không tưởng).} & L1\\[3pt]
+Symbolic AI & Approaches encoding explicit rules and expert knowledge. \newline\textit{\color{teal}History question; explainability.} & \textcolor{tipc}{AI biểu tượng (luật, hệ chuyên gia).} & L1\\[3pt]
+Connectionist AI & Statistical inference from large data, bypassing experts. \newline\textit{\color{teal}History question; data hunger, opacity.} & \textcolor{tipc}{AI kết nối / mạng nơ-ron.} & L1\\[3pt]
+Neuro-symbolic AI & Hybrid methods combining symbolic and neural approaches. \newline\textit{\color{teal}Shows history is not linear.} & \textcolor{tipc}{AI lai biểu tượng–nơ-ron.} & L1\\[3pt]
+Hype & Mismatch between claims and reality. \newline\textit{\color{teal}Vendor promises; Hinton radiologist quote.} & \textcolor{tipc}{Sự thổi phồng.} & L2\\[3pt]
+Materiality of AI & AI depends on minerals, energy, water, hardware and labour. \newline\textit{\color{teal}“Green/cloud” claims.} & \textcolor{tipc}{Tính vật chất của AI.} & L1\\[3pt]
+Frugal AI / green AI / no AI & Research trends valuing smaller, lower-carbon or no AI solutions. \newline\textit{\color{teal}Proportionality; alternatives.} & \textcolor{tipc}{AI tiết kiệm / AI xanh / không dùng AI.} & L1\\[3pt]
+Data colonialism & Extraction of value from data that concentrates wealth; extension of colonialism and capitalism. \newline\textit{\color{teal}Language data, Global South data work.} & \textcolor{tipc}{Thực dân dữ liệu.} & L1\\[3pt]
+Reactivity & People adapt to measures, so measures reshape the world (Espeland \& Sauder). \newline\textit{\color{teal}KPIs, rankings, accuracy targets, gaming.} & \textcolor{tipc}{Tính phản ứng với chỉ số đo.} & L1\\[3pt]
+Shifting power & Ask who gains and loses power, not only whether AI is “fair” (Kalluri). \newline\textit{\color{teal}Normative choice in conclusions.} & \textcolor{tipc}{Chuyển dịch quyền lực.} & L1\\[3pt]
+Decolonial AI & Approach showing harms are systemic; individual action or alternative platforms are not enough. \newline\textit{\color{teal}Why individual opt-out is insufficient.} & \textcolor{tipc}{AI giải thực dân.} & L1\\[3pt]
+AI ethics & Interdisciplinary field separating hype from reality and guiding regulation and practice. \newline\textit{\color{teal}Government report question.} & \textcolor{tipc}{Đạo đức AI.} & L2\\[3pt]
+Ethics charter / manifesto & A voluntary document stating principles (transparency, fairness…). \newline\textit{\color{teal}“Company signed a charter — enough?”} & \textcolor{tipc}{Hiến chương/tuyên ngôn đạo đức.} & L2\\[3pt]
+Three poles of discourse & Technical, regulatory and business/innovation discourses (Gornet et al. 2024). \newline\textit{\color{teal}Positioning trends in AI ethics.} & \textcolor{tipc}{Ba cực diễn ngôn: kỹ thuật, pháp lý, kinh doanh.} & L2\\[3pt]
+Operationalisation & Turning a principle into a process with an owner, evidence, remedy and revision. \newline\textit{\color{teal}Recommendation paragraphs.} & \textcolor{tipc}{Vận hành hoá nguyên tắc.} & L2\\[3pt]
+Arena & A coherent group of actors sharing tenets about AI risk. \newline\textit{\color{teal}Four-arena map.} & \textcolor{tipc}{Đấu trường (nhóm tác nhân cùng quan điểm).} & L2\\[3pt]
+AI safety & Arena focused on existential/loss-of-control risk; North-America-centred. \newline\textit{\color{teal}Contrast with AI ethics.} & \textcolor{tipc}{An toàn AI (rủi ro tồn vong).} & L2\\[3pt]
+TESCREAL & Gebru \& Torres’s label for the bundle of ideologies behind AGI utopias. \newline\textit{\color{teal}Critique of super-intelligence arena.} & \textcolor{tipc}{Gói ý thức hệ TESCREAL.} & L2\\[3pt]
+Brussels effect & EU rules spreading to non-EU partners via market power (Bradford). \newline\textit{\color{teal}Technical-economic arena.} & \textcolor{tipc}{Hiệu ứng Brussels.} & L2\\[3pt]
+Harmonised standard (hEN) & Technical standard giving presumption of conformity with EU law. \newline\textit{\color{teal}AI Act compliance; limits for rights.} & \textcolor{tipc}{Tiêu chuẩn hài hoà.} & L2\\[3pt]
+Soft law & Non-binding principles and declarations; hard law is enforceable in court. \newline\textit{\color{teal}Charters; ethics washing.} & \textcolor{tipc}{Luật mềm (không ràng buộc).} & L3\\[3pt]
+HLEG 7 requirements & Human agency \& oversight; robustness \& safety; privacy \& data governance; transparency; diversity/non-discrimination/fairness; societal \& environmental well-being; accountability. \newline\textit{\color{teal}Short “name the principles” question.} & \textcolor{tipc}{7 yêu cầu AI đáng tin cậy của HLEG.} & L3\\[3pt]
+Lawful basis (GDPR Art. 6) & Consent, contract, legal obligation, vital interest, public task, legitimate interest. \newline\textit{\color{teal}Any personal-data use case.} & \textcolor{tipc}{Cơ sở pháp lý xử lý dữ liệu.} & L3\\[3pt]
+GDPR principles (Art. 5) & Lawfulness/fairness/transparency, purpose limitation, minimisation, accuracy, storage limitation, integrity/confidentiality, accountability. \newline\textit{\color{teal}Concrete compliance measures.} & \textcolor{tipc}{Nguyên tắc GDPR.} & L3\\[3pt]
+Pseudonymisation & Replacing identifiers; data remain personal. \newline\textit{\color{teal}“We removed names, so it is anonymous” trap.} & \textcolor{tipc}{Giả danh hoá (vẫn là dữ liệu cá nhân).} & L3\\[3pt]
+Anonymisation & Irreversible removal of identifiability; leaves GDPR scope. \newline\textit{\color{teal}Cour de cassation anonymisation.} & \textcolor{tipc}{Ẩn danh hoá thật sự.} & L3\\[3pt]
+Art. 22 GDPR & Right not to be subject to solely automated decisions with legal/similarly significant effects; safeguards: human intervention, contest. \newline\textit{\color{teal}Credit, welfare, hiring.} & \textcolor{tipc}{Quyền không bị quyết định hoàn toàn tự động.} & L3\\[3pt]
+SCHUFA (CJEU C-634/21, 2023) & A score that decisively drives the human decision is itself an automated decision. \newline\textit{\color{teal}The named exam trap.} & \textcolor{tipc}{Án SCHUFA: con người “đóng dấu” điểm máy $\neq$ giám sát thật.} & L3\\[3pt]
+DPIA & GDPR impact assessment for high-risk processing (Art. 35). \newline\textit{\color{teal}Videosurveillance, profiling.} & \textcolor{tipc}{Đánh giá tác động bảo vệ dữ liệu.} & L3\\[3pt]
+FRIA & AI Act fundamental-rights impact assessment for certain deployers (Art. 27), e.g. public bodies. \newline\textit{\color{teal}Public institution deploying high-risk AI.} & \textcolor{tipc}{Đánh giá tác động quyền cơ bản.} & L3\\[3pt]
+AI system (AI Act) & Machine-based system that infers from input how to generate outputs influencing environments. \newline\textit{\color{teal}Scope: is it even AI?} & \textcolor{tipc}{Hệ thống AI – tiêu chí then chốt là suy luận.} & L3\\[3pt]
+Provider / deployer & Provider places on the market under its name; deployer uses under its authority. \newline\textit{\color{teal}Allocate duties in every legal answer.} & \textcolor{tipc}{Nhà cung cấp / bên triển khai.} & L3\\[3pt]
+Risk pyramid & Prohibited, high-risk, transparency, minimal + GPAI rules. \newline\textit{\color{teal}Classification paragraph.} & \textcolor{tipc}{Kim tự tháp rủi ro.} & L3\\[3pt]
+Prohibited practices (Art. 5) & Manipulation, exploiting vulnerabilities, social scoring, crime prediction by profiling, untargeted face scraping, emotion inference at work/school, sensitive biometric categorisation, real-time RBI for police. \newline\textit{\color{teal}Short question; videosurveillance; proctoring.} & \textcolor{tipc}{Thực hành bị cấm.} & L3\\[3pt]
+Real-time remote biometric identification & Identifying people at a distance from biometric data live; prohibited for law enforcement in public spaces except narrow cases. \newline\textit{\color{teal}Videosurveillance at events.} & \textcolor{tipc}{Nhận dạng sinh trắc từ xa thời gian thực.} & L3\\[3pt]
+High-risk AI (Annex I / III) & Safety component of regulated product, or use in listed areas (biometrics, education, employment, essential services, law enforcement, migration, justice…). \newline\textit{\color{teal}Credit, hiring, welfare, policing.} & \textcolor{tipc}{Hệ thống AI rủi ro cao.} & L3\\[3pt]
+Human oversight (Art. 14) & Design enabling people to understand, monitor, override and stop the system. \newline\textit{\color{teal}Pair with SCHUFA: must be effective.} & \textcolor{tipc}{Giám sát của con người.} & L3\\[3pt]
+Transparency obligations (Art. 50) & Disclose AI interaction, mark synthetic content, disclose deepfakes. \newline\textit{\color{teal}Chatbots, generative AI.} & \textcolor{tipc}{Nghĩa vụ minh bạch.} & L3\\[3pt]
+GPAI model & General-purpose model performing many distinct tasks, integrable downstream. \newline\textit{\color{teal}OpenAI partnership questions.} & \textcolor{tipc}{Mô hình AI đa dụng.} & L3\\[3pt]
+Systemic risk (GPAI) & High-impact capability risk; presumed above 10\textsuperscript{25} FLOPs or designated. \newline\textit{\color{teal}“Does ChatGPT pose systemic risk?”} & \textcolor{tipc}{Rủi ro hệ thống.} & L3\\[3pt]
+AI Office / scientific panel & EU body enforcing GPAI rules; independent experts can issue qualified alerts. \newline\textit{\color{teal}Panel-composition question.} & \textcolor{tipc}{Văn phòng AI / hội đồng khoa học.} & L3\\[3pt]
+Regulatory sandbox & Supervised environment to test AI, incl. real-world testing. \newline\textit{\color{teal}Pilot recommendations.} & \textcolor{tipc}{Môi trường thử nghiệm có kiểm soát.} & L3\\[3pt]
+Copyright & Protects original human expression in a fixed medium, not ideas or algorithms. \newline\textit{\color{teal}Training data, generated output.} & \textcolor{tipc}{Bản quyền.} & L3\\[3pt]
+Fair use & US exception weighed on four factors (purpose/transformative, nature, amount, market effect). \newline\textit{\color{teal}Compare with EU TDM.} & \textcolor{tipc}{Sử dụng hợp lý (Mỹ).} & L3\\[3pt]
+Text and data mining (TDM) & EU exceptions: research (Art. 3) and general with opt-out (Art. 4). \newline\textit{\color{teal}LLM training in the EU.} & \textcolor{tipc}{Khai thác văn bản \& dữ liệu.} & L3\\[3pt]
+Civil liability & Fault + harm + causal link; also product liability (product + defect). \newline\textit{\color{teal}Harmful chatbot output.} & \textcolor{tipc}{Trách nhiệm dân sự.} & L3\\[3pt]
+Platform & Intermediary that matches parties, captures data and taskifies contributions. \newline\textit{\color{teal}Labour questions.} & \textcolor{tipc}{Nền tảng trung gian.} & L4\\[3pt]
+Platform triangulation & Three-way relation platform–client–worker (Abel \& Dieuaide). \newline\textit{\color{teal}Who is responsible for workers?} & \textcolor{tipc}{Tam giác nền tảng.} & L4\\[3pt]
+Taskification & Breaking work into standardised micro-tasks. \newline\textit{\color{teal}Loss of context in annotation.} & \textcolor{tipc}{Nhiệm vụ hoá.} & L4\\[3pt]
+Digital labour & Continuum from unpaid user activity to micro-paid piecework. \newline\textit{\color{teal}“Users at work”, free labour.} & \textcolor{tipc}{Lao động số.} & L4\\[3pt]
+Microwork & Very short paid online tasks (labelling, transcription, captchas). \newline\textit{\color{teal}MTurk, Remotasks.} & \textcolor{tipc}{Vi-nhiệm vụ.} & L4\\[3pt]
+BPO & Business Process Outsourcing firm employing data workers on site. \newline\textit{\color{teal}Madagascar case.} & \textcolor{tipc}{Công ty thuê ngoài quy trình.} & L4\\[3pt]
+Trainer / preparation & Generating and annotating training data. \newline\textit{\color{teal}Three roles short question.} & \textcolor{tipc}{Người huấn luyện – chuẩn bị dữ liệu.} & L4\\[3pt]
+Imitator / impersonation & Humans performing work presented as automated (“artificial artificial intelligence”). \newline\textit{\color{teal}Google Duplex, Julie Desk.} & \textcolor{tipc}{Người giả làm AI.} & L4\\[3pt]
+Verifier / verification & Checking and correcting live outputs; never disappears. \newline\textit{\color{teal}Content moderation, ASR.} & \textcolor{tipc}{Người kiểm định đầu ra.} & L4\\[3pt]
+Multilayer stack & Chains of intermediaries creating “black boxes within black boxes” (Schmidt). \newline\textit{\color{teal}Opacity of supply chain.} & \textcolor{tipc}{Chuỗi thầu phụ nhiều tầng.} & L4\\[3pt]
+Data-production dispositif & Instructions + interface + metrics governing “truth” and pace (Miceli \& Posada). \newline\textit{\color{teal}Who defines ground truth?} & \textcolor{tipc}{Bộ máy sản xuất dữ liệu.} & L4\\[3pt]
+Effective hourly pay & Pay including unpaid search/rejection time (median $\approx$ \$1.77/h on MTurk). \newline\textit{\color{teal}Procurement safeguards.} & \textcolor{tipc}{Thu nhập thực theo giờ.} & L4\\[3pt]
+Algorithmic bias & Systematic error disadvantaging groups; debiasing has mixed results. \newline\textit{\color{teal}COMPAS, Gender Shades.} & \textcolor{tipc}{Thiên lệch thuật toán.} & L5\\[3pt]
+Intersectionality & Overlapping identities (e.g. gender $\times$ race) producing specific disadvantages. \newline\textit{\color{teal}Why single-attribute fairness metrics fail.} & \textcolor{tipc}{Tính giao thoa.} & L5\\[3pt]
+Algocracy & Governing through algorithmic systems. \newline\textit{\color{teal}Public-sector AI.} & \textcolor{tipc}{Thuật toán trị.} & L5\\[3pt]
+Technosolutionism & Assuming technology is a necessary part of the solution. \newline\textit{\color{teal}Question the purpose before the metric.} & \textcolor{tipc}{Chủ nghĩa giải pháp công nghệ.} & L5\\[3pt]
+Mulching proposal & Satire showing FAT can legitimise an unacceptable purpose. \newline\textit{\color{teal}Critique of purely technical FAT document.} & \textcolor{tipc}{Bài châm biếm “đề xuất nghiền”.} & L5\\[3pt]
+Expert field & Group sharing belief in a legitimate form of knowledge (Bourdieu). \newline\textit{\color{teal}Judges vs journalists.} & \textcolor{tipc}{Trường chuyên gia.} & L5\\[3pt]
+Decoupling & Gap between management discourse and actual practice. \newline\textit{\color{teal}“Deployed” tool nobody uses.} & \textcolor{tipc}{Tách rời diễn ngôn–thực hành.} & L5\\[3pt]
+Buffering & Foot-dragging, gaming, open critique of algorithms. \newline\textit{\color{teal}Users resisting tools.} & \textcolor{tipc}{Đệm chắn / kháng cự.} & L5\\[3pt]
+Algorithmic imaginary & Ways of thinking what algorithms are and should be (Bucher). \newline\textit{\color{teal}Why fields react differently.} & \textcolor{tipc}{Hình dung về thuật toán.} & L5\\[3pt]
+Right to explanation & Claim to meaningful information about the logic of automated decisions. \newline\textit{\color{teal}Credit refusal, welfare.} & \textcolor{tipc}{Quyền được giải thích.} & L5\\[3pt]
+Contrastive explanation & “Why A rather than B?” explanation, selective and dialogic. \newline\textit{\color{teal}Designing explanations for laypeople.} & \textcolor{tipc}{Giải thích đối chiếu.} & L5\\[3pt]
+Contestability & Ability of affected people to challenge and change an outcome; political turn of explainability. \newline\textit{\color{teal}Appeal mechanisms.} & \textcolor{tipc}{Khả năng phản đối/khiếu nại.} & L5\\[3pt]
+Information asymmetry & One side holds the information needed to contest. \newline\textit{\color{teal}Limits of individual appeals.} & \textcolor{tipc}{Bất cân xứng thông tin.} & L5\\[3pt]
+Value-Sensitive Design & Design method embedding stakeholder values in systems. \newline\textit{\color{teal}Contestable AI by design.} & \textcolor{tipc}{Thiết kế nhạy cảm giá trị.} & L5\\[3pt]
+\end{longtable}}
+\section{Writing kit: the fill-in sentence bank}
+Replace each \slot{SLOT} with the facts of your case. Section~\ref{sec:uc} gives ready-made values for nine typical cases. Learn one sentence per group by heart.
+\subsection*{Slot legend}\begin{multicols}{2}\small\begin{description}[itemsep=0pt]\item[\slot{ACTOR}] who deploys / asks\item[\slot{SYSTEM}] the AI system\item[\slot{PURPOSE}] its stated purpose\item[\slot{AFFECTED}] affected people\item[\slot{DECISION}] the decision it influences\item[\slot{HARM}] main harm\item[\slot{VALUE}] value you prioritise\item[\slot{AIACT}] AI Act classification\item[\slot{DATA}] personal data involved\item[\slot{WORKERS}] hidden workers\item[\slot{USERS}] operators / users\item[\slot{CONTEST}] contestation route\item[\slot{MEASURE}] concrete safeguard\item[\slot{ALT}] less intrusive alternative\item[\slot{CASE}] course precedent\item[\slot{TRIGGER}] stop / revision trigger\item[\slot{NARROW}] narrow framing\item[\slot{WIDE}] wide framing\end{description}\end{multicols}
+\subsection*{1. Opening \& framing}\begin{enumerate}[leftmargin=1.6em]
+\item The question asks whether \slot{ACTOR} should use \slot{SYSTEM} in order to \slot{PURPOSE}.\\\vitext{Mở bài: nhắc lại câu hỏi.}
+\item I frame \slot{SYSTEM} as a sociotechnical system rather than as a model: it includes the data, the operators (\slot{USERS}), the hidden workers (\slot{WORKERS}), the institution and the people affected (\slot{AFFECTED}).\\\vitext{Tuyên bố đóng khung rộng.}
+\item A narrow framing — \slot{NARROW} — would make the problem look purely technical; a wider framing — \slot{WIDE} — makes visible who bears the risks.\\\vitext{So sánh hai cách đóng khung (câu “ăn điểm” framing).}
+\item My normative choice is to prioritise \slot{VALUE}; I explain below what this choice costs.\\\vitext{Nêu lựa chọn chuẩn tắc.}
+\end{enumerate}
+\subsection*{2. Introducing a concept}\begin{enumerate}[leftmargin=1.6em]
+\item The course concept of [CONCEPT] (author, year) helps here: [CONCEPT] is [definition].\\\vitext{Giới thiệu khái niệm + tác giả.}
+\item This matters in this case because \slot{SYSTEM} directly shapes \slot{DECISION}.\\\vitext{Nối khái niệm với tình huống.}
+\item As in \slot{CASE}, the risk is not only technical error but \slot{HARM}.\\\vitext{Dẫn tiền lệ của môn.}
+\end{enumerate}
+\subsection*{3. Legal classification}\begin{enumerate}[leftmargin=1.6em]
+\item Under the AI Act, \slot{SYSTEM} is an AI system because it infers outputs from its inputs; given its purpose, it is \slot{AIACT}.\\\vitext{Phân loại AI Act.}
+\item \slot{ACTOR} acts as a deployer (or as a provider if it develops the system or puts it into service under its own name), so it must ensure human oversight, follow the instructions of use, keep logs and, as a public body, carry out a fundamental-rights impact assessment.\\\vitext{Vai trò provider/deployer + nghĩa vụ.}
+\item Because \slot{DATA} are processed, the GDPR requires one lawful basis and all the principles — in particular purpose limitation, data minimisation and storage limitation — and a DPIA before deployment.\\\vitext{Câu GDPR dùng cho mọi tình huống có dữ liệu cá nhân.}
+\end{enumerate}
+\subsection*{4. Human oversight (SCHUFA sentence)}\begin{enumerate}[leftmargin=1.6em]
+\item Placing a human in the loop is not enough: following the SCHUFA ruling (CJEU, 2023), if \slot{USERS} systematically follow the output, \slot{DECISION} is in fact automated and Article 22 GDPR applies.\\\vitext{Câu “bẫy SCHUFA” — học thuộc.}
+\item Oversight is meaningful only if \slot{USERS} have the time, the information, the authority and no penalty for overriding the system; I would measure the override rate and observe actual practice (decoupling, Meyer \& Rowan).\\\vitext{Điều kiện giám sát thật + cách kiểm chứng.}
+\end{enumerate}
+\subsection*{5. Hidden labour}\begin{enumerate}[leftmargin=1.6em]
+\item Behind \slot{SYSTEM} there are \slot{WORKERS}: following Tubaro et al. (2020), they act as trainers (labelling data), verifiers (checking outputs) and sometimes imitators (doing what is sold as automatic).\\\vitext{Ba vai trò lao động.}
+\item \slot{ACTOR} should state who these workers are, how they are contracted, how much they are effectively paid and whether they are internal or subcontracted, and put these conditions in the procurement contract.\\\vitext{Câu giảng viên dặn: ai, hợp đồng, trả bao nhiêu, nội bộ hay thuê ngoài.}
+\end{enumerate}
+\subsection*{6. Users \& contestation}\begin{enumerate}[leftmargin=1.6em]
+\item An explanation is only useful if it is adapted to \slot{AFFECTED}: selective, contrastive and actionable, not a technical dump of model weights.\\\vitext{Giải thích phù hợp người nghe.}
+\item \slot{AFFECTED} need a real contestation route — \slot{CONTEST} — but individual appeals do not solve information asymmetry, so I add a collective channel (independent authority, NGOs, published statistics).\\\vitext{Phản đối cá nhân + tập thể.}
+\end{enumerate}
+\subsection*{7. Technosolutionism \& materiality}\begin{enumerate}[leftmargin=1.6em]
+\item Before optimising fairness metrics, we must ask whether \slot{SYSTEM} is legitimate at all: as the mulching proposal shows, fairness, accountability and transparency can make an unacceptable purpose look acceptable.\\\vitext{Câu “mulching”.}
+\item A less intrusive alternative — \slot{ALT} — should be compared, including its environmental and labour costs, before choosing AI.\\\vitext{Đề xuất phương án thay thế.}
+\end{enumerate}
+\subsection*{8. Recommendation \& trade-off}\begin{enumerate}[leftmargin=1.6em]
+\item I therefore recommend a conditional deployment: \slot{MEASURE}.\\\vitext{Khuyến nghị có điều kiện.}
+\item \slot{ACTOR} remains accountable; the system should be suspended if \slot{TRIGGER}.\\\vitext{Ai chịu trách nhiệm + điều kiện dừng.}
+\item This choice has a cost — slower processing and higher operating expenses — but it protects \slot{VALUE}, which I consider more important here than efficiency alone.\\\vitext{Thừa nhận đánh đổi (trade-off).}
+\end{enumerate}
+\subsection*{Worked example: the sentence bank filled for “Algorithmic videosurveillance at large events”}\begin{enumerate}[leftmargin=1.6em]
+\item The question asks whether \textcolor{tipc}{\textbf{the Ministère de l’Intérieur}} should use \textcolor{tipc}{\textbf{the algorithmic videosurveillance system}} in order to \textcolor{tipc}{\textbf{detect risky events in crowds and trigger rapid intervention}}.
+\item I frame \textcolor{tipc}{\textbf{the algorithmic videosurveillance system}} as a sociotechnical system rather than as a model: it includes the data, the operators (\textcolor{tipc}{\textbf{control-room police operators}}), the hidden workers (\textcolor{tipc}{\textbf{annotators who labelled “suspicious behaviour” videos and operators watching alerts}}), the institution and the people affected (\textcolor{tipc}{\textbf{everyone attending or passing through the event, especially groups already over-policed}}).
+\item The course concept of [CONCEPT] (author, year) helps here: [CONCEPT] is [definition].
+\item This matters in this case because \textcolor{tipc}{\textbf{the algorithmic videosurveillance system}} directly shapes \textcolor{tipc}{\textbf{police interventions and stops}}.
+\item Under the AI Act, \textcolor{tipc}{\textbf{the algorithmic videosurveillance system}} is an AI system because it infers outputs from its inputs; given its purpose, it is \textcolor{tipc}{\textbf{prohibited if it performs real-time remote biometric identification for law enforcement (outside narrow exceptions), and otherwise likely high-risk (law enforcement / biometrics, Annex III)}}.
+\item \textcolor{tipc}{\textbf{the Ministère de l’Intérieur}} acts as a deployer (or as a provider if it develops the system or puts it into service under its own name), so it must ensure human oversight, follow the instructions of use, keep logs and, as a public body, carry out a fundamental-rights impact assessment.
+\item Placing a human in the loop is not enough: following the SCHUFA ruling (CJEU, 2023), if \textcolor{tipc}{\textbf{control-room police operators}} systematically follow the output, \textcolor{tipc}{\textbf{police interventions and stops}} is in fact automated and Article 22 GDPR applies.
+\item Oversight is meaningful only if \textcolor{tipc}{\textbf{control-room police operators}} have the time, the information, the authority and no penalty for overriding the system; I would measure the override rate and observe actual practice (decoupling, Meyer \& Rowan).
+\item Behind \textcolor{tipc}{\textbf{the algorithmic videosurveillance system}} there are \textcolor{tipc}{\textbf{annotators who labelled “suspicious behaviour” videos and operators watching alerts}}: following Tubaro et al. (2020), they act as trainers (labelling data), verifiers (checking outputs) and sometimes imitators (doing what is sold as automatic).
+\item \textcolor{tipc}{\textbf{the Ministère de l’Intérieur}} should state who these workers are, how they are contracted, how much they are effectively paid and whether they are internal or subcontracted, and put these conditions in the procurement contract.
+\item An explanation is only useful if it is adapted to \textcolor{tipc}{\textbf{everyone attending or passing through the event, especially groups already over-policed}}: selective, contrastive and actionable, not a technical dump of model weights.
+\item \textcolor{tipc}{\textbf{everyone attending or passing through the event, especially groups already over-policed}} need a real contestation route — \textcolor{tipc}{\textbf{a complaint channel to the CNIL and a published register of alerts and interventions}} — but individual appeals do not solve information asymmetry, so I add a collective channel (independent authority, NGOs, published statistics).
+\item Before optimising fairness metrics, we must ask whether \textcolor{tipc}{\textbf{the algorithmic videosurveillance system}} is legitimate at all: as the mulching proposal shows, fairness, accountability and transparency can make an unacceptable purpose look acceptable.
+\item A less intrusive alternative — \textcolor{tipc}{\textbf{more stewards, better crowd-flow design and classic CCTV with trained staff}} — should be compared, including its environmental and labour costs, before choosing AI.
+\item I therefore recommend a conditional deployment: \textcolor{tipc}{\textbf{event detection only (no facial identification), limited zones and durations, a DPIA and FRIA, public signage, logs, independent audit of false alerts}}.
+\item \textcolor{tipc}{\textbf{the Ministère de l’Intérieur}} remains accountable; the system should be suspended if \textcolor{tipc}{\textbf{false-alert rates differ across groups or the system is used beyond its declared zones and events}}.
+\end{enumerate}
+\section{Use-case bank}\label{sec:uc}
+\subsection{Algorithmic videosurveillance at large events \textnormal{\small\color{gold}(official sample topic)}}
+Ministère de l’Intérieur wants cameras + AI to detect risks (crowd surges, abandoned bags, weapons) during large events and trigger rapid action.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the Ministère de l’Intérieur\\
+\slot{SYSTEM} & the algorithmic videosurveillance system\\
+\slot{PURPOSE} & detect risky events in crowds and trigger rapid intervention\\
+\slot{AFFECTED} & everyone attending or passing through the event, especially groups already over-policed\\
+\slot{DECISION} & police interventions and stops\\
+\slot{HARM} & chilling effect on freedom of assembly and discriminatory targeting\\
+\slot{VALUE} & freedom of movement and assembly together with public safety\\
+\slot{AIACT} & prohibited if it performs real-time remote biometric identification for law enforcement (outside narrow exceptions), and otherwise likely high-risk (law enforcement / biometrics, Annex III)\\
+\slot{DATA} & images of identifiable people in public spaces\\
+\slot{WORKERS} & annotators who labelled “suspicious behaviour” videos and operators watching alerts\\
+\slot{USERS} & control-room police operators\\
+\slot{CONTEST} & a complaint channel to the CNIL and a published register of alerts and interventions\\
+\slot{MEASURE} & event detection only (no facial identification), limited zones and durations, a DPIA and FRIA, public signage, logs, independent audit of false alerts\\
+\slot{ALT} & more stewards, better crowd-flow design and classic CCTV with trained staff\\
+\slot{CASE} & Clearview AI and the Olympics experiment debates\\
+\slot{TRIGGER} & false-alert rates differ across groups or the system is used beyond its declared zones and events\\
+\slot{NARROW} & “accuracy of anomaly detection”\\
+\slot{WIDE} & “mass surveillance of public space by the State”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item GDPR / Law Enforcement Directive (2016/680) for police purposes; proportionality and necessity\item AI Act Art. 5 real-time RBI prohibition vs event detection\item Deployer public body $\rightarrow$ FRIA (Art. 27), registration, human oversight\item Workers who label “suspicious” behaviour define what counts as risk\item Framing: safety vs liberty; reactivity of crowds aware of cameras\end{itemize}
+\subsection{Consumer credit scoring with a human adviser}
+A bank uses AI to score creditworthiness; the score is sent to an adviser who “decides”.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the bank\\
+\slot{SYSTEM} & the credit-scoring model\\
+\slot{PURPOSE} & assess customers’ creditworthiness before granting loans\\
+\slot{AFFECTED} & loan applicants, especially those with atypical income histories\\
+\slot{DECISION} & loan approval or refusal\\
+\slot{HARM} & financial exclusion and indirect discrimination\\
+\slot{VALUE} & equal access to an essential service\\
+\slot{AIACT} & high-risk (Annex III, access to essential private services — credit)\\
+\slot{DATA} & financial and behavioural personal data\\
+\slot{WORKERS} & data labellers and model-validation contractors\\
+\slot{USERS} & customer advisers under sales targets\\
+\slot{CONTEST} & a written reasoned explanation and a review by a senior credit officer with power to overturn\\
+\slot{MEASURE} & bias audits by group, input restrictions, logged adviser overrides, explanation letters and an independent appeal\\
+\slot{ALT} & a transparent rules-based scorecard plus adviser judgment\\
+\slot{CASE} & SCHUFA (CJEU, 2023)\\
+\slot{TRIGGER} & advisers follow the score in almost all cases or refusal rates diverge across groups\\
+\slot{NARROW} & “predicting default accurately”\\
+\slot{WIDE} & “deciding who accesses credit as an essential service”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item SCHUFA trap: adviser rubber-stamping = automated decision\item High-risk obligations Art. 9–15; deployer duties\item Explanations for laypeople, contestation\item Decoupling/buffering of advisers\item Reactivity: customers game inputs\end{itemize}
+\subsection{Automated CV screening (HR recruitment)}
+A retail group (the course exercise uses Casino) wants AI to process CVs, evaluate candidates and filter applications.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the retail group\\
+\slot{SYSTEM} & the CV-screening tool\\
+\slot{PURPOSE} & rank and filter job applications\\
+\slot{AFFECTED} & job candidates, especially women, older and foreign-trained applicants\\
+\slot{DECISION} & who is invited to interview\\
+\slot{HARM} & discrimination reproduced from past hiring data\\
+\slot{VALUE} & non-discrimination and equal opportunity\\
+\slot{AIACT} & high-risk (Annex III, employment and workers management)\\
+\slot{DATA} & CVs and candidates’ personal data\\
+\slot{WORKERS} & annotators who tagged CV fields and “good candidate” labels\\
+\slot{USERS} & recruiters\\
+\slot{CONTEST} & the right to request human review and the reasons for rejection\\
+\slot{MEASURE} & recruiters review a sample of rejected CVs, bias tests by group, no emotion or video analysis, notices to candidates\\
+\slot{ALT} & structured blind screening by recruiters with a simple keyword filter\\
+\slot{CASE} & Amazon’s abandoned recruiting tool and Gender Shades\\
+\slot{TRIGGER} & selection rates diverge between groups\\
+\slot{NARROW} & “matching CVs to job descriptions”\\
+\slot{WIDE} & “controlling access to employment”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item Appropriate human control measures (the class exercise question)\item Data governance Art. 10: historical bias\item Emotion recognition at work is prohibited\item Workers’ representatives consulted\item Taskification of CV annotation\end{itemize}
+\subsection{Welfare-fraud risk scoring (CAF / SyRI)}
+A benefits agency scores recipients to target fraud inspections.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the benefits agency\\
+\slot{SYSTEM} & the fraud risk-scoring algorithm\\
+\slot{PURPOSE} & target inspections of benefit recipients\\
+\slot{AFFECTED} & benefit recipients — precarious, single-parent and disabled households\\
+\slot{DECISION} & who is inspected and whose benefits are suspended\\
+\slot{HARM} & compounding injustice against the poorest\\
+\slot{VALUE} & dignity and equal treatment of vulnerable people\\
+\slot{AIACT} & high-risk (Annex III, access to essential public services and benefits); social scoring is prohibited\\
+\slot{DATA} & household, income and family data\\
+\slot{WORKERS} & caseworkers who label past fraud cases\\
+\slot{USERS} & inspectors\\
+\slot{CONTEST} & notification of the scoring, access to reasons and an appeal with suspension of sanctions\\
+\slot{MEASURE} & publish the criteria, remove proxies for vulnerability, FRIA, independent audit and annual public report\\
+\slot{ALT} & random plus rule-based inspections and simpler declaration forms\\
+\slot{CASE} & SyRI (Netherlands) and CNAF (Conseil d’État, 2024)\\
+\slot{TRIGGER} & inspections concentrate on vulnerable groups without higher detected fraud\\
+\slot{NARROW} & “detecting fraud efficiently”\\
+\slot{WIDE} & “which fraud we choose to look for (welfare fraud rather than company fraud)”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item Framing: focusing on welfare fraud is a normative choice\item Fair AI vs radical AI\item Collective contestation (La Quadrature du Net, Défenseur des droits)\item Public deployer $\rightarrow$ FRIA\item Reactivity of measures\end{itemize}
+\subsection{Recidivism / pre-trial risk score (COMPAS-like)}
+A justice ministry considers a risk score to help judges decide on release.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the justice ministry\\
+\slot{SYSTEM} & the recidivism risk score\\
+\slot{PURPOSE} & support judges’ release and sentencing decisions\\
+\slot{AFFECTED} & defendants, disproportionately from minority and poor groups\\
+\slot{DECISION} & pre-trial detention or release\\
+\slot{HARM} & unequal error rates and loss of liberty\\
+\slot{VALUE} & due process and the presumption of innocence\\
+\slot{AIACT} & high-risk (administration of justice / law enforcement); prediction of crime solely from profiling is prohibited\\
+\slot{DATA} & criminal records and socio-demographic data\\
+\slot{WORKERS} & clerks who coded past case files\\
+\slot{USERS} & judges\\
+\slot{CONTEST} & disclosure of the score and its factors to the defence, with the right to challenge it in court\\
+\slot{MEASURE} & score as non-binding input, factors disclosed, judges trained, outcomes monitored by group\\
+\slot{ALT} & structured professional guidelines without a score\\
+\slot{CASE} & COMPAS (ProPublica, 2016) and Christin’s ethnography\\
+\slot{TRIGGER} & error rates differ by group or judges follow the score mechanically\\
+\slot{NARROW} & “which fairness metric to use”\\
+\slot{WIDE} & “whether detention policy itself is just”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item COMPAS: two arenas talking past each other\item Expert fields: judges resist “crude” tools\item Fairness metrics are normative choices\item Prohibition Art. 5 on crime prediction by profiling\item Explanation for the defence\end{itemize}
+\subsection{Partnership with an LLM provider (Commission $\times$ OpenAI) \textnormal{\small\color{gold}(official sample topic)}}
+An institution adopts a GPAI/LLM service; the provider supplies a purely technical FAT document.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the European Commission\\
+\slot{SYSTEM} & the LLM service\\
+\slot{PURPOSE} & assist staff and citizens with information and drafting\\
+\slot{AFFECTED} & citizens, staff and the people whose data and texts trained the model\\
+\slot{DECISION} & the information citizens receive and staff drafting\\
+\slot{HARM} & hallucinated or biased answers and dependence on one private provider\\
+\slot{VALUE} & accountability and democratic control\\
+\slot{AIACT} & a GPAI model, possibly with systemic risk (> 10\textsuperscript{25} FLOPs), plus transparency duties for chatbots (Art. 50)\\
+\slot{DATA} & prompts that may contain personal data\\
+\slot{WORKERS} & RLHF raters and content moderators in outsourced chains\\
+\slot{USERS} & civil servants\\
+\slot{CONTEST} & a correction and complaint channel with published incident reports\\
+\slot{MEASURE} & contractual audit rights, incident reporting, copyright policy and training-data summary, user-impact testing, AI disclosure to citizens\\
+\slot{ALT} & a smaller, specialised model under institutional control\\
+\slot{CASE} & the mulching proposal and Air Canada chatbot\\
+\slot{TRIGGER} & serious incidents or refusal to provide audit information\\
+\slot{NARROW} & “fairness metrics, explainability algorithms and model weights”\\
+\slot{WIDE} & “who is accountable for the service, for whom, and with what workers and resources”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item Technical document $\neq$ accountability (mulching)\item Who explains to whom; contestation\item GPAI duties, systemic risk\item Hidden labour of RLHF/moderation\item Materiality: energy and water\end{itemize}
+\subsection{Facial recognition at borders (ETIAS / Clearview)}
+A border agency uses facial recognition and risk screening for travellers.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the border agency\\
+\slot{SYSTEM} & the facial-recognition and traveller risk-screening system\\
+\slot{PURPOSE} & verify identities and flag risky travellers\\
+\slot{AFFECTED} & travellers, migrants and asylum seekers\\
+\slot{DECISION} & secondary checks and refusals of entry\\
+\slot{HARM} & higher error rates for darker-skinned people and opaque refusals\\
+\slot{VALUE} & non-discrimination and the right to asylum\\
+\slot{AIACT} & high-risk (migration, asylum and border control; biometrics); untargeted scraping of faces is prohibited\\
+\slot{DATA} & biometric (special-category) data\\
+\slot{WORKERS} & annotators of face datasets\\
+\slot{USERS} & border officers\\
+\slot{CONTEST} & reasons for refusal and access to an independent appeal\\
+\slot{MEASURE} & 1:1 verification rather than 1:N identification, error testing by group, human decision on refusals, strict retention limits\\
+\slot{ALT} & manual document checks with trained officers\\
+\slot{CASE} & Clearview AI fines and Gender Shades\\
+\slot{TRIGGER} & error rates differ by skin type or data are reused for other purposes\\
+\slot{NARROW} & “matching accuracy”\\
+\slot{WIDE} & “the politics of who may cross borders”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item Special-category data Art. 9 GDPR\item Sociotechnical criticism arena (Buolamwini \& Gebru)\item Power: travellers cannot negotiate\item Contestation under power imbalance\end{itemize}
+\subsection{AI proctoring with emotion detection in exams}
+A university wants webcam AI that detects cheating and “stress” during online exams.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the university\\
+\slot{SYSTEM} & the AI proctoring tool\\
+\slot{PURPOSE} & detect cheating during online exams\\
+\slot{AFFECTED} & students, especially disabled, neurodivergent and poorly connected students\\
+\slot{DECISION} & cheating suspicions and sanctions\\
+\slot{HARM} & false accusations and intrusive monitoring of private homes\\
+\slot{VALUE} & privacy and fair evaluation\\
+\slot{AIACT} & prohibited for the emotion-inference part (education), and high-risk for monitoring students during tests (Annex III, education)\\
+\slot{DATA} & video of students in their homes, possibly biometric\\
+\slot{WORKERS} & reviewers who check flagged videos\\
+\slot{USERS} & exam supervisors\\
+\slot{CONTEST} & access to the flagged footage and a hearing before any sanction\\
+\slot{MEASURE} & drop emotion detection, flags reviewed by a trained human, no automatic sanction, alternatives for students without good connections\\
+\slot{ALT} & open-book or oral exams designed against cheating\\
+\slot{CASE} & the Art. 5 prohibitions and the mulching lesson\\
+\slot{TRIGGER} & flags concentrate on particular groups\\
+\slot{NARROW} & “cheating-detection accuracy”\\
+\slot{WIDE} & “how we assess learning and trust students”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item Prohibited emotion recognition in education\item Technosolutionism: redesign the exam instead\item Verification workers\item Contestation before sanctions\end{itemize}
+\subsection{Content moderation and annotation outsourcing}
+A platform outsources moderation and labelling to BPOs in Madagascar or the Philippines.
+{\small\begin{longtable}{>{\RaggedRight\arraybackslash}p{2.2cm}>{\RaggedRight\arraybackslash}p{13.6cm}}\toprule
+\slot{ACTOR} & the platform\\
+\slot{SYSTEM} & the moderation classifier and its outsourced annotation chain\\
+\slot{PURPOSE} & remove harmful content at scale\\
+\slot{AFFECTED} & moderators and annotators, plus users whose posts are removed\\
+\slot{DECISION} & removal of content and labels that define “harmful”\\
+\slot{HARM} & psychological harm and very low effective pay for workers\\
+\slot{VALUE} & decent working conditions along the value chain\\
+\slot{AIACT} & usually not high-risk by itself; the DSA and labour law matter more\\
+\slot{DATA} & users’ posts and moderators’ performance data\\
+\slot{WORKERS} & BPO employees on day-rated contracts and crowdworkers\\
+\slot{USERS} & moderators\\
+\slot{CONTEST} & a dispute procedure for workers’ rejected tasks and for users’ removed content\\
+\slot{MEASURE} & subcontractor transparency, paid training, psychological support, living wage clauses, audit of the chain\\
+\slot{ALT} & fewer layers of subcontracting and in-house moderation teams\\
+\slot{CASE} & Madagascar BPOs (Le Ludec, 2024) and Venezuela (Posada, 2022)\\
+\slot{TRIGGER} & audits find unpaid time or harmful-content exposure without support\\
+\slot{NARROW} & “moderation accuracy and cost per item”\\
+\slot{WIDE} & “who does the work behind automation and under which conditions”\\
+\bottomrule\end{longtable}}
+\textbf{Angles to use:}\begin{itemize}[nosep]\item Three roles, value chain, multilayer stacks\item Data-production dispositif\item Effective pay vs piece rate\item North–South division of labour\end{itemize}
+\section{Mock papers in the exam format}
+Each paper has 4 short questions (answer all four on one page) and 6 long questions (one page each). Do the paper under time, then compare with the model answers in Section~\ref{sec:ans}.
+\subsection{Paper A — the official sample questions (fully written model answers)}\begin{enumerate}[label=\textbf{Q\arabic*.},leftmargin=2.4em]
+\item \textcolor{teal}{[Short · \textonequarter{} page]} Name 5 different roles of actors in the AI sociotechnical system and how they contribute to AI. {\small\color{gray}(L1, L3)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} Describe (in a few lines) an example of a value chain of annotation work. {\small\color{gray}(L4)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} Give three methods used to analyse a sociotechnical system. {\small\color{gray}(L1)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} Distinguish the trainer, the verifier and the imitator. {\small\color{gray}(L4)}
+\item \textcolor{gold}{[Long · 1 page]} The French government asks for your expertise on the different trends in AI ethics and how they articulate. Provide a report of the topics they should look into, why they are relevant, and how they are positioned in the social world of AI. {\small\color{gray}(L2, L1)}
+\item \textcolor{gold}{[Long · 1 page]} The Ministère de l’Intérieur wants to deploy algorithmic videosurveillance at large-scale events to identify risks quickly. Identify the main legal issues, explain whether and how it is subject to the AI Act, and which measures it should take. {\small\color{gray}(L3, L5, L1)}
+\item \textcolor{gold}{[Long · 1 page]} OpenAI provided a purely technical document (fairness metrics, explainability algorithms, model weights and code) on how its LLM will be fair, accountable and transparent. Give the Commission guidelines to evaluate it critically. {\small\color{gray}(L5, L4, L3)}
+\item \textcolor{gold}{[Long · 1 page]} The Commission is setting up an independent scientific panel to support the implementation and enforcement of the AI Act. Recommend which expertises it should include, and why, and how it should be balanced. {\small\color{gray}(L1, L2, L3)}
+\item \textcolor{gold}{[Long · 1 page]} A retail group wants an AI tool that automatically processes CVs, evaluates candidates and filters applications. What would be appropriate human control measures, and what else should it consider? {\small\color{gray}(L3, L5, L4)}
+\item \textcolor{gold}{[Long · 1 page]} A benefits agency presents its new fraud-scoring algorithm as “a neutral efficiency tool”. Analyse this framing and propose an alternative framing. {\small\color{gray}(L1, L5)}
+\end{enumerate}
+\subsection{Paper B — law, users and generative AI (outline answers)}\begin{enumerate}[label=\textbf{Q\arabic*.},leftmargin=2.4em]
+\item \textcolor{teal}{[Short · \textonequarter{} page]} What is soft law? Give two of its shortcomings. {\small\color{gray}(L3)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} Name four AI practices prohibited by the AI Act. {\small\color{gray}(L3)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} Define decoupling and buffering. {\small\color{gray}(L5)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} What does the COMPAS case teach about AI bias? {\small\color{gray}(L5)}
+\item \textcolor{gold}{[Long · 1 page]} A bank uses an AI credit score that is sent to an adviser who formally decides. Is this an automated decision? What should the bank do? {\small\color{gray}(L3, L5)}
+\item \textcolor{gold}{[Long · 1 page]} A public service launches an LLM chatbot to answer citizens. Identify the legal and ethical issues and propose safeguards. {\small\color{gray}(L3, L4)}
+\item \textcolor{gold}{[Long · 1 page]} A cloud provider claims its AI service is “immaterial and green”. How should a public buyer assess this claim? {\small\color{gray}(L1)}
+\item \textcolor{gold}{[Long · 1 page]} Managers say a decision-support algorithm is “successfully deployed”, but staff seem not to use it. Design a study to find out what happens. {\small\color{gray}(L5, L1)}
+\item \textcolor{gold}{[Long · 1 page]} Design a meaningful contestation mechanism for people refused a public benefit by an algorithmic system. {\small\color{gray}(L5)}
+\item \textcolor{gold}{[Long · 1 page]} Does ChatGPT pose a systemic risk under the AI Act? Build a short risk assessment. {\small\color{gray}(L3)}
+\end{enumerate}
+\subsection{Paper C — labour, arenas and copyright (outline answers)}\begin{enumerate}[label=\textbf{Q\arabic*.},leftmargin=2.4em]
+\item \textcolor{teal}{[Short · \textonequarter{} page]} What is the key criterion of an “AI system” in the AI Act? {\small\color{gray}(L3)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} Name four lawful bases of the GDPR and explain the “OR / AND” rule. {\small\color{gray}(L3)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} According to Jobin et al. (2019), on which principles do AI ethics guidelines converge? {\small\color{gray}(L2)}
+\item \textcolor{teal}{[Short · \textonequarter{} page]} For whom and why do we explain AI decisions? {\small\color{gray}(L5)}
+\item \textcolor{gold}{[Long · 1 page]} Brief a parliamentary committee on the difference between “AI safety” and “AI ethics”. {\small\color{gray}(L2)}
+\item \textcolor{gold}{[Long · 1 page]} A French company outsources image annotation to a BPO in Madagascar. Write procurement guidelines. {\small\color{gray}(L4)}
+\item \textcolor{gold}{[Long · 1 page]} An LLM provider trained on publicly accessible books and websites. Discuss copyright in the EU and the US. {\small\color{gray}(L3)}
+\item \textcolor{gold}{[Long · 1 page]} A court builds an in-house AI to anonymise its decisions (Cour de cassation). What does this case teach about AI work and users? {\small\color{gray}(L5, L4)}
+\item \textcolor{gold}{[Long · 1 page]} A city wants “AI to solve homelessness”. Critically assess this proposal. {\small\color{gray}(L5)}
+\item \textcolor{gold}{[Long · 1 page]} A border agency adopts facial recognition. Discuss its classification and risks. {\small\color{gray}(L3, L1)}
+\end{enumerate}
+\section{Model answers}\label{sec:ans}
+\subsection{Paper A}
+\subsubsection*{Q1 (short) — Name 5 different roles of actors in the AI sociotechnical system and how they contribute to AI.}
+A sociotechnical system links technical objects and people. (1) Researchers/developers design models and choose objectives. (2) Data workers (trainers, verifiers, imitators — Tubaro 2020) produce and check the data. (3) Companies/providers place systems on the market under their name and set business goals. (4) Deployers and users (judges, advisers, journalists) apply outputs — or resist them. (5) Regulators and standard bodies (AI Office, CNIL) set and enforce rules; affected people and NGOs contest decisions. {\small\color{gray}(74 words)}
+\subsubsection*{Q2 (short) — Describe (in a few lines) an example of a value chain of annotation work.}
+Example: a French retail start-up sells “automatic” checkout cameras. It contracts a platform/BPO, which subcontracts to a firm in Madagascar. There, French-speaking graduates on day-rated contracts ($\approx$ \$0.4–1.7/h) label tray images and even watch live streams (impersonation). Several QA layers check accuracy before data return to the client’s ML team. Value is captured at the top while costs and opacity — “black boxes within black boxes” (Schmidt 2022) — are pushed down the chain. {\small\color{gray}(74 words)}
+\subsubsection*{Q3 (short) — Give three methods used to analyse a sociotechnical system.}
+Analysing a sociotechnical system starts with framing where it begins and ends. (1) Ethnography and on-site interviews: observe what people actually do (e.g. Christin’s study of judges and journalists). (2) Discourse analysis: study how charters, press and laws describe AI. (3) Computational methods: network analysis/NLP, e.g. Gargiulo et al.’s map of 139M papers with community detection. Others: studying controversies, sociotechnical imaginaries, comparing press/science/regulation. {\small\color{gray}(63 words)}
+\subsubsection*{Q4 (short) — Distinguish the trainer, the verifier and the imitator.}
+Tubaro, Casilli \& Coville (2020) show three human roles behind AI. (1) The trainer prepares data: generating voice/image data and annotating it before training. (2) The verifier checks and corrects outputs of a live system (e.g. ASR transcripts), producing fresh labels — this never disappears. (3) The imitator replaces the algorithm and pretends to be AI (“artificial artificial intelligence”), e.g. Google Duplex calls made by humans. {\small\color{gray}(66 words)}
+\subsubsection*{Q5 (long) — The French government asks for your expertise on the different trends in AI ethics and how they articulate. Provide a report of the topics they should look into, why they are relevant, and how they are positioned in the social world of AI.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] AI ethics is not a single doctrine but a contested space in which actors frame “AI risk” differently. I frame it sociotechnically and map the trends using the four arenas of Benbouzid et al. (2020) and the three discursive poles of Gornet et al. (2024), choosing to prioritise present and unevenly distributed harms.
+\item[\blk{A1}] Super-intelligence and AI safety: led by tech leaders (Musk, Altman), some academics (Hinton, Bengio) and philosophers (Bostrom), North-America-centred, it frames AI like nuclear technology. It matters because it has captured policymaker attention (Bletchley, AI safety institutes, AI Act code of practice). Its limit, according to Bender et al. (2021), is that hypothetical long-term risks distract from current harms. The government should follow it without letting it set the whole agenda.
+\item[\blk{A2}] Technical and economic conformity: the open-world agents arena (Asilomar 2009) and the EU’s market approach see AI as a certifiable component — the AI Act, harmonised standards, CE marking, the Brussels effect. This trend is where most binding rules now come from. But certifying fundamental rights through standards is difficult, because rights depend on context and on judges (Gornet \& Maxwell).
+\item[\blk{A3}] Sociotechnical criticism: AI reinforces power structures (Weizenbaum) and has systematic bias (Buolamwini \& Gebru); cases like SyRI, CNAF and Clearview show it. Ethics charters converge on five words — transparency, fairness, non-maleficence, responsibility, privacy (Jobin 2019) — but interpret them differently and omit work, power and ecology. The government should therefore look at hidden labour (Tubaro 2020) and materiality (Crawford 2021).
+\item[\blk{R}] Recommendation: fund independent, interdisciplinary research; require operationalisation (owner, evidence, remedy) of every principle; involve affected groups and data workers. Trade-off: this is slower than relying on industry self-regulation, but soft law without enforcement risks “ethics washing”.
+\end{description}
+\subsubsection*{Q6 (long) — The Ministère de l’Intérieur wants to deploy algorithmic videosurveillance at large-scale events to identify risks quickly. Identify the main legal issues, explain whether and how it is subject to the AI Act, and which measures it should take.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] The Ministry wants AI on cameras to detect risks in crowds. I frame it not as “anomaly-detection accuracy” but as State surveillance of public space, and I prioritise freedom of assembly together with safety.
+\item[\blk{A1}] Data protection: images of identifiable people are personal data. For police purposes the Law Enforcement Directive applies (the GDPR for other purposes): a legal basis in law, necessity and proportionality, purpose and storage limitation, a DPIA, and information to the public (signage). Measures: limit the zones and the duration to the event, define precise categories of events, delete footage quickly and keep logs.
+\item[\blk{A2}] AI Act: the system infers alerts from video, so it is an AI system and the Ministry is a deployer (or a provider if it develops it). Real-time remote biometric identification in public spaces for law enforcement is prohibited except for narrow cases (Art. 5), so the system must detect events, not identify faces. As a law-enforcement or biometric use it is likely high-risk (Annex III), so: human oversight (Art. 14), logs, following the instructions of use, a FRIA as a public body (Art. 27) and registration.
+\item[\blk{A3}] Effective oversight and contestation: under SCHUFA logic, an operator who always confirms alerts is not oversight. Operators need training, time and the authority to dismiss alerts, and their override rates should be audited. The “suspicious” labels come from annotators, whose choices define what counts as risk, so the training data must be audited for bias against particular groups. Citizens need a complaint route (CNIL) and published statistics.
+\item[\blk{R}] I recommend a limited, time-bound experiment: event detection only, an independent evaluation and suspension if false alerts are unequal. Cost: less automation and more staff, which is justified by fundamental rights.
+\end{description}
+\subsubsection*{Q7 (long) — OpenAI provided a purely technical document (fairness metrics, explainability algorithms, model weights and code) on how its LLM will be fair, accountable and transparent. Give the Commission guidelines to evaluate it critically.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] The document frames trustworthiness as a technical property of the model. I adopt a sociotechnical framing and a normative choice: accountability towards the people affected, not only the technical correctness of the model.
+\item[\blk{A1}] Question the purpose before the metric. The mulching proposal (Keyes et al., 2019) shows that FAT can make an unacceptable system look “fair”. Guideline: ask what the LLM will be used for, by whom and on whom, and which alternatives were considered. Any fairness metric is a normative choice, and it should be intersectional rather than limited to a single attribute.
+\item[\blk{A2}] Transparency for whom? Model weights and code help experts but not citizens. Explanations must be selective and contrastive (Miller), and adapted to laypeople and regulators. Guideline: demand usable documentation (capabilities, limits, training-data summary, copyright policy — the GPAI duties), incident reporting and evaluation of systemic risks, and a channel for contestation.
+\item[\blk{A3}] Accountability covers what is missing from the document: the RLHF raters and moderators (trainers and verifiers, Tubaro 2020), their contracts and pay; energy and water use (Crawford); and who is liable when outputs harm someone (Air Canada). Guideline: put audit rights, worker conditions and liability in the contract.
+\item[\blk{R}] The Commission should evaluate with a checklist covering purpose, affected people, contestation, workers, materiality and liability, and suspend the partnership if information is refused. The trade-off is a longer procurement process, but it avoids pure “ethics washing”.
+\end{description}
+\subsubsection*{Q8 (long) — The Commission is setting up an independent scientific panel to support the implementation and enforcement of the AI Act. Recommend which expertises it should include, and why, and how it should be balanced.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] The panel must be scientific (research-based) and independent from the Commission, so Commission staff and non-researchers are out of scope. Every composition implies a framing of AI, so I choose a sociotechnical framing that makes this choice explicit.
+\item[\blk{A1}] Technical coverage: AI is not linear — symbolic, connectionist and neuro-symbolic approaches coexist (Cardon et al., 2018). Gargiulo et al. (2023) map the field into theoretical areas (machine learning, neural networks, expert systems) and application areas (NLP, computer vision). I would use their publication shares to balance part of the panel, plus experts in GPAI evaluation, since the panel can issue qualified alerts on systemic risk.
+\item[\blk{A2}] Social science coverage: AI ethics and AI safety frame risk differently, so both should be represented. Sociologists and anthropologists of AI can show usage issues such as decoupling that hinder enforcement. Legal scholars can work on standards and fundamental rights. Design researchers can check that explanation and contestation mechanisms are realistic. Members should have AI-specific expertise, not just a general discipline.
+\item[\blk{A3}] Balance and independence: declare and manage industry conflicts of interest (rarely treated as COI in AI), balance gender and geography (not only North-American safety voices), and include researchers on labour and the environment, which charters often omit.
+\item[\blk{R}] The result is an interdisciplinary panel with weighted technical seats and a social-science core, with public conflict-of-interest declarations and periodic rotation. The cost is a slower consensus, but it gives a broader and more legitimate view of AI risks.
+\end{description}
+\subsubsection*{Q9 (long) — A retail group wants an AI tool that automatically processes CVs, evaluates candidates and filters applications. What would be appropriate human control measures, and what else should it consider?}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] The tool shapes access to employment. I frame it as a hiring process, not only as a matching model, and I prioritise non-discrimination.
+\item[\blk{A1}] Classification: an AI system used for recruitment is high-risk (Annex III, employment). The provider must ensure risk management, data governance against historical bias (Art. 10), documentation and logs. The group, as deployer, must follow the instructions of use, inform candidates and workers’ representatives, and organise human oversight. Emotion recognition in video interviews is prohibited at work.
+\item[\blk{A2}] Human control must be real: recruiters review a random sample of rejected CVs, can override without penalty, have the time and the reasons, and their override rate is monitored. Under SCHUFA, rubber-stamping makes the rejection an automated decision under Art. 22 GDPR, which gives rights to human intervention and contestation.
+\item[\blk{A3}] Hidden labour and data: CV fields and “good hire” labels were annotated by workers whose instructions define the ground truth (Miceli \& Posada). The group should ask the vendor who labelled the data, how and at what pay, and test selection rates by gender, age and origin, including intersections.
+\item[\blk{R}] I recommend a pilot in which the AI only sorts and never rejects alone, with bias audits and stopping if selection rates diverge. Cost: slower screening, but fairer access to jobs.
+\end{description}
+\subsubsection*{Q10 (long) — A benefits agency presents its new fraud-scoring algorithm as “a neutral efficiency tool”. Analyse this framing and propose an alternative framing.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Framing decides where the system starts and ends. Calling the algorithm “neutral efficiency” frames it as a technical optimisation; I propose to frame it as a policy choice about whom the State controls, and I prioritise equal dignity.
+\item[\blk{A1}] What the efficiency framing hides: the choice to target welfare fraud rather than tax or company fraud is already normative. It shows the model’s accuracy but hides the affected households, the caseworkers who labelled past cases, and the political decision. Cases such as SyRI and CNAF show the consequences: inspections concentrated on the poorest, which compounds injustice (Eidelson).
+\item[\blk{A2}] Reactivity and technosolutionism: once people are scored, recipients and inspectors adapt to the score (Espeland \& Sauder), and a fair metric can still serve an unjust purpose (Kalluri, the mulching lesson). The agency must justify why AI is necessary at all compared with simpler forms and random checks.
+\item[\blk{A3}] Consequences for law and contestation: as essential public benefits, the system is high-risk (social scoring is prohibited), so a FRIA is required. Affected people need notification, reasons and an appeal, but individual appeals do not fix information asymmetry, so the agency should publish statistics and allow NGOs and the Défenseur des droits to scrutinise it.
+\item[\blk{R}] Under the alternative framing, deployment is conditional on public debate, published criteria and stopping if inspections target vulnerable groups without more fraud being detected. Cost: less “efficiency”, but more legitimacy.
+\end{description}
+\subsection{Paper B}
+\subsubsection*{Q1 (short) — What is soft law? Give two of its shortcomings.}
+Soft law is a set of non-binding agreements, principles and declarations (e.g. ethics charters, OECD principles), unlike hard law, which is enforceable in court. Shortcomings: (1) it has no effect without voluntary adherence; (2) it lacks legal security and can bypass democratic institutions — a way to avoid strict regulation. It can, however, harden, for example when a company publicly commits to it and the CNIL/FTC enforces that commitment. {\small\color{gray}(69 words)}
+\subsubsection*{Q2 (short) — Name four AI practices prohibited by the AI Act.}
+Article 5 of the AI Act prohibits “unacceptable-risk” practices, including: (1) social scoring; (2) emotion inference in the workplace or in education; (3) untargeted scraping of facial images to build recognition databases; (4) real-time remote biometric identification in public spaces for law enforcement, apart from narrow exceptions (missing persons, terrorism…). Others: subliminal manipulation, exploiting vulnerabilities, crime prediction from profiling. Fines can reach €35M or 7\% of turnover. {\small\color{gray}(67 words)}
+\subsubsection*{Q3 (short) — Define decoupling and buffering.}
+Decoupling (Meyer \& Rowan, 1977) is the separation between management discourse (“the algorithm is deployed”) and employees’ actual practice. Buffering is how workers protect their work from algorithms: (1) foot-dragging — ignoring the tool or putting its results at the end of reports; (2) gaming — clickbait titles, choosing cases; (3) open critique. Christin observed both among judges and web journalists. {\small\color{gray}(61 words)}
+\subsubsection*{Q4 (short) — What does the COMPAS case teach about AI bias?}
+COMPAS is a US recidivism score that ProPublica (2016) showed had unequal errors between Black and white defendants. Lessons: (1) it moved a technical debate into the public sphere; (2) data science and criminology talked past each other; (3) choosing a fairness metric is a normative choice; (4) the deeper question is whether the detention practice itself is just (Kalluri: ask how AI shifts power). {\small\color{gray}(65 words)}
+\subsubsection*{Q5 (long) — A bank uses an AI credit score that is sent to an adviser who formally decides. Is this an automated decision? What should the bank do?}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Framing: access to credit as an essential service, not only default prediction. Value: equal access.
+\item[\blk{A1}] SCHUFA trap: if the score decisively drives the adviser, it is an automated decision under Art. 22 GDPR, which gives rights to human intervention, to express a view and to contest.
+\item[\blk{A2}] AI Act high-risk (credit, Annex III): the bank as deployer ensures oversight and logs, and as provider if it develops in-house; data governance; FRIA for credit scoring.
+\item[\blk{A3}] Users: advisers under sales targets may rubber-stamp (decoupling). Measure the override rate, give time and authority, and send explanation letters adapted to customers.
+\item[\blk{R}] Conditional use with an audited override rate and stopping if refusal rates diverge; cost: slower decisions.
+\end{description}
+\subsubsection*{Q6 (long) — A public service launches an LLM chatbot to answer citizens. Identify the legal and ethical issues and propose safeguards.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] An information service to citizens; value: reliable, accountable information.
+\item[\blk{A1}] Transparency (Art. 50): disclose the AI and mark generated content; GDPR for the prompts (minimisation, retention, processor contract).
+\item[\blk{A2}] Liability: a wrong answer can bind the institution (Air Canada); a disclaimer is not enough $\rightarrow$ verified sources, escalation to a human.
+\item[\blk{A3}] GPAI underneath: downstream information duties, copyright policy; hidden RLHF/moderation workers; energy costs.
+\item[\blk{R}] Bounded release on low-stakes topics, human escalation and incident logs; stop if repeated harmful answers occur.
+\end{description}
+\subsubsection*{Q7 (long) — A cloud provider claims its AI service is “immaterial and green”. How should a public buyer assess this claim?}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Rematerialise the cloud (Crawford): chips, mines, energy, water, labour.
+\item[\blk{A1}] Ask for the system boundary: training + repeated inference + hardware + data centres; the electricity mix; the period (Luccioni et al. on BLOOM).
+\item[\blk{A2}] Deep learning is not always better (Delarue 2024): compare with frugal/no-AI alternatives; beware of rebound effects.
+\item[\blk{A3}] Labour materiality: annotation and verification chains in the Global South; data colonialism.
+\item[\blk{R}] Procurement criteria with measured footprints and independent verification; the trade-off may be lower performance.
+\end{description}
+\subsubsection*{Q8 (long) — Managers say a decision-support algorithm is “successfully deployed”, but staff seem not to use it. Design a study to find out what happens.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] The gap between discourse and practice is an empirical question (decoupling).
+\item[\blk{A1}] Methods: ethnography of daily work, interviews with staff and managers, analysis of usage logs (computational).
+\item[\blk{A2}] What to look for: buffering (foot-dragging, gaming, open critique), the misalignment of the algorithm’s goals with professional goals, algorithmic imaginaries (Bucher).
+\item[\blk{A3}] Interpret through expert fields: barriers to entry, identity, attitude to technology (judges vs journalists).
+\item[\blk{R}] Results feed a redesign or withdrawal; resistance is information, not irrationality.
+\end{description}
+\subsubsection*{Q9 (long) — Design a meaningful contestation mechanism for people refused a public benefit by an algorithmic system.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Contestability = the political turn of explainability; value: dignity of the vulnerable.
+\item[\blk{A1}] Individual: a contrastive, plain-language explanation, access to data, the correction of errors, a reviewer with authority to overturn and suspension of the sanction during review (Art. 22(3)).
+\item[\blk{A2}] Usability for both sides: not a 50-page report, not a postal letter at midnight; offline and assisted channels for low digital literacy.
+\item[\blk{A3}] Collective: aggregated complaint statistics, the Défenseur des droits, NGOs (La Quadrature du Net), public deliberation (contestation matrix; Alfrink et al.).
+\item[\blk{R}] Link appeals to system redesign; the cost is administrative time.
+\end{description}
+\subsubsection*{Q10 (long) — Does ChatGPT pose a systemic risk under the AI Act? Build a short risk assessment.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] GPAI model vs downstream system; systemic risk is defined legally.
+\item[\blk{A1}] Criteria: high-impact capabilities, presumption > 10\textsuperscript{25} FLOPs or Commission designation (including a scientific-panel alert).
+\item[\blk{A2}] Risks rated gravity $\times$ probability: personal data leaks, disinformation, harmful advice to vulnerable people, cyberattacks.
+\item[\blk{A3}] Mitigations: evaluations and red-teaming, incident reporting to the AI Office, cybersecurity, plus the duties of downstream providers.
+\item[\blk{R}] Likely systemic; remaining uncertainty about measuring capabilities.
+\end{description}
+\subsection{Paper C}
+\subsubsection*{Q1 (short) — What is the key criterion of an “AI system” in the AI Act?}
+Under the AI Act, an AI system is a machine-based system that, for explicit or implicit objectives, infers from its input how to generate outputs (predictions, content, recommendations, decisions) that can influence environments. The key criterion is the capacity to infer (machine learning or logic/knowledge-based). Autonomy and adaptiveness are optional; software executing rules defined solely by humans is excluded (Recital 12). {\small\color{gray}(61 words)}
+\subsubsection*{Q2 (short) — Name four lawful bases of the GDPR and explain the “OR / AND” rule.}
+Article 6 GDPR: (1) consent, (2) performance of a contract, (3) legal obligation, (4) public interest/task — also vital interest and legitimate interest. Rule: each processing needs ONE lawful basis (“OR”) AND must respect ALL the Article 5 principles (“AND”): lawfulness, fairness and transparency; purpose limitation; minimisation; accuracy; storage limitation; integrity and confidentiality; accountability. {\small\color{gray}(54 words)}
+\subsubsection*{Q3 (short) — According to Jobin et al. (2019), on which principles do AI ethics guidelines converge?}
+Jobin, Ienca \& Vayena (2019) read 84 AI ethics guidelines and found 11 themes. Global convergence on five: (1) transparency, (2) justice and fairness, (3) non-maleficence, (4) responsibility, (5) privacy. But there is substantive divergence in how they are interpreted and implemented (polysemy), and topics such as work, power and ecology are missing. {\small\color{gray}(53 words)}
+\subsubsection*{Q4 (short) — For whom and why do we explain AI decisions?}
+For whom: (1) experts, (2) laypeople, (3) regulators — each needs a different form. Why: descriptive (what the model does), explanatory (how), normative (justifying the decision) and contestable (giving grounds to challenge). Good explanations are selective, contrastive and dialogic (Miller), ideally producing a complexity drop (Dessalles). {\small\color{gray}(46 words)}
+\subsubsection*{Q5 (long) — Brief a parliamentary committee on the difference between “AI safety” and “AI ethics”.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Two arenas framing risk differently; a framing defines which harms get attention.
+\item[\blk{A1}] AI safety: existential / loss-of-control risk, led by tech leaders and some academics, North-America-centred, nuclear analogy $\rightarrow$ technology-centred rules (Bletchley, AI safety institutes).
+\item[\blk{A2}] AI ethics / sociotechnical criticism: present harms, bias (Gender Shades), power (Weizenbaum), labour and ecology; tools: audits, social science.
+\item[\blk{A3}] Overlaps and critiques: TESCREAL (Gebru \& Torres), distraction from current harms (Bender); but safety research also covers short-term robustness.
+\item[\blk{R}] The committee should fund both, but target present harms with enforceable rules.
+\end{description}
+\subsubsection*{Q6 (long) — A French company outsources image annotation to a BPO in Madagascar. Write procurement guidelines.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Value chain and multilayer stacks: accuracy targets push costs down the chain.
+\item[\blk{A1}] Visibility: list every subcontractor and audit rights; avoid “black boxes within black boxes”.
+\item[\blk{A2}] Conditions: effective hourly pay including unpaid time, contract type (not day-rated without leave), paid training, psychological support for harmful content.
+\item[\blk{A3}] Instructions–interface–metrics: allow workers to flag ambiguous labels; ground truth is co-produced; dispute procedures.
+\item[\blk{R}] Price floors and monitoring; the cost is higher, but the data are better and the work decent.
+\end{description}
+\subsubsection*{Q7 (long) — An LLM provider trained on publicly accessible books and websites. Discuss copyright in the EU and the US.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Copyright protects original human expression in a fixed medium; ideas are not protected.
+\item[\blk{A1}] EU: TDM exceptions — research (Art. 3) and general with opt-out (Art. 4); lawful access required; public $\neq$ free.
+\item[\blk{A2}] US: fair use with four factors (transformative?, nature, amount, market effect); a separate doctrine.
+\item[\blk{A3}] AI Act GPAI duties: copyright policy respecting opt-outs + public training-content summary, which still apply even to open models; output filtering; machine output is not protected.
+\item[\blk{R}] Recommend licensing and opt-out compliance; trade-off with data scale.
+\end{description}
+\subsubsection*{Q8 (long) — A court builds an in-house AI to anonymise its decisions (Cour de cassation). What does this case teach about AI work and users?}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Internal data work by civil servants (typology: internal, employees).
+\item[\blk{A1}] Training never ends: a permanent team, verification as a strategic need.
+\item[\blk{A2}] The AI as an “absent colleague”, called “the software”; annotators use empathy to keep decisions readable.
+\item[\blk{A3}] Pseudonymisation vs anonymisation; there is a trade-off between readability and protection.
+\item[\blk{R}] Budget permanent staff and recognise their work in the system’s design.
+\end{description}
+\subsubsection*{Q9 (long) — A city wants “AI to solve homelessness”. Critically assess this proposal.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Technosolutionism: assuming technology is a necessary part of the solution.
+\item[\blk{A1}] Post-hoc rationalisation; the real problem may be housing policy (tech neutrality vs tech politics).
+\item[\blk{A2}] Mulching lesson: making it fair and transparent does not make the purpose legitimate.
+\item[\blk{A3}] Who is affected and can they contest? Data colonialism of vulnerable people; reactivity of indicators.
+\item[\blk{R}] Start from the need with the people affected; AI only if it is proven proportionate.
+\end{description}
+\subsubsection*{Q10 (long) — A border agency adopts facial recognition. Discuss its classification and risks.}
+\begin{description}[leftmargin=1.2cm,style=sameline]
+\item[\blk{F}] Power asymmetry at borders.
+\item[\blk{A1}] AI Act: high-risk (migration/borders, biometrics); untargeted face scraping prohibited (Clearview).
+\item[\blk{A2}] GDPR Art. 9 biometric data; DPIA; retention.
+\item[\blk{A3}] Bias across skin types (Gender Shades); contestation is difficult for travellers.
+\item[\blk{R}] Prefer 1:1 verification over 1:N, test error rates by group and keep humans responsible for refusals.
+\end{description}
+\section{Self-test: trap or truth?}
+Cover the right-hand column, decide true or false, then check.
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.5cm}>{\RaggedRight\arraybackslash}p{7.6cm}>{\RaggedRight\arraybackslash}p{7.4cm}}\toprule \# & Statement & Answer\\\midrule\endhead\bottomrule\endfoot
+1 & A human adviser signs every credit refusal, so the decision is not automated under Article 22 GDPR. & \textcolor{red}{\textbf{Trap!}} SCHUFA (CJEU 2023): if the score decisively drives the decision, it is an automated decision. Human signature $\neq$ meaningful review.\\[3pt]
+2 & Every AI system used by a public body is high-risk under the AI Act. & \textcolor{red}{\textbf{Trap!}} Classification depends on the intended purpose (Annex I/III, Art. 5, Art. 50), not on who uses it. Public bodies do have extra duties, e.g. the FRIA.\\[3pt]
+3 & Pseudonymised data (names replaced by codes) are still personal data. & \textcolor{teal}{\textbf{True.}} Re-identification remains possible, so the GDPR still applies. Only true anonymisation leaves its scope.\\[3pt]
+4 & Open-weight GPAI models have no AI Act obligations. & \textcolor{red}{\textbf{Trap!}} The open-source exemption covers documentation duties only; the copyright policy and the training-content summary still apply, and systemic-risk models get no exemption.\\[3pt]
+5 & Real-time remote biometric identification in public spaces for law enforcement is prohibited, with narrow exceptions. & \textcolor{teal}{\textbf{True.}} Art. 5 AI Act: exceptions such as finding missing persons, abduction, trafficking, terrorist threats or suspects of serious crimes.\\[3pt]
+6 & Emotion recognition used to monitor employees at work is prohibited. & \textcolor{teal}{\textbf{True.}} Art. 5 prohibits emotion inference in the workplace and in education (except medical or safety reasons).\\[3pt]
+7 & Symbolic AI was simply replaced by neural AI. & \textcolor{red}{\textbf{Trap!}} The linear-history preconception: symbolic, connectionist and neuro-symbolic approaches coexist (Cardon et al. 2018; Gargiulo et al. 2023).\\[3pt]
+8 & Data work disappears once the model is trained. & \textcolor{red}{\textbf{Trap!}} Verification “never goes away” (Tubaro 2020); see the Cour de cassation’s permanent annotation team.\\[3pt]
+9 & A piece rate of \$0.10 per task tells you the worker’s hourly wage. & \textcolor{red}{\textbf{Trap!}} Unpaid search, rejections and returns make effective pay much lower (MTurk median $\approx$ \$1.77/h).\\[3pt]
+10 & Ethics charters are legally binding. & \textcolor{red}{\textbf{Trap!}} They are soft law — but they can harden when a company publicly commits to them or when they are incorporated into binding texts.\\[3pt]
+11 & A fairness metric is a normative choice about which disparities matter. & \textcolor{teal}{\textbf{True.}} Choosing a metric encodes values; intersectionality is rarely captured. The mulching paper shows FAT cannot rescue an unacceptable purpose.\\[3pt]
+12 & Consent is the only lawful basis for processing personal data. & \textcolor{red}{\textbf{Trap!}} Art. 6 lists six bases (consent, contract, legal obligation, vital interest, public task, legitimate interest) — one basis AND all the principles.\\[3pt]
+13 & Under the AI Act, an AI system must be autonomous and adaptive. & \textcolor{red}{\textbf{Trap!}} Autonomy and adaptiveness are optional; the key criterion is inference.\\[3pt]
+14 & Media visibility of a risk shows how large that risk is. & \textcolor{red}{\textbf{Trap!}} Attention is a limited and political resource; media salience $\neq$ risk magnitude (e.g. super-intelligence coverage).\\[3pt]
+15 & A GPAI model is presumed to have high-impact capabilities above 10\textsuperscript{25} FLOPs of training compute. & \textcolor{teal}{\textbf{True.}} Or it can be designated by the Commission, including after a qualified alert from the scientific panel.\\[3pt]
+16 & A scientific independent panel advising the Commission may include Commission officials. & \textcolor{red}{\textbf{Trap!}} Independent means independent from the Commission; scientific means research-based members (official sample answer).\\[3pt]
+17 & Machine-generated text is protected by copyright as the machine’s original expression. & \textcolor{red}{\textbf{Trap!}} Copyright protects original expression by a human; ideas and algorithms are not protected either.\\[3pt]
+18 & US fair use and the EU text-and-data-mining exceptions are the same rule. & \textcolor{red}{\textbf{Trap!}} Fair use weighs four factors; the EU has a research exception (Art. 3) and a general exception with opt-out (Art. 4).\\[3pt]
+19 & Decoupling means official adoption of a tool can coexist with staff ignoring it. & \textcolor{teal}{\textbf{True.}} Meyer \& Rowan (1977); Christin observed foot-dragging, gaming and open critique.\\[3pt]
+20 & Giving source code to citizens is a sufficient explanation of a decision. & \textcolor{red}{\textbf{Trap!}} Explanations must fit their audience (experts, laypeople, regulators) and be selective and contrastive.\\[3pt]
+\end{longtable}
+\section*{Last-minute checklist}\begin{itemize}\item Framing stated? What does it hide?\item One named concept + author per argument?\item Mechanism explained \emph{in this case}, not in general?\item Concrete measure with a responsible actor?\item Workers: who, contract, pay, internal or external?\item Human oversight: SCHUFA sentence?\item Trade-off and stop trigger in the conclusion?\end{itemize}
+\end{document}
