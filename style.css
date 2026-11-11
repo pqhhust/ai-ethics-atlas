@@ -137,3 +137,12 @@ table.gloss td{vertical-align:top;font-size:14px}
  .rm-panel.idle{position:static;width:auto;box-shadow:none;max-height:none}}
 @media (max-width:760px){.rm-panel,.rm-panel.idle{position:static;width:auto;max-height:none;box-shadow:none}.rm-svg{min-width:880px}.rm-canvas{max-height:70vh}}
 @media (max-width:1700px) and (min-width:761px){.rm-panel:not(.idle){width:340px;max-height:44vh;padding:18px;font-size:14px}.rm-panel:not(.idle) h2{font-size:21px;margin:0 0 6px}.rm-panel:not(.idle) .lede,.rm-panel:not(.idle) p{margin:6px 0}}
+/* ===== Teacher video ===== */
+.video-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:20px;align-items:start}
+#teacher-video{width:100%;border-radius:10px;background:#000;display:block}
+.chapters{max-height:75vh;overflow:auto;padding:18px}.chapters h2{margin-top:0;font-size:21px}
+.chapters ol{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.chapters button{width:100%;text-align:left;border:0;background:none;padding:7px 8px;font-size:14px;border-radius:6px;display:flex;gap:10px}
+.chapters button:hover{background:var(--soft)}.chapters button.current{background:var(--teal);color:#fff}.chapters button.current .ct{color:#d6ebe6}
+.chapters .ct{font-variant-numeric:tabular-nums;color:var(--muted);min-width:38px}
+@media (max-width:1000px){.video-layout{grid-template-columns:1fr}.chapters{max-height:none}}

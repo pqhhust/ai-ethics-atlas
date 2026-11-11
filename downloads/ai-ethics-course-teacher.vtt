@@ -1,0 +1,829 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.285
+Hello. In about sixteen minutes, I will teach you the whole AI ethics course,
+
+2
+00:00:05.285 --> 00:00:07.200
+the way you need it for the exam.
+
+3
+00:00:07.550 --> 00:00:13.412
+Not every detail. The ideas that come back again and again, how they connect,
+
+4
+00:00:13.412 --> 00:00:14.900
+and how to turn them into answers.
+
+5
+00:00:16.000 --> 00:00:20.806
+The course has five lectures. The first two, by Tiphaine Viard,
+
+6
+00:00:20.806 --> 00:00:25.675
+look at AI as a sociotechnical system, and at the landscape of AI ethics.
+
+7
+00:00:26.375 --> 00:00:33.419
+The third, by Thomas Le Goff, is about regulation: soft law, the GDPR, and the AI Act.
+
+8
+00:00:33.419 --> 00:00:38.125
+The fourth, by Mathilde Abel, is about the human labour behind AI.
+
+9
+00:00:38.825 --> 00:00:45.444
+The fifth comes back to users: bias, technosolutionism, how people really use algorithms,
+
+10
+00:00:45.444 --> 00:00:46.975
+and how they can contest them.
+
+11
+00:00:47.675 --> 00:00:53.300
+If you remember only one thing, remember three questions you can ask of any AI system.
+
+12
+00:00:53.650 --> 00:00:59.018
+Where does the system start and end? Who does the work, who decides, and who is affected?
+
+13
+00:00:59.018 --> 00:01:01.925
+And which rule applies, with which concrete safeguard?
+
+14
+00:01:02.275 --> 00:01:05.950
+Every exam question is a variation on these three.
+
+15
+00:01:07.050 --> 00:01:10.968
+We start with the most important idea of the course: framing.
+
+16
+00:01:10.968 --> 00:01:14.600
+The teachers said there will be at least one framing question.
+
+17
+00:01:14.950 --> 00:01:21.359
+Look at the left. If you frame a credit-scoring system as just a model, the only question is:
+
+18
+00:01:21.359 --> 00:01:22.175
+is the score accurate?
+
+19
+00:01:22.875 --> 00:01:27.185
+Now look at the right. A sociotechnical framing includes the data,
+
+20
+00:01:27.185 --> 00:01:32.605
+the annotators who labelled it, the advisers who use the score, the bank’s targets,
+
+21
+00:01:32.605 --> 00:01:36.500
+the regulators, the applicants, and even the energy and hardware.
+
+22
+00:01:36.850 --> 00:01:42.175
+Now the question becomes: who gets access to credit, and who bears the errors?
+
+23
+00:01:42.875 --> 00:01:46.884
+So framing means deciding where the object starts and ends.
+
+24
+00:01:46.884 --> 00:01:50.000
+Every framing shows some problems and hides others.
+
+25
+00:01:50.350 --> 00:01:56.250
+In an exam answer, always say which framing you choose, and what a narrower framing would hide.
+
+26
+00:01:57.350 --> 00:02:02.850
+How do we study a sociotechnical system? Three methods are enough for a short question.
+
+27
+00:02:03.200 --> 00:02:08.945
+Ethnography and interviews, to see what people actually do. Discourse analysis,
+
+28
+00:02:08.945 --> 00:02:14.689
+to study the words in charters, newspapers and laws. And computational methods,
+
+29
+00:02:14.689 --> 00:02:16.825
+like network maps of scientific papers.
+
+30
+00:02:17.525 --> 00:02:20.764
+The history of AI teaches the same lesson.
+
+31
+00:02:20.764 --> 00:02:25.082
+Symbolic AI encodes explicit rules and expert knowledge.
+
+32
+00:02:25.082 --> 00:02:30.634
+Connectionist AI learns statistical patterns from large amounts of data,
+
+33
+00:02:30.634 --> 00:02:32.325
+and sacrifices intelligibility.
+
+34
+00:02:33.025 --> 00:02:38.646
+The common myth is that neural AI simply replaced symbolic AI. In fact,
+
+35
+00:02:38.646 --> 00:02:40.275
+they coexist and compete.
+
+36
+00:02:40.625 --> 00:02:47.600
+Defining AI has always been a fight for scientific space. That is why AI is a polysemic word.
+
+37
+00:02:48.700 --> 00:02:54.275
+Next, materiality. The word cloud makes AI sound immaterial. It is not.
+
+38
+00:02:54.625 --> 00:03:00.186
+It depends on minerals like lithium and rare earths, on water, and on energy,
+
+39
+00:03:00.186 --> 00:03:02.375
+for training and for every single query.
+
+40
+00:03:03.075 --> 00:03:07.225
+And it depends on human labour, which we will see in lecture four.
+
+41
+00:03:07.925 --> 00:03:10.948
+Two concepts about power. Data colonialism:
+
+42
+00:03:10.948 --> 00:03:15.517
+value is extracted from data and concentrated in a few companies.
+
+43
+00:03:15.517 --> 00:03:20.650
+A community gives its language data, and it is sold back to them as a service.
+
+44
+00:03:21.000 --> 00:03:27.480
+Reactivity: people adapt to what is measured. When a ranking counts international students,
+
+45
+00:03:27.480 --> 00:03:29.700
+universities recruit to raise the number.
+
+46
+00:03:30.400 --> 00:03:36.992
+So, following Kalluri, don’t only ask whether an AI is fair. Ask who gains power,
+
+47
+00:03:36.992 --> 00:03:37.492
+and who loses it.
+
+48
+00:03:38.375 --> 00:03:44.325
+Lecture two looks at AI ethics itself. Jobin and colleagues read eighty-four guidelines.
+
+49
+00:03:44.675 --> 00:03:51.353
+They converge on five principles: transparency, justice and fairness, non-maleficence,
+
+50
+00:03:51.353 --> 00:03:52.750
+responsibility and privacy.
+
+51
+00:03:53.450 --> 00:03:57.683
+But the same words mean different things to different actors.
+
+52
+00:03:57.683 --> 00:04:02.401
+And the charters organise around three poles: technical, regulatory,
+
+53
+00:04:02.401 --> 00:04:03.575
+and business or innovation.
+
+54
+00:04:04.275 --> 00:04:11.155
+The big weakness is the operationalisation gap. Principles rarely become concrete procedures.
+
+55
+00:04:11.155 --> 00:04:14.450
+And some topics are missing: work, power, and ecology.
+
+56
+00:04:15.150 --> 00:04:21.252
+Legally, charters are soft law. They are not binding, they can bypass democratic debate,
+
+57
+00:04:21.252 --> 00:04:23.675
+and they can be used for ethics washing.
+
+58
+00:04:24.025 --> 00:04:30.730
+But soft law can harden: when a company publicly commits, or when the law absorbs it,
+
+59
+00:04:30.730 --> 00:04:31.230
+as the AI Act did.
+
+60
+00:04:32.150 --> 00:04:37.575
+Who defines what AI risk is? Benbouzid and colleagues describe four arenas.
+
+61
+00:04:37.925 --> 00:04:41.835
+The super-intelligence arena fears loss of control.
+
+62
+00:04:41.835 --> 00:04:46.425
+The open-world agents arena wants experts to certify technical risks.
+
+63
+00:04:47.125 --> 00:04:53.976
+The sociotechnical criticism arena says AI reinforces power and carries systematic bias.
+
+64
+00:04:53.976 --> 00:05:00.282
+And the technical-economic arena builds market conformity: standards, the AI Act,
+
+65
+00:05:00.282 --> 00:05:01.450
+and the Brussels effect.
+
+66
+00:05:02.150 --> 00:05:09.645
+Remember the contrast between AI safety and AI ethics. AI safety focuses on existential risk,
+
+67
+00:05:09.645 --> 00:05:14.050
+is led by tech leaders, and compares AI to nuclear weapons.
+
+68
+00:05:14.400 --> 00:05:17.576
+AI ethics focuses on present, unequal harms.
+
+69
+00:05:17.576 --> 00:05:22.350
+The critique of the safety arena is that it distracts from those harms.
+
+70
+00:05:22.700 --> 00:05:26.900
+In a government report question, these arenas are your structure.
+
+71
+00:05:28.000 --> 00:05:34.218
+Lecture three: the law. For the GDPR, remember one formula: one legal basis,
+
+72
+00:05:34.218 --> 00:05:35.400
+and all the principles.
+
+73
+00:05:36.100 --> 00:05:41.423
+Two classic points. Pseudonymised data, where names are replaced by codes,
+
+74
+00:05:41.423 --> 00:05:42.800
+are still personal data.
+
+75
+00:05:43.150 --> 00:05:50.864
+Article 22 gives a right not to be subject to a solely automated decision with significant effects,
+
+76
+00:05:50.864 --> 00:05:51.800
+like refusing a loan.
+
+77
+00:05:52.500 --> 00:05:59.175
+Now the exam trap the teacher warned about. A student writes: a human signs the decision,
+
+78
+00:05:59.175 --> 00:06:00.725
+so it is not automated. Wrong.
+
+79
+00:06:01.425 --> 00:06:05.474
+In the SCHUFA case, in 2023, the Court of Justice said:
+
+80
+00:06:05.474 --> 00:06:10.350
+if the human relies decisively on the score, the score is the decision.
+
+81
+00:06:10.700 --> 00:06:16.400
+So Article 22 applies. Human oversight must be real, not a rubber stamp.
+
+82
+00:06:17.500 --> 00:06:20.900
+For the AI Act, ask four questions in order.
+
+83
+00:06:21.250 --> 00:06:25.781
+First, is it an AI system? The key criterion is inference:
+
+84
+00:06:25.781 --> 00:06:28.675
+the system infers its outputs from its inputs.
+
+85
+00:06:29.375 --> 00:06:34.524
+Second, which risk level? Prohibited, high-risk, transparency, or minimal,
+
+86
+00:06:34.524 --> 00:06:37.375
+plus special rules for general-purpose models.
+
+87
+00:06:37.725 --> 00:06:43.820
+Prohibited practices include social scoring, emotion recognition at work or school,
+
+88
+00:06:43.820 --> 00:06:45.950
+untargeted scraping of faces,
+
+89
+00:06:45.950 --> 00:06:51.311
+and real-time remote biometric identification by police in public spaces,
+
+90
+00:06:51.311 --> 00:06:52.650
+with narrow exceptions.
+
+91
+00:06:53.000 --> 00:06:58.942
+High-risk areas are listed in Annex III: biometrics, education, employment,
+
+92
+00:06:58.942 --> 00:07:03.550
+credit and public benefits, law enforcement, migration and justice.
+
+93
+00:07:04.250 --> 00:07:09.813
+Third, which role? The provider places the system on the market under its name.
+
+94
+00:07:09.813 --> 00:07:12.000
+The deployer uses it under its authority.
+
+95
+00:07:12.700 --> 00:07:18.439
+Fourth, which duties? Risk management, data governance, documentation, logs,
+
+96
+00:07:18.439 --> 00:07:22.442
+human oversight and robustness for high-risk systems.
+
+97
+00:07:22.442 --> 00:07:26.175
+Public deployers also do a fundamental-rights impact assessment.
+
+98
+00:07:27.275 --> 00:07:33.868
+Generative AI has its own rules. A general-purpose model provider must document the model,
+
+99
+00:07:33.868 --> 00:07:37.750
+inform downstream providers, have a copyright policy,
+
+100
+00:07:37.750 --> 00:07:40.200
+and publish a summary of its training data.
+
+101
+00:07:40.900 --> 00:07:46.784
+Above ten to the power twenty-five operations of training compute, or if designated,
+
+102
+00:07:46.784 --> 00:07:51.758
+the model is presumed to have systemic risk. Then it needs red-teaming,
+
+103
+00:07:51.758 --> 00:07:54.000
+incident reporting and cybersecurity.
+
+104
+00:07:54.350 --> 00:07:58.661
+And open-weight models are only exempt from documentation.
+
+105
+00:07:58.661 --> 00:08:01.975
+The copyright policy and training summary still apply.
+
+106
+00:08:02.675 --> 00:08:06.946
+Copyright protects original human expression. In the EU,
+
+107
+00:08:06.946 --> 00:08:13.124
+text-and-data mining is allowed under exceptions, but rights holders can opt out.
+
+108
+00:08:13.124 --> 00:08:15.475
+The US uses fair use, with four factors.
+
+109
+00:08:16.175 --> 00:08:21.897
+Finally, liability. When Air Canada’s chatbot invented a refund policy,
+
+110
+00:08:21.897 --> 00:08:26.600
+the company was held to it. A disclaimer does not remove responsibility.
+
+111
+00:08:27.700 --> 00:08:34.369
+Lecture four, by Mathilde Abel, asks: who makes automatic AI? A platform matches people,
+
+112
+00:08:34.369 --> 00:08:39.050
+captures data, and breaks work into small tasks. That is taskification.
+
+113
+00:08:39.750 --> 00:08:45.940
+Tubaro, Casilli and Coville describe three roles. The trainer works before the model:
+
+114
+00:08:45.940 --> 00:08:47.425
+generating and labelling data.
+
+115
+00:08:48.125 --> 00:08:54.224
+The imitator works instead of the model: humans secretly doing what is sold as AI,
+
+116
+00:08:54.224 --> 00:08:59.325
+like Google Duplex calls, or theft detection watched by workers in Madagascar.
+
+117
+00:09:00.025 --> 00:09:05.775
+The verifier works after the model: checking and correcting live outputs.
+
+118
+00:09:05.775 --> 00:09:07.275
+And verification never goes away.
+
+119
+00:09:08.375 --> 00:09:14.287
+Here is a value chain of annotation. A French start-up buys data from a platform,
+
+120
+00:09:14.287 --> 00:09:17.675
+which needs ninety-five to ninety-nine percent accuracy.
+
+121
+00:09:18.375 --> 00:09:23.397
+The work goes through subcontractors, black boxes within black boxes,
+
+122
+00:09:23.397 --> 00:09:29.175
+down to annotators in Madagascar, paid around half a dollar to under two dollars an hour.
+
+123
+00:09:29.875 --> 00:09:33.896
+Several layers of quality control check and reject the work,
+
+124
+00:09:33.896 --> 00:09:36.025
+and the data goes back to the client.
+
+125
+00:09:36.375 --> 00:09:42.965
+Remember: a piece rate is not an hourly wage, because searching and rejected work are unpaid.
+
+126
+00:09:42.965 --> 00:09:47.650
+And the instructions, interface and metrics decide what counts as the truth.
+
+127
+00:09:48.350 --> 00:09:53.726
+The teacher’s rule: never just write human in the loop. Say who these people are,
+
+128
+00:09:53.726 --> 00:09:58.400
+which contract they have, how they are paid, and whether they are internal or external.
+
+129
+00:09:59.500 --> 00:10:06.208
+Lecture five. The flagship bias case is COMPAS, a recidivism score with unequal errors.
+
+130
+00:10:06.208 --> 00:10:09.825
+Choosing a fairness metric is itself a normative choice.
+
+131
+00:10:10.525 --> 00:10:16.017
+But cases like SyRI in the Netherlands, or the French family-benefits agency,
+
+132
+00:10:16.017 --> 00:10:21.450
+raise a deeper question: is a fair algorithm enough, if the practice itself is unjust?
+
+133
+00:10:22.150 --> 00:10:27.183
+The mulching proposal is a satire. It makes an absurd algorithm fair,
+
+134
+00:10:27.183 --> 00:10:28.875
+accountable and transparent.
+
+135
+00:10:29.225 --> 00:10:33.212
+The lesson: without questioning the purpose, fairness,
+
+136
+00:10:33.212 --> 00:10:36.425
+accountability and transparency can justify anything.
+
+137
+00:10:37.125 --> 00:10:42.773
+That is technosolutionism: assuming technology must be part of the solution.
+
+138
+00:10:42.773 --> 00:10:48.273
+Watch for the lobby lines: others will do it, regulation kills innovation,
+
+139
+00:10:48.273 --> 00:10:49.625
+and the next version will fix it.
+
+140
+00:10:50.725 --> 00:10:55.950
+How do people really use algorithms? Christin studied judges and web journalists.
+
+141
+00:10:56.300 --> 00:11:02.774
+She found decoupling: managers say the tool is deployed, while staff ignore or resist it.
+
+142
+00:11:02.774 --> 00:11:06.075
+And buffering: foot-dragging, gaming and open critique.
+
+143
+00:11:06.775 --> 00:11:09.769
+The two expert fields react differently.
+
+144
+00:11:09.769 --> 00:11:14.858
+Judges have high entry barriers and tie decisions to their identity.
+
+145
+00:11:14.858 --> 00:11:17.825
+Journalists work in an open, profit-driven field.
+
+146
+00:11:18.525 --> 00:11:24.620
+And at the French Cour de cassation, the anonymisation AI needs a permanent team.
+
+147
+00:11:24.620 --> 00:11:25.425
+Training never ends.
+
+148
+00:11:26.125 --> 00:11:31.969
+So adoption is not use, and an override button is not real human judgment.
+
+149
+00:11:31.969 --> 00:11:33.475
+You have to observe the practice.
+
+150
+00:11:34.575 --> 00:11:41.423
+A good explanation is selective, contrastive, and dialogic, and it is adapted to its audience:
+
+151
+00:11:41.423 --> 00:11:43.550
+experts, laypeople, or regulators.
+
+152
+00:11:43.900 --> 00:11:49.500
+We explain to describe, to explain, to justify, and to give grounds to contest.
+
+153
+00:11:50.200 --> 00:11:54.599
+Contestation can be individual or collective. Individually,
+
+154
+00:11:54.599 --> 00:11:58.350
+you get an explanation or a justification of your case.
+
+155
+00:11:58.700 --> 00:12:03.200
+Collectively, you get public statistics, deliberation, NGOs,
+
+156
+00:12:03.200 --> 00:12:06.850
+and independent authorities like the Défenseur des droits.
+
+157
+00:12:07.550 --> 00:12:12.339
+Why both? Because individual appeals put the burden on each person,
+
+158
+00:12:12.339 --> 00:12:17.100
+and they don’t fix the information asymmetry. Collective channels rebalance power.
+
+159
+00:12:18.200 --> 00:12:22.253
+Now let’s connect the five lectures. I use five storylines,
+
+160
+00:12:22.253 --> 00:12:25.750
+and they are also on the concept roadmap of the website.
+
+161
+00:12:26.100 --> 00:12:32.138
+The framing storyline goes from framing, to sociotechnical systems, to the arenas,
+
+162
+00:12:32.138 --> 00:12:37.550
+to the COMPAS metric, to fair versus radical AI, and ends with the mulching lesson.
+
+163
+00:12:38.250 --> 00:12:44.729
+The human-in-the-loop storyline: hidden labour, trainers and verifiers, human oversight,
+
+164
+00:12:44.729 --> 00:12:48.225
+SCHUFA, Article 22, decoupling, and finally contestation.
+
+165
+00:12:48.925 --> 00:12:55.372
+From ethics to law: charters, the operationalisation gap, soft law, the AI Act pyramid,
+
+166
+00:12:55.372 --> 00:12:58.525
+high-risk duties, standards, and impact assessments.
+
+167
+00:12:59.225 --> 00:13:04.881
+The power storyline, and the generative AI storyline, link materiality, labour,
+
+168
+00:13:04.881 --> 00:13:07.825
+copyright and the general-purpose model rules.
+
+169
+00:13:08.175 --> 00:13:13.350
+Each storyline is a ready-made long answer: three steps make one argument.
+
+170
+00:13:14.450 --> 00:13:20.763
+The exam has ten questions: six long ones, one A4 page each, and four short ones,
+
+171
+00:13:20.763 --> 00:13:22.050
+on one page together.
+
+172
+00:13:22.400 --> 00:13:29.544
+A long answer has five blocks. First, frame: who asks, what system, what purpose, your framing,
+
+173
+00:13:29.544 --> 00:13:31.025
+and the value you prioritise.
+
+174
+00:13:31.725 --> 00:13:36.821
+Then three arguments. Each one goes: claim, course concept with its author,
+
+175
+00:13:36.821 --> 00:13:42.575
+how it works in this case, and a concrete measure. Take each argument from a different lecture.
+
+176
+00:13:43.275 --> 00:13:48.647
+Finish with a recommendation: the decision, who is responsible, when to stop,
+
+177
+00:13:48.647 --> 00:13:50.250
+and the trade-off of your choice.
+
+178
+00:13:50.950 --> 00:13:57.035
+Here is an example block for a videosurveillance question. It uses the SCHUFA idea,
+
+179
+00:13:57.035 --> 00:14:01.800
+makes it concrete for police operators, and proposes an audit of override rates.
+
+180
+00:14:02.900 --> 00:14:08.000
+Short answers take a quarter page. Three moves: define, name, example.
+
+181
+00:14:08.700 --> 00:14:15.979
+For example, three methods to analyse a sociotechnical system: ethnography, discourse analysis,
+
+182
+00:14:15.979 --> 00:14:18.650
+and computational methods, with one example.
+
+183
+00:14:19.350 --> 00:14:25.538
+The teachers said it themselves: for these questions, the names alone earn the points.
+
+184
+00:14:25.538 --> 00:14:27.100
+So do the four short questions first.
+
+185
+00:14:28.200 --> 00:14:34.308
+Question 1. A bank adviser signs every loan refusal suggested by the score.
+
+186
+00:14:34.308 --> 00:14:36.075
+Is the decision automated?
+
+187
+00:14:36.425 --> 00:14:38.550
+Pause the video and answer.
+
+188
+00:14:41.900 --> 00:14:48.133
+It can be: under SCHUFA, if the adviser relies decisively on the score,
+
+189
+00:14:48.133 --> 00:14:51.950
+it is an automated decision and Article 22 GDPR applies.
+
+190
+00:14:53.050 --> 00:14:57.250
+Question 2. Name the three roles of humans behind AI.
+
+191
+00:14:57.600 --> 00:14:59.725
+Pause the video and answer.
+
+192
+00:15:03.075 --> 00:15:08.151
+Trainer (prepares data), verifier (checks outputs),
+
+193
+00:15:08.151 --> 00:15:12.425
+imitator (pretends to be the AI) — Tubaro et al. 2020.
+
+194
+00:15:13.525 --> 00:15:18.400
+Question 3. A company signed an ethics charter. Is it legally bound?
+
+195
+00:15:18.750 --> 00:15:20.875
+Pause the video and answer.
+
+196
+00:15:24.225 --> 00:15:30.875
+No — charters are soft law. But they can harden: public commitments can be enforced,
+
+197
+00:15:30.875 --> 00:15:31.675
+and law can absorb them.
+
+198
+00:15:32.775 --> 00:15:36.775
+Question 4. What lesson does the mulching proposal teach?
+
+199
+00:15:37.125 --> 00:15:39.250
+Pause the video and answer.
+
+200
+00:15:42.600 --> 00:15:43.342
+Fairness,
+
+201
+00:15:43.342 --> 00:15:50.075
+accountability and transparency do not make a system acceptable if its purpose is unacceptable.
+
+202
+00:15:51.175 --> 00:15:57.125
+Question 5. Emotion recognition to monitor employees: which AI Act level?
+
+203
+00:15:57.475 --> 00:15:59.600
+Pause the video and answer.
+
+204
+00:16:02.950 --> 00:16:08.075
+Prohibited (Article 5), except for medical or safety reasons.
+
+205
+00:16:09.175 --> 00:16:12.700
+To finish, one sentence to carry into the exam.
+
+206
+00:16:13.050 --> 00:16:18.625
+Frame it. Name the people. Find the rule. Propose a safeguard. And admit the trade-off.
+
+207
+00:16:18.975 --> 00:16:20.425
+Good luck.

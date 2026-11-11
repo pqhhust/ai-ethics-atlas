@@ -6278,6 +6278,108 @@
       ]
     }
   ],
+  "video": {
+    "src": "downloads/ai-ethics-course-teacher.mp4",
+    "vtt": "downloads/ai-ethics-course-teacher.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Introduction"
+      },
+      {
+        "t": 16,
+        "title": "0 · The course map"
+      },
+      {
+        "t": 67,
+        "title": "1 · Framing"
+      },
+      {
+        "t": 117,
+        "title": "2 · Methods and history"
+      },
+      {
+        "t": 168,
+        "title": "3 · Materiality and power"
+      },
+      {
+        "t": 218,
+        "title": "4 · AI ethics charters"
+      },
+      {
+        "t": 272,
+        "title": "5 · Four arenas"
+      },
+      {
+        "t": 327,
+        "title": "6 · GDPR and the human in the loop"
+      },
+      {
+        "t": 377,
+        "title": "7 · The AI Act"
+      },
+      {
+        "t": 447,
+        "title": "8 · Generative AI"
+      },
+      {
+        "t": 507,
+        "title": "9 · The humans behind AI"
+      },
+      {
+        "t": 548,
+        "title": "10 · Value chains"
+      },
+      {
+        "t": 599,
+        "title": "11 · Fairness and technosolutionism"
+      },
+      {
+        "t": 650,
+        "title": "12 · Algorithms in practice"
+      },
+      {
+        "t": 694,
+        "title": "13 · Explanation and contestation"
+      },
+      {
+        "t": 738,
+        "title": "14 · How everything connects"
+      },
+      {
+        "t": 794,
+        "title": "15 · Writing a long answer"
+      },
+      {
+        "t": 842,
+        "title": "16 · Writing a short answer"
+      },
+      {
+        "t": 868,
+        "title": "17 · Check yourself (1/5)"
+      },
+      {
+        "t": 893,
+        "title": "17 · Check yourself (2/5)"
+      },
+      {
+        "t": 913,
+        "title": "17 · Check yourself (3/5)"
+      },
+      {
+        "t": 932,
+        "title": "17 · Check yourself (4/5)"
+      },
+      {
+        "t": 951,
+        "title": "17 · Check yourself (5/5)"
+      },
+      {
+        "t": 969,
+        "title": "Closing"
+      }
+    ]
+  },
   "roadmap": {
     "nodes": [
       {
