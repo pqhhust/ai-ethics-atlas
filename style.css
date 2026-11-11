@@ -43,3 +43,54 @@ a.card.title-link{text-decoration:none;color:var(--ink)}a.card.title-link span{c
 .edit-cue{display:block;width:100%;box-sizing:border-box;margin-top:4px;font-size:14px}
 .add-line{display:block;width:100%;margin:6px 0 4px;border-style:dashed!important;background:transparent!important;color:var(--teal)!important}
 @media print{.script-editor{display:none!important}}
+/* ===== Exam preparation pages ===== */
+.exam-banner .toolbar a{color:#e0ede5;border:1px solid #4b6770;border-radius:6px;padding:6px 10px;text-decoration:none;font-size:14px}
+.exam-banner h2{margin-top:6px}
+.prefs button.selected,.confidence button.selected{background:var(--teal);color:#fff;border-color:var(--teal)}
+.part-jumps{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.part-jumps button{font-size:13px;padding:6px 10px}
+.part h2{margin-top:0}
+.ideas{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.idea{display:grid;grid-template-columns:34px minmax(0,1fr);gap:8px;padding:12px 0;border-top:1px solid var(--line)}
+.idea:first-child{border-top:0}
+.idea-num{font-family:var(--serif);font-size:20px;color:var(--teal);line-height:1.4}
+.idea-key{display:none;font-weight:600;margin:0}
+.idea-en{margin:0 0 6px;color:var(--ink)!important}
+.vi{color:#5b4a2e!important;background:#f7f0e4;border-left:3px solid var(--gold);padding:6px 10px;border-radius:0 5px 5px 0;margin:4px 0;font-size:15px}
+td.vi,th.vi{border-left:0;border-radius:0}
+.hide-vi .vi{display:none}
+.idea-tip{font-size:13px;color:#87602f!important;margin:6px 0 0}
+.recall .idea{cursor:pointer}
+.recall .idea .idea-key{display:block}
+.recall .idea .idea-body{display:none}
+.recall .idea.revealed .idea-body{display:block}
+.recall .idea:not(.revealed) .idea-key::after{content:'  · tap to reveal';font-weight:400;color:var(--muted);font-size:12px}
+.slot{background:#e3ecf4;color:#24506d;border-radius:4px;padding:0 5px;font-size:.85em;font-weight:700;letter-spacing:.3px}
+mark.filled{background:#fbe8c8;color:#5b3d12;border-radius:4px;padding:0 3px}
+.templates{padding-left:22px}.templates li{margin:10px 0}.templates p{margin:2px 0;color:var(--ink)}
+.blocks{list-style:none;padding:0;display:grid;gap:12px}
+.blocks li{display:grid;grid-template-columns:42px minmax(0,1fr);gap:10px;align-items:start}
+.blocks p{margin:4px 0}
+.block-label{background:var(--nav);color:#fff;border-radius:6px;text-align:center;font-weight:700;padding:4px 0;font-size:13px}
+table.gloss td{vertical-align:top;font-size:14px}
+.game-card h2{margin-top:6px}
+.flashcard{display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;width:100%;min-height:260px;padding:30px;background:#fff;border:2px solid var(--line);border-radius:14px;text-align:center;font-size:17px;transition:transform .2s}
+.flashcard:hover{background:#fff;transform:translateY(-2px)}
+.flashcard.flipped{border-color:var(--teal)}
+.fc-term{font-family:var(--serif);font-size:clamp(22px,3vw,32px);font-weight:400}
+.fc-def{max-width:640px}
+.toolbar.center{justify-content:center}
+.match-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:14px}
+.match-grid>div{display:grid;gap:10px;align-content:start}
+.match-item{text-align:left;font-size:14px;line-height:1.4}
+.match-item.selected{border-color:var(--teal);background:var(--soft);box-shadow:0 0 0 2px var(--teal)}
+.match-item.done{opacity:.35;text-decoration:line-through}
+.quiz-def{font-size:19px;color:var(--ink)!important;line-height:1.55}
+.quiz-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.quiz-opts button{padding:16px;font-size:16px;text-align:left}
+.quiz-opts button.right{background:#dcefe3;border-color:#2f8a5b;color:#17442c}
+.quiz-opts button.wrong{background:#f6dcdc;border-color:#b24a4a;color:#5e1d1d}
+@media (max-width:760px){.match-grid,.quiz-opts{grid-template-columns:1fr}.blocks li{grid-template-columns:36px minmax(0,1fr)}}
+@media print{.sidebar,.topbar,footer,.toolbar,.part-jumps,.notes,.notes-label,.confidence,#toast{display:none!important}.workspace{margin:0}main{padding:0;max-width:none}.card{break-inside:avoid;border:0;padding:8px 0}details{display:block}details>summary{display:none}details .detail-content{display:block}.recall .idea .idea-body{display:block}body{background:#fff;font-size:12px}}
+.toolbar select{max-width:100%;min-width:0;text-overflow:ellipsis}
+@media (max-width:760px){table.gloss,table.gloss tbody,table.gloss tr,table.gloss td{display:block;width:100%}table.gloss thead{display:none}table.gloss tr{padding:10px 12px;border-bottom:1px solid var(--line)}table.gloss td{border:0;padding:3px 0}}
