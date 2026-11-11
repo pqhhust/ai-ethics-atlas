@@ -6277,5 +6277,1077 @@
         }
       ]
     }
-  ]
+  ],
+  "roadmap": {
+    "nodes": [
+      {
+        "id": "FRAME",
+        "lecture": "L1",
+        "label": "Framing",
+        "en": "Choosing where a technical object starts and ends; it makes some problems, actors and remedies visible and hides others.",
+        "vi": "Đóng khung: chọn ranh giới đối tượng phân tích — làm lộ ra cái này, che khuất cái kia."
+      },
+      {
+        "id": "STS",
+        "lecture": "L1",
+        "label": "Sociotechnical system",
+        "en": "Models, data, workers, institutions, users, law and affected people studied as one system.",
+        "vi": "Hệ thống xã hội–kỹ thuật: công nghệ và con người là một khối."
+      },
+      {
+        "id": "METH",
+        "lecture": "L1",
+        "label": "STS methods",
+        "en": "Ethnography/interviews, discourse analysis, computational methods, controversies, imaginaries.",
+        "vi": "Phương pháp: dân tộc học, phân tích diễn ngôn, phương pháp tính toán, tranh cãi."
+      },
+      {
+        "id": "POLY",
+        "lecture": "L1",
+        "label": "Polysemy of AI",
+        "en": "AI means different things in technical, media, regulatory and scientific arenas.",
+        "vi": "AI đa nghĩa tuỳ đấu trường."
+      },
+      {
+        "id": "HIST",
+        "lecture": "L1",
+        "label": "Symbolic vs connectionist",
+        "en": "Rival, coexisting traditions; history of AI is not linear (Cardon 2018, Gargiulo 2023).",
+        "vi": "Biểu tượng vs nơ-ron: cùng tồn tại, lịch sử không tuyến tính."
+      },
+      {
+        "id": "MAT",
+        "lecture": "L1",
+        "label": "Materiality of AI",
+        "en": "AI depends on minerals, energy, water, hardware and labour (Crawford).",
+        "vi": "Tính vật chất: khoáng sản, điện, nước, phần cứng, lao động."
+      },
+      {
+        "id": "LAB",
+        "lecture": "L1",
+        "label": "Hidden human labour",
+        "en": "Human work behind “automatic” AI that is made invisible.",
+        "vi": "Lao động con người bị che giấu sau AI “tự động”."
+      },
+      {
+        "id": "DCOL",
+        "lecture": "L1",
+        "label": "Data colonialism",
+        "en": "Extraction of value from data concentrating wealth; extension of colonialism and capitalism.",
+        "vi": "Thực dân dữ liệu: khai thác giá trị, tập trung của cải."
+      },
+      {
+        "id": "REACT",
+        "lecture": "L1",
+        "label": "Reactivity / quantification",
+        "en": "People adapt to what is measured, so measures reshape the world (Espeland & Sauder).",
+        "vi": "Tính phản ứng: con người chạy theo chỉ số đo."
+      },
+      {
+        "id": "POWER",
+        "lecture": "L1",
+        "label": "Shifting power",
+        "en": "Ask who gains and loses power, not only whether AI is fair (Kalluri).",
+        "vi": "Hỏi: ai được/mất quyền lực?"
+      },
+      {
+        "id": "HYPE",
+        "lecture": "L2",
+        "label": "Hype",
+        "en": "Mismatch between claims and reality; waves of hope and hype.",
+        "vi": "Thổi phồng: lời hứa ≠ thực tế."
+      },
+      {
+        "id": "ETH",
+        "lecture": "L2",
+        "label": "Ethics charters",
+        "en": "84–436 guidelines converging on 5 principles but divergent in meaning (Jobin; Gornet).",
+        "vi": "Hiến chương đạo đức: hội tụ 5 nguyên tắc, hiểu khác nhau."
+      },
+      {
+        "id": "POLES",
+        "lecture": "L2",
+        "label": "Three poles of discourse",
+        "en": "Technical, regulatory and business/innovation discourses.",
+        "vi": "Ba cực: kỹ thuật, pháp lý, kinh doanh."
+      },
+      {
+        "id": "OPGAP",
+        "lecture": "L2",
+        "label": "Operationalisation gap",
+        "en": "Principles rarely become concrete procedures; work, power and ecology stay invisible.",
+        "vi": "Khoảng trống vận hành hoá: nguyên tắc chưa thành quy trình."
+      },
+      {
+        "id": "ARENA",
+        "lecture": "L2",
+        "label": "Four arenas",
+        "en": "Super-intelligence, open-world agents, sociotechnical criticism, technical-economic conformity.",
+        "vi": "Bốn đấu trường đóng khung rủi ro khác nhau."
+      },
+      {
+        "id": "SAFE",
+        "lecture": "L2",
+        "label": "AI safety arena",
+        "en": "Existential/loss-of-control framing led by tech leaders; nuclear analogy.",
+        "vi": "An toàn AI: rủi ro tồn vong, so sánh hạt nhân."
+      },
+      {
+        "id": "CRIT",
+        "lecture": "L2",
+        "label": "Sociotechnical criticism",
+        "en": "AI reinforces power structures and carries systematic bias; audits and social science.",
+        "vi": "Phê phán xã hội–kỹ thuật: quyền lực, thiên lệch hệ thống."
+      },
+      {
+        "id": "CONF",
+        "lecture": "L2",
+        "label": "Conformity / Brussels effect",
+        "en": "EU market approach: build conformity for AI products; rules spread globally.",
+        "vi": "Tuân thủ thị trường EU, hiệu ứng Brussels."
+      },
+      {
+        "id": "STD",
+        "lecture": "L2",
+        "label": "Harmonised standards",
+        "en": "Technical norms giving presumption of conformity; hard to certify fundamental rights.",
+        "vi": "Tiêu chuẩn hài hoà; khó “chứng nhận” quyền con người."
+      },
+      {
+        "id": "SOFT",
+        "lecture": "L3",
+        "label": "Soft law",
+        "en": "Non-binding principles; can harden through public commitment or binding texts.",
+        "vi": "Luật mềm: không ràng buộc nhưng có thể “cứng lại”."
+      },
+      {
+        "id": "GDPR",
+        "lecture": "L3",
+        "label": "GDPR basis + principles",
+        "en": "One lawful basis AND all Art. 5 principles; accountability.",
+        "vi": "GDPR: một cơ sở pháp lý VÀ mọi nguyên tắc."
+      },
+      {
+        "id": "PSEUDO",
+        "lecture": "L3",
+        "label": "Pseudonymisation",
+        "en": "Data with identifiers replaced remain personal data.",
+        "vi": "Giả danh hoá vẫn là dữ liệu cá nhân."
+      },
+      {
+        "id": "A22",
+        "lecture": "L3",
+        "label": "Art. 22 GDPR",
+        "en": "Right not to be subject to solely automated decisions with significant effects; right to contest.",
+        "vi": "Quyền không bị quyết định hoàn toàn tự động."
+      },
+      {
+        "id": "SCHUFA",
+        "lecture": "L3",
+        "label": "SCHUFA ruling",
+        "en": "A score that decisively drives a human’s decision is an automated decision (CJEU 2023).",
+        "vi": "Án SCHUFA: con người đóng dấu điểm máy = quyết định tự động."
+      },
+      {
+        "id": "IA",
+        "lecture": "L3",
+        "label": "DPIA / FRIA",
+        "en": "Impact assessments: data protection (GDPR Art. 35) and fundamental rights (AI Act Art. 27).",
+        "vi": "Đánh giá tác động: dữ liệu (DPIA) và quyền cơ bản (FRIA)."
+      },
+      {
+        "id": "AISYS",
+        "lecture": "L3",
+        "label": "AI system (definition)",
+        "en": "Machine-based system that infers outputs from inputs; inference is the key criterion.",
+        "vi": "Định nghĩa hệ thống AI: tiêu chí suy luận."
+      },
+      {
+        "id": "ROLES",
+        "lecture": "L3",
+        "label": "Provider / deployer",
+        "en": "Who places the system on the market vs who uses it; duties follow the role.",
+        "vi": "Nhà cung cấp / bên triển khai: nghĩa vụ theo vai trò."
+      },
+      {
+        "id": "PYR",
+        "lecture": "L3",
+        "label": "Risk pyramid",
+        "en": "Prohibited, high-risk, transparency, minimal; plus GPAI rules.",
+        "vi": "Kim tự tháp rủi ro."
+      },
+      {
+        "id": "PROH",
+        "lecture": "L3",
+        "label": "Prohibited practices",
+        "en": "Social scoring, emotion inference at work/school, real-time RBI for police, face scraping…",
+        "vi": "Thực hành bị cấm."
+      },
+      {
+        "id": "HR",
+        "lecture": "L3",
+        "label": "High-risk obligations",
+        "en": "Risk management, data governance, documentation, logs, oversight, robustness (Art. 9–17).",
+        "vi": "Nghĩa vụ hệ rủi ro cao."
+      },
+      {
+        "id": "OVS",
+        "lecture": "L3",
+        "label": "Human oversight (Art. 14)",
+        "en": "People must be able to understand, monitor, override and stop the system.",
+        "vi": "Giám sát của con người: hiểu, theo dõi, bác bỏ, dừng."
+      },
+      {
+        "id": "TRANS",
+        "lecture": "L3",
+        "label": "Transparency (Art. 50)",
+        "en": "Disclose AI interaction, mark synthetic content, disclose deepfakes.",
+        "vi": "Minh bạch: báo là AI, đánh dấu nội dung tổng hợp."
+      },
+      {
+        "id": "GPAI",
+        "lecture": "L3",
+        "label": "GPAI model",
+        "en": "General-purpose model integrable downstream; documentation, copyright policy, training summary.",
+        "vi": "Mô hình AI đa dụng."
+      },
+      {
+        "id": "SYS",
+        "lecture": "L3",
+        "label": "Systemic risk",
+        "en": "High-impact GPAI risk; presumed above 10^25 FLOPs or designated.",
+        "vi": "Rủi ro hệ thống của GPAI."
+      },
+      {
+        "id": "PANEL",
+        "lecture": "L3",
+        "label": "AI Office & scientific panel",
+        "en": "EU enforcement of GPAI; independent experts can issue qualified alerts.",
+        "vi": "Văn phòng AI và hội đồng khoa học độc lập."
+      },
+      {
+        "id": "COPY",
+        "lecture": "L3",
+        "label": "Copyright & TDM",
+        "en": "Protects human expression; EU TDM exceptions with opt-out vs US fair use.",
+        "vi": "Bản quyền và ngoại lệ khai thác dữ liệu."
+      },
+      {
+        "id": "LIAB",
+        "lecture": "L3",
+        "label": "Liability",
+        "en": "Contractual, civil (fault + harm + causation), product, criminal; disclaimers are not enough.",
+        "vi": "Trách nhiệm pháp lý."
+      },
+      {
+        "id": "PLAT",
+        "lecture": "L4",
+        "label": "Platform",
+        "en": "Intermediary that matches parties, captures data and taskifies contributions.",
+        "vi": "Nền tảng trung gian."
+      },
+      {
+        "id": "TASK",
+        "lecture": "L4",
+        "label": "Taskification",
+        "en": "Breaking work into standardised micro-tasks.",
+        "vi": "Nhiệm vụ hoá."
+      },
+      {
+        "id": "DL",
+        "lecture": "L4",
+        "label": "Digital labour",
+        "en": "Continuum from unpaid user activity to micro-paid piecework.",
+        "vi": "Lao động số."
+      },
+      {
+        "id": "ROLES3",
+        "lecture": "L4",
+        "label": "Trainer / verifier / imitator",
+        "en": "Three human roles behind AI (Tubaro et al. 2020).",
+        "vi": "Ba vai trò: huấn luyện, kiểm định, giả làm AI."
+      },
+      {
+        "id": "CHAIN",
+        "lecture": "L4",
+        "label": "Value chain & multilayer stacks",
+        "en": "Chains of subcontractors: “black boxes within black boxes” (Schmidt).",
+        "vi": "Chuỗi giá trị nhiều tầng thầu phụ."
+      },
+      {
+        "id": "DISP",
+        "lecture": "L4",
+        "label": "Data-production dispositif",
+        "en": "Instructions + interface + metrics define “ground truth” and pace (Miceli & Posada).",
+        "vi": "Bộ máy sản xuất dữ liệu quyết định “sự thật”."
+      },
+      {
+        "id": "PAY",
+        "lecture": "L4",
+        "label": "Effective pay & conditions",
+        "en": "Piece rate ≠ hourly pay; precarious contracts, harmful content.",
+        "vi": "Thu nhập thực và điều kiện làm việc."
+      },
+      {
+        "id": "NS",
+        "lecture": "L4",
+        "label": "Global North–South division",
+        "en": "Demand in North America/Europe, data work in the Global South.",
+        "vi": "Phân công lao động Bắc–Nam."
+      },
+      {
+        "id": "BIAS",
+        "lecture": "L5",
+        "label": "Algorithmic bias (COMPAS)",
+        "en": "Unequal errors; debiasing has mixed results; metric choice is normative.",
+        "vi": "Thiên lệch thuật toán, vụ COMPAS."
+      },
+      {
+        "id": "FAIRRAD",
+        "lecture": "L5",
+        "label": "Fair AI vs radical AI",
+        "en": "A fair algorithm is pointless without deeper change (SyRI, CNAF, Clearview).",
+        "vi": "AI công bằng vs AI cấp tiến."
+      },
+      {
+        "id": "TECHSOL",
+        "lecture": "L5",
+        "label": "Technosolutionism",
+        "en": "Assuming technology is a necessary part of the solution.",
+        "vi": "Chủ nghĩa giải pháp công nghệ."
+      },
+      {
+        "id": "MULCH",
+        "lecture": "L5",
+        "label": "Mulching proposal",
+        "en": "Satire: FAT can make an unacceptable purpose look acceptable.",
+        "vi": "Bài châm biếm “đề xuất nghiền”."
+      },
+      {
+        "id": "DECOUP",
+        "lecture": "L5",
+        "label": "Decoupling & buffering",
+        "en": "Gap between management discourse and practice; foot-dragging, gaming, critique.",
+        "vi": "Tách rời diễn ngôn–thực hành; kháng cự."
+      },
+      {
+        "id": "EXPF",
+        "lecture": "L5",
+        "label": "Expert fields",
+        "en": "Judges vs journalists react differently to algorithms (Christin; Bourdieu).",
+        "vi": "Trường chuyên gia: thẩm phán vs nhà báo."
+      },
+      {
+        "id": "CASS",
+        "lecture": "L5",
+        "label": "Cour de cassation",
+        "en": "In-house anonymisation AI: training never ends, “absent colleague”.",
+        "vi": "Toà Phá án: huấn luyện không bao giờ kết thúc."
+      },
+      {
+        "id": "EXPL",
+        "lecture": "L5",
+        "label": "Explanations",
+        "en": "Selective, contrastive, dialogic; for experts, laypeople or regulators.",
+        "vi": "Giải thích: chọn lọc, đối chiếu, theo người nghe."
+      },
+      {
+        "id": "CONTEST",
+        "lecture": "L5",
+        "label": "Contestability",
+        "en": "Ability to challenge and change an outcome; political turn of explainability.",
+        "vi": "Khả năng phản đối/khiếu nại."
+      },
+      {
+        "id": "COLL",
+        "lecture": "L5",
+        "label": "Collective contestation",
+        "en": "NGOs, ombudsperson, public scrutiny tools address information asymmetry.",
+        "vi": "Phản đối tập thể: NGO, Défenseur des droits, cơ sở dữ liệu công khai."
+      }
+    ],
+    "edges": [
+      {
+        "source": "FRAME",
+        "target": "STS",
+        "rel": "sets the boundary of",
+        "why": "The wider the framing, the more actors of the system become visible."
+      },
+      {
+        "source": "METH",
+        "target": "STS",
+        "rel": "are how we study",
+        "why": "Name the method you would use to check a claim about the system."
+      },
+      {
+        "source": "STS",
+        "target": "LAB",
+        "rel": "makes visible",
+        "why": "A model-only framing hides the workers."
+      },
+      {
+        "source": "STS",
+        "target": "MAT",
+        "rel": "includes",
+        "why": "Infrastructure, energy and minerals are part of the system."
+      },
+      {
+        "source": "POLY",
+        "target": "HIST",
+        "rel": "results from",
+        "why": "Competing definitions come from fights for scientific space."
+      },
+      {
+        "source": "POLY",
+        "target": "AISYS",
+        "rel": "is narrowed in law by",
+        "why": "The AI Act needs one legal definition despite polysemy."
+      },
+      {
+        "source": "HIST",
+        "target": "AISYS",
+        "rel": "explains the scope of",
+        "why": "Both machine learning and logic/knowledge-based inference count."
+      },
+      {
+        "source": "HIST",
+        "target": "PANEL",
+        "rel": "guides the balance of",
+        "why": "Use research areas (Gargiulo) to balance the scientific panel."
+      },
+      {
+        "source": "MAT",
+        "target": "LAB",
+        "rel": "includes",
+        "why": "Labour is part of AI’s materiality."
+      },
+      {
+        "source": "MAT",
+        "target": "NS",
+        "rel": "follows the geography of",
+        "why": "Extraction of minerals and of data work both flow North ← South."
+      },
+      {
+        "source": "LAB",
+        "target": "ROLES3",
+        "rel": "is detailed as",
+        "why": "Trainer, verifier, imitator."
+      },
+      {
+        "source": "DCOL",
+        "target": "NS",
+        "rel": "reinforces",
+        "why": "Value captured in the North, resources and work from the South."
+      },
+      {
+        "source": "DCOL",
+        "target": "POWER",
+        "rel": "is a form of",
+        "why": "Data extraction shifts power to a few companies."
+      },
+      {
+        "source": "REACT",
+        "target": "DECOUP",
+        "rel": "explains the gaming in",
+        "why": "Users optimise for what the algorithm measures."
+      },
+      {
+        "source": "REACT",
+        "target": "DISP",
+        "rel": "operates through",
+        "why": "Accuracy metrics shape how workers label."
+      },
+      {
+        "source": "POWER",
+        "target": "FAIRRAD",
+        "rel": "reframes",
+        "why": "Ask who gains power, not only which metric is fair."
+      },
+      {
+        "source": "HYPE",
+        "target": "TECHSOL",
+        "rel": "feeds",
+        "why": "Inflated promises make technology look necessary."
+      },
+      {
+        "source": "HYPE",
+        "target": "SAFE",
+        "rel": "amplifies",
+        "why": "Super-intelligence narratives attract attention and funding."
+      },
+      {
+        "source": "METH",
+        "target": "ETH",
+        "rel": "discourse analysis maps",
+        "why": "Jobin and Gornet analysed charters with discourse methods."
+      },
+      {
+        "source": "ETH",
+        "target": "POLES",
+        "rel": "is structured into",
+        "why": "Technical, regulatory and business poles."
+      },
+      {
+        "source": "ETH",
+        "target": "OPGAP",
+        "rel": "suffers from",
+        "why": "Principles without owner, evidence or remedy."
+      },
+      {
+        "source": "ETH",
+        "target": "SOFT",
+        "rel": "has the legal status of",
+        "why": "Charters are soft law."
+      },
+      {
+        "source": "OPGAP",
+        "target": "LAB",
+        "rel": "leaves out",
+        "why": "Charters rarely discuss work, power, ecology."
+      },
+      {
+        "source": "FRAME",
+        "target": "ARENA",
+        "rel": "differs in each",
+        "why": "Each arena frames “AI risk” differently."
+      },
+      {
+        "source": "ARENA",
+        "target": "SAFE",
+        "rel": "includes",
+        "why": "Super-intelligence / AI safety arena."
+      },
+      {
+        "source": "ARENA",
+        "target": "CRIT",
+        "rel": "includes",
+        "why": "Sociotechnical criticism arena."
+      },
+      {
+        "source": "ARENA",
+        "target": "CONF",
+        "rel": "includes",
+        "why": "Technical-economic conformity arena."
+      },
+      {
+        "source": "SAFE",
+        "target": "CRIT",
+        "rel": "is criticised by",
+        "why": "Distraction from present harms (Bender; TESCREAL)."
+      },
+      {
+        "source": "SAFE",
+        "target": "SYS",
+        "rel": "inspired",
+        "why": "GPAI systemic-risk rules echo the safety framing."
+      },
+      {
+        "source": "CRIT",
+        "target": "BIAS",
+        "rel": "documents",
+        "why": "Gender Shades, COMPAS: systematic bias."
+      },
+      {
+        "source": "CRIT",
+        "target": "POWER",
+        "rel": "argues AI reinforces",
+        "why": "Weizenbaum: AI comforts power structures."
+      },
+      {
+        "source": "POLES",
+        "target": "CONF",
+        "rel": "regulatory pole leads to",
+        "why": "Over time ethics is structured into regulation."
+      },
+      {
+        "source": "SOFT",
+        "target": "CONF",
+        "rel": "hardens into",
+        "why": "Charters → regulation → standards continuum."
+      },
+      {
+        "source": "CONF",
+        "target": "PYR",
+        "rel": "produces",
+        "why": "The AI Act risk pyramid."
+      },
+      {
+        "source": "CONF",
+        "target": "STD",
+        "rel": "relies on",
+        "why": "Harmonised standards and CE marking."
+      },
+      {
+        "source": "STD",
+        "target": "HR",
+        "rel": "give presumption of conformity for",
+        "why": "Standards operationalise high-risk requirements."
+      },
+      {
+        "source": "STD",
+        "target": "IA",
+        "rel": "cannot replace",
+        "why": "Fundamental rights are contextual and need case-by-case assessment."
+      },
+      {
+        "source": "AISYS",
+        "target": "PYR",
+        "rel": "is then classified on",
+        "why": "First “is it AI?”, then “which risk level?”"
+      },
+      {
+        "source": "PYR",
+        "target": "PROH",
+        "rel": "top level",
+        "why": "Unacceptable risk: banned."
+      },
+      {
+        "source": "PYR",
+        "target": "HR",
+        "rel": "second level",
+        "why": "Strict obligations."
+      },
+      {
+        "source": "PYR",
+        "target": "TRANS",
+        "rel": "third level",
+        "why": "Disclosure duties."
+      },
+      {
+        "source": "ROLES",
+        "target": "HR",
+        "rel": "allocates the duties of",
+        "why": "Provider builds compliance; deployer uses it properly."
+      },
+      {
+        "source": "HR",
+        "target": "OVS",
+        "rel": "requires",
+        "why": "Art. 14 human oversight."
+      },
+      {
+        "source": "HR",
+        "target": "IA",
+        "rel": "triggers",
+        "why": "FRIA for public deployers; DPIA under GDPR."
+      },
+      {
+        "source": "HR",
+        "target": "DISP",
+        "rel": "data governance must examine",
+        "why": "Art. 10: how labels and “ground truth” were produced."
+      },
+      {
+        "source": "PROH",
+        "target": "FAIRRAD",
+        "rel": "is the radical answer of",
+        "why": "Some uses are banned rather than debiased."
+      },
+      {
+        "source": "TRANS",
+        "target": "EXPL",
+        "rel": "is less than",
+        "why": "Saying “this is AI” is not an explanation."
+      },
+      {
+        "source": "GDPR",
+        "target": "A22",
+        "rel": "contains",
+        "why": "Automated-decision safeguards."
+      },
+      {
+        "source": "GDPR",
+        "target": "PSEUDO",
+        "rel": "still applies to",
+        "why": "Pseudonymised data are personal data."
+      },
+      {
+        "source": "GDPR",
+        "target": "IA",
+        "rel": "requires",
+        "why": "DPIA for high-risk processing."
+      },
+      {
+        "source": "A22",
+        "target": "SCHUFA",
+        "rel": "is interpreted by",
+        "why": "What counts as “solely automated”."
+      },
+      {
+        "source": "SCHUFA",
+        "target": "OVS",
+        "rel": "shows oversight must be",
+        "why": "Effective, not rubber-stamping."
+      },
+      {
+        "source": "SCHUFA",
+        "target": "DECOUP",
+        "rel": "is tested by",
+        "why": "Observe whether reviewers really deviate from the score."
+      },
+      {
+        "source": "A22",
+        "target": "CONTEST",
+        "rel": "grants a right to",
+        "why": "Human intervention, express a view, contest (22(3))."
+      },
+      {
+        "source": "GPAI",
+        "target": "SYS",
+        "rel": "may carry",
+        "why": "Above 10^25 FLOPs or designated."
+      },
+      {
+        "source": "GPAI",
+        "target": "COPY",
+        "rel": "must have a policy on",
+        "why": "Copyright compliance and training-data summary."
+      },
+      {
+        "source": "GPAI",
+        "target": "ROLES3",
+        "rel": "relies on",
+        "why": "RLHF raters and moderators."
+      },
+      {
+        "source": "SYS",
+        "target": "PANEL",
+        "rel": "is flagged by",
+        "why": "Qualified alerts from the scientific panel."
+      },
+      {
+        "source": "COPY",
+        "target": "DCOL",
+        "rel": "echoes",
+        "why": "Public data taken and sold back as a service."
+      },
+      {
+        "source": "LIAB",
+        "target": "ROLES",
+        "rel": "asks who is responsible among",
+        "why": "A disclaimer does not move responsibility."
+      },
+      {
+        "source": "LIAB",
+        "target": "TRANS",
+        "rel": "is not solved by",
+        "why": "A chatbot disclaimer (Air Canada)."
+      },
+      {
+        "source": "PLAT",
+        "target": "TASK",
+        "rel": "organises work by",
+        "why": "Taskification makes contributions interoperable."
+      },
+      {
+        "source": "PLAT",
+        "target": "DL",
+        "rel": "puts users to",
+        "why": "From free labour to micro-paid work."
+      },
+      {
+        "source": "TASK",
+        "target": "ROLES3",
+        "rel": "produces micro-tasks for",
+        "why": "Labelling, checking, impersonating."
+      },
+      {
+        "source": "ROLES3",
+        "target": "CASS",
+        "rel": "verification example:",
+        "why": "Training never ends; a permanent team."
+      },
+      {
+        "source": "ROLES3",
+        "target": "OVS",
+        "rel": "verifiers are a hidden form of",
+        "why": "Human checking that is rarely recognised."
+      },
+      {
+        "source": "CHAIN",
+        "target": "NS",
+        "rel": "spreads across",
+        "why": "Subcontracting to lower-income countries."
+      },
+      {
+        "source": "CHAIN",
+        "target": "HR",
+        "rel": "obscures provenance for",
+        "why": "Black boxes within black boxes weaken data documentation."
+      },
+      {
+        "source": "DISP",
+        "target": "BIAS",
+        "rel": "shapes",
+        "why": "Ground truth decided by instructions and metrics."
+      },
+      {
+        "source": "PAY",
+        "target": "CHAIN",
+        "rel": "is pushed down by",
+        "why": "Accuracy and price targets at the top."
+      },
+      {
+        "source": "BIAS",
+        "target": "FRAME",
+        "rel": "raises a question of",
+        "why": "Choosing a fairness metric is a framing choice."
+      },
+      {
+        "source": "BIAS",
+        "target": "FAIRRAD",
+        "rel": "debiasing limits lead to",
+        "why": "Fix the algorithm or question the practice?"
+      },
+      {
+        "source": "FAIRRAD",
+        "target": "TECHSOL",
+        "rel": "rejects",
+        "why": "A better algorithm does not fix an unjust policy."
+      },
+      {
+        "source": "TECHSOL",
+        "target": "MULCH",
+        "rel": "is illustrated by",
+        "why": "FAT applied to an absurd purpose."
+      },
+      {
+        "source": "MULCH",
+        "target": "ETH",
+        "rel": "critiques checklist",
+        "why": "Principles without asking “should this exist?”."
+      },
+      {
+        "source": "EXPF",
+        "target": "DECOUP",
+        "rel": "explains differences in",
+        "why": "Judges openly criticise, journalists game."
+      },
+      {
+        "source": "DECOUP",
+        "target": "OVS",
+        "rel": "tests whether",
+        "why": "Nominal oversight is real."
+      },
+      {
+        "source": "CASS",
+        "target": "PSEUDO",
+        "rel": "performs",
+        "why": "Anonymising court decisions — readability vs protection."
+      },
+      {
+        "source": "CASS",
+        "target": "LAB",
+        "rel": "shows internal",
+        "why": "Data work by civil servants, not only outsourced."
+      },
+      {
+        "source": "EXPL",
+        "target": "CONTEST",
+        "rel": "has a political turn in",
+        "why": "Explanations matter when they enable challenge."
+      },
+      {
+        "source": "CONTEST",
+        "target": "COLL",
+        "rel": "individual limits require",
+        "why": "Information asymmetry and power imbalance."
+      },
+      {
+        "source": "COLL",
+        "target": "POWER",
+        "rel": "rebalances",
+        "why": "NGOs, ombudsperson, public scrutiny."
+      }
+    ],
+    "threads": [
+      {
+        "title": "Framing thread",
+        "vi": "Mạch “đóng khung”",
+        "use": "Any “analyse/critique this proposal” question — the teachers’ favourite.",
+        "steps": [
+          {
+            "node": "FRAME",
+            "text": "Start by saying where the system begins and ends: framing decides what is visible."
+          },
+          {
+            "node": "STS",
+            "text": "Choose a wide, sociotechnical framing: data, workers, institutions, users, affected people."
+          },
+          {
+            "node": "ARENA",
+            "text": "Show that actors frame the risk differently (safety, conformity, criticism)."
+          },
+          {
+            "node": "BIAS",
+            "text": "Even a fairness metric is a framing choice — COMPAS."
+          },
+          {
+            "node": "FAIRRAD",
+            "text": "Ask whether fixing the algorithm is enough, or whether the practice itself is unjust."
+          },
+          {
+            "node": "TECHSOL",
+            "text": "Question whether technology is needed at all."
+          },
+          {
+            "node": "MULCH",
+            "text": "Conclude: FAT checklists cannot justify an unacceptable purpose."
+          }
+        ]
+      },
+      {
+        "title": "Human-in-the-loop thread",
+        "vi": "Mạch “con người trong vòng lặp”",
+        "use": "Credit, hiring, welfare, videosurveillance: “is there real human control?”",
+        "steps": [
+          {
+            "node": "LAB",
+            "text": "Name the humans: AI depends on hidden labour."
+          },
+          {
+            "node": "ROLES3",
+            "text": "Classify them: trainers, verifiers, imitators — who, contract, pay, internal or external."
+          },
+          {
+            "node": "DISP",
+            "text": "Their instructions and metrics define the ground truth the model learns."
+          },
+          {
+            "node": "OVS",
+            "text": "The AI Act requires oversight able to understand, override and stop."
+          },
+          {
+            "node": "SCHUFA",
+            "text": "But a reviewer who always follows the score is not oversight."
+          },
+          {
+            "node": "A22",
+            "text": "Then the decision is automated and Art. 22 safeguards apply."
+          },
+          {
+            "node": "DECOUP",
+            "text": "Check in practice: measure override rates, observe use."
+          },
+          {
+            "node": "CONTEST",
+            "text": "Give affected people a real way to challenge the outcome."
+          }
+        ]
+      },
+      {
+        "title": "From ethics to law thread",
+        "vi": "Mạch “từ đạo đức đến luật”",
+        "use": "Government report on AI ethics trends; “is a charter enough?”",
+        "steps": [
+          {
+            "node": "ETH",
+            "text": "Charters converge on five principles but mean different things."
+          },
+          {
+            "node": "OPGAP",
+            "text": "They lack operationalisation and omit work, power, ecology."
+          },
+          {
+            "node": "SOFT",
+            "text": "Legally they are soft law — binding only if they harden."
+          },
+          {
+            "node": "CONF",
+            "text": "The EU hardened them into a market-conformity regulation."
+          },
+          {
+            "node": "PYR",
+            "text": "The AI Act sorts systems into a risk pyramid."
+          },
+          {
+            "node": "HR",
+            "text": "High-risk systems get concrete obligations."
+          },
+          {
+            "node": "STD",
+            "text": "Standards operationalise them…"
+          },
+          {
+            "node": "IA",
+            "text": "…but fundamental rights still need contextual impact assessments."
+          }
+        ]
+      },
+      {
+        "title": "Power & extraction thread",
+        "vi": "Mạch “quyền lực và khai thác”",
+        "use": "Materiality, labour, Global South, “who benefits?” questions.",
+        "steps": [
+          {
+            "node": "MAT",
+            "text": "Rematerialise the cloud: minerals, energy, labour."
+          },
+          {
+            "node": "DCOL",
+            "text": "Value is extracted from data and concentrated."
+          },
+          {
+            "node": "NS",
+            "text": "Work flows to the Global South, demand stays in the North."
+          },
+          {
+            "node": "CHAIN",
+            "text": "Through multilayer subcontracting chains…"
+          },
+          {
+            "node": "PAY",
+            "text": "…that push costs and precarity down to workers."
+          },
+          {
+            "node": "POWER",
+            "text": "So ask who gains and who loses power."
+          },
+          {
+            "node": "COLL",
+            "text": "And give collective, not only individual, means to contest."
+          }
+        ]
+      },
+      {
+        "title": "Generative AI thread",
+        "vi": "Mạch “AI tạo sinh / LLM”",
+        "use": "Partnership with an LLM provider; the OpenAI technical-document question.",
+        "steps": [
+          {
+            "node": "HYPE",
+            "text": "Separate promises from reality."
+          },
+          {
+            "node": "GPAI",
+            "text": "Classify the model as GPAI with its specific duties."
+          },
+          {
+            "node": "SYS",
+            "text": "Check systemic-risk criteria and extra duties."
+          },
+          {
+            "node": "PANEL",
+            "text": "Independent scientific experts can raise alerts."
+          },
+          {
+            "node": "COPY",
+            "text": "Training data raise copyright and TDM opt-out questions."
+          },
+          {
+            "node": "ROLES3",
+            "text": "RLHF raters and moderators are hidden workers."
+          },
+          {
+            "node": "MULCH",
+            "text": "A purely technical FAT document is not accountability."
+          },
+          {
+            "node": "EXPL",
+            "text": "Explanations must fit their audience and enable contestation."
+          }
+        ]
+      }
+    ]
+  }
 }
