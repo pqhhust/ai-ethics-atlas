@@ -1,0 +1,259 @@
+% AI Ethics (HSS_5DA06_TP) -- cheat sheet A4 recto-verso, giải thích tiếng Việt, thuật ngữ tiếng Anh
+% Nguồn: 4 bộ slide (Viard, Abel, Le Goff), transcript bài giảng, câu hỏi thi mẫu. Build: xelatex (2 lần)
+\documentclass[10pt]{article}
+\usepackage[a4paper,landscape,margin=0.25cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmainfont{texgyretermes}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{array}
+\makeatletter
+\newcommand{\needspace}[1]{\par\penalty-100\begingroup\setlength{\dimen@}{#1}\vskip\z@\@plus\dimen@\penalty-100\vskip\z@\@plus-\dimen@\vskip\dimen@\penalty9999\vskip-\dimen@\vskip\z@skip\endgroup}
+\makeatother
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\columnsep}{5pt}
+\setlength{\columnseprule}{0.3pt}
+\setlength{\tabcolsep}{1.6pt}
+\renewcommand{\arraystretch}{0.95}
+\definecolor{h1}{HTML}{1F4E79}\definecolor{h2}{HTML}{A23B2A}\definecolor{bg}{HTML}{EAF0F6}
+\setlist{nosep,leftmargin=6.5pt,labelsep=2pt,itemsep=0pt,topsep=0pt,partopsep=0pt,parsep=0pt}
+\setlist[itemize]{label={\color{h2}\scriptsize$\bullet$}}
+\setlist[itemize,2]{label={\color{h2}--},leftmargin=7pt}
+\newcommand{\sect}[1]{\needspace{3\baselineskip}\vspace{1.5pt}\noindent\colorbox{h1}{\parbox{\dimexpr\linewidth-2\fboxsep}{\bfseries\color{white}#1}}\par\vspace{0.8pt}}
+\newcommand{\sub}[1]{\needspace{2.2\baselineskip}\vspace{0.8pt}{\bfseries\color{h2}#1}\par\nopagebreak}
+\newcommand{\kw}[1]{\textbf{#1}}
+\newcommand{\cnt}[1]{{\color{h2}\bfseries(#1)}}
+\newcommand{\n}[1]{\,{\color{h2}\bfseries#1)}\,}
+\newcommand{\ex}[1]{\par\vspace{0.8pt}\noindent\colorbox{bg}{\parbox{\dimexpr\linewidth-2\fboxsep}{#1}}\par\vspace{0.5pt}}
+\newcommand{\ct}[1]{{\color{h1}\itshape(#1)}}
+\begin{document}
+\fontsize{8}{8.5}\selectfont
+\begin{multicols*}{4}
+\raggedcolumns
+\raggedright
+{\centering\fontsize{9}{10}\selectfont\bfseries\color{h1} AI Ethics (5DA06) -- cheat sheet (VI)\par}
+{\centering\itshape thuật ngữ \textbf{in đậm} = tiếng Anh như trong đề; \color{h1}(tác giả, năm) = trích dẫn để ghi vào bài\par}
+
+%=====================================================================
+\sect{0 Đề thi \& cách viết bài}
+\begin{itemize}
+\item Thi viết trên giấy 2h, \kw{có tài liệu kèm đề} (document \& discussion study). Đề mẫu: 6 câu dài + 4 câu ngắn.
+\item Câu ngắn kiểu ``kể tên 2--3 \kw{methods} phân tích sociotechnical system'' = 2/20 điểm: chỉ cần \emph{tên}.
+\item Giảng viên nói chắc chắn có \kw{1 câu về framing}; mỗi bài giảng có thể có 1 câu.
+\item \kw{Bẫy Schufa}: có người duyệt lại $\neq$ tự động là \emph{không} ``fully automated'' (mục 8).
+\item Họ chấm \emph{cách lập luận và đánh đổi} (trade-offs), không chỉ đáp án.
+\end{itemize}
+\sub{Khung trả lời câu dài \cnt{5 khối}}
+\begin{itemize}
+\item \n1\kw{Reframe}: ai hỏi, mục tiêu gì, phạm vi (gạch chân từ khóa đề, vd.\ ``scientific'', ``independent'').
+\item \n2\kw{Actors \& stakes}: ai liên quan, ai được/mất, quan hệ quyền lực.
+\item \n3\kw{Concepts} của bài giảng + trích dẫn (Tubaro 2020, Gornet 2024\ldots).
+\item \n4\kw{Recommendations} cụ thể, đo được (ai làm, làm gì, kiểm tra thế nào).
+\item \n5\kw{Limits / trade-offs}: framing của chính mình loại trừ cái gì; lựa chọn chuẩn tắc (normative choice) nói rõ.
+\end{itemize}
+
+%=====================================================================
+\sect{1 AI là sociotechnical system (Viard)}
+\begin{itemize}
+\item \kw{AI} = khái niệm chung chỉ các hệ thống \emph{học suy luận từ dữ liệu}; thuật ngữ \kw{polysemic} (đa nghĩa): kỹ thuật, báo chí, luật, khoa học định nghĩa khác nhau.
+\item Ví dụ thành công/thất bại ``ồn ào'' và ``im lặng'': AlphaGo, spam filters, COMPAS, SyRI. Thách thức: tách \kw{hype} khỏi thực tế.
+\item \kw{Sociotechnical system}: nghiên cứu \emph{vật thể kỹ thuật và con người như một hệ thống}; actors định hình không gian xã hội họ ở trong đó. Không gian của AI bị định hình bởi \cnt{3} \n1bối cảnh chính trị \& luật \n2thực tế kỹ thuật \n3trí tưởng tượng chung (imaginaries).
+\item \kw{STS} (Science and Technology Studies): vật thể kỹ thuật trong xã hội; sự \kw{reception} (tiếp nhận) không thể bỏ qua: cách dùng xuất hiện, thay đổi, biến mất.
+\item Sự chú ý của công dân và nhà hoạch định là \kw{tài nguyên hữu hạn}; quyết định được đưa ra trong \kw{sub-political spaces} \ct{Beck, 1986}.
+\item Quá trình \kw{variation \& selection} dẫn tới \kw{stabilisation}, với \kw{interpretive flexibility} rồi \kw{closure} (đóng lại một nghĩa).
+\item AI Act: ``essential to clarify the \emph{role of actors}'' $\Rightarrow$ xác định actors và vai trò.
+\end{itemize}
+\sub{Framing (chắc chắn có trong đề)}
+\begin{itemize}
+\item \kw{Framing} = chọn \emph{vật thể bắt đầu và kết thúc ở đâu}: AI chỉ là code Python? + mô hình toán + dữ liệu + người thu thập/gán nhãn + GPU, mỏ + người dùng + luật\ldots
+\item Framing quyết định \emph{cái gì được đo, cái gì vô hình}. Ví dụ \kw{life cycle analysis} (ACV): bắt đầu đếm phát thải từ đâu? Hai con số với framing khác nhau \emph{không so sánh được}.
+\item Mở rộng framing: đầy đủ hơn nhưng khó đo; thu hẹp: đo được nhưng bỏ sót. Luôn \emph{nói rõ và biện minh} framing của mình.
+\end{itemize}
+\sub{Methods phân tích sociotechnical system \cnt{7}}
+\begin{itemize}
+\item \n1framing \n2\kw{ethnography} \& phỏng vấn tại chỗ \n3\kw{discourse analysis} \n4\kw{computational methods} \n5tạo \kw{sociotechnical imaginaries} (utopia/dystopia) \n6tập trung vào \kw{controversies} \& điểm căng thẳng \n7so sánh các nguồn khác nhau: báo chí, khoa học, luật, xã hội dân sự.
+\end{itemize}
+\sub{Actors \& roles trong hệ thống AI (Q1 đề mẫu)}
+\begin{itemize}
+\item \kw{Researchers} (định nghĩa, phương pháp); \kw{providers / Big Tech} (xây và bán mô hình); \kw{deployers} (cơ quan, công ty dùng); \kw{data workers} (trainer, verifier, imitator); \kw{users / data subjects} (bị tác động, chống cự, khiếu nại); \kw{regulators} (EU, CNIL, AI Office); \kw{standardisation bodies} (CEN-CENELEC); \kw{media}; \kw{civil society} / NGOs (ProPublica, La Quadrature); \kw{investors}; \kw{miners / hardware} (Crawford).
+\item Mỗi actor: \emph{đóng góp gì} + \emph{lợi ích} + \emph{quyền lực}.
+\end{itemize}
+
+%=====================================================================
+\sect{2 Lịch sử xã hội của AI}
+\begin{itemize}
+\item Thuật ngữ AI có từ \kw{1950s}, nhưng AI hôm nay khác hẳn. \kw{Định kiến}: phát triển tuyến tính (symbolic trước, neural nay); chu kỳ \kw{hype} (Gartner) hiếm khi đúng thực tế.
+\item \kw{Symbolic AI} / expert systems / decision trees: học bán thủ công từ dữ liệu + tri thức chuyên gia. \kw{Neural AI}: suy luận thống kê, bỏ chuyên gia, cần nhiều dữ liệu. \kw{Generative AI}: tự tạo ví dụ huấn luyện?
+\item \ct{Cardon, Cointet \& Mazières 2018, \emph{La revanche des neurones}}: AI là thay đổi paradigm của tính toán; \kw{bi-clustering} mạng trích dẫn (Louvain) cho thấy căng thẳng \kw{symbolic vs connectionist}.
+\item \kw{Connectionist tenets} \cnt{4}: \n1hy sinh tính dễ hiểu \& chặt chẽ để nắm độ phức tạp của dữ liệu \n2dữ liệu đủ dư thừa/đối xứng để bền vững \n3thế giới thực lộn xộn, phi tuyến \n4dữ liệu phải được chia nhỏ (atomised, granularised).
+\item \ct{Gargiulo et al.\ 2023}: Microsoft Academic Graph, \kw{139 triệu} bài báo $\Rightarrow$ \cnt{5} \n1nhiều ngành con phụ thuộc nhau \n2symbolic, neural, neuro-symbolic cùng phát triển \n3chia giữa lý thuyết và ứng dụng \n4chịu ảnh hưởng báo chí \& tiểu thuyết \n5đang bước vào vùng bị quản lý. $\Rightarrow$ phải coi AI là sociotechnical object.
+\end{itemize}
+
+%=====================================================================
+\sect{3 Materiality: môi trường \& quyền lực}
+\begin{itemize}
+\item \kw{Rematerialising the cloud} \ct{Crawford 2021, \emph{Atlas of AI}}: phụ thuộc mỏ (lithium); 99.8\% đất đào là chất thải; 1 tấn đất hiếm = 75\,000 L nước axit + 1 tấn chất phóng xạ; điều kiện lao động tồi tệ.
+\item Deep learning tốn \kw{carbon} và \kw{lao động} \ct{Luccioni et al.\ 2023, BLOOM}; không phải lúc nào cũng tốt hơn \ct{Delarue et al.\ 2024}.
+\item Xu hướng: \kw{frugal AI}, ước lượng carbon, ``green AI'', \kw{no AI}. \kw{Moral reconfiguration} của nghiên cứu \ct{Hardy 2023}.
+\item \kw{Data colonialism}: trích xuất giá trị từ dữ liệu, mở rộng của chủ nghĩa thực dân \& tư bản \ct{Zuboff}: lợi nhuận + tập trung của cải; tăng bất bình đẳng Bắc--Nam. Ví dụ \kw{ngôn ngữ}: cộng đồng cho dữ liệu ngôn ngữ, rồi bị bán lại dưới dạng dịch vụ.
+\item \kw{Reactivity} \ct{Espeland \& Sauder 2007}: số đo công khai \emph{tái tạo} thế giới xã hội (trường học chạy theo tiêu chí xếp hạng). ``Ta có tìm thấy cái ta đo?''
+\item \ct{Kalluri 2020}: đừng hỏi AI có tốt/công bằng không, hãy hỏi nó \kw{dịch chuyển quyền lực} thế nào.
+\item \kw{Decolonial AI} \ct{Mohamed et al.\ 2020}: hành động cá nhân \emph{không đủ} (vấn đề hệ thống), nền tảng thay thế cũng không đủ (Mastodon vs X). Thách thức ý tưởng ``dữ liệu là tài nguyên tự nhiên''; media literacy, regulation, đa nguyên thật sự.
+\end{itemize}
+
+%=====================================================================
+\sect{4 Digital labour \& data work (Abel)}
+\begin{itemize}
+\item \kw{Platform}: công ty trung gian ghép nối người, thông tin, hàng hóa và \kw{thu dữ liệu} từ tương tác; \kw{taskification} (chia việc thành tác vụ nhỏ); không phải Taylorism cổ điển: điều phối \emph{ngoài} công ty. \kw{Triangulation} platform--worker--client \ct{Abel \& Dieuaide 2023}.
+\item \kw{Digital labour} = \kw{continuum} từ hoạt động không lương của user (điền hồ sơ, đánh giá) tới việc vặt trả theo món và freelance \ct{Terranova, free labor}; thiếu quyền lao động (nghỉ phép, hưu trí, thậm chí được trả lương).
+\item Vì sao quan trọng: AI \kw{dịch chuyển} chứ không \kw{thay thế} lao động $\Rightarrow$ bùng nổ micro-workers. Lời hứa ``việc người tạm thời trước khi tự động hóa'' \emph{phần lớn sai}.
+\item \kw{Clients} (Big Tech, start-ups, R\&D, labs) cần: chất lượng nhãn > số lượng; phủ lĩnh vực \& đặc thù địa phương; dữ liệu cập nhật; đánh đổi chính xác--chi phí--thời gian; bí mật \& nguồn gốc; giảm rủi ro.
+\item \ct{Muldoon et al.\ 2024}: \kw{AI data work} = lao động người để chuẩn bị/đánh giá dữ liệu và đầu ra, thường thuê ngoài, trả thấp. Typology \cnt{2 trục}: crowdworker vs employee; dịch vụ ngoài vs trong, tổng quát vs chuyên AI.
+\item \ct{Schmidt 2022}: để đạt 95--99\% độ chính xác, trung gian thành \kw{multi-layer stacks}; ``black boxes within black boxes'' (lớp ẩn tổ chức giống lớp ẩn mạng) $\Rightarrow$ chính xác hơn nhưng \kw{mờ đục} về nguồn gốc \& điều kiện lao động.
+\end{itemize}
+\sub{3 vai trò \ct{Tubaro, Casilli \& Coville 2020}}
+\begin{itemize}
+\item \n1\kw{Trainer / preparation} (trước robot): \kw{data generation} (ghi giọng, ảnh, giọng địa phương) + \kw{annotation} (phân loại, bounding box, polygon, phân đoạn pixel).
+\item \n2\kw{Imitator / impersonation}: người \emph{đóng vai} AI, ``\kw{artificial artificial intelligence}'' (MTurk). Google Duplex (tới 25\% cuộc gọi do người, 5/2019), Julie Desk (80\% máy/20\% người).
+\item \n3\kw{Verifier / verification} (sau robot): hệ thống đã chạy, người kiểm tra \& sửa (nghe clip ASR 3--15 s, chấm độ liên quan, sửa OCR) $\Rightarrow$ \emph{không bao giờ biến mất}.
+\end{itemize}
+\sub{Phân công lao động toàn cầu}
+\begin{itemize}
+\item Platforms/BPO = định chế \kw{offshoring} mới. Cầu ở Bắc Mỹ/Âu; cung ở Nam Á, Đông Âu, Mỹ Latin, châu Phi. World Bank 2023: \kw{154--435 triệu} người làm việc online (4.4--12.5\% lao động).
+\item MTurk: US $\approx$75\%, India $\approx$16\%; 100--200k đăng ký, $\approx$2k hoạt động; half-life 12--18 tháng.
+\item Lao động trẻ, học vấn cao hơn mặt bằng, kinh tế khó khăn. Lương: median $\approx$\kw{\$1.77/h}, mean \$3.13/h \ct{Hara et al.\ 2018}; thời gian không lương (tìm việc, bị từ chối).
+\item \kw{Dispositif} \ct{Miceli \& Posada 2022}: instructions + interface + metrics quyết định ``sự thật'' và nhịp độ. Nội dung bạo lực/tình dục. Phụ nữ 1/3--40\%, chênh lệch thu nhập (vd.\ 68\%).
+\item \kw{Venezuela} \ct{Posada 2022}: USD như phao cứu sinh giữa siêu lạm phát; \$0.7--2/h; mất điện, phí rút tiền; việc rẻ nhất (captcha, selfie).
+\item \kw{Madagascar} \ct{Le Ludec 2024}: BPO nói tiếng Pháp làm cho khách Pháp; \emph{journaliers} (trả theo ngày, không nghỉ phép); QA nhiều tầng; impersonation (phát hiện trộm từ video trực tiếp: ``they said it was all automatic\ldots we're the ones behind it'').
+\end{itemize}
+\ex{\textbf{Q2 đề mẫu -- value chain của annotation}: \n1client Pháp (vd.\ start-up camera chống trộm siêu thị) cần dữ liệu \n2giao cho platform / BPO trung gian (hợp đồng, SLA độ chính xác) \n3BPO ở Madagascar chia việc (taskification): gán nhãn video, impersonation trực tiếp \n4worker (journalier, lương thấp, bị theo dõi bởi metrics) \n5QA nhiều tầng $\to$ dữ liệu về client $\to$ mô hình được bán là ``tự động''. Giá trị \& uy tín ở Bắc, chi phí \& vô hình ở Nam.}
+
+%=====================================================================
+\sect{5 Bức tranh AI ethics (Q3 đề mẫu)}
+\begin{itemize}
+\item \kw{AI ethics}: nghiên cứu liên ngành (CS, kinh tế, luật, toán, xã hội học). Mục tiêu \cnt{4}: \n1tách hype/thực tế \n2hiểu cách diễn ngôn, lập luận, actors liên kết \n3chỉ ra vùng cần luật \n4hướng dẫn vận hành.
+\item \ct{Jobin, Ienca \& Vayena 2019}: \kw{84} văn bản, \kw{11 chủ đề}: transparency, justice \& fairness, non-maleficence, responsibility, privacy, beneficence, freedom \& autonomy, trust, sustainability, dignity, solidarity. Hội tụ quanh \kw{5} (5 cái đầu); bất đồng về \emph{cách hiểu và triển khai}.
+\item \ct{Gornet, Delarue, Boritchev \& Viard, FAccT 2024}: \kw{436} manifestos (MapAIE) $\Rightarrow$ \kw{3 cực}: technical, regulatory, business/innovation. XAI: kỹ thuật hơn, ít luật; fairness: không đổi; AGI: ít kỹ thuật, ít luật; freedom/autonomy: nhiều luật \& công bằng xã hội. Theo thời gian: AI ethics \kw{chuyển thành AI regulation}; vẫn \kw{thiếu operationalisation} (trừ theo lĩnh vực) và thiếu visibilisation.
+\item Chủ đề \kw{bị thiếu}: AI \& lao động, AI \& đấu tranh quyền lực (bất công, sexism), AI \& sinh thái.
+\item Liên tục: \kw{charters $\to$ regulation $\to$ standards}.
+\item Báo chí (1000 bài tiếng Pháp, n-gram, $\chi^2$, Louvain): cụm technical, private sector, transhumanist, regulation, bioethics; 2023--25: RIA (AI Act), OpenAI, IA générative, chính trị Mỹ.
+\item \kw{Hype}: AI là thuật ngữ rộng, không phải 1 công nghệ; có ứng dụng có ích, hype = khoảng cách giữa tuyên bố và thực tế (Hinton 2016 về radiologists). Làm với industry không bị coi là xung đột lợi ích; hội nghị chú trọng hiệu năng.
+\end{itemize}
+\sub{4 arenas / nuances of regulation \ct{Benbouzid et al.\ 2020}}
+\begin{itemize}
+\item \n1\kw{AI as super-intelligence}: transhumanist, sợ mất kiểm soát (Wiener, Good, Moravec, Russell), Future of Life Institute. Phê phán: rủi ro dài hạn giả định \emph{làm xao nhãng} tác hại thực, ngắn hạn \ct{Bender et al.\ 2021}.
+\item \n2\kw{Intelligent agents in an open world}: Asilomar 2009 (AAAI), chuyên gia nhận diện rủi ro, AI là thành phần kỹ thuật \emph{có thể chứng nhận}; One Hundred Year Study, Partnership on AI.
+\item \n3\kw{Tech neutrality vs sociotechnical}: AI củng cố cấu trúc quyền lực \ct{Weizenbaum 1976}; bias có hệ thống \ct{Buolamwini \& Gebru 2018}; audits, báo cáo; căng thẳng giữa giải pháp kỹ thuật và vấn đề chính trị sâu.
+\item \n4\kw{Technical \& economic lens} (EU): tạo \kw{conformity} cho sản phẩm; GDPR, DSA, DMA, AI Act; \kw{Brussels effect} \ct{Bradford}; định nghĩa rộng + phụ lục dễ sửa.
+\end{itemize}
+\sub{AI ethics vs AI safety}
+\begin{itemize}
+\item \kw{AI safety}: rủi ro tồn vong; Musk, Altman, Hinton, Bengio, Bostrom, Kurzweil; trung tâm Bắc Mỹ; được chú ý (Bletchley, AI Safety Institute, code of practice). Lập luận: AI như hạt nhân $\Rightarrow$ luật \emph{lấy công nghệ làm trung tâm}, bỏ qua phi kỹ thuật; \kw{TESCREAL} \ct{Gebru \& Torres 2024}.
+\item Lời kêu gọi ``tạm dừng 6 tháng'': không ai dừng; không có bằng chứng công khai.
+\end{itemize}
+
+%=====================================================================
+\sect{6 Users of AI: bias \& technosolutionism}
+\begin{itemize}
+\item Vì sao quan tâm user \cnt{5}: \n1ta cũng là user \n2giữ niềm tin vào thể chế \n3thấy trở ngại, non-use, phân biệt \n4gần \kw{metrological realism} \n5giúp operationalisation (luật).
+\item \kw{COMPAS} (ProPublica 2016): đánh giá nguy cơ tái phạm; case bias kinh điển; tranh cãi chuyển từ luật/tội phạm học ra không gian công cộng; 2 arenas (data science vs criminology) ít trao đổi \ct{Beaudouin \& Maxwell 2023}.
+\item Bias hôm nay: nhiều phương pháp debias (Bolukbasi 2016) kết quả lẫn lộn, có khi \emph{tăng} bias \ct{Prost 2021}; định nghĩa fairness cũ, không vững về xã hội học, hiếm khi \kw{intersectionality}. $\Rightarrow$ tranh luận về \kw{algocracy}.
+\item \kw{Fair AI vs radical AI}: SyRI (Hà Lan, gian lận phúc lợi), Schufa (ADM \& human oversight), CNAF (Pháp, Conseil d'État 2024), ETIAS (biên giới), Clearview AI (nhận diện khuôn mặt, phạt 2025) $\Rightarrow$ fairness vô nghĩa nếu không gắn với \emph{thay đổi sâu} \ct{Kalluri 2020; Keyes 2020}; \kw{compounding injustice} \ct{Eidelson 2021}; cần \kw{compassion} \ct{Vaccaro 2021}.
+\item \kw{Mulching proposal} \ct{Keyes, Hutson \& Durbin 2019}: áp FAT (fair, accountable, transparent) vào thuật toán biến người già thành thức ăn: \emph{fair} (demographic parity), \emph{accountable} (10 giây khiếu nại), \emph{transparent} (biển ``mulching area'') $\Rightarrow$ FAT không hỏi \emph{có nên làm không}.
+\item \kw{Technosolutionism}: tin công nghệ \emph{tất yếu} là một phần của giải pháp $\Rightarrow$ hợp lý hóa sau, giải pháp xa rời thực tế; nguy cơ cho dân chủ \ct{Nemitz 2023}; abstraction traps \ct{Selbst et al.\ 2018}. Ví dụ Covid tracing: tranh luận về privacy thay vì Bluetooth không phù hợp.
+\item Lập luận lobby \cnt{4}: ``không làm thì người khác làm''; ``chảy máu chất xám''; ``luật cản đổi mới''; ``phiên bản mới sẽ sửa lỗi cũ''.
+\end{itemize}
+\sub{Algorithms in practice \ct{Christin 2017/2019}}
+\begin{itemize}
+\item Ethnography 2011--15, 100 phỏng vấn: luật sư/thẩm phán (defendant scoring) vs nhà báo web (trend mining). Hai \kw{expert fields} \ct{Bourdieu}; khác: rào cản gia nhập (mạnh vs gần như không), phi lợi nhuận vs lợi nhuận.
+\item Chung: \kw{decoupling} \ct{Meyer \& Rowan 1977} (diễn ngôn quản lý $\neq$ thực hành); \kw{buffering} \cnt{3}: \n1\kw{foot-dragging} (lờ đi công cụ) \n2\kw{gaming} (clickbait, chọn hồ sơ) \n3\kw{open critique}.
+\item \kw{Algorithmic imaginaries} \ct{Bucher 2016}: nhà báo không nghi công cụ mà nghi \emph{mục đích}; thẩm phán chê thuật toán ``crude'', công cụ vì lợi nhuận.
+\item \kw{Cour de cassation}: NER để ẩn danh bản án, huấn luyện nội bộ 2 năm, \emph{không bao giờ xong} (đội thường trực); gọi là ``the software'', như một đồng nghiệp vắng mặt.
+\end{itemize}
+
+%=====================================================================
+\sect{7 Explanation \& contestation}
+\begin{itemize}
+\item \kw{Right to explanation} (EU): giải thích nên \kw{selective, mutable, dialogic} \ct{Miller}; \kw{contrastive} \ct{Dessalles 2020}. Cho ai: chuyên gia, người thường, cơ quan quản lý. Để làm gì: descriptive, explanatory, normative, \kw{contestable}.
+\item \kw{Right to contest AI} \ct{Kaminski \& Urban 2021}: quyền cá nhân, mô phỏng \kw{due process}; đặt gánh nặng lên cá nhân; vừa với GDPR. Mục tiêu: trao quyền công dân, chấp nhận quyết định, cải thiện hệ thống, chống gaming. Giới hạn: không giải quyết \kw{bất cân xứng thông tin} và quyền lực; mỗi người chỉ đấu cho hồ sơ của mình.
+\item \kw{Contestable AI by design} \ct{Alfrink et al.\ 2023}: \kw{Value-Sensitive Design}, vòng khiếu nại cho \kw{public AI}.
+\end{itemize}
+
+%=====================================================================
+\sect{8 Human in the loop \& bẫy Schufa}
+\ex{\textbf{Schufa (CJEU, C-634/21)}: công ty chấm điểm tín dụng; điểm số được bên thứ ba dùng gần như nguyên xi. Tòa: nếu người ``duyệt'' \emph{luôn đồng ý} với hệ thống thì \emph{không có} giám sát thật $\Rightarrow$ coi là \kw{fully automated decision} (GDPR art.\,22) $\Rightarrow$ kích hoạt quyền: giải thích, can thiệp của người, khiếu nại. \textbf{Câu hỏi bẫy}: ``có người thì không phải tự động hoàn toàn?'' $\to$ \textbf{Sai}, nếu sự can thiệp không \kw{meaningful}.}
+\begin{itemize}
+\item \kw{Human in the loop} (người trong từng quyết định) vs \kw{human supervision / oversight} (người đứng trên hệ thống). Meaningful review cần: thẩm quyền đảo ngược, thời gian, thông tin, đào tạo, tránh \kw{automation bias}.
+\item Khi đề hỏi về human in the loop: \emph{ai} là người đó, thuê thế nào, trả bao nhiêu, nội bộ hay thuê ngoài (lời giảng viên Abel).
+\end{itemize}
+
+%=====================================================================
+\sect{9 Luật: soft law, đạo đức, GDPR, trách nhiệm (Le Goff)}
+\begin{itemize}
+\item \kw{Soft law}: thỏa thuận/nguyên tắc \emph{không ràng buộc}; \kw{hard law}: nghĩa vụ ràng buộc, thực thi trước tòa. Điều kiện \cnt{3} (Conseil d'État 2013): \n1nhằm thay đổi hành vi qua tự nguyện \n2tự nó không tạo quyền/nghĩa vụ \n3mức hình thức hóa giống quy tắc luật.
+\item Nhược điểm: không ràng buộc; thiếu an toàn pháp lý, bỏ qua thể chế dân chủ; cách né luật cứng. Soft law \kw{có thể có hiệu lực}: công ty tuyên bố tuân theo (FTC, CNIL thực thi) hoặc thể chế trao hiệu lực (standard trong luật, thẩm phán dùng để xác định lỗi).
+\item Nguyên tắc: \kw{HLEG 2019} \cnt{7}: human agency \& oversight; technical robustness \& safety; privacy \& data governance; transparency; diversity, non-discrimination \& fairness; societal \& environmental well-being; accountability. \kw{OECD} 2019/2024 \cnt{5}. \kw{UNESCO} 2021 \cnt{10}.
+\end{itemize}
+\sub{GDPR}
+\begin{itemize}
+\item \kw{Một legal basis} (art.\,6, ``OR'') \cnt{6}: consent, contract, legal obligation, vital interest, \kw{public interest}, legitimate interest.
+\item \kw{Mọi principles} (art.\,5, ``AND'') \cnt{6}: \n1lawfulness, fairness, transparency \n2purpose limitation \n3data minimisation \& accuracy \n4storage limitation \n5integrity \& confidentiality \n6\kw{accountability} (chứng minh được tuân thủ).
+\item Pseudonymisation (vẫn là dữ liệu cá nhân) $\neq$ anonymisation.
+\end{itemize}
+\sub{Rủi ro pháp lý của LLM \cnt{3}}
+\begin{itemize}
+\item \n1\kw{Data protection} (legal basis, principles, không xuất dữ liệu cá nhân) \n2\kw{Intellectual property} (làm sạch dataset, tôn trọng \kw{opt-out}, lọc đầu ra, điều khoản sử dụng) \n3\kw{Liability}: hợp đồng (vụ \kw{Air Canada} chatbot), dân sự (\kw{faute + préjudice + lien de causalité}), hình sự; sản phẩm lỗi (\kw{produit + défaut de sécurité}); trách nhiệm do vật (chose + gardien).
+\item \kw{Copyright}: bảo vệ ``\emph{original expression, by a human, in a fixed medium}''; ý tưởng/thuật toán không, mã nguồn có; không cần thủ tục. \kw{Fair use} (US) \cnt{4 yếu tố}: \n1mục đích (transformative?) \n2bản chất tác phẩm \n3lượng trích \n4ảnh hưởng thị trường. EU: ngoại lệ \kw{text and data mining} (nghiên cứu; thương mại có opt-out).
+\end{itemize}
+
+%=====================================================================
+\sect{10 EU AI Act}
+\begin{itemize}
+\item Lịch sử: HLEG 2018 $\to$ guidelines 2019 $\to$ white paper 2020 $\to$ đề xuất 2021 $\to$ thông qua 13/6/2024 $\to$ \kw{hiệu lực 1/8/2024}, áp dụng dần: cấm 2/2025; GPAI 8/2025; phần lớn 8/2026; high-risk Annex I 8/2027 (theo văn bản gốc).
+\item \kw{AI system} = hệ thống dựa trên máy, \emph{tự chủ ở các mức}, (có thể thích nghi sau triển khai), vì mục tiêu rõ/ngầm, \kw{infers} từ input cách tạo output (dự đoán, nội dung, khuyến nghị, quyết định) ảnh hưởng môi trường. Đặc trưng chính: \kw{khả năng suy luận} (ML \emph{và} logic/knowledge-based); loại trừ luật do người viết sẵn (recital 12).
+\item Actors \cnt{4}: \kw{provider} (đưa ra thị trường dưới tên mình: tuân thủ \emph{ex ante}, CE marking); \kw{deployer} (dùng dưới thẩm quyền, trừ cá nhân: theo hướng dẫn sử dụng; thành provider nếu đổi tên/sửa cơ bản); \kw{distributor}; \kw{importer}.
+\end{itemize}
+\sub{Kim tự tháp rủi ro \cnt{4 + GPAI}}
+\begin{itemize}
+\item \n1\kw{Prohibited} (art.\,5) \cnt{8}: subliminal techniques; khai thác điểm yếu (tuổi, khuyết tật, hoàn cảnh); \kw{social scoring}; dự đoán khả năng phạm tội của cá nhân (chỉ từ profiling); \kw{untargeted scraping} để làm CSDL khuôn mặt; \kw{emotion recognition} ở nơi làm việc/trường học; \kw{biometric categorisation} suy ra dữ liệu nhạy cảm; \kw{real-time remote biometric identification} nơi công cộng cho thực thi pháp luật (ngoại lệ: bắt cóc, buôn người, người mất tích, khủng bố, nghi phạm tội nặng; cần cho phép trước).
+\item \n2\kw{High-risk}: sản phẩm theo luật ngành (Annex I: máy, thiết bị y tế, hàng không, xe\ldots) hoặc \kw{Annex III} \cnt{8}: biometrics; critical infrastructure; education; employment; essential services (y tế, tín dụng, bảo hiểm); law enforcement; migration \& border; justice \& democratic processes.
+\item Nghĩa vụ provider high-risk: art.\,9 risk management; 10 \kw{data governance} (bias, đại diện, dữ liệu sạch); 11 tài liệu kỹ thuật (Annex IV); 12 logs; 13 transparency \& hướng dẫn cho deployer; 14 \kw{human oversight} (giao diện, nút ``stop'', quyền ghi đè); 15 accuracy, robustness, cybersecurity; 17 quality management.
+\item \n3\kw{Transparency} (art.\,50): chatbot báo đang nói với AI; nội dung tổng hợp \kw{watermark}; emotion/biometric báo cho người liên quan; \kw{deepfake} phải công bố (trừ nghệ thuật/châm biếm); văn bản thông tin cho công chúng.
+\item \n4Minimal risk: tự nguyện theo code/nguyên tắc.
+\item \kw{GPAI model}: tổng quát đáng kể, làm nhiều tác vụ. Nghĩa vụ \cnt{4}: tài liệu kỹ thuật; thông tin cho downstream; chính sách \kw{copyright} (opt-out); \kw{tóm tắt dữ liệu huấn luyện} công khai (open-source miễn 2 cái đầu). \kw{Systemic risk}: $>10^{25}$ FLOPs hoặc Commission chỉ định $\Rightarrow$ thêm \cnt{4}: đánh giá \& adversarial testing; đánh giá \& giảm rủi ro hệ thống; báo cáo sự cố nghiêm trọng cho AI Office; cybersecurity.
+\item Thực thi: \kw{AI Office} (GPAI), \kw{AI Board}, cơ quan quốc gia; \kw{regulatory sandboxes}. Phạt: cấm 35 tr€/7\%; high-risk \& transparency 15 tr€/3\%; không hợp tác 7.5 tr€/1\% (lấy mức cao hơn).
+\item \kw{Standards}: tuân thủ = thử theo \kw{harmonised standards} (hENs) $\Rightarrow$ CE mark; mới: chứng nhận \kw{fundamental rights}, khó vì phụ thuộc ngữ cảnh, cần phán quyết tòa; tính dân chủ của tổ chức tiêu chuẩn bị đặt câu hỏi \ct{Gornet \& Maxwell 2024}.
+\item Công cụ đánh giá rủi ro: NIST AI RMF 2023, ANSSI 2024, ALTAI 2020. Ma trận: \kw{gravity} (0--4) $\times$ \kw{probability} (0--4) + mitigation.
+\end{itemize}
+
+%=====================================================================
+\sect{11 Đề mẫu -- dàn ý trả lời}
+\sub{Q1: 5 vai trò actors \& đóng góp}
+\begin{itemize}
+\item Researchers (định nghĩa, framing AI), providers (xây, bán), deployers (dùng, chịu nghĩa vụ), data workers (trainer/verifier/imitator: chất lượng dữ liệu), regulators/standard bodies (luật, CE), users/data subjects (dùng, chống cự, khiếu nại), media/NGOs (đưa tranh cãi ra công chúng: ProPublica). Mỗi vai trò: 1 câu đóng góp + 1 ví dụ.
+\end{itemize}
+\sub{Q3: báo cáo cho chính phủ Pháp về các xu hướng AI ethics}
+\begin{itemize}
+\item Chủ đề cần xem: \n1nguyên tắc (Jobin 11 chủ đề; HLEG 7) \n2ba cực diễn ngôn (Gornet 2024) \& chuyển thành luật \n3AI ethics vs AI safety (framing rủi ro khác nhau, TESCREAL) \n44 arenas (Benbouzid) \n5bias \& fair vs radical AI (COMPAS, SyRI, CNAF) \n6lao động (Tubaro, Le Ludec: Madagascar gắn với Pháp!) \n7môi trường (Crawford, frugal AI) \n8users, explanation, contestation \n9standards \& AI Act.
+\item Với mỗi chủ đề: \emph{vì sao liên quan} + \emph{ai mang nó} (actor, arena) + \emph{vị trí} (technical / regulatory / business). Nêu chủ đề bị thiếu (lao động, quyền lực, sinh thái).
+\end{itemize}
+\sub{Q4: videosurveillance thuật toán (Bộ Nội vụ) -- vấn đề pháp lý}
+\begin{itemize}
+\item \kw{GDPR} (và chỉ thị \kw{Police-Justice} 2016/680 nếu mục đích thực thi pháp luật): legal basis = public interest / nhiệm vụ công; \kw{necessity \& proportionality}; minimisation (không lưu khuôn mặt, làm mờ); storage limitation (xóa sau thời hạn ngắn); transparency (biển báo \emph{dễ thấy}, thông tin công khai); dữ liệu sinh trắc là \kw{sensitive} (art.\,9); \kw{DPIA} bắt buộc (giám sát có hệ thống nơi công cộng quy mô lớn); hỏi \kw{CNIL}.
+\item Quyền cơ bản: riêng tư, tự do đi lại \& hội họp (\kw{chilling effect}), không phân biệt (bias theo nhóm), nguy cơ \kw{function creep} (mở rộng mục đích).
+\item \kw{AI Act}: Bộ Nội vụ là \kw{deployer} (cơ quan công). Phân loại: nếu \emph{nhận dạng người bằng sinh trắc thời gian thực} $\Rightarrow$ \kw{bị cấm} (trừ ngoại lệ hẹp + cho phép trước của tòa/cơ quan độc lập). Nếu chỉ phát hiện \emph{sự kiện} (đám đông, vật bỏ quên, xâm nhập) không nhận dạng $\Rightarrow$ không phải RBI; xét \kw{Annex III} (biometrics, law enforcement) $\Rightarrow$ có thể \kw{high-risk}. Pháp: thử nghiệm VSA thuật toán cho Thế vận hội (loi n°\,2023-380, art.\,10), không nhận diện khuôn mặt; được kéo dài dù kết quả ít.
+\item \kw{Biện pháp cụ thể} cho deployer high-risk: mua hệ thống có \kw{CE marking} \& tài liệu; dùng đúng hướng dẫn; \kw{human oversight} bởi nhân viên được đào tạo, có quyền bỏ qua cảnh báo (tránh bẫy Schufa: không duyệt máy móc); giữ \kw{logs}; theo dõi \& báo sự cố cho provider/cơ quan; \kw{fundamental rights impact assessment} (cơ quan công); đăng ký vào CSDL EU; thông báo cho người dân; kiểm tra bias theo nhóm; giới hạn thời gian/khu vực sự kiện; đánh giá sau sự kiện \& công bố kết quả.
+\item Mở rộng (điểm cao): framing (ai đo ``rủi ro''?), technosolutionism (camera có giải quyết vấn đề an ninh?), lao động ẩn (ai gán nhãn video huấn luyện?), contestation (người bị gắn cờ khiếu nại thế nào?).
+\end{itemize}
+\sub{Đề mẫu khác: panel khoa học độc lập cho AI Act}
+\begin{itemize}
+\item ``Scientific'' = gắn với nghiên cứu; ``independent'' = độc lập với Commission. Cân bằng theo \kw{Gargiulo 2023} (tỉ lệ lĩnh vực: lý thuyết vs ứng dụng; symbolic vs connectionist) + chuyên gia AI \& society (ethics \emph{và} safety vì framing rủi ro khác nhau, xã hội học, nhân học, design cho explanation/contestation, luật). Cân bằng giới, địa lý (Bắc--Nam), academia/industry (xung đột lợi ích).
+\item Tài liệu kỹ thuật của OpenAI ``FAT'': cẩn thận \kw{mulching proposal} (fair $\neq$ nên làm); metrics fairness nào, cho ai (intersectionality); explanation cho ai (Miller), có cho phép \kw{contestation}?; lao động dữ liệu \& môi trường bị bỏ ngoài framing; kiểm toán độc lập, không chỉ tự khai.
+\end{itemize}
+
+\end{multicols*}
+\end{document}
